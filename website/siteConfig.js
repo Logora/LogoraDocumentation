@@ -24,7 +24,7 @@ const siteConfig = {
   title: 'Test Site', // Title for your website.
   tagline: 'A website for testing',
   url: 'https://master.d24s2qxlp9xzpm.amplifyapp.com', // Your website URL
-  baseUrl: '/app', // Base URL for your project */
+  baseUrl: '/app/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',

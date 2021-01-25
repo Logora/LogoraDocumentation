@@ -33,7 +33,7 @@ module.exports={
       },
       "items": [
         {
-          "to": "docs/",
+          "to": "/",
           "label": "Documentation",
           "position": "left"
         },

@@ -1,7 +1,6 @@
 ---
 id: introduction
-title: Introduction
-sidebar_label: Introduction
+slug: /
 ---
 
 Check the [documentation](https://docusaurus.io) for how to use Docusaurus.

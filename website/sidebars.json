@@ -1,8 +1,0 @@
-{
-  "docs": {
-    "Introduction": ["introduction"],
-    "Installation": 
-		["doc2", "doc3"],
-    "Authentification unique": ["exampledoc4"]
-  }
-}

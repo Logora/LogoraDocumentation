@@ -6,7 +6,6 @@ module.exports={
   "organizationName": "Logora",
   "projectName": "LogoraDocumentation",
   "favicon": "img/favicon.ico",
-  "customFields": {},
   "onBrokenLinks": "log",
   "onBrokenMarkdownLinks": "log",
   "presets": [
@@ -18,9 +17,8 @@ module.exports={
 		  "routeBasePath": "/",
 		  "path": "docs"
         },
-        "blog": {},
         "theme": {
-          "customCss": "..\\src\\css\\customTheme.css"
+          "customCss": [require.resolve('./src/css/custom.css')]
         }
       }
     ]

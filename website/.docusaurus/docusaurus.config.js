@@ -6,7 +6,6 @@ export default {
   "organizationName": "Logora",
   "projectName": "LogoraDocumentation",
   "favicon": "img/favicon.ico",
-  "customFields": {},
   "onBrokenLinks": "log",
   "onBrokenMarkdownLinks": "log",
   "presets": [
@@ -18,9 +17,10 @@ export default {
           "routeBasePath": "/",
           "path": "docs"
         },
-        "blog": {},
         "theme": {
-          "customCss": "..\\src\\css\\customTheme.css"
+          "customCss": [
+            "C:\\Users\\Henry\\Documents\\Projets\\Logora\\LogoraDocumentation\\website\\src\\css\\custom.css"
+          ]
         }
       }
     ]
@@ -83,6 +83,7 @@ export default {
     "localeConfigs": {}
   },
   "onDuplicateRoutes": "warn",
+  "customFields": {},
   "themes": [],
   "titleDelimiter": "|",
   "noIndex": false

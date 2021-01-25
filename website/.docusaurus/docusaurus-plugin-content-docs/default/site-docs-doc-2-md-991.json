@@ -1,0 +1,16 @@
+{
+  "unversionedId": "doc2",
+  "id": "doc2",
+  "isDocsHomePage": false,
+  "title": "doc2",
+  "description": "This is a link to another document.",
+  "source": "@site/docs\\doc2.md",
+  "slug": "/doc2",
+  "permalink": "/doc2",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "introduction",
+    "permalink": "/"
+  }
+}

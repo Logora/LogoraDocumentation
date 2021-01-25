@@ -1,0 +1,32 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "introduction",
+          "docs": [
+            {
+              "id": "doc2",
+              "path": "/doc2",
+              "sidebar": "docs"
+            },
+            {
+              "id": "doc3",
+              "path": "/doc3"
+            },
+            {
+              "id": "introduction",
+              "path": "/",
+              "sidebar": "docs"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

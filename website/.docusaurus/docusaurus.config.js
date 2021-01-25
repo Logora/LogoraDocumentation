@@ -1,4 +1,4 @@
-module.exports={
+export default {
   "title": "Logora",
   "tagline": "La fin du commentaire, le début du débat",
   "url": "https://master.d24s2qxlp9xzpm.amplifyapp.com",
@@ -14,7 +14,7 @@ module.exports={
       "@docusaurus/preset-classic",
       {
         "docs": {
-		  "routeBasePath": "/",
+          "routeBasePath": "/",
           "sidebarPath": "sidebars.js"
         },
         "blog": {},
@@ -24,15 +24,7 @@ module.exports={
       }
     ]
   ],
-  "plugins": [
-	[
-      '@docusaurus/plugin-content-docs',
-      {
-        'path': 'docs',
-        'routeBasePath': '/'
-	  }
-	]
-  ],
+  "plugins": [],
   "themeConfig": {
     "navbar": {
       "title": "Logora",
@@ -50,14 +42,47 @@ module.exports={
           "label": "Espace d'administration",
           "position": "left"
         }
-      ]
+      ],
+      "hideOnScroll": false
     },
     "footer": {
       "links": [],
       "copyright": "Copyright © 2021 Logora",
       "logo": {
         "src": "img/logora_logo.png"
+      },
+      "style": "light"
+    },
+    "colorMode": {
+      "defaultMode": "light",
+      "disableSwitch": false,
+      "respectPrefersColorScheme": false,
+      "switchConfig": {
+        "darkIcon": "🌜",
+        "darkIconStyle": {},
+        "lightIcon": "🌞",
+        "lightIconStyle": {}
       }
-    }
-  }
-}
+    },
+    "docs": {
+      "versionPersistence": "localStorage"
+    },
+    "metadatas": [],
+    "prism": {
+      "additionalLanguages": []
+    },
+    "hideableSidebar": false
+  },
+  "baseUrlIssueBanner": true,
+  "i18n": {
+    "defaultLocale": "en",
+    "locales": [
+      "en"
+    ],
+    "localeConfigs": {}
+  },
+  "onDuplicateRoutes": "warn",
+  "themes": [],
+  "titleDelimiter": "|",
+  "noIndex": false
+};

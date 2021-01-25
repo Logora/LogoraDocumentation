@@ -1,13 +1,12 @@
 module.exports = {
   docs: [
     {
-      type: 'category',
-      label: 'Introduction',
-      items: ['introduction'],
+      type: 'doc',
+      id: 'introduction',
     },
-    {
+	{
       type: 'category',
-      label: 'Docusaurus',
+      label: 'Installation',
       items: ['doc2'],
     },
   ],

@@ -2,7 +2,7 @@
   "unversionedId": "introduction",
   "id": "introduction",
   "isDocsHomePage": false,
-  "title": "introduction",
+  "title": "Introduction",
   "description": "Check the documentation for how to use Docusaurus.",
   "source": "@site/docs\\introduction.md",
   "slug": "/",

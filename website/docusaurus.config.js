@@ -14,8 +14,9 @@ module.exports={
       "@docusaurus/preset-classic",
       {
         "docs": {
+          "sidebarPath": "sidebars.js",
 		  "routeBasePath": "/",
-          "sidebarPath": "sidebars.js"
+		  "path": "docs"
         },
         "blog": {},
         "theme": {
@@ -25,13 +26,6 @@ module.exports={
     ]
   ],
   "plugins": [
-	[
-      '@docusaurus/plugin-content-docs',
-      {
-        'path': 'docs',
-        'routeBasePath': '/'
-	  }
-	]
   ],
   "themeConfig": {
     "navbar": {

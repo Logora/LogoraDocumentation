@@ -15,20 +15,13 @@
           "sidebars": {
             "docs": [
               {
-                "collapsed": true,
-                "type": "category",
-                "label": "Introduction",
-                "items": [
-                  {
-                    "type": "doc",
-                    "id": "introduction"
-                  }
-                ]
+                "type": "doc",
+                "id": "introduction"
               },
               {
                 "collapsed": true,
                 "type": "category",
-                "label": "Docusaurus",
+                "label": "Installation",
                 "items": [
                   {
                     "type": "doc",
@@ -55,7 +48,7 @@
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "introduction",
+                "title": "Introduction",
                 "permalink": "/"
               }
             },
@@ -74,7 +67,7 @@
               "unversionedId": "introduction",
               "id": "introduction",
               "isDocsHomePage": false,
-              "title": "introduction",
+              "title": "Introduction",
               "description": "Check the documentation for how to use Docusaurus.",
               "source": "@site/docs\\introduction.md",
               "slug": "/",
@@ -95,13 +88,7 @@
     "default": null
   },
   "docusaurus-plugin-content-pages": {
-    "default": [
-      {
-        "type": "jsx",
-        "permalink": "/",
-        "source": "@site/src\\pages\\index.js"
-      }
-    ]
+    "default": []
   },
   "docusaurus-plugin-debug": {
     "default": null

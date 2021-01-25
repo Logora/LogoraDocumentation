@@ -6,21 +6,14 @@
   "docsSidebars": {
     "docs": [
       {
-        "collapsed": true,
-        "type": "category",
+        "type": "link",
         "label": "Introduction",
-        "items": [
-          {
-            "type": "link",
-            "label": "introduction",
-            "href": "/"
-          }
-        ]
+        "href": "/"
       },
       {
         "collapsed": true,
         "type": "category",
-        "label": "Docusaurus",
+        "label": "Installation",
         "items": [
           {
             "type": "link",

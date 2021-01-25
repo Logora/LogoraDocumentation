@@ -14,8 +14,9 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
+          "sidebarPath": "sidebars.js",
           "routeBasePath": "/",
-          "sidebarPath": "sidebars.js"
+          "path": "docs"
         },
         "blog": {},
         "theme": {

@@ -1,0 +1,158 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "@theme/NotFound": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      9,
+      0
+    ],
+    "styles": [
+      0,
+      2,
+      7,
+      8,
+      9,
+      1
+    ],
+    "@theme/DocItem": [
+      0,
+      1,
+      2
+    ],
+    "@site/docs\\introduction.md": [
+      0,
+      3
+    ],
+    "@site/docs\\doc3.md": [
+      0,
+      4
+    ],
+    "@site/docs\\doc2.md": [
+      0,
+      5
+    ],
+    "~docs/default\\version-current-metadata-prop-751.json": [
+      6
+    ],
+    "main": [
+      1,
+      8,
+      7
+    ],
+    "runtime~main": [
+      1,
+      7,
+      8
+    ],
+    "@theme/DocPage": [
+      0,
+      1,
+      9
+    ]
+  },
+  "assets": {
+    "0": {
+      "js": [
+        {
+          "file": "common.cfbc5f58.js",
+          "hash": "5acca385e521cb3dbec4",
+          "publicPath": "/common.cfbc5f58.js"
+        }
+      ]
+    },
+    "1": {
+      "css": [
+        {
+          "file": "styles.9d0981bb.css",
+          "hash": "85c923fb663e91f29056",
+          "publicPath": "/styles.9d0981bb.css"
+        }
+      ],
+      "js": [
+        {
+          "file": "styles.5fd05bf1.js",
+          "hash": "85c923fb663e91f29056",
+          "publicPath": "/styles.5fd05bf1.js"
+        }
+      ]
+    },
+    "2": {
+      "js": [
+        {
+          "file": "17896441.56f1cc5d.js",
+          "hash": "869b43872e8093a89573",
+          "publicPath": "/17896441.56f1cc5d.js"
+        }
+      ]
+    },
+    "3": {
+      "js": [
+        {
+          "file": "1a366355.62f3d242.js",
+          "hash": "9cfd73bff9d9d5e1793e",
+          "publicPath": "/1a366355.62f3d242.js"
+        }
+      ]
+    },
+    "4": {
+      "js": [
+        {
+          "file": "225b4c69.3835e8b3.js",
+          "hash": "64201f9244afe5b8b0b3",
+          "publicPath": "/225b4c69.3835e8b3.js"
+        }
+      ]
+    },
+    "5": {
+      "js": [
+        {
+          "file": "991b72a1.709730e5.js",
+          "hash": "b65cf8c7fe3bdd1fcaf9",
+          "publicPath": "/991b72a1.709730e5.js"
+        }
+      ]
+    },
+    "6": {
+      "js": [
+        {
+          "file": "f976f453.70fec455.js",
+          "hash": "8d05f65e33f4fe3b319d",
+          "publicPath": "/f976f453.70fec455.js"
+        }
+      ]
+    },
+    "7": {
+      "js": [
+        {
+          "file": "main.984b1a4d.js",
+          "hash": "e0712a3d063a59bf2ac7",
+          "publicPath": "/main.984b1a4d.js"
+        }
+      ]
+    },
+    "8": {
+      "js": [
+        {
+          "file": "runtime~main.536abf03.js",
+          "hash": "9918e7842762ea619347",
+          "publicPath": "/runtime~main.536abf03.js"
+        }
+      ]
+    },
+    "9": {
+      "js": [
+        {
+          "file": "9.50b6bc4c.js",
+          "hash": "326d24bff677323120c3",
+          "publicPath": "/9.50b6bc4c.js"
+        }
+      ]
+    }
+  }
+}

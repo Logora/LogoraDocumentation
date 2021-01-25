@@ -47,9 +47,6 @@ module.exports={
     "footer": {
       "links": [],
       "copyright": "Copyright © 2021 Logora",
-      "logo": {
-        "src": "img/logora_logo.png"
-      }
     }
   }
 }

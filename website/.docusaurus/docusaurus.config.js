@@ -34,7 +34,7 @@ export default {
       },
       "items": [
         {
-          "to": "docs/",
+          "to": "/",
           "label": "Documentation",
           "position": "left"
         },
@@ -49,9 +49,6 @@ export default {
     "footer": {
       "links": [],
       "copyright": "Copyright © 2021 Logora",
-      "logo": {
-        "src": "img/logora_logo.png"
-      },
       "style": "light"
     },
     "colorMode": {

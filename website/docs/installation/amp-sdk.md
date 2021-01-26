@@ -1,6 +1,6 @@
 ---
-id: wordpress
-title: Installation Wordpress
+id: amp-sdk
+title: Google AMP SDK
 ---
 
 ### Avant de commencer 

@@ -1,6 +1,6 @@
 ---
-id: wordpress
-title: Installation Wordpress
+id: javascript
+title: Installation Javascript
 ---
 
 ### Avant de commencer 

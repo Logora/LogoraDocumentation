@@ -7,7 +7,17 @@ module.exports = {
 	{
       type: 'category',
       label: 'Installation',
-      items: ['installation/wordpress'],
+      items: ['installation/javascript', 'installation/wordpress', 'installation/amp-sdk', 'installation/app-sdk'],
+    },
+	{
+      type: 'category',
+      label: 'Authentification unique',
+      items: ['authentication/introduction'],
+    },
+	{
+      type: 'category',
+      label: 'Configuration',
+      items: ['configuration/theme'],
     },
   ],
 };

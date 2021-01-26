@@ -1,6 +1,5 @@
 ---
 id: wordpress
-title: Plugin Wordpress
 ---
 
 ## Installation Wordpress

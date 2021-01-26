@@ -7,7 +7,7 @@ module.exports = {
 	{
       type: 'category',
       label: 'Installation',
-      items: ['doc2'],
+      items: ['wordpress'],
     },
   ],
 };

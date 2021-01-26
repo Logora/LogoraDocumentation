@@ -1,6 +1,6 @@
 ---
 id: theme
-title: Couleurs et textes
+title: Apparence et thème
 ---
 
 #### Bientôt disponible...

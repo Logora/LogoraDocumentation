@@ -1,3 +1,8 @@
+---
+id: wordpress
+title: Plugin Wordpress
+---
+
 ## Installation Wordpress
 
 # Avant de commencer 

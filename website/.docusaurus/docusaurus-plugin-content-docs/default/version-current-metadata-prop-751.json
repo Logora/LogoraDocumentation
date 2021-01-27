@@ -75,6 +75,18 @@
             "href": "/configuration/moderation"
           }
         ]
+      },
+      {
+        "collapsed": false,
+        "type": "category",
+        "label": "Questions fréquentes",
+        "items": [
+          {
+            "type": "link",
+            "label": "Performance",
+            "href": "/faq/performance"
+          }
+        ]
       }
     ]
   },
@@ -83,6 +95,7 @@
     "/configuration/moderation": "docs",
     "/configuration/routes": "docs",
     "/configuration/theme": "docs",
+    "/faq/performance": "docs",
     "/installation/amp-sdk": "docs",
     "/installation/app-sdk": "docs",
     "/installation/javascript-sdk": "docs",

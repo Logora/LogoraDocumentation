@@ -21,5 +21,11 @@ module.exports = {
 	  collapsed: false,
       items: ['configuration/theme', 'configuration/routes', 'configuration/moderation'],
     },
+	{
+      type: 'category',
+      label: 'Questions fréquentes',
+	  collapsed: false,
+      items: ['faq/performance'],
+    },
   ],
 };

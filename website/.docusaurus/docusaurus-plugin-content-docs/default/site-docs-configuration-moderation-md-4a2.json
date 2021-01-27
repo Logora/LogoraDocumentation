@@ -12,5 +12,9 @@
   "previous": {
     "title": "Chemins d'URL",
     "permalink": "/configuration/routes"
+  },
+  "next": {
+    "title": "Performance",
+    "permalink": "/faq/performance"
   }
 }

@@ -74,6 +74,17 @@
                     "id": "configuration/moderation"
                   }
                 ]
+              },
+              {
+                "collapsed": false,
+                "type": "category",
+                "label": "Questions fréquentes",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "faq/performance"
+                  }
+                ]
               }
             ]
           },
@@ -82,6 +93,7 @@
             "/configuration/moderation": "docs",
             "/configuration/routes": "docs",
             "/configuration/theme": "docs",
+            "/faq/performance": "docs",
             "/installation/amp-sdk": "docs",
             "/installation/app-sdk": "docs",
             "/installation/javascript-sdk": "docs",
@@ -124,6 +136,10 @@
               "previous": {
                 "title": "Chemins d'URL",
                 "permalink": "/configuration/routes"
+              },
+              "next": {
+                "title": "Performance",
+                "permalink": "/faq/performance"
               }
             },
             {
@@ -164,6 +180,22 @@
               "next": {
                 "title": "Chemins d'URL",
                 "permalink": "/configuration/routes"
+              }
+            },
+            {
+              "unversionedId": "faq/performance",
+              "id": "faq/performance",
+              "isDocsHomePage": false,
+              "title": "Performance",
+              "description": "Logora met tout en oeuvre pour que le code inséré aie le moins d'impact sur le chargement de vos pages. Voici quelques détails sur le fonctionnement de Logora pour mieux évaluer la performance des scripts insérés.",
+              "source": "@site/docs\\faq\\performance.md",
+              "slug": "/faq/performance",
+              "permalink": "/faq/performance",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Modération",
+                "permalink": "/configuration/moderation"
               }
             },
             {

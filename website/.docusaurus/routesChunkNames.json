@@ -21,7 +21,7 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
-  "/-053": {
+  "/-004": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---f-97-3dc"
   },
@@ -44,6 +44,10 @@
   "/configuration/theme-591": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---configuration-theme-678-6d9"
+  },
+  "/faq/performance-185": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---faq-performance-925-ace"
   },
   "/installation/amp-sdk-f30": {
     "component": "component---theme-doc-item-178-a40",

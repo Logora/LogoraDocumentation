@@ -13,7 +13,7 @@ Si vous souhaitez que vos utilisateurs utilisent votre propre module d'authentif
 L'Authentification Unique permet aux utilisateurs de s'identifier sur votre site pour utiliser le plugin Logora sans s'authentifier une deuxième fois sur Logora.
 
 
-Le SSO va créer un profil d'utilisateur spécifique au site sur Logora afin de ne pas créer de conflit avec les utilisateurs existant déjà sur Logora.
+L'Authentification Unique va créer un profil d'utilisateur spécifique au site sur Logora afin de ne pas créer de conflit avec les utilisateurs existant déjà sur Logora.
 
 
 Logora propose plusieurs modes d'authentification possibles :

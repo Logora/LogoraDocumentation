@@ -39,7 +39,7 @@ export default [
 },
 {
   path: '/',
-  component: ComponentCreator('/','053'),
+  component: ComponentCreator('/','004'),
   
   routes: [
 {
@@ -65,6 +65,11 @@ export default [
 {
   path: '/configuration/theme',
   component: ComponentCreator('/configuration/theme','591'),
+  exact: true,
+},
+{
+  path: '/faq/performance',
+  component: ComponentCreator('/faq/performance','185'),
   exact: true,
 },
 {

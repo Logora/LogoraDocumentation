@@ -31,6 +31,11 @@
               "sidebar": "docs"
             },
             {
+              "id": "faq/performance",
+              "path": "/faq/performance",
+              "sidebar": "docs"
+            },
+            {
               "id": "installation/amp-sdk",
               "path": "/installation/amp-sdk",
               "sidebar": "docs"

@@ -350,7 +350,7 @@
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Introduction",
+                "title": "Pour commencer",
                 "permalink": "/"
               },
               "next": {
@@ -402,8 +402,8 @@
               "unversionedId": "introduction",
               "id": "introduction",
               "isDocsHomePage": false,
-              "title": "Introduction",
-              "description": "Check the documentation for how to use Docusaurus.",
+              "title": "Pour commencer",
+              "description": "Logora fournit un espace de débat interactif pour animer et faire grandir votre communauté. Logora est intégré sur votre site en marque blanche, et peut être totalement personnalisé pour s'adapter à vos besoins et à vos interfaces. Découvrez notre Démo.",
               "source": "@site/docs\\introduction.md",
               "slug": "/",
               "permalink": "/",

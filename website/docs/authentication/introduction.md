@@ -3,7 +3,7 @@ id: introduction
 title: Introduction
 ---
 
-Si vous n'avez pas de méthode d'inscription et de connexion sur votre site ou que vous souhaitez utiliser le module de connexion de Logora, allez sur votre `Espace d'administration > Paramètres > Authentification` et choisissez le mode d'authentification `Social`. Vous pouvez ensuite passer à la [personnalisation de votre espace de débat](configuration/theme.md).
+Si vous n'avez pas de méthode d'inscription et de connexion sur votre site ou que vous souhaitez utiliser le module de connexion de Logora, allez sur votre [Espace d'administration](https://admin.logora.fr) onglet Configuration > Authentification` et choisissez le mode d'authentification `Social`. Vous pouvez ensuite passer directement à la [personnalisation de votre espace de débat](configuration/theme.md).
 
 Si vous souhaitez que vos utilisateurs utilisent votre propre module d'authentification pour participer sur l'espace de débat, utilisez l'Authentification Unique - ou Single Sign-On (SSO).
 

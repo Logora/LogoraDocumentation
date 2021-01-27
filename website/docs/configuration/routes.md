@@ -8,7 +8,7 @@ L'espace de débat comprend plusieurs pages qui sont accessibles sur votre site 
 ### Chemin préfixe de l'espace de débat
 
 
-Les routes de l'espace de débat sont préfixées par le paramètre préfixe défini dans l'espace d'administration à l'onglet *Paramètres > Personnalisation > Chemins d'URL*. Ce préfixe vous permet d'avoir le même chemin racine pour toutes les pages de l'espace de débat. Par défaut, le préfixe est *'espace-debat'*.
+Les routes de l'espace de débat sont préfixées par le paramètre préfixe défini dans l'espace d'administration à l'onglet *Configuration > Personnalisation > Chemins d'URL*. Ce préfixe vous permet d'avoir le même chemin racine pour toutes les pages de l'espace de débat. Par défaut, le préfixe est *'espace-debat'*.
 
 
 ### Pages de l'espace de débat
@@ -48,7 +48,7 @@ Voici les différentes pages de l'espace de débat avec leurs liens et leurs par
 Avec les paramètres par défaut, la page d'accueil de l'espace de débat est accessible par le lien : https://votresite.com/espace-debat/debats.
 
 
-Les noms de ces chemins sont paramétrables dans l'espace d'administration à l'onglet *Paramètres > Personnalisation > Chemins d'URL*.
+Les noms de ces chemins sont paramétrables dans l'espace d'administration à l'onglet *Configuration > Personnalisation > Chemins d'URL*.
 
 
 

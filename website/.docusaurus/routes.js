@@ -39,7 +39,7 @@ export default [
 },
 {
   path: '/',
-  component: ComponentCreator('/','004'),
+  component: ComponentCreator('/','4c6'),
   
   routes: [
 {
@@ -48,8 +48,28 @@ export default [
   exact: true,
 },
 {
+  path: '/authentication/cookie',
+  component: ComponentCreator('/authentication/cookie','c66'),
+  exact: true,
+},
+{
   path: '/authentication/introduction',
   component: ComponentCreator('/authentication/introduction','ea0'),
+  exact: true,
+},
+{
+  path: '/authentication/jwt',
+  component: ComponentCreator('/authentication/jwt','888'),
+  exact: true,
+},
+{
+  path: '/authentication/oauth2',
+  component: ComponentCreator('/authentication/oauth2','8a0'),
+  exact: true,
+},
+{
+  path: '/configuration/ads',
+  component: ComponentCreator('/configuration/ads','35b'),
   exact: true,
 },
 {

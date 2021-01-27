@@ -11,8 +11,28 @@
           "mainDocId": "introduction",
           "docs": [
             {
+              "id": "authentication/cookie",
+              "path": "/authentication/cookie",
+              "sidebar": "docs"
+            },
+            {
               "id": "authentication/introduction",
               "path": "/authentication/introduction",
+              "sidebar": "docs"
+            },
+            {
+              "id": "authentication/jwt",
+              "path": "/authentication/jwt",
+              "sidebar": "docs"
+            },
+            {
+              "id": "authentication/oauth2",
+              "path": "/authentication/oauth2",
+              "sidebar": "docs"
+            },
+            {
+              "id": "configuration/ads",
+              "path": "/configuration/ads",
               "sidebar": "docs"
             },
             {

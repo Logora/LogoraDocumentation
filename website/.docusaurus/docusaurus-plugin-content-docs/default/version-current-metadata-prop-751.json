@@ -51,6 +51,21 @@
             "type": "link",
             "label": "Introduction",
             "href": "/authentication/introduction"
+          },
+          {
+            "type": "link",
+            "label": "OAuth 2.0",
+            "href": "/authentication/oauth2"
+          },
+          {
+            "type": "link",
+            "label": "Signature JWT",
+            "href": "/authentication/jwt"
+          },
+          {
+            "type": "link",
+            "label": "Cookie",
+            "href": "/authentication/cookie"
           }
         ]
       },
@@ -73,6 +88,11 @@
             "type": "link",
             "label": "Modération",
             "href": "/configuration/moderation"
+          },
+          {
+            "type": "link",
+            "label": "Insertions publicitaires",
+            "href": "/configuration/ads"
           }
         ]
       },
@@ -91,7 +111,11 @@
     ]
   },
   "permalinkToSidebar": {
+    "/authentication/cookie": "docs",
     "/authentication/introduction": "docs",
+    "/authentication/jwt": "docs",
+    "/authentication/oauth2": "docs",
+    "/configuration/ads": "docs",
     "/configuration/moderation": "docs",
     "/configuration/routes": "docs",
     "/configuration/theme": "docs",

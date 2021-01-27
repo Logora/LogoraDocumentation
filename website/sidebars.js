@@ -13,13 +13,13 @@ module.exports = {
 	{
       type: 'category',
       label: 'Authentification unique',
-      items: ['authentication/introduction'],
+      items: ['authentication/introduction', 'authentication/oauth2', 'authentication/jwt', 'authentication/cookie'],
     },
 	{
       type: 'category',
       label: 'Configuration',
 	  collapsed: false,
-      items: ['configuration/theme', 'configuration/routes', 'configuration/moderation'],
+      items: ['configuration/theme', 'configuration/routes', 'configuration/moderation', 'configuration/ads'],
     },
 	{
       type: 'category',

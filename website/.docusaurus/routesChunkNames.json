@@ -21,7 +21,7 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
-  "/-004": {
+  "/-4c6": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---f-97-3dc"
   },
@@ -29,9 +29,25 @@
     "component": "component---theme-doc-item-178-a40",
     "content": "content---1-a-3-9ad"
   },
+  "/authentication/cookie-c66": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---authentication-cookied-97-122"
+  },
   "/authentication/introduction-ea0": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---authentication-introductione-60-de4"
+  },
+  "/authentication/jwt-888": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---authentication-jwtc-47-13c"
+  },
+  "/authentication/oauth2-8a0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---authentication-oauth-2782-d0f"
+  },
+  "/configuration/ads-35b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---configuration-ads-2-b-4-765"
   },
   "/configuration/moderation-b1a": {
     "component": "component---theme-doc-item-178-a40",

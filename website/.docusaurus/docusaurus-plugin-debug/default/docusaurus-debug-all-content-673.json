@@ -53,6 +53,18 @@
                   {
                     "type": "doc",
                     "id": "authentication/introduction"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "authentication/oauth2"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "authentication/jwt"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "authentication/cookie"
                   }
                 ]
               },
@@ -72,6 +84,10 @@
                   {
                     "type": "doc",
                     "id": "configuration/moderation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "configuration/ads"
                   }
                 ]
               },
@@ -89,7 +105,11 @@
             ]
           },
           "permalinkToSidebar": {
+            "/authentication/cookie": "docs",
             "/authentication/introduction": "docs",
+            "/authentication/jwt": "docs",
+            "/authentication/oauth2": "docs",
+            "/configuration/ads": "docs",
             "/configuration/moderation": "docs",
             "/configuration/routes": "docs",
             "/configuration/theme": "docs",
@@ -103,11 +123,31 @@
           },
           "docs": [
             {
+              "unversionedId": "authentication/cookie",
+              "id": "authentication/cookie",
+              "isDocsHomePage": false,
+              "title": "Cookie",
+              "description": "Ce mode d'authentification permet de connecter automatiquement les utilisateurs à Logora une fois qu'il sont authentifiés à travers votre système de connexion. La flexibilité de cette approche lui permet d'être compatible avec de nombreux types de systèmes de connexion.",
+              "source": "@site/docs\\authentication\\cookie.md",
+              "slug": "/authentication/cookie",
+              "permalink": "/authentication/cookie",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Signature JWT",
+                "permalink": "/authentication/jwt"
+              },
+              "next": {
+                "title": "Apparence et thème",
+                "permalink": "/configuration/theme"
+              }
+            },
+            {
               "unversionedId": "authentication/introduction",
               "id": "authentication/introduction",
               "isDocsHomePage": false,
               "title": "Introduction",
-              "description": "Si vous n'avez pas de méthode d'inscription et de connexion sur votre site ou que vous souhaitez utiliser le module de connexion de Logora, allez sur votre Espace d'administration > Paramètres > Authentification et choisissez le mode d'authentification Social. Vous pouvez ensuite passer à la personnalisation de votre espace de débat.",
+              "description": "Si vous n'avez pas de méthode d'inscription et de connexion sur votre site ou que vous souhaitez utiliser le module de connexion de Logora, allez sur votre Espace d'administration onglet Configuration > Authentification et choisissez le mode d'authentification Social`. Vous pouvez ensuite passer directement à la personnalisation de votre espace de débat.",
               "source": "@site/docs\\authentication\\introduction.md",
               "slug": "/authentication/introduction",
               "permalink": "/authentication/introduction",
@@ -118,8 +158,68 @@
                 "permalink": "/installation/app-sdk"
               },
               "next": {
-                "title": "Apparence et thème",
-                "permalink": "/configuration/theme"
+                "title": "OAuth 2.0",
+                "permalink": "/authentication/oauth2"
+              }
+            },
+            {
+              "unversionedId": "authentication/jwt",
+              "id": "authentication/jwt",
+              "isDocsHomePage": false,
+              "title": "Signature JWT",
+              "description": "Ce mode d'authentification permet de connecter automatiquement les utilisateurs à Logora une fois qu'il sont authentifiés à travers votre système de connexion. Cette méthode utilise un jeton JWT (JSON Web Token) par votre clé secrète pour transmettre les données de l'utilisateur à Logora.",
+              "source": "@site/docs\\authentication\\jwt.md",
+              "slug": "/authentication/jwt",
+              "permalink": "/authentication/jwt",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "OAuth 2.0",
+                "permalink": "/authentication/oauth2"
+              },
+              "next": {
+                "title": "Cookie",
+                "permalink": "/authentication/cookie"
+              }
+            },
+            {
+              "unversionedId": "authentication/oauth2",
+              "id": "authentication/oauth2",
+              "isDocsHomePage": false,
+              "title": "OAuth 2.0",
+              "description": "Le protocole OAuth 2.0 permet la récupération sécurisée des ressources tout en protégeant les données de vos utilisateurs. Logora propose un service authentification conforme OAuth 2.0, qui permet de connecter automatiquement vos utilisateurs à l'application Logora une fois qu'ils sont connectés à votre système d'authentification.",
+              "source": "@site/docs\\authentication\\oauth2.md",
+              "slug": "/authentication/oauth2",
+              "permalink": "/authentication/oauth2",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/authentication/introduction"
+              },
+              "next": {
+                "title": "Signature JWT",
+                "permalink": "/authentication/jwt"
+              }
+            },
+            {
+              "unversionedId": "configuration/ads",
+              "id": "configuration/ads",
+              "isDocsHomePage": false,
+              "title": "Insertions publicitaires",
+              "description": "Les pages du plugin Logora sont fournies en marque blanche et hébergées sur votre site.",
+              "source": "@site/docs\\configuration\\ads.md",
+              "slug": "/configuration/ads",
+              "permalink": "/configuration/ads",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Modération",
+                "permalink": "/configuration/moderation"
+              },
+              "next": {
+                "title": "Performance",
+                "permalink": "/faq/performance"
               }
             },
             {
@@ -138,8 +238,8 @@
                 "permalink": "/configuration/routes"
               },
               "next": {
-                "title": "Performance",
-                "permalink": "/faq/performance"
+                "title": "Insertions publicitaires",
+                "permalink": "/configuration/ads"
               }
             },
             {
@@ -174,8 +274,8 @@
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Introduction",
-                "permalink": "/authentication/introduction"
+                "title": "Cookie",
+                "permalink": "/authentication/cookie"
               },
               "next": {
                 "title": "Chemins d'URL",
@@ -194,8 +294,8 @@
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Modération",
-                "permalink": "/configuration/moderation"
+                "title": "Insertions publicitaires",
+                "permalink": "/configuration/ads"
               }
             },
             {

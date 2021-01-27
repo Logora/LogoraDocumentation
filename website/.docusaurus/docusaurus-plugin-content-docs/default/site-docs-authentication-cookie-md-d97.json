@@ -1,0 +1,20 @@
+{
+  "unversionedId": "authentication/cookie",
+  "id": "authentication/cookie",
+  "isDocsHomePage": false,
+  "title": "Cookie",
+  "description": "Ce mode d'authentification permet de connecter automatiquement les utilisateurs à Logora une fois qu'il sont authentifiés à travers votre système de connexion. La flexibilité de cette approche lui permet d'être compatible avec de nombreux types de systèmes de connexion.",
+  "source": "@site/docs\\authentication\\cookie.md",
+  "slug": "/authentication/cookie",
+  "permalink": "/authentication/cookie",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Signature JWT",
+    "permalink": "/authentication/jwt"
+  },
+  "next": {
+    "title": "Apparence et thème",
+    "permalink": "/configuration/theme"
+  }
+}

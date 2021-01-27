@@ -10,7 +10,7 @@
   "version": "current",
   "sidebar": "docs",
   "next": {
-    "title": "doc2",
-    "permalink": "/doc2"
+    "title": "Installation Javascript",
+    "permalink": "/installation/javascript-sdk"
   }
 }

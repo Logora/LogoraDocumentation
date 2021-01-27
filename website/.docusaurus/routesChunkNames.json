@@ -21,7 +21,7 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
-  "/-423": {
+  "/-053": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---f-97-3dc"
   },
@@ -29,12 +29,40 @@
     "component": "component---theme-doc-item-178-a40",
     "content": "content---1-a-3-9ad"
   },
-  "/doc2-73c": {
+  "/authentication/introduction-ea0": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---doc-2991-910"
+    "content": "content---authentication-introductione-60-de4"
   },
-  "/doc3-843": {
+  "/configuration/moderation-b1a": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---doc-3225-a11"
+    "content": "content---configuration-moderation-4-a-2-51c"
+  },
+  "/configuration/routes-e62": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---configuration-routes-73-c-474"
+  },
+  "/configuration/theme-591": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---configuration-theme-678-6d9"
+  },
+  "/installation/amp-sdk-f30": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---installation-amp-sdk-4-f-0-41b"
+  },
+  "/installation/app-sdk-f89": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---installation-app-sdk-3-e-8-136"
+  },
+  "/installation/javascript-sdk-974": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---installation-javascript-sdke-24-c01"
+  },
+  "/installation/server-side-sdk-4b6": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---installation-server-side-sdke-1-b-365"
+  },
+  "/installation/wordpress-8cb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---installation-wordpressdef-15f"
   }
 }

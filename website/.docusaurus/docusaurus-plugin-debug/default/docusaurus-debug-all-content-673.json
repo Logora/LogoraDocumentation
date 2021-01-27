@@ -19,49 +19,252 @@
                 "id": "introduction"
               },
               {
-                "collapsed": true,
+                "collapsed": false,
                 "type": "category",
                 "label": "Installation",
                 "items": [
                   {
                     "type": "doc",
-                    "id": "doc2"
+                    "id": "installation/javascript-sdk"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "installation/wordpress"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "installation/server-side-sdk"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "installation/amp-sdk"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "installation/app-sdk"
+                  }
+                ]
+              },
+              {
+                "collapsed": true,
+                "type": "category",
+                "label": "Authentification unique",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "authentication/introduction"
+                  }
+                ]
+              },
+              {
+                "collapsed": false,
+                "type": "category",
+                "label": "Configuration",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "configuration/theme"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "configuration/routes"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "configuration/moderation"
                   }
                 ]
               }
             ]
           },
           "permalinkToSidebar": {
-            "/doc2": "docs",
+            "/authentication/introduction": "docs",
+            "/configuration/moderation": "docs",
+            "/configuration/routes": "docs",
+            "/configuration/theme": "docs",
+            "/installation/amp-sdk": "docs",
+            "/installation/app-sdk": "docs",
+            "/installation/javascript-sdk": "docs",
+            "/installation/server-side-sdk": "docs",
+            "/installation/wordpress": "docs",
             "/": "docs"
           },
           "docs": [
             {
-              "unversionedId": "doc2",
-              "id": "doc2",
+              "unversionedId": "authentication/introduction",
+              "id": "authentication/introduction",
               "isDocsHomePage": false,
-              "title": "doc2",
-              "description": "This is a link to another document.",
-              "source": "@site/docs\\doc2.md",
-              "slug": "/doc2",
-              "permalink": "/doc2",
+              "title": "Introduction",
+              "description": "Si vous n'avez pas de méthode d'inscription et de connexion sur votre site ou que vous souhaitez utiliser le module de connexion de Logora, allez sur votre Espace d'administration > Paramètres > Authentification et choisissez le mode d'authentification Social. Vous pouvez ensuite passer à la personnalisation de votre espace de débat.",
+              "source": "@site/docs\\authentication\\introduction.md",
+              "slug": "/authentication/introduction",
+              "permalink": "/authentication/introduction",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "App SDK",
+                "permalink": "/installation/app-sdk"
+              },
+              "next": {
+                "title": "Apparence et thème",
+                "permalink": "/configuration/theme"
+              }
+            },
+            {
+              "unversionedId": "configuration/moderation",
+              "id": "configuration/moderation",
+              "isDocsHomePage": false,
+              "title": "Modération",
+              "description": "Logora s'occupe de la modération de votre espace de débat. Personnalisez le type de modération dans votre espace d'administration",
+              "source": "@site/docs\\configuration\\moderation.md",
+              "slug": "/configuration/moderation",
+              "permalink": "/configuration/moderation",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Chemins d'URL",
+                "permalink": "/configuration/routes"
+              }
+            },
+            {
+              "unversionedId": "configuration/routes",
+              "id": "configuration/routes",
+              "isDocsHomePage": false,
+              "title": "Chemins d'URL",
+              "description": "L'espace de débat comprend plusieurs pages qui sont accessibles sur votre site via des URLs différentes. Si vous utilisez l'Installation en Javascript, ces URLs doivent pointer vers la page de votre site web où est inséré l'espace de débat. Si vous utilisez notre plugin Wordpress, les routes sont gérées automatiquement.",
+              "source": "@site/docs\\configuration\\routes.md",
+              "slug": "/configuration/routes",
+              "permalink": "/configuration/routes",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Apparence et thème",
+                "permalink": "/configuration/theme"
+              },
+              "next": {
+                "title": "Modération",
+                "permalink": "/configuration/moderation"
+              }
+            },
+            {
+              "unversionedId": "configuration/theme",
+              "id": "configuration/theme",
+              "isDocsHomePage": false,
+              "title": "Apparence et thème",
+              "description": "Bientôt disponible...",
+              "source": "@site/docs\\configuration\\theme.md",
+              "slug": "/configuration/theme",
+              "permalink": "/configuration/theme",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/authentication/introduction"
+              },
+              "next": {
+                "title": "Chemins d'URL",
+                "permalink": "/configuration/routes"
+              }
+            },
+            {
+              "unversionedId": "installation/amp-sdk",
+              "id": "installation/amp-sdk",
+              "isDocsHomePage": false,
+              "title": "Google AMP SDK",
+              "description": "Insérez Logora sur vos pages Google AMP",
+              "source": "@site/docs\\installation\\amp-sdk.md",
+              "slug": "/installation/amp-sdk",
+              "permalink": "/installation/amp-sdk",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "API côté serveur",
+                "permalink": "/installation/server-side-sdk"
+              },
+              "next": {
+                "title": "App SDK",
+                "permalink": "/installation/app-sdk"
+              }
+            },
+            {
+              "unversionedId": "installation/app-sdk",
+              "id": "installation/app-sdk",
+              "isDocsHomePage": false,
+              "title": "App SDK",
+              "description": "Bientôt disponible...",
+              "source": "@site/docs\\installation\\app-sdk.md",
+              "slug": "/installation/app-sdk",
+              "permalink": "/installation/app-sdk",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Google AMP SDK",
+                "permalink": "/installation/amp-sdk"
+              },
+              "next": {
+                "title": "Introduction",
+                "permalink": "/authentication/introduction"
+              }
+            },
+            {
+              "unversionedId": "installation/javascript-sdk",
+              "id": "installation/javascript-sdk",
+              "isDocsHomePage": false,
+              "title": "Installation Javascript",
+              "description": "Installez Logora grâce à notre code universel Javascript.",
+              "source": "@site/docs\\installation\\javascript-sdk.md",
+              "slug": "/installation/javascript-sdk",
+              "permalink": "/installation/javascript-sdk",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Introduction",
                 "permalink": "/"
+              },
+              "next": {
+                "title": "Installation Wordpress",
+                "permalink": "/installation/wordpress"
               }
             },
             {
-              "unversionedId": "doc3",
-              "id": "doc3",
+              "unversionedId": "installation/server-side-sdk",
+              "id": "installation/server-side-sdk",
               "isDocsHomePage": false,
-              "title": "doc3",
-              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac euismod odio, eu consequat dui. Nullam molestie consectetur risus id imperdiet. Proin sodales ornare turpis, non mollis massa ultricies id. Nam at nibh scelerisque, feugiat ante non, dapibus tortor. Vivamus volutpat diam quis tellus elementum bibendum. Praesent semper gravida velit quis aliquam. Etiam in cursus neque. Nam lectus ligula, malesuada et mauris a, bibendum faucibus mi. Phasellus ut interdum felis. Phasellus in odio pulvinar, porttitor urna eget, fringilla lectus. Aliquam sollicitudin est eros. Mauris consectetur quam vitae mauris interdum hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "source": "@site/docs\\doc3.md",
-              "slug": "/doc3",
-              "permalink": "/doc3",
-              "version": "current"
+              "title": "API côté serveur",
+              "description": "Insérez Logora côté serveur grâce à notre API",
+              "source": "@site/docs\\installation\\api.md",
+              "slug": "/installation/server-side-sdk",
+              "permalink": "/installation/server-side-sdk",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Installation Wordpress",
+                "permalink": "/installation/wordpress"
+              },
+              "next": {
+                "title": "Google AMP SDK",
+                "permalink": "/installation/amp-sdk"
+              }
+            },
+            {
+              "unversionedId": "installation/wordpress",
+              "id": "installation/wordpress",
+              "isDocsHomePage": false,
+              "title": "Installation Wordpress",
+              "description": "Avant de commencer",
+              "source": "@site/docs\\installation\\wordpress.md",
+              "slug": "/installation/wordpress",
+              "permalink": "/installation/wordpress",
+              "version": "current",
+              "sidebar": "docs",
+              "previous": {
+                "title": "Installation Javascript",
+                "permalink": "/installation/javascript-sdk"
+              },
+              "next": {
+                "title": "API côté serveur",
+                "permalink": "/installation/server-side-sdk"
+              }
             },
             {
               "unversionedId": "introduction",
@@ -75,8 +278,8 @@
               "version": "current",
               "sidebar": "docs",
               "next": {
-                "title": "doc2",
-                "permalink": "/doc2"
+                "title": "Installation Javascript",
+                "permalink": "/installation/javascript-sdk"
               }
             }
           ]

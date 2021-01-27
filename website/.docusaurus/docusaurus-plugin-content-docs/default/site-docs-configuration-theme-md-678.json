@@ -1,0 +1,20 @@
+{
+  "unversionedId": "configuration/theme",
+  "id": "configuration/theme",
+  "isDocsHomePage": false,
+  "title": "Apparence et thème",
+  "description": "Bientôt disponible...",
+  "source": "@site/docs\\configuration\\theme.md",
+  "slug": "/configuration/theme",
+  "permalink": "/configuration/theme",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/authentication/introduction"
+  },
+  "next": {
+    "title": "Chemins d'URL",
+    "permalink": "/configuration/routes"
+  }
+}

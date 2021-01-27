@@ -11,21 +11,83 @@
         "href": "/"
       },
       {
-        "collapsed": true,
+        "collapsed": false,
         "type": "category",
         "label": "Installation",
         "items": [
           {
             "type": "link",
-            "label": "doc2",
-            "href": "/doc2"
+            "label": "Installation Javascript",
+            "href": "/installation/javascript-sdk"
+          },
+          {
+            "type": "link",
+            "label": "Installation Wordpress",
+            "href": "/installation/wordpress"
+          },
+          {
+            "type": "link",
+            "label": "API côté serveur",
+            "href": "/installation/server-side-sdk"
+          },
+          {
+            "type": "link",
+            "label": "Google AMP SDK",
+            "href": "/installation/amp-sdk"
+          },
+          {
+            "type": "link",
+            "label": "App SDK",
+            "href": "/installation/app-sdk"
+          }
+        ]
+      },
+      {
+        "collapsed": true,
+        "type": "category",
+        "label": "Authentification unique",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/authentication/introduction"
+          }
+        ]
+      },
+      {
+        "collapsed": false,
+        "type": "category",
+        "label": "Configuration",
+        "items": [
+          {
+            "type": "link",
+            "label": "Apparence et thème",
+            "href": "/configuration/theme"
+          },
+          {
+            "type": "link",
+            "label": "Chemins d'URL",
+            "href": "/configuration/routes"
+          },
+          {
+            "type": "link",
+            "label": "Modération",
+            "href": "/configuration/moderation"
           }
         ]
       }
     ]
   },
   "permalinkToSidebar": {
-    "/doc2": "docs",
+    "/authentication/introduction": "docs",
+    "/configuration/moderation": "docs",
+    "/configuration/routes": "docs",
+    "/configuration/theme": "docs",
+    "/installation/amp-sdk": "docs",
+    "/installation/app-sdk": "docs",
+    "/installation/javascript-sdk": "docs",
+    "/installation/server-side-sdk": "docs",
+    "/installation/wordpress": "docs",
     "/": "docs"
   }
 }

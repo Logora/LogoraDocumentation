@@ -1,0 +1,20 @@
+{
+  "unversionedId": "installation/app-sdk",
+  "id": "installation/app-sdk",
+  "isDocsHomePage": false,
+  "title": "App SDK",
+  "description": "Bientôt disponible...",
+  "source": "@site/docs\\installation\\app-sdk.md",
+  "slug": "/installation/app-sdk",
+  "permalink": "/installation/app-sdk",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Google AMP SDK",
+    "permalink": "/installation/amp-sdk"
+  },
+  "next": {
+    "title": "Introduction",
+    "permalink": "/authentication/introduction"
+  }
+}

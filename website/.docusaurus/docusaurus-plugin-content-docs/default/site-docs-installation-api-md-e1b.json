@@ -1,0 +1,20 @@
+{
+  "unversionedId": "installation/server-side-sdk",
+  "id": "installation/server-side-sdk",
+  "isDocsHomePage": false,
+  "title": "API côté serveur",
+  "description": "Insérez Logora côté serveur grâce à notre API",
+  "source": "@site/docs\\installation\\api.md",
+  "slug": "/installation/server-side-sdk",
+  "permalink": "/installation/server-side-sdk",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Installation Wordpress",
+    "permalink": "/installation/wordpress"
+  },
+  "next": {
+    "title": "Google AMP SDK",
+    "permalink": "/installation/amp-sdk"
+  }
+}

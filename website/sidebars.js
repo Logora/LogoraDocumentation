@@ -8,7 +8,7 @@ module.exports = {
       type: 'category',
       label: 'Installation',
 	  collapsed: false,
-      items: ['installation/javascript', 'installation/wordpress', 'installation/api', 'installation/amp-sdk', 'installation/app-sdk'],
+      items: ['installation/javascript-sdk', 'installation/wordpress', 'installation/server-side-sdk', 'installation/amp-sdk', 'installation/app-sdk'],
     },
 	{
       type: 'category',
@@ -19,7 +19,7 @@ module.exports = {
       type: 'category',
       label: 'Configuration',
 	  collapsed: false,
-      items: ['configuration/theme', 'configuration/moderation'],
+      items: ['configuration/theme', 'configuration/routes', 'configuration/moderation'],
     },
   ],
 };

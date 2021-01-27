@@ -11,13 +11,49 @@
           "mainDocId": "introduction",
           "docs": [
             {
-              "id": "doc2",
-              "path": "/doc2",
+              "id": "authentication/introduction",
+              "path": "/authentication/introduction",
               "sidebar": "docs"
             },
             {
-              "id": "doc3",
-              "path": "/doc3"
+              "id": "configuration/moderation",
+              "path": "/configuration/moderation",
+              "sidebar": "docs"
+            },
+            {
+              "id": "configuration/routes",
+              "path": "/configuration/routes",
+              "sidebar": "docs"
+            },
+            {
+              "id": "configuration/theme",
+              "path": "/configuration/theme",
+              "sidebar": "docs"
+            },
+            {
+              "id": "installation/amp-sdk",
+              "path": "/installation/amp-sdk",
+              "sidebar": "docs"
+            },
+            {
+              "id": "installation/app-sdk",
+              "path": "/installation/app-sdk",
+              "sidebar": "docs"
+            },
+            {
+              "id": "installation/javascript-sdk",
+              "path": "/installation/javascript-sdk",
+              "sidebar": "docs"
+            },
+            {
+              "id": "installation/server-side-sdk",
+              "path": "/installation/server-side-sdk",
+              "sidebar": "docs"
+            },
+            {
+              "id": "installation/wordpress",
+              "path": "/installation/wordpress",
+              "sidebar": "docs"
             },
             {
               "id": "introduction",

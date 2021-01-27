@@ -1,0 +1,16 @@
+{
+  "unversionedId": "configuration/moderation",
+  "id": "configuration/moderation",
+  "isDocsHomePage": false,
+  "title": "Modération",
+  "description": "Logora s'occupe de la modération de votre espace de débat. Personnalisez le type de modération dans votre espace d'administration",
+  "source": "@site/docs\\configuration\\moderation.md",
+  "slug": "/configuration/moderation",
+  "permalink": "/configuration/moderation",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Chemins d'URL",
+    "permalink": "/configuration/routes"
+  }
+}

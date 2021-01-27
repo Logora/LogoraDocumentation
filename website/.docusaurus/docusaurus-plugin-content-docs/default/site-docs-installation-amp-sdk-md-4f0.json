@@ -1,0 +1,20 @@
+{
+  "unversionedId": "installation/amp-sdk",
+  "id": "installation/amp-sdk",
+  "isDocsHomePage": false,
+  "title": "Google AMP SDK",
+  "description": "Insérez Logora sur vos pages Google AMP",
+  "source": "@site/docs\\installation\\amp-sdk.md",
+  "slug": "/installation/amp-sdk",
+  "permalink": "/installation/amp-sdk",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "API côté serveur",
+    "permalink": "/installation/server-side-sdk"
+  },
+  "next": {
+    "title": "App SDK",
+    "permalink": "/installation/app-sdk"
+  }
+}

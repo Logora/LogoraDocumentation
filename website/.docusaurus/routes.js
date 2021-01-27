@@ -39,7 +39,7 @@ export default [
 },
 {
   path: '/',
-  component: ComponentCreator('/','423'),
+  component: ComponentCreator('/','053'),
   
   routes: [
 {
@@ -48,13 +48,48 @@ export default [
   exact: true,
 },
 {
-  path: '/doc2',
-  component: ComponentCreator('/doc2','73c'),
+  path: '/authentication/introduction',
+  component: ComponentCreator('/authentication/introduction','ea0'),
   exact: true,
 },
 {
-  path: '/doc3',
-  component: ComponentCreator('/doc3','843'),
+  path: '/configuration/moderation',
+  component: ComponentCreator('/configuration/moderation','b1a'),
+  exact: true,
+},
+{
+  path: '/configuration/routes',
+  component: ComponentCreator('/configuration/routes','e62'),
+  exact: true,
+},
+{
+  path: '/configuration/theme',
+  component: ComponentCreator('/configuration/theme','591'),
+  exact: true,
+},
+{
+  path: '/installation/amp-sdk',
+  component: ComponentCreator('/installation/amp-sdk','f30'),
+  exact: true,
+},
+{
+  path: '/installation/app-sdk',
+  component: ComponentCreator('/installation/app-sdk','f89'),
+  exact: true,
+},
+{
+  path: '/installation/javascript-sdk',
+  component: ComponentCreator('/installation/javascript-sdk','974'),
+  exact: true,
+},
+{
+  path: '/installation/server-side-sdk',
+  component: ComponentCreator('/installation/server-side-sdk','4b6'),
+  exact: true,
+},
+{
+  path: '/installation/wordpress',
+  component: ComponentCreator('/installation/wordpress','8cb'),
   exact: true,
 },
 ]

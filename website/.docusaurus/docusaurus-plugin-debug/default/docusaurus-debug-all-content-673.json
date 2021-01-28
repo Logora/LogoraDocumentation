@@ -5,7 +5,7 @@
         {
           "versionName": "current",
           "versionLabel": "Next",
-          "versionPath": "/",
+          "versionPath": "/docs",
           "isLast": true,
           "routePriority": -1,
           "sidebarFilePath": "C:\\Users\\Henry\\Documents\\Projets\\Logora\\LogoraDocumentation\\website\\sidebars.js",
@@ -105,21 +105,21 @@
             ]
           },
           "permalinkToSidebar": {
-            "/authentication/cookie": "docs",
-            "/authentication/introduction": "docs",
-            "/authentication/jwt": "docs",
-            "/authentication/oauth2": "docs",
-            "/configuration/ads": "docs",
-            "/configuration/moderation": "docs",
-            "/configuration/routes": "docs",
-            "/configuration/theme": "docs",
-            "/faq/performance": "docs",
-            "/installation/amp-sdk": "docs",
-            "/installation/app-sdk": "docs",
-            "/installation/javascript-sdk": "docs",
-            "/installation/server-side-sdk": "docs",
-            "/installation/wordpress": "docs",
-            "/": "docs"
+            "/docs/authentication/cookie": "docs",
+            "/docs/authentication/introduction": "docs",
+            "/docs/authentication/jwt": "docs",
+            "/docs/authentication/oauth2": "docs",
+            "/docs/configuration/ads": "docs",
+            "/docs/configuration/moderation": "docs",
+            "/docs/configuration/routes": "docs",
+            "/docs/configuration/theme": "docs",
+            "/docs/faq/performance": "docs",
+            "/docs/installation/amp-sdk": "docs",
+            "/docs/installation/app-sdk": "docs",
+            "/docs/installation/javascript-sdk": "docs",
+            "/docs/installation/server-side-sdk": "docs",
+            "/docs/installation/wordpress": "docs",
+            "/docs/": "docs"
           },
           "docs": [
             {
@@ -130,16 +130,16 @@
               "description": "Ce mode d'authentification permet de connecter automatiquement les utilisateurs à Logora une fois qu'il sont authentifiés à travers votre système de connexion. La flexibilité de cette approche lui permet d'être compatible avec de nombreux types de systèmes de connexion.",
               "source": "@site/docs\\authentication\\cookie.md",
               "slug": "/authentication/cookie",
-              "permalink": "/authentication/cookie",
+              "permalink": "/docs/authentication/cookie",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Signature JWT",
-                "permalink": "/authentication/jwt"
+                "permalink": "/docs/authentication/jwt"
               },
               "next": {
                 "title": "Apparence et thème",
-                "permalink": "/configuration/theme"
+                "permalink": "/docs/configuration/theme"
               }
             },
             {
@@ -150,16 +150,16 @@
               "description": "Si vous n'avez pas de méthode d'inscription et de connexion sur votre site ou que vous souhaitez utiliser le module de connexion de Logora, allez sur votre Espace d'administration onglet Configuration > Authentification et choisissez le mode d'authentification Social`. Vous pouvez ensuite passer directement à la personnalisation de votre espace de débat.",
               "source": "@site/docs\\authentication\\introduction.md",
               "slug": "/authentication/introduction",
-              "permalink": "/authentication/introduction",
+              "permalink": "/docs/authentication/introduction",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "App SDK",
-                "permalink": "/installation/app-sdk"
+                "permalink": "/docs/installation/app-sdk"
               },
               "next": {
                 "title": "OAuth 2.0",
-                "permalink": "/authentication/oauth2"
+                "permalink": "/docs/authentication/oauth2"
               }
             },
             {
@@ -170,16 +170,16 @@
               "description": "Ce mode d'authentification permet de connecter automatiquement les utilisateurs à Logora une fois qu'il sont authentifiés à travers votre système de connexion. Cette méthode utilise un jeton JWT (JSON Web Token) par votre clé secrète pour transmettre les données de l'utilisateur à Logora.",
               "source": "@site/docs\\authentication\\jwt.md",
               "slug": "/authentication/jwt",
-              "permalink": "/authentication/jwt",
+              "permalink": "/docs/authentication/jwt",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "OAuth 2.0",
-                "permalink": "/authentication/oauth2"
+                "permalink": "/docs/authentication/oauth2"
               },
               "next": {
                 "title": "Cookie",
-                "permalink": "/authentication/cookie"
+                "permalink": "/docs/authentication/cookie"
               }
             },
             {
@@ -190,16 +190,16 @@
               "description": "Le protocole OAuth 2.0 permet la récupération sécurisée des ressources tout en protégeant les données de vos utilisateurs. Logora propose un service authentification conforme OAuth 2.0, qui permet de connecter automatiquement vos utilisateurs à l'application Logora une fois qu'ils sont connectés à votre système d'authentification.",
               "source": "@site/docs\\authentication\\oauth2.md",
               "slug": "/authentication/oauth2",
-              "permalink": "/authentication/oauth2",
+              "permalink": "/docs/authentication/oauth2",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Introduction",
-                "permalink": "/authentication/introduction"
+                "permalink": "/docs/authentication/introduction"
               },
               "next": {
                 "title": "Signature JWT",
-                "permalink": "/authentication/jwt"
+                "permalink": "/docs/authentication/jwt"
               }
             },
             {
@@ -210,16 +210,16 @@
               "description": "Les pages du plugin Logora sont fournies en marque blanche et hébergées sur votre site.",
               "source": "@site/docs\\configuration\\ads.md",
               "slug": "/configuration/ads",
-              "permalink": "/configuration/ads",
+              "permalink": "/docs/configuration/ads",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Modération",
-                "permalink": "/configuration/moderation"
+                "permalink": "/docs/configuration/moderation"
               },
               "next": {
                 "title": "Performance",
-                "permalink": "/faq/performance"
+                "permalink": "/docs/faq/performance"
               }
             },
             {
@@ -230,16 +230,16 @@
               "description": "Logora s'occupe de la modération de votre espace de débat. Personnalisez le type de modération dans votre espace d'administration",
               "source": "@site/docs\\configuration\\moderation.md",
               "slug": "/configuration/moderation",
-              "permalink": "/configuration/moderation",
+              "permalink": "/docs/configuration/moderation",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Chemins d'URL",
-                "permalink": "/configuration/routes"
+                "permalink": "/docs/configuration/routes"
               },
               "next": {
                 "title": "Insertions publicitaires",
-                "permalink": "/configuration/ads"
+                "permalink": "/docs/configuration/ads"
               }
             },
             {
@@ -250,16 +250,16 @@
               "description": "L'espace de débat comprend plusieurs pages qui sont accessibles sur votre site via des URLs différentes. Si vous utilisez l'Installation en Javascript, ces URLs doivent pointer vers la page de votre site web où est inséré l'espace de débat. Si vous utilisez notre plugin Wordpress, les routes sont gérées automatiquement.",
               "source": "@site/docs\\configuration\\routes.md",
               "slug": "/configuration/routes",
-              "permalink": "/configuration/routes",
+              "permalink": "/docs/configuration/routes",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Apparence et thème",
-                "permalink": "/configuration/theme"
+                "permalink": "/docs/configuration/theme"
               },
               "next": {
                 "title": "Modération",
-                "permalink": "/configuration/moderation"
+                "permalink": "/docs/configuration/moderation"
               }
             },
             {
@@ -270,16 +270,16 @@
               "description": "Bientôt disponible...",
               "source": "@site/docs\\configuration\\theme.md",
               "slug": "/configuration/theme",
-              "permalink": "/configuration/theme",
+              "permalink": "/docs/configuration/theme",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Cookie",
-                "permalink": "/authentication/cookie"
+                "permalink": "/docs/authentication/cookie"
               },
               "next": {
                 "title": "Chemins d'URL",
-                "permalink": "/configuration/routes"
+                "permalink": "/docs/configuration/routes"
               }
             },
             {
@@ -290,12 +290,12 @@
               "description": "Logora met tout en oeuvre pour que le code inséré aie le moins d'impact sur le chargement de vos pages. Voici quelques détails sur le fonctionnement de Logora pour mieux évaluer la performance des scripts insérés.",
               "source": "@site/docs\\faq\\performance.md",
               "slug": "/faq/performance",
-              "permalink": "/faq/performance",
+              "permalink": "/docs/faq/performance",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Insertions publicitaires",
-                "permalink": "/configuration/ads"
+                "permalink": "/docs/configuration/ads"
               }
             },
             {
@@ -306,16 +306,16 @@
               "description": "Insérez Logora sur vos pages Google AMP",
               "source": "@site/docs\\installation\\amp-sdk.md",
               "slug": "/installation/amp-sdk",
-              "permalink": "/installation/amp-sdk",
+              "permalink": "/docs/installation/amp-sdk",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "API côté serveur",
-                "permalink": "/installation/server-side-sdk"
+                "permalink": "/docs/installation/server-side-sdk"
               },
               "next": {
                 "title": "App SDK",
-                "permalink": "/installation/app-sdk"
+                "permalink": "/docs/installation/app-sdk"
               }
             },
             {
@@ -326,16 +326,16 @@
               "description": "Bientôt disponible...",
               "source": "@site/docs\\installation\\app-sdk.md",
               "slug": "/installation/app-sdk",
-              "permalink": "/installation/app-sdk",
+              "permalink": "/docs/installation/app-sdk",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Google AMP SDK",
-                "permalink": "/installation/amp-sdk"
+                "permalink": "/docs/installation/amp-sdk"
               },
               "next": {
                 "title": "Introduction",
-                "permalink": "/authentication/introduction"
+                "permalink": "/docs/authentication/introduction"
               }
             },
             {
@@ -346,16 +346,16 @@
               "description": "Installez Logora grâce à notre code universel Javascript.",
               "source": "@site/docs\\installation\\javascript-sdk.md",
               "slug": "/installation/javascript-sdk",
-              "permalink": "/installation/javascript-sdk",
+              "permalink": "/docs/installation/javascript-sdk",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Pour commencer",
-                "permalink": "/"
+                "permalink": "/docs/"
               },
               "next": {
                 "title": "Installation Wordpress",
-                "permalink": "/installation/wordpress"
+                "permalink": "/docs/installation/wordpress"
               }
             },
             {
@@ -366,16 +366,16 @@
               "description": "Insérez Logora côté serveur grâce à notre API",
               "source": "@site/docs\\installation\\api.md",
               "slug": "/installation/server-side-sdk",
-              "permalink": "/installation/server-side-sdk",
+              "permalink": "/docs/installation/server-side-sdk",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Installation Wordpress",
-                "permalink": "/installation/wordpress"
+                "permalink": "/docs/installation/wordpress"
               },
               "next": {
                 "title": "Google AMP SDK",
-                "permalink": "/installation/amp-sdk"
+                "permalink": "/docs/installation/amp-sdk"
               }
             },
             {
@@ -386,16 +386,16 @@
               "description": "Avant de commencer",
               "source": "@site/docs\\installation\\wordpress.md",
               "slug": "/installation/wordpress",
-              "permalink": "/installation/wordpress",
+              "permalink": "/docs/installation/wordpress",
               "version": "current",
               "sidebar": "docs",
               "previous": {
                 "title": "Installation Javascript",
-                "permalink": "/installation/javascript-sdk"
+                "permalink": "/docs/installation/javascript-sdk"
               },
               "next": {
                 "title": "API côté serveur",
-                "permalink": "/installation/server-side-sdk"
+                "permalink": "/docs/installation/server-side-sdk"
               }
             },
             {
@@ -406,12 +406,12 @@
               "description": "Logora fournit un espace de débat interactif pour animer et faire grandir votre communauté. Logora est intégré sur votre site en marque blanche, et peut être totalement personnalisé pour s'adapter à vos besoins et à vos interfaces. Découvrez notre Démo.",
               "source": "@site/docs\\introduction.md",
               "slug": "/",
-              "permalink": "/",
+              "permalink": "/docs/",
               "version": "current",
               "sidebar": "docs",
               "next": {
                 "title": "Installation Javascript",
-                "permalink": "/installation/javascript-sdk"
+                "permalink": "/docs/installation/javascript-sdk"
               }
             }
           ]
@@ -429,6 +429,9 @@
     "default": null
   },
   "docusaurus-theme-classic": {
+    "default": null
+  },
+  "docusaurus-plugin-client-redirects": {
     "default": null
   }
 }

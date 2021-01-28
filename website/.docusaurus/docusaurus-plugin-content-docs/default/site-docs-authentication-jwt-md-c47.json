@@ -6,15 +6,15 @@
   "description": "Ce mode d'authentification permet de connecter automatiquement les utilisateurs à Logora une fois qu'il sont authentifiés à travers votre système de connexion. Cette méthode utilise un jeton JWT (JSON Web Token) par votre clé secrète pour transmettre les données de l'utilisateur à Logora.",
   "source": "@site/docs\\authentication\\jwt.md",
   "slug": "/authentication/jwt",
-  "permalink": "/authentication/jwt",
+  "permalink": "/docs/authentication/jwt",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "OAuth 2.0",
-    "permalink": "/authentication/oauth2"
+    "permalink": "/docs/authentication/oauth2"
   },
   "next": {
     "title": "Cookie",
-    "permalink": "/authentication/cookie"
+    "permalink": "/docs/authentication/cookie"
   }
 }

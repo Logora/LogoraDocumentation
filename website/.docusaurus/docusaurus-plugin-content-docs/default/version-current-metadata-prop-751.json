@@ -8,7 +8,7 @@
       {
         "type": "link",
         "label": "Pour commencer",
-        "href": "/"
+        "href": "/docs/"
       },
       {
         "collapsed": false,
@@ -18,27 +18,27 @@
           {
             "type": "link",
             "label": "Installation Javascript",
-            "href": "/installation/javascript-sdk"
+            "href": "/docs/installation/javascript-sdk"
           },
           {
             "type": "link",
             "label": "Installation Wordpress",
-            "href": "/installation/wordpress"
+            "href": "/docs/installation/wordpress"
           },
           {
             "type": "link",
             "label": "API côté serveur",
-            "href": "/installation/server-side-sdk"
+            "href": "/docs/installation/server-side-sdk"
           },
           {
             "type": "link",
             "label": "Google AMP SDK",
-            "href": "/installation/amp-sdk"
+            "href": "/docs/installation/amp-sdk"
           },
           {
             "type": "link",
             "label": "App SDK",
-            "href": "/installation/app-sdk"
+            "href": "/docs/installation/app-sdk"
           }
         ]
       },
@@ -50,22 +50,22 @@
           {
             "type": "link",
             "label": "Introduction",
-            "href": "/authentication/introduction"
+            "href": "/docs/authentication/introduction"
           },
           {
             "type": "link",
             "label": "OAuth 2.0",
-            "href": "/authentication/oauth2"
+            "href": "/docs/authentication/oauth2"
           },
           {
             "type": "link",
             "label": "Signature JWT",
-            "href": "/authentication/jwt"
+            "href": "/docs/authentication/jwt"
           },
           {
             "type": "link",
             "label": "Cookie",
-            "href": "/authentication/cookie"
+            "href": "/docs/authentication/cookie"
           }
         ]
       },
@@ -77,22 +77,22 @@
           {
             "type": "link",
             "label": "Apparence et thème",
-            "href": "/configuration/theme"
+            "href": "/docs/configuration/theme"
           },
           {
             "type": "link",
             "label": "Chemins d'URL",
-            "href": "/configuration/routes"
+            "href": "/docs/configuration/routes"
           },
           {
             "type": "link",
             "label": "Modération",
-            "href": "/configuration/moderation"
+            "href": "/docs/configuration/moderation"
           },
           {
             "type": "link",
             "label": "Insertions publicitaires",
-            "href": "/configuration/ads"
+            "href": "/docs/configuration/ads"
           }
         ]
       },
@@ -104,27 +104,27 @@
           {
             "type": "link",
             "label": "Performance",
-            "href": "/faq/performance"
+            "href": "/docs/faq/performance"
           }
         ]
       }
     ]
   },
   "permalinkToSidebar": {
-    "/authentication/cookie": "docs",
-    "/authentication/introduction": "docs",
-    "/authentication/jwt": "docs",
-    "/authentication/oauth2": "docs",
-    "/configuration/ads": "docs",
-    "/configuration/moderation": "docs",
-    "/configuration/routes": "docs",
-    "/configuration/theme": "docs",
-    "/faq/performance": "docs",
-    "/installation/amp-sdk": "docs",
-    "/installation/app-sdk": "docs",
-    "/installation/javascript-sdk": "docs",
-    "/installation/server-side-sdk": "docs",
-    "/installation/wordpress": "docs",
-    "/": "docs"
+    "/docs/authentication/cookie": "docs",
+    "/docs/authentication/introduction": "docs",
+    "/docs/authentication/jwt": "docs",
+    "/docs/authentication/oauth2": "docs",
+    "/docs/configuration/ads": "docs",
+    "/docs/configuration/moderation": "docs",
+    "/docs/configuration/routes": "docs",
+    "/docs/configuration/theme": "docs",
+    "/docs/faq/performance": "docs",
+    "/docs/installation/amp-sdk": "docs",
+    "/docs/installation/app-sdk": "docs",
+    "/docs/installation/javascript-sdk": "docs",
+    "/docs/installation/server-side-sdk": "docs",
+    "/docs/installation/wordpress": "docs",
+    "/docs/": "docs"
   }
 }

@@ -6,15 +6,15 @@
   "description": "Bientôt disponible...",
   "source": "@site/docs\\configuration\\theme.md",
   "slug": "/configuration/theme",
-  "permalink": "/configuration/theme",
+  "permalink": "/docs/configuration/theme",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "Cookie",
-    "permalink": "/authentication/cookie"
+    "permalink": "/docs/authentication/cookie"
   },
   "next": {
     "title": "Chemins d'URL",
-    "permalink": "/configuration/routes"
+    "permalink": "/docs/configuration/routes"
   }
 }

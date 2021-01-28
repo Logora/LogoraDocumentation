@@ -14,7 +14,6 @@ export default {
       {
         "docs": {
           "sidebarPath": "sidebars.js",
-          "routeBasePath": "/",
           "path": "docs"
         },
         "theme": {
@@ -25,7 +24,21 @@ export default {
       }
     ]
   ],
-  "plugins": [],
+  "plugins": [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        "redirects": [
+          {
+            "to": "/",
+            "from": [
+              "/dmlkmklmlkmlkocs"
+            ]
+          }
+        ]
+      }
+    ]
+  ],
   "themeConfig": {
     "navbar": {
       "title": "Logora",

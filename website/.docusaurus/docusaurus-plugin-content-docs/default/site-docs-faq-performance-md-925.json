@@ -6,11 +6,11 @@
   "description": "Logora met tout en oeuvre pour que le code inséré aie le moins d'impact sur le chargement de vos pages. Voici quelques détails sur le fonctionnement de Logora pour mieux évaluer la performance des scripts insérés.",
   "source": "@site/docs\\faq\\performance.md",
   "slug": "/faq/performance",
-  "permalink": "/faq/performance",
+  "permalink": "/docs/faq/performance",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "Insertions publicitaires",
-    "permalink": "/configuration/ads"
+    "permalink": "/docs/configuration/ads"
   }
 }

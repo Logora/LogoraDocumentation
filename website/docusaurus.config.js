@@ -14,7 +14,6 @@ module.exports={
       {
         "docs": {
           "sidebarPath": "sidebars.js",
-		  "routeBasePath": "/",
 		  "path": "docs"
         },
         "theme": {
@@ -24,6 +23,17 @@ module.exports={
     ]
   ],
   "plugins": [
+	[
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/',
+            from: ['/dmlkmklmlkmlkocs'],
+          },
+        ],
+      },
+	]
   ],
   "themeConfig": {
     "navbar": {

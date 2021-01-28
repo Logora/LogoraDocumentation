@@ -6,15 +6,15 @@
   "description": "Bientôt disponible...",
   "source": "@site/docs\\installation\\app-sdk.md",
   "slug": "/installation/app-sdk",
-  "permalink": "/installation/app-sdk",
+  "permalink": "/docs/installation/app-sdk",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "Google AMP SDK",
-    "permalink": "/installation/amp-sdk"
+    "permalink": "/docs/installation/amp-sdk"
   },
   "next": {
     "title": "Introduction",
-    "permalink": "/authentication/introduction"
+    "permalink": "/docs/authentication/introduction"
   }
 }

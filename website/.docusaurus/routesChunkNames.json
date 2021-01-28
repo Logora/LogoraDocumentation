@@ -21,68 +21,68 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
-  "/-4c6": {
+  "/docs-799": {
     "component": "component---theme-doc-page-1-be-9be",
-    "versionMetadata": "versionMetadata---f-97-3dc"
+    "versionMetadata": "versionMetadata---docsf-97-b71"
   },
-  "/-76b": {
+  "/docs/-fdb": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---1-a-3-9ad"
+    "content": "content---docs-1-a-3-9fa"
   },
-  "/authentication/cookie-c66": {
+  "/docs/authentication/cookie-50c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---authentication-cookied-97-122"
+    "content": "content---docs-authentication-cookied-97-a16"
   },
-  "/authentication/introduction-ea0": {
+  "/docs/authentication/introduction-e0f": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---authentication-introductione-60-de4"
+    "content": "content---docs-authentication-introductione-60-174"
   },
-  "/authentication/jwt-888": {
+  "/docs/authentication/jwt-157": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---authentication-jwtc-47-13c"
+    "content": "content---docs-authentication-jwtc-47-398"
   },
-  "/authentication/oauth2-8a0": {
+  "/docs/authentication/oauth2-a84": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---authentication-oauth-2782-d0f"
+    "content": "content---docs-authentication-oauth-2782-609"
   },
-  "/configuration/ads-35b": {
+  "/docs/configuration/ads-9a8": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---configuration-ads-2-b-4-765"
+    "content": "content---docs-configuration-ads-2-b-4-809"
   },
-  "/configuration/moderation-b1a": {
+  "/docs/configuration/moderation-a96": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---configuration-moderation-4-a-2-51c"
+    "content": "content---docs-configuration-moderation-4-a-2-d3b"
   },
-  "/configuration/routes-e62": {
+  "/docs/configuration/routes-c73": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---configuration-routes-73-c-474"
+    "content": "content---docs-configuration-routes-73-c-b9c"
   },
-  "/configuration/theme-591": {
+  "/docs/configuration/theme-e22": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---configuration-theme-678-6d9"
+    "content": "content---docs-configuration-theme-678-d25"
   },
-  "/faq/performance-185": {
+  "/docs/faq/performance-688": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---faq-performance-925-ace"
+    "content": "content---docs-faq-performance-925-867"
   },
-  "/installation/amp-sdk-f30": {
+  "/docs/installation/amp-sdk-426": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---installation-amp-sdk-4-f-0-41b"
+    "content": "content---docs-installation-amp-sdk-4-f-0-a08"
   },
-  "/installation/app-sdk-f89": {
+  "/docs/installation/app-sdk-789": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---installation-app-sdk-3-e-8-136"
+    "content": "content---docs-installation-app-sdk-3-e-8-977"
   },
-  "/installation/javascript-sdk-974": {
+  "/docs/installation/javascript-sdk-7fd": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---installation-javascript-sdke-24-c01"
+    "content": "content---docs-installation-javascript-sdke-24-4a0"
   },
-  "/installation/server-side-sdk-4b6": {
+  "/docs/installation/server-side-sdk-55c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---installation-server-side-sdke-1-b-365"
+    "content": "content---docs-installation-server-side-sdke-1-b-434"
   },
-  "/installation/wordpress-8cb": {
+  "/docs/installation/wordpress-61b": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---installation-wordpressdef-15f"
+    "content": "content---docs-installation-wordpressdef-c6a"
   }
 }

@@ -6,15 +6,15 @@
   "description": "Les pages du plugin Logora sont fournies en marque blanche et hébergées sur votre site.",
   "source": "@site/docs\\configuration\\ads.md",
   "slug": "/configuration/ads",
-  "permalink": "/configuration/ads",
+  "permalink": "/docs/configuration/ads",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "Modération",
-    "permalink": "/configuration/moderation"
+    "permalink": "/docs/configuration/moderation"
   },
   "next": {
     "title": "Performance",
-    "permalink": "/faq/performance"
+    "permalink": "/docs/faq/performance"
   }
 }

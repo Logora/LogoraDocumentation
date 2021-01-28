@@ -75,6 +75,8 @@ Insérez le code Javascript de la synthèse à l'endroit où vous souhaitez voir
 
 > Si vous préférez insérer la synthèse côté serveur, rendez-vous sur la page d'[installation côté serveur](installation/api.md).
 
+> Si vous souhaitez utiliser le widget, utilisez l'autre lien indiqué dans le code Javascript exemple
+
 Le conteneur **logora_synthese** est l'endroit où la synthèse est chargée.
 
 Code standard à copier/coller et compléter :
@@ -92,7 +94,7 @@ Code standard à copier/coller et compléter :
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://api.logora.fr/synthese.js'; 
+        s.src = 'https://api.logora.fr/synthese.js'; // 'https://api.logora.fr/widget.js' pour le widget
         (d.head || d.body).appendChild(s);
     })();
 </script>

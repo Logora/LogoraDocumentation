@@ -25,7 +25,7 @@ module.exports = {
       type: 'category',
       label: 'Questions fréquentes',
 	  collapsed: false,
-      items: ['faq/performance', 'faq/data', 'faq/rgpd'],
+      items: ['faq/performance', 'faq/rgpd'],
     },
   ],
 };

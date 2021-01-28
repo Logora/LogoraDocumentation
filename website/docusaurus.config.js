@@ -24,17 +24,6 @@ module.exports={
     ]
   ],
   "plugins": [
-	[
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          {
-            to: '/',
-            from: ['/tototo'],
-          },
-        ],
-      },
-	]
   ],
   "themeConfig": {
     "navbar": {

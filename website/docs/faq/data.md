@@ -4,8 +4,6 @@ title: Traitement des données
 description: Description du traitement des données
 ---
 
-### Traitement des données 
-
 ##### Le sous-traitant est autorisé à traiter pour le compte du responsable de traitement les données à caractère personnel nécessaires pour fournir le service suivant :
  
 Mise à disposition d’un espace contributif, via un widget intégré dans le siteet son application,  permettant aux internautes ayant un compte de donner un avis et de répondre à des questions sous forme de débat et de commenter leurs réponses.  

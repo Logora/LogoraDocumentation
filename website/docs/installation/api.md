@@ -4,6 +4,9 @@ title: API côté serveur
 description: Insérez Logora côté serveur grâce à notre API
 ---
 
+
+### Récupération du code de la synthèse
+
 Logora fournit une route d'API pour récupérer pour insérer la synthèse dans vos pages côté serveur. Cette route d'API renvoie le code HTML complet de la synthèse (CSS et scrips inclus), que vous pouvez insérer dans votre modèle de page.
 
 > Cette API est utilisée par ailleurs par le code Javascript Logora pour afficher la synthèse.
@@ -79,4 +82,50 @@ Le code HTML renvoyé a pour racine le conteneur suivant  :
 <div class="logoraContainer" lang="fr" data-id="synthesis"><div>
 ```
 
+### Récupérer la liste des articles
 
+Pour éviter de faire des appels inutiles et charger la synthèse uniquement sur les pages article où un débat est lié, vous pouvez utiliser la route prévue par l'API de Logora pour récupérer la liste de vos articles liés à un débat.
+
+#### Requête
+
+URL de base : 
+`https://app.logora.fr/api/v1/updated_sources`
+
+Méthode : `GET`
+En-tête : `Content-Type: application/json`
+Paramètres d'URL : 
+- `shortname` (requis) : nom de votre application disponible dans votre espace d'administration
+- `timestamp` (requis) : date depuis laquelle vous souhaitez récupérer les mises à jour des articles (si un débat est associé ou non), en format timestamp Unix (secondes).
+- `page` (optionnel) : numéro de page
+- `per_page` (optionnel) : nombre d'éléments par page, par défaut 10
+
+La route renvoie l'ensemble des articles qui ont eu une modification d'association à un débat depuis la date passée en paramètre.
+
+#### Réponse
+
+```json
+{
+  "success": true,
+  "data": {
+      {
+        "identifier": 1, // Identifiant unique de l'article que vous fournissez lors de l'insertion de la synthèse
+        "title": "Exemple d’Article – Démo", // Titre de l'article
+        "source_url": "https://demo.logora.fr/article-demo", // URL de l'article
+        "has_debate": false, // Indique si l'article est associé à un débat
+        "debate_updated_at": "2021-01-06T16:01:19.717Z" // Dernière modification de l'association à un débat (association à un débat ou suppression de l'association)
+      },
+      {
+        "identifier": 2,
+        "title": "Exemple d'article #2 - Démo",
+        "source_url": "https://demo.logora.fr/article2-demo",
+        "has_debate": true,
+        "debate_updated_at": "2021-01-06T15:22:32.630Z"
+      }, 
+      ...
+  }
+}
+```
+
+En-têtes de la réponse :
+- `total` : nombre total d'éléments (sans inclure la pagination)
+- `total-pages` : nombre de pages de la réponse

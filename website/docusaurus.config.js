@@ -30,7 +30,7 @@ module.exports={
         redirects: [
           {
             to: '/',
-            from: ['/*'],
+            from: ['/tototo'],
           },
         ],
       },

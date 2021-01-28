@@ -28,7 +28,7 @@ module.exports={
       {
         redirects: [
           {
-            to: '/',
+            to: '/docs',
             from: ['/dmlkmklmlkmlkocs'],
           },
         ],

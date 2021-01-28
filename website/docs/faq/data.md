@@ -6,11 +6,11 @@ description: Description du traitement des données
 
 ### Traitement des données 
 
-`Le sous-traitant est autorisé à traiter pour le compte du responsable de traitement les données à caractère personnel nécessaires pour fournir le service suivant :`
+##### Le sous-traitant est autorisé à traiter pour le compte du responsable de traitement les données à caractère personnel nécessaires pour fournir le service suivant :
  
 Mise à disposition d’un espace contributif, via un widget intégré dans le siteet son application,  permettant aux internautes ayant un compte de donner un avis et de répondre à des questions sous forme de débat et de commenter leurs réponses.  
  
-`La nature des opérations réalisées sur les données est :`
+##### La nature des opérations réalisées sur les données est :
 
 Réception des données ;
 
@@ -22,7 +22,7 @@ Stockage des données ;
 
 Destruction des données.
  
-`Les finalités du traitement sont :`
+##### Les finalités du traitement sont :
 
 La prise en compte de la participation à un débat ; 
 
@@ -40,7 +40,7 @@ La prise en compte du dépôt des commentaires, des contributions ;
 
 - La proposition d’un débat à un utilisateur lié à son profil. 
  
-`Les données à caractère personnel traitées sont :`
+##### Les données à caractère personnel traitées sont :
 
 Les données d’identification (Nom,  prénom, pseudo, email, notes et commentaires) 
 

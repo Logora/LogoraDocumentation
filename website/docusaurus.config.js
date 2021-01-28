@@ -1,7 +1,7 @@
 module.exports={
   "title": "Logora",
   "tagline": "La fin du commentaire, le début du débat",
-  "url": "https://master.d24s2qxlp9xzpm.amplifyapp.com",
+  "url": "https://docs.logora.fr",
   "baseUrl": "/",
   "organizationName": "Logora",
   "projectName": "LogoraDocumentation",

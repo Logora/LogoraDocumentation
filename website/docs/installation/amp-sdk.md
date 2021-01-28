@@ -15,8 +15,8 @@ URL de base :
 `https://api.logora.fr/synthese-amp.html`
 
 Paramètres dynamiques à spécifier dans l'URL :
-- **shortname** : nom de l'application
-- **id** : identifiant de la page
+- `shortname` : nom de l'application
+- `id` : identifiant de la page
 
 Exemple d'URL :
 `https://api.logora.fr/synthese-amp.html?shortname=logora-demo&id=1881`

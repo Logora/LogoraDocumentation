@@ -14,6 +14,7 @@ module.exports={
       {
         "docs": {
           "sidebarPath": "sidebars.js",
+		  "routeBasePath": "/",
 		  "path": "docs"
         },
         "theme": {
@@ -28,8 +29,8 @@ module.exports={
       {
         redirects: [
           {
-            to: '/docs/',
-            from: ['/dmlkmklmlkmlkocs'],
+            to: '/',
+            from: ['/*'],
           },
         ],
       },

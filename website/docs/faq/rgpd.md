@@ -20,7 +20,7 @@ Le sous-traitant est autorisé à traiter pour le compte du responsable de trait
 
 Mise à disposition d'un espace contributif, via un widget intégré dans le site et son application, permettant aux internautes ayant un compte, de donner un avis et de répondre à des questions sous forme de débat et de commenter leurs réponses. 
 
-`La nature des opérations réalisées sur les données est :`
+##### La nature des opérations réalisées sur les données est :
 
 Réception des données ;
 
@@ -32,7 +32,7 @@ Stockage des données ;
 
 Destruction des données. 
 
-`Les finalités du traitement sont :` 
+##### Les finalités du traitement sont :
 
 La prise en compte de la participation à un débat; 
 
@@ -50,7 +50,7 @@ La suggestion des débats;
 
 La proposition d'un débat à un utilisateur lié à son profil. 
 
-`Les données à caractère personnel traitées sont :`
+##### Les données à caractère personnel traitées sont :
 
 Les données d'identification (Nom, prénom, pseudo, email, notes et commentaires); 
 
@@ -60,7 +60,7 @@ Pour l'exécution du service objet du présent contrat, le responsable de traite
 
 ### III. Obligations du sous-traitant vis-à-vis du responsable de traitement 
 
-`Le sous-traitant s'engage à :` 
+##### Le sous-traitant s'engage à :
 
 1. traiter les données uniquement pour la ou les seule(s) finalité(s) qui fait/font l'objet de la sous-traitance. 
 
@@ -119,7 +119,7 @@ Le sous-traitant met à la disposition du responsable de traitement la documenta
 
 ### IV. Obligations du responsable de traitement vis-à-vis du sous-traitant 
 
-`Le responsable de traitement s'engage à : 
+##### Le responsable de traitement s'engage à :
 
 1. fournir au sous-traitant les données visées au Il des présentes clauses; 
 

@@ -1,7 +1,7 @@
 ---
 id: introduction
 title: Pour commencer
-slug: /
+slug: /docs
 ---
 
 Logora fournit un espace de débat interactif pour animer et faire grandir votre communauté. Logora est intégré sur votre site en marque blanche, et peut être totalement personnalisé pour s'adapter à vos besoins et à vos interfaces. Découvrez notre [Démo](https://demo.logora.fr).

@@ -71,6 +71,12 @@ La réponse renvoyée est sous cette forme :
 ```json
 {
   "success": true, // true si un débat est associé, false si aucun débat ou une erreur
+  "debate": {    
+    "slug": "mon-debat",    // Identifiant unique du débat, présent dans l'URL
+    "name": "Faut-il introduire une dose de proportionnelle dans l'élection des députés ?",     // Titre du débat
+    "direct_url": "https://exemple.com/espace-debat/debat/mon-debat",    // Lien vers le débat
+    "votes_count": 32                                                    // Nombre de votes sur le débat
+  },
   "content": CODE_HTML, // Code HTML de la synthèse à insérer dans la page. Attribut non présent si success à false
   "source": OBJET_SOURCE, // Objet contenant les métadonnées de la page
   "config": OBJET_CONFIG, // Objet contenant la configuration de l'application

@@ -86,7 +86,7 @@ La réponse renvoyée est sous cette forme :
 Le code HTML renvoyé a pour racine le conteneur suivant  : 
 
 ```html
-<div class="logoraContainer" lang="fr" data-id="synthesis"><div>
+<div id="logoraRoot" class="logoraContainer" lang="fr" data-id="synthesis"><div>
 ```
 
 ### Récupérer la liste des articles

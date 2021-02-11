@@ -7,7 +7,7 @@ description: Insérez Logora côté serveur grâce à notre API
 
 ### Récupération du code de la synthèse
 
-Logora fournit une route d'API pour récupérer pour insérer la synthèse dans vos pages côté serveur. Cette route d'API renvoie le code HTML complet de la synthèse (CSS et scrips inclus), que vous pouvez insérer dans votre modèle de page.
+Logora fournit une route d'API pour récupérer la synthèse dans vos pages côté serveur. Cette route d'API renvoie le code HTML complet de la synthèse (CSS et scrips inclus), que vous pouvez insérer dans votre modèle de page. Cette méthode remplace l'insertion du script Logora sur vos pages.
 
 > Cette API est utilisée par ailleurs par le code Javascript Logora pour afficher la synthèse.
 
@@ -15,7 +15,7 @@ Logora fournit une route d'API pour récupérer pour insérer la synthèse dans 
 
 URL de base :
 - `https://render.logora.fr/synthesis` pour la synthèse  
-- `https://render.logora.fr/widget` pour le widget  
+- `https://render.logora.fr/widget` pour le widget
 
 Méthode : `POST`  
 En-tête : `Content-Type: application/json`
@@ -58,7 +58,7 @@ https://render.logora.fr/app?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18c
 https://render.logora.fr/app?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6&insertType=amp
 ```
 
-> Le paramètre `source_url` doit avoir un nom de domaine identique à l'URL de votre site ("URL du site web" dans Configuration > Général), sinon, la source envoyée ne sera pas prise en compte.
+> Le paramètre `source_url` doit avoir un nom de domaine identique à l'URL de votre site ("URL du site web" dans *Configuration > Général*), sinon, la source envoyée ne sera pas prise en compte.
 
 > Pour des raisons de performance, les sources publiées avant le 1er janvier 2019 ne sont pas prises en compte.
 

@@ -1,6 +1,6 @@
 ---
 id: oauth2
-title: OAuth 2.0
+title: Client OAuth 2.0
 ---
 
 Le protocole OAuth 2.0 permet la récupération sécurisée des ressources tout en protégeant les données de vos utilisateurs. Logora propose un service authentification conforme OAuth 2.0, qui permet de connecter automatiquement vos utilisateurs à l'application Logora une fois qu'ils sont connectés à votre système d'authentification.

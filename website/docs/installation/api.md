@@ -58,7 +58,7 @@ https://render.logora.fr/app?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18c
 https://render.logora.fr/app?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6&insertType=amp
 ```
 
-> Le paramètre `source_url` doit avoir un nom de domaine identique à l'URL de votre site ("URL du site web" dans *Configuration > Général*), sinon, la source envoyée ne sera pas prise en compte.
+> Le paramètre `source_url` doit avoir un nom de domaine identique à un des domaines autorisés de votre application (modifiable dans *Configuration > Général*), sinon, la source envoyée ne sera pas prise en compte.
 
 > Pour des raisons de performance, les sources publiées avant le 1er janvier 2019 ne sont pas prises en compte.
 

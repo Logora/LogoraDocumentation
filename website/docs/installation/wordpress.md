@@ -13,4 +13,8 @@ title: Installation Wordpress
 
 - Logora est disponible sur le catalogue Wordpress (https://wordpress.org/plugins/logora/). Sur votre interface Wordpress, téléchargez le plugin via Extensions en recherchant "Logora". Activez l'extension après son téléchargement.
 - Ajoutez votre nom d'application et votre clé secrète dans l'onglet de réglages Logora.
-- Votre espace de débat est disponible au chemin /espace-debat. 
+
+### Utilisation
+
+- Accédez à votre espace de débat sur le chemin `/espace-debat`. 
+- La synthèse de débat est disponible via le shortcode `[logora-synthese]`. Insérez ce shortcode dans votre template d'article pour qu'il soit présent sur toutes les pages. 

@@ -23,7 +23,7 @@ En-tête : `Content-Type: application/json`
 Paramètres d'URL :   
 `shortname` (requis) : nom de votre application disponible dans votre espace d'administration  
 `uid` (requis) : identifiant unique de la page (le même identifiant que celui inséré côté client)    
-`insertType` (optionnel) : mode d'insertion, ne pas ajouter si insertion standard. Indiquer *iframe* ou *amp* si insertion en iframe ou sur une page AMP.  
+`insertType` (optionnel) : mode d'insertion, ne pas ajouter si insertion standard. Indiquer *amp* pour une insertion sur une page AMP ou *iframe* pour une insertion en iframe.  
 
 Corps de la requête : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.
 ```json

@@ -13,7 +13,7 @@ module.exports = {
 	{
       type: 'category',
       label: 'Authentification unique',
-      items: ['authentication/introduction', 'authentication/oauth2', 'authentication/jwt', 'authentication/cookie'],
+      items: ['authentication/introduction', 'authentication/oauth2', 'authentication/jwt'],
     },
 	{
       type: 'category',

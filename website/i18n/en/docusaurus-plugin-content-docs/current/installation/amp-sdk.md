@@ -1,7 +1,7 @@
 ---
 id: amp-sdk
 title: Google AMP SDK
-description: Insérez Logora sur vos pages Google AMP
+description: Insert Logora on your Google AMP pages
 ---
 
 The Google AMP SDK integration allows you to display the debate summary in your AMP pages.

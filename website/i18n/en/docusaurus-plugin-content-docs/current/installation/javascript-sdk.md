@@ -1,50 +1,49 @@
 ---
 id: javascript-sdk
-title: Installation Javascript
-description: Installez Logora grâce à notre code universel Javascript.
+title: Javascript installation
+description: Install Logora with our universal Javascript code.
 ---
 
-Logora peut être installé sur n'importe quel site en insérant le code natif JavaScript. Cette documentation est à destination des développeurs. Logora propose également une documentation personnalisée pour l'[installation Wordpress](installation/wordpress).
+Logora can be installed on any site by inserting the native JavaScript code. This documentation is intended for developers. Logora also offers a custom documentation for the [Wordpress installation](installation/wordpress).
 
-L'installation en Javascript se fait en deux temps :
-1. Insérer l'espace de débat 
-2. Insérer la synthèse du débat sur vos pages
+The installation in JavaScript is done in two steps:
+1. Insert the discussion space 
+2. Insert the debate summary on your pages
 	 
-### Avant de commencer 
+### Before starting 
 
-- Enregistrez votre site sur Logora en vous inscrivant : [Inscription](https://logora.fr/signup)
-- Munissez-vous de votre **nom d'application** disponible sur votre [espace d'administration](https://admin.logora.fr) dans l'onglet *Configuration > Général*.
-- Autorisez les domaines sur lesquels vous désirez installer Logora. Pour cela, rendez-vous sur votre espace d'administration dans l'onglet *Configuration > Général > Sécurité > Domaines autorisés*. Par exemple, si le code inséré sur la page à l'URL https://exemple.com/article/exemple-article, ajoutez le domaine https://exemple.com (attention: ne pas mettre de barre oblique à la fin). Exemple : http://localhost:3000 , http://sous-domaine.exemple.com.  Important : l'ajout des domaines sur l'espace d'administration fonctionne comme un ajout de tag, n'oubliez pas d'appuyer sur "entrer" lors de l'insertion de vos URL.
+- Register your site on Logora by signing up : [Register](https://logora.fr/signup)
+- Get your **shortname** available on your [administration space](https://admin.logora.fr) in the tab *Configuration > General*.
+- Authorize the domains on which you want to install Logora. To do this, go to your administration space in the tab *Configuration > General > Security > Authorized domains*.
 
-### 1. Installer l'espace de débat 
+For example, if the code is inserted on the page at the URL https://example.com/article/example-article, add the domain https://example.com (warning: do not put a slash at the end). Example: http://localhost:3000 , http://sous-domaine.exemple.com. Important: adding domains on the administration space works like adding a tag, don't forget to press "enter" when inserting your URLs.
 
+Par exemple, si le code inséré sur la page à l'URL https://exemple.com/article/exemple-article, ajoutez le domaine https://exemple.com (attention: ne pas mettre de barre oblique à la fin). Exemple : http://localhost:3000 , http://sous-domaine.exemple.com.  Important : l'ajout des domaines sur l'espace d'administration fonctionne comme un ajout de tag, n'oubliez pas d'appuyer sur "entrer" lors de l'insertion de vos URL.
 
-L'espace de débat est la plateforme principale où vos utilisateurs pourront participer aux débats. L'espace de débat est inséré sur une page dédiée sur votre site. 
+### 1. Install the debate space
 
+The debate space is the main platform where your users will be able to participate in debates. The debate space is inserted on a dedicated page on your site. 
 
-Prenons l'exemple d'un site web disponible à l'adresse https://votresite.com. L'éditeur du site web souhaite accéder à l'espace de débat via l'adresse https://votresite.com/espace-debat. Voici les étapes à suivre pour insérer l'espace de débat :
+Let's take the example of a website available at https://yourwebsite.com. The website editor would like to access the debate space via the address https://yourwebsite.com/debate-space. Here are the steps to follow to insert the debate space :
 
-#### 1.1. Ajouter une page pour insérer l'espace de débat
+#### 1.1. Add a page to insert the debate space
 
+Create a dedicated page where the debate space will be inserted. This page is available at https://yourwebsite.com/debate-space. The prefix 'debate-space' is the default prefix. It can be changed in the administration area.
 
-Créez une page dédiée où sera inséré l'espace de débat. Cette page est disponible à l'adresse https://votresite.com/espace-debat. Le préfixe 'espace-debat' est le préfixe par défaut. Il est modifiable dans l'espace d'administration.
+#### 1.2. Inserting the JavaScript code and your configuration variables
 
+Insert the Javascript code of the debate in the place where you want the debate space to appear. 
 
-#### 1.2. Insérer le code JavaScript et vos variables de configuration
+The **logora_app** container is where the debate space is loaded.
 
-
-Insérez le code Javascript du débat à l'endroit où vous souhaitez voir apparaître l'espace de débat. 
-
-Le conteneur **logora_app** est l'endroit où l'espace de débat est chargé.
-
-Code standard à copier/coller et compléter : 
+Standard code to copy/paste and complete: 
 
 ```html
 <div id="logora_app"></div>
 <script>
-    // Variables de configuration
+    // Configuration variables
     var logora_config = {
-        shortname: "NOM_APPLICATION" // Nom d'application présent dans votre espace d'administration
+        shortname: "NOM_APPLICATION" // Application name available in your administration space
     };
 
     (function() {
@@ -55,55 +54,47 @@ Code standard à copier/coller et compléter :
 </script>
 ```
 
-#### 1.3. Réécriture des URLs pour les routes de l'espace de débat
+#### 1.3. URL rewriting for debate space routes
 
+Use URL rewriting on your platform or CMS to make paths starting with 'debate-space/' (or whatever prefix you choose) point to the page where the debate space is inserted.
 
-Utilisez la réécriture d'URL sur votre plateforme ou CMS pour que les chemins commençant par 'espace-debat/' (ou le préfixe que vous avez choisi) pointent vers la page où est inséré l'espace de débat.
+Go to https://yourwebsite.com/debate-space/debates. You are on the Debate Space home page!
 
+To change the prefix and the URL paths of the debate space pages, go to [the URL paths configuration](configuration/routes.md).
 
-Accédez à la page https://votresite.com/espace-debat/debats. Vous êtes sur la page d'accueil de l'espace de débat !
+### 2. Install the debate synthesis
 
+Insert the Javascript code of the summary in the place where you want the summary of the debate to appear, at the foot of the article. This is an example of Javascript code that loads and displays the debate summary linked to your article. It must be inserted on all your article pages. This code will not display anything until you have associated a debate with the page.
 
-Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat, rendez-vous sur [la configuration des chemins d'URL](configuration/routes.md).
+> If you prefer to insert the server-side summary, go to the [server-side installation] page (installation/api.md).
 
+> If you want to use the widget, use the widget.js link displayed in the sample Javascript code below. 
 
+The **logora_synthese** container is the place where the synthesis is loaded.
 
-### 2. Installer la synthèse du débat 
-
-
-Insérez le code Javascript de la synthèse à l'endroit où vous souhaitez voir apparaître la synthèse du débat, en pied d'article. Ceci est un exemple de code Javascript qui charge et affiche la synthèse du débat en cours lié à votre article. Il doit être inséré sur toutes vos pages d'articles. Ce code n'affichera rien tant que vous n'avez pas associé de débat à la page.
-
-> Si vous préférez insérer la synthèse côté serveur, rendez-vous sur la page d'[installation côté serveur](installation/api.md).
-
-> Si vous souhaitez utiliser le widget, utilisez l'autre lien indiqué dans le code Javascript exemple
-
-Le conteneur **logora_synthese** est l'endroit où la synthèse est chargée.
-
-Code standard à copier/coller et compléter :
+Standard code to copy/paste and complete :
 
 ```html
 <div class="logora_synthese" data-object-id="logora_config"></div>
 <script>
-    // Variables de configuration
+    // Configuration variables
     var logora_config = {
-        shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
+        shortname: "SHORTNAME", // Shortname available in your administration space
         debate: {
-            identifier: "PAGE_IDENTIFIER" // Identifiant unique de la page
+            identifier: "PAGE_IDENTIFIER" // Unique identifier of the page
         }
     };
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://api.logora.fr/synthese.js'; // 'https://api.logora.fr/widget.js' pour le widget
+        s.src = 'https://api.logora.fr/synthese.js'; // 'https://api.logora.fr/widget.js' for the widget
         (d.head || d.body).appendChild(s);
     })();
 </script>
 ```
 
-**debate.identifier (requis)** : identifiant unique lié à la page. Cet identifiant doit être unique pour chaque page où est insérée la synthèse. Il permettra de récupérer le débat correspondant à la page. Par exemple, l'identifiant peut être l'ID dans votre base de données de l'article présent sur la page, ou un slug unique ('exemple-identifiant').
+**debate.identifier (required)** : unique identifier linked to the page. This identifier must be unique for each page where the synthesis is inserted. It will allow to retrieve the debate corresponding to the page. For example, the identifier can be the ID in your database of the article on the page, or a unique slug ('example-identifier').
 
+The debate linked to the page must then be created in the administration area > create a debate, by providing the debate.identifier or by selecting the article concerned in the list of last retrieved articles. 
 
-Le débat lié à la page doit ensuite être créé dans l'espace d'administration > créer un débat, en fournissant l'identifiant debate.identifier ou en sélectionnant l'article concerné dans la liste des derniers articles récupérés. 
-
-
-Il ne reste plus qu'à implémenter l'authentification unique et à personnaliser Logora pour lancer votre premier débat. 
+All that remains is to implement single sign-on and customize Logora to launch your first debate. 

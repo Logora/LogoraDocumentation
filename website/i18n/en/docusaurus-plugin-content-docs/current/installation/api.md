@@ -5,27 +5,27 @@ description: Insérez Logora côté serveur grâce à notre API
 ---
 
 
-### Récupération du code de la synthèse
+### Retrieving the code of the synthesis
 
-Logora fournit une route d'API pour récupérer la synthèse dans vos pages côté serveur. Cette route d'API renvoie le code HTML complet de la synthèse (CSS et scrips inclus), que vous pouvez insérer dans votre modèle de page. Cette méthode remplace l'insertion du script Logora sur vos pages.
+Logora provides an API route to retrieve the summary in your server-side pages. This API route returns the full HTML code of the synthesis (including CSS and scripts), which you can insert into your page template. This method replaces the insertion of the Logora script on your pages.
 
-> Cette API est utilisée par ailleurs par le code Javascript Logora pour afficher la synthèse.
+> This API is also used by the Logora Javascript code to display the synthesis.
 
-#### Requête
+#### Query
 
-URL de base :
-- `https://render.logora.fr/synthesis` pour la synthèse  
-- `https://render.logora.fr/widget` pour le widget
+Base URL :
+- `https://render.logora.fr/synthesis` for the synthesis
+- `https://render.logora.fr/widget` for the widget
 
-Méthode : `POST`  
-En-tête : `Content-Type: application/json`
+Method : `POST`  
+Header : `Content-Type: application/json`
 
-Paramètres d'URL :   
-`shortname` (requis) : nom de votre application disponible dans votre espace d'administration  
-`uid` (requis) : identifiant unique de la page (le même identifiant que celui inséré côté client)    
-`insertType` (optionnel) : mode d'insertion, ne pas ajouter si insertion standard. Indiquer *amp* pour une insertion sur une page AMP ou *iframe* pour une insertion en iframe.  
+URL parameters :   
+`shortname` (required): name of your application available in your administration space  
+`uid` (required): unique identifier of the page (the same identifier as the one inserted on the client side) 
+`insertType` (optional) : insertion mode, do not add if standard insertion. Indicate *amp* for an insertion on an AMP page or *iframe* for an insertion in iframe.  
 
-Corps de la requête : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.
+Request body: The request body must contain metadata about the page, in JSON format.
 ```json
 {
   "source": 
@@ -52,21 +52,21 @@ Corps de la requête : Le corps de la requête doit contenir des métadonnées s
 ```
 
 
-Exemples d'URL de requête :
+Examples of query URLs:
 ```
 https://render.logora.fr/app?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6
 https://render.logora.fr/app?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6&insertType=amp
 ```
 
-> Le paramètre `source_url` doit avoir un nom de domaine identique à un des domaines autorisés de votre application (modifiable dans *Configuration > Général*), sinon, la source envoyée ne sera pas prise en compte.
+> The `source_url` parameter must have a domain name identical to one of the authorized domains of your application (editable in *Configuration > General*), otherwise the source sent will not be taken into account.
 
-> Pour des raisons de performance, les sources publiées avant le 1er janvier 2019 ne sont pas prises en compte.
-
-
-#### Réponse
+> For performance reasons, sources published before January 1st 2019 are not taken into account.
 
 
-La réponse renvoyée est sous cette forme :
+#### Response
+
+
+The response returned is in this form:
 
 ```json
 {
@@ -83,32 +83,32 @@ La réponse renvoyée est sous cette forme :
 ```
 
 
-Le code HTML renvoyé a pour racine le conteneur suivant  : 
+The returned HTML code has the following container as its root: 
 
 ```html
 <div id="logoraRoot" class="logoraContainer" lang="fr" data-id="synthesis"><div>
 ```
 
-### Récupérer la liste des articles
+### Retrieve the list of articles
 
-Pour éviter de faire des appels inutiles et charger la synthèse uniquement sur les pages article où un débat est lié, vous pouvez utiliser la route prévue par l'API de Logora pour récupérer la liste de vos articles liés à un débat.
+To avoid making unnecessary calls and loading the synthesis only on the article pages where a debate is linked, you can use the route provided by the Logora API to retrieve the list of your articles linked to a debate.
 
-#### Requête
+#### Query
 
-URL de base : 
+Base URL : 
 `https://app.logora.fr/api/v1/updated_sources`
 
-Méthode : `GET`
-En-tête : `Content-Type: application/json`
-Paramètres d'URL : 
-- `shortname` (requis) : nom de votre application disponible dans votre espace d'administration
-- `timestamp` (requis) : date depuis laquelle vous souhaitez récupérer les mises à jour des articles (si un débat est associé ou non), en format timestamp Unix (secondes).
-- `page` (optionnel) : numéro de page
-- `per_page` (optionnel) : nombre d'éléments par page, par défaut 10
+Method : `GET`
+Header : `Content-Type: application/json`
+URL parameters : 
+- `shortname` (required): name of your application available in your administration space
+- `timestamp` required): date from which you want to retrieve article updates (if a debate is associated or not), in Unix timestamp format (seconds).
+- `page` (optional): page number
+- `per_page` (optional) : number of items per page, by default 10
 
-La route renvoie l'ensemble des articles qui ont eu une modification d'association à un débat depuis la date passée en paramètre.
+The route returns the set of items that have had an association change to a debate since the date passed in parameter.
 
-#### Réponse
+#### Response
 
 ```json
 {
@@ -133,6 +133,6 @@ La route renvoie l'ensemble des articles qui ont eu une modification d'associati
 }
 ```
 
-En-têtes de la réponse :
-- `total` : nombre total d'éléments (sans inclure la pagination)
-- `total-pages` : nombre de pages de la réponse
+Response headers:
+- `total` : total number of items (not including pagination)
+- `total-pages` : number of pages in the response

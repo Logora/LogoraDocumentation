@@ -1,7 +1,7 @@
 ---
 id: server-side-sdk
-title: API côté serveur
-description: Insérez Logora côté serveur grâce à notre API
+title:  Server side API
+description: Insert Logora on server side with our API
 ---
 
 
@@ -30,21 +30,21 @@ Request body: The request body must contain metadata about the page, in JSON for
 {
   "source": 
   {
-    "source_url": "https://votresite.com/article", // (Requis) URL canonique de la page
-    "uid": "a3f4e033-9e13-4abb-be11-2d87a2294013", // (Requis) Identifiant unique de la page
-    "title": "Titre de l'article", // (Requis) Titre de la page
-    "description": "Description de la page", // (Optionnel) Description de la page
-    "origin_image_url": "https://image.com/image.png", // (Optionnel) URL de l'image de la page
-    "published_date": "2020-12-01T12:00:00+01:00", // (Requis) Date de publication de la page au format ISO_8601
-    "publisher": "Mon site", // (Optionnel) Nom du site
-    "tag_objects": [  // (Optionnel) Étiquettes de l'article sous forme de tableau d'objets
+    "source_url": "https://yourwebsite.com/article", // (Required) Canonical URL of the page
+    "uid": "a3f4e033-9e13-4abb-be11-2d87a2294013", // (Required) Unique identifier of the page
+    "title": Title of the article", // (Required) Title of the page
+    "description": "Page description", // (Optional) Page description
+    "origin_image_url": "https://image.com/image.png", // (Optional) URL of the page image
+    "published_date": "2020-12-01T12:00:00+01:00", // ((Required) Date of publication of the page in ISO_8601 format
+    "publisher": "Your website", // (Optional) Site name
+    "tag_objects": [  // (Optional) Tags of the article as an array of objects
         { 
-          "name": "politique",  // (Requis) Nom affiché de l'étiquette
-          "uid": "politique-001" // (Optionnel) Identifiant unique de l'étiquette. Peut être omis si les noms sont déjà uniques
+          "name": "politique",  // (Required) Displayed name of the tag
+          "uid": "politique-001" // (Optional) Unique identifier of the label. Can be omitted if the names are already unique
         }, 
         { 
-          "name": "santé", 
-          "uid": "sante-003" 
+          "name": "health", 
+          "uid": "health-003" 
         },
     ]
   }
@@ -70,15 +70,15 @@ The response returned is in this form:
 
 ```json
 {
-  "success": true, // true si un débat est associé, false si aucun débat ou une erreur
+  "success": true, // true if a debate is associated, false if no debate or an error
   "debate": {    
-    "slug": "mon-debat",    // Identifiant unique du débat, présent dans l'URL
-    "name": "Faut-il introduire une dose de proportionnelle dans l'élection des députés ?",     // Titre du débat
-    "direct_url": "https://exemple.com/espace-debat/debat/mon-debat"      // Lien vers le débat
+    "slug": "my-debate",    // Unique identifier of the debate, present in the URL
+    "name": "Should proportional representation be introduced in the election of deputies?",     // Debate Title
+    "direct_url": "https://exemple.com/debate-space/debate/my-debate"      // Link to the debate
   },
-  "content": CODE_HTML, // Code HTML de la synthèse à insérer dans la page. Attribut non présent si success à false
-  "source": OBJET_SOURCE, // Objet contenant les métadonnées de la page
-  "config": OBJET_CONFIG, // Objet contenant la configuration de l'application
+  "content": CODE_HTML, // HTML code of the synthesis to insert in the page. Attribute not present if success is false
+  "source": OBJET_SOURCE, //  Object containing the metadata of the page
+  "config": OBJET_CONFIG, // Object containing the application configuration
 }
 ```
 
@@ -115,15 +115,15 @@ The route returns the set of items that have had an association change to a deba
   "success": true,
   "data": {
       {
-        "identifier": 1, // Identifiant unique de l'article que vous fournissez lors de l'insertion de la synthèse
-        "title": "Exemple d’Article – Démo", // Titre de l'article
-        "source_url": "https://demo.logora.fr/article-demo", // URL de l'article
-        "has_debate": false, // Indique si l'article est associé à un débat
-        "debate_updated_at": "2021-01-06T16:01:19.717Z" // Dernière modification de l'association à un débat (association à un débat ou suppression de l'association)
+        "identifier": 1, //  Unique identifier of the article that you provide when inserting the synthesis
+        "title": "Sample Article – Demo", // Title of the article
+        "source_url": "https://demo.logora.fr/article-demo", // URL of the article
+        "has_debate": false, //  Indicates if the article is associated with a debate
+        "debate_updated_at": "2021-01-06T16:01:19.717Z" // Last modification of the association to a debate (association to a debate or removal of the association)
       },
       {
         "identifier": 2,
-        "title": "Exemple d'article #2 - Démo",
+        "title": "Sample Article 2 – Demo",
         "source_url": "https://demo.logora.fr/article2-demo",
         "has_debate": true,
         "debate_updated_at": "2021-01-06T15:22:32.630Z"

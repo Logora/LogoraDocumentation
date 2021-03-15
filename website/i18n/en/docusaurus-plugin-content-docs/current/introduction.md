@@ -4,10 +4,10 @@ title: Quickstart
 slug: /
 ---
 
-Logora provides un espace de débat interactif pour animer et faire grandir votre communauté. Logora est intégré sur votre site en marque blanche, et peut être totalement personnalisé pour s'adapter à vos besoins et à vos interfaces. Découvrez notre [Démo](https://demo.logora.fr).
+Logora provides an interactive discussion space to animate and grow your community. Logora is integrated on your website as a white label, and can be fully customized to fit your needs and interfaces. Discover our [Demo](https://demo.logora.fr).
 
-Cette documentation va vous guider dans l'installation et dans l'utilisation de Logora.
+This documentation will guide you through the installation and use of Logora.
 
 #### Installation
 
-Utilisez notre [code universel](installation/javascript-sdk.md) ou notre [plugin Wordpress](installation/wordpress.md) pour commencer l'installation !
+Use our [universal code](en/installation/javascript-sdk.md) or our [Wordpress plugin](en/installation/wordpress.md) to start the installation !

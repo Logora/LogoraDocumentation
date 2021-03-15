@@ -10,4 +10,4 @@ This documentation will guide you through the installation and use of Logora.
 
 #### Installation
 
-Use our [universal code](en/installation/javascript-sdk.md) or our [Wordpress plugin](en/installation/wordpress.md) to start the installation !
+Use our [universal code](installation/javascript-sdk.md) or our [Wordpress plugin](installation/wordpress.md) to start the installation !

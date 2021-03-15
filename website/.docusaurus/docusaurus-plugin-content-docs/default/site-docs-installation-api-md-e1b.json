@@ -6,15 +6,15 @@
   "description": "Insérez Logora côté serveur grâce à notre API",
   "source": "@site/docs\\installation\\api.md",
   "slug": "/installation/server-side-sdk",
-  "permalink": "/docs/installation/server-side-sdk",
+  "permalink": "/en/installation/server-side-sdk",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "Installation Wordpress",
-    "permalink": "/docs/installation/wordpress"
+    "permalink": "/en/installation/wordpress"
   },
   "next": {
     "title": "Google AMP SDK",
-    "permalink": "/docs/installation/amp-sdk"
+    "permalink": "/en/installation/amp-sdk"
   }
 }

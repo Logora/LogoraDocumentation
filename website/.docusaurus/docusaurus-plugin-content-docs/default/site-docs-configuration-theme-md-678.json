@@ -3,18 +3,18 @@
   "id": "configuration/theme",
   "isDocsHomePage": false,
   "title": "Apparence et thème",
-  "description": "Bientôt disponible...",
+  "description": "Logora se fond à votre identité visuelle via l'onglet \"Paramètres\".",
   "source": "@site/docs\\configuration\\theme.md",
   "slug": "/configuration/theme",
-  "permalink": "/docs/configuration/theme",
+  "permalink": "/en/configuration/theme",
   "version": "current",
   "sidebar": "docs",
   "previous": {
-    "title": "Cookie",
-    "permalink": "/docs/authentication/cookie"
+    "title": "Signature JWT",
+    "permalink": "/en/authentication/jwt"
   },
   "next": {
     "title": "Chemins d'URL",
-    "permalink": "/docs/configuration/routes"
+    "permalink": "/en/configuration/routes"
   }
 }

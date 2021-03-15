@@ -1,19 +1,35 @@
 export default {
   "title": "Logora",
   "tagline": "La fin du commentaire, le début du débat",
-  "url": "https://master.d24s2qxlp9xzpm.amplifyapp.com",
-  "baseUrl": "/",
+  "url": "https://docs.logora.fr",
+  "baseUrl": "/en/",
   "organizationName": "Logora",
   "projectName": "LogoraDocumentation",
   "favicon": "img/favicon.ico",
   "onBrokenLinks": "log",
   "onBrokenMarkdownLinks": "log",
+  "i18n": {
+    "defaultLocale": "fr",
+    "locales": [
+      "fr",
+      "en"
+    ],
+    "localeConfigs": {
+      "en": {
+        "label": "English"
+      },
+      "fr": {
+        "label": "Français"
+      }
+    }
+  },
   "presets": [
     [
       "@docusaurus/preset-classic",
       {
         "docs": {
           "sidebarPath": "sidebars.js",
+          "routeBasePath": "/",
           "path": "docs"
         },
         "theme": {
@@ -24,21 +40,7 @@ export default {
       }
     ]
   ],
-  "plugins": [
-    [
-      "@docusaurus/plugin-client-redirects",
-      {
-        "redirects": [
-          {
-            "to": "/",
-            "from": [
-              "/dmlkmklmlkmlkocs"
-            ]
-          }
-        ]
-      }
-    ]
-  ],
+  "plugins": [],
   "themeConfig": {
     "navbar": {
       "title": "Logora",
@@ -55,6 +57,10 @@ export default {
           "href": "https://admin.logora.fr",
           "label": "Espace d'administration",
           "position": "left"
+        },
+        {
+          "type": "localeDropdown",
+          "position": "right"
         }
       ],
       "hideOnScroll": false
@@ -85,13 +91,6 @@ export default {
     "hideableSidebar": false
   },
   "baseUrlIssueBanner": true,
-  "i18n": {
-    "defaultLocale": "en",
-    "locales": [
-      "en"
-    ],
-    "localeConfigs": {}
-  },
   "onDuplicateRoutes": "warn",
   "customFields": {},
   "themes": [],

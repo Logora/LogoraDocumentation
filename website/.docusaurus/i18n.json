@@ -1,11 +1,15 @@
 {
-  "defaultLocale": "en",
+  "defaultLocale": "fr",
   "locales": [
+    "fr",
     "en"
   ],
   "localeConfigs": {
+    "fr": {
+      "label": "Français"
+    },
     "en": {
-      "label": "en"
+      "label": "English"
     }
   },
   "currentLocale": "en"

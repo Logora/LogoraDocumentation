@@ -6,15 +6,15 @@
   "description": "Avant de commencer",
   "source": "@site/docs\\installation\\wordpress.md",
   "slug": "/installation/wordpress",
-  "permalink": "/docs/installation/wordpress",
+  "permalink": "/en/installation/wordpress",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "Installation Javascript",
-    "permalink": "/docs/installation/javascript-sdk"
+    "permalink": "/en/installation/javascript-sdk"
   },
   "next": {
     "title": "API côté serveur",
-    "permalink": "/docs/installation/server-side-sdk"
+    "permalink": "/en/installation/server-side-sdk"
   }
 }

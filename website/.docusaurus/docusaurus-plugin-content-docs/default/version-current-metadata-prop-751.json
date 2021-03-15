@@ -8,7 +8,7 @@
       {
         "type": "link",
         "label": "Pour commencer",
-        "href": "/docs/"
+        "href": "/en/"
       },
       {
         "collapsed": false,
@@ -18,27 +18,27 @@
           {
             "type": "link",
             "label": "Installation Javascript",
-            "href": "/docs/installation/javascript-sdk"
+            "href": "/en/installation/javascript-sdk"
           },
           {
             "type": "link",
             "label": "Installation Wordpress",
-            "href": "/docs/installation/wordpress"
+            "href": "/en/installation/wordpress"
           },
           {
             "type": "link",
             "label": "API côté serveur",
-            "href": "/docs/installation/server-side-sdk"
+            "href": "/en/installation/server-side-sdk"
           },
           {
             "type": "link",
             "label": "Google AMP SDK",
-            "href": "/docs/installation/amp-sdk"
+            "href": "/en/installation/amp-sdk"
           },
           {
             "type": "link",
             "label": "App SDK",
-            "href": "/docs/installation/app-sdk"
+            "href": "/en/installation/app-sdk"
           }
         ]
       },
@@ -50,22 +50,22 @@
           {
             "type": "link",
             "label": "Introduction",
-            "href": "/docs/authentication/introduction"
+            "href": "/en/authentication/introduction"
           },
           {
             "type": "link",
-            "label": "OAuth 2.0",
-            "href": "/docs/authentication/oauth2"
+            "label": "Serveur OAuth 2.0",
+            "href": "/en/authentication/oauth2_server"
+          },
+          {
+            "type": "link",
+            "label": "Client OAuth 2.0",
+            "href": "/en/authentication/oauth2"
           },
           {
             "type": "link",
             "label": "Signature JWT",
-            "href": "/docs/authentication/jwt"
-          },
-          {
-            "type": "link",
-            "label": "Cookie",
-            "href": "/docs/authentication/cookie"
+            "href": "/en/authentication/jwt"
           }
         ]
       },
@@ -77,22 +77,22 @@
           {
             "type": "link",
             "label": "Apparence et thème",
-            "href": "/docs/configuration/theme"
+            "href": "/en/configuration/theme"
           },
           {
             "type": "link",
             "label": "Chemins d'URL",
-            "href": "/docs/configuration/routes"
+            "href": "/en/configuration/routes"
           },
           {
             "type": "link",
             "label": "Modération",
-            "href": "/docs/configuration/moderation"
+            "href": "/en/configuration/moderation"
           },
           {
             "type": "link",
             "label": "Insertions publicitaires",
-            "href": "/docs/configuration/ads"
+            "href": "/en/configuration/ads"
           }
         ]
       },
@@ -104,27 +104,33 @@
           {
             "type": "link",
             "label": "Performance",
-            "href": "/docs/faq/performance"
+            "href": "/en/faq/performance"
+          },
+          {
+            "type": "link",
+            "label": "RGPD",
+            "href": "/en/faq/rgpd"
           }
         ]
       }
     ]
   },
   "permalinkToSidebar": {
-    "/docs/authentication/cookie": "docs",
-    "/docs/authentication/introduction": "docs",
-    "/docs/authentication/jwt": "docs",
-    "/docs/authentication/oauth2": "docs",
-    "/docs/configuration/ads": "docs",
-    "/docs/configuration/moderation": "docs",
-    "/docs/configuration/routes": "docs",
-    "/docs/configuration/theme": "docs",
-    "/docs/faq/performance": "docs",
-    "/docs/installation/amp-sdk": "docs",
-    "/docs/installation/app-sdk": "docs",
-    "/docs/installation/javascript-sdk": "docs",
-    "/docs/installation/server-side-sdk": "docs",
-    "/docs/installation/wordpress": "docs",
-    "/docs/": "docs"
+    "/en/authentication/introduction": "docs",
+    "/en/authentication/jwt": "docs",
+    "/en/authentication/oauth2": "docs",
+    "/en/authentication/oauth2_server": "docs",
+    "/en/configuration/ads": "docs",
+    "/en/configuration/moderation": "docs",
+    "/en/configuration/routes": "docs",
+    "/en/configuration/theme": "docs",
+    "/en/faq/performance": "docs",
+    "/en/faq/rgpd": "docs",
+    "/en/installation/amp-sdk": "docs",
+    "/en/installation/app-sdk": "docs",
+    "/en/installation/javascript-sdk": "docs",
+    "/en/installation/server-side-sdk": "docs",
+    "/en/installation/wordpress": "docs",
+    "/en/": "docs"
   }
 }

@@ -1,88 +1,93 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/en/",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/en/",
           "mainDocId": "introduction",
           "docs": [
             {
-              "id": "authentication/cookie",
-              "path": "/docs/authentication/cookie",
-              "sidebar": "docs"
-            },
-            {
               "id": "authentication/introduction",
-              "path": "/docs/authentication/introduction",
+              "path": "/en/authentication/introduction",
               "sidebar": "docs"
             },
             {
               "id": "authentication/jwt",
-              "path": "/docs/authentication/jwt",
+              "path": "/en/authentication/jwt",
               "sidebar": "docs"
             },
             {
               "id": "authentication/oauth2",
-              "path": "/docs/authentication/oauth2",
+              "path": "/en/authentication/oauth2",
+              "sidebar": "docs"
+            },
+            {
+              "id": "authentication/oauth2_server",
+              "path": "/en/authentication/oauth2_server",
               "sidebar": "docs"
             },
             {
               "id": "configuration/ads",
-              "path": "/docs/configuration/ads",
+              "path": "/en/configuration/ads",
               "sidebar": "docs"
             },
             {
               "id": "configuration/moderation",
-              "path": "/docs/configuration/moderation",
+              "path": "/en/configuration/moderation",
               "sidebar": "docs"
             },
             {
               "id": "configuration/routes",
-              "path": "/docs/configuration/routes",
+              "path": "/en/configuration/routes",
               "sidebar": "docs"
             },
             {
               "id": "configuration/theme",
-              "path": "/docs/configuration/theme",
+              "path": "/en/configuration/theme",
               "sidebar": "docs"
             },
             {
               "id": "faq/performance",
-              "path": "/docs/faq/performance",
+              "path": "/en/faq/performance",
+              "sidebar": "docs"
+            },
+            {
+              "id": "faq/rgpd",
+              "path": "/en/faq/rgpd",
               "sidebar": "docs"
             },
             {
               "id": "installation/amp-sdk",
-              "path": "/docs/installation/amp-sdk",
+              "path": "/en/installation/amp-sdk",
               "sidebar": "docs"
             },
             {
               "id": "installation/app-sdk",
-              "path": "/docs/installation/app-sdk",
+              "path": "/en/installation/app-sdk",
               "sidebar": "docs"
             },
             {
               "id": "installation/javascript-sdk",
-              "path": "/docs/installation/javascript-sdk",
+              "path": "/en/installation/javascript-sdk",
               "sidebar": "docs"
             },
             {
               "id": "installation/server-side-sdk",
-              "path": "/docs/installation/server-side-sdk",
+              "path": "/en/installation/server-side-sdk",
               "sidebar": "docs"
             },
             {
               "id": "installation/wordpress",
-              "path": "/docs/installation/wordpress",
+              "path": "/en/installation/wordpress",
               "sidebar": "docs"
             },
             {
               "id": "introduction",
-              "path": "/docs/",
+              "path": "/en/",
               "sidebar": "docs"
             }
           ]

@@ -6,15 +6,15 @@
   "description": "Installez Logora grâce à notre code universel Javascript.",
   "source": "@site/docs\\installation\\javascript-sdk.md",
   "slug": "/installation/javascript-sdk",
-  "permalink": "/docs/installation/javascript-sdk",
+  "permalink": "/en/installation/javascript-sdk",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "Pour commencer",
-    "permalink": "/docs/"
+    "permalink": "/en/"
   },
   "next": {
     "title": "Installation Wordpress",
-    "permalink": "/docs/installation/wordpress"
+    "permalink": "/en/installation/wordpress"
   }
 }

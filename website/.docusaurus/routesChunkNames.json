@@ -1,70 +1,92 @@
 {
-  "/en/-d95": {
-    "component": "1be78505",
-    "versionMetadata": "f976f453"
+  "/en/__docusaurus/debug-53a": {
+    "component": "component---theme-debug-config-23-a-2ff"
   },
-  "/en/-79f": {
-    "component": "17896441",
-    "content": "1a366355"
+  "/en/__docusaurus/debug/config-271": {
+    "component": "component---theme-debug-config-23-a-2ff"
   },
-  "/en/authentication/introduction-eb0": {
-    "component": "17896441",
-    "content": "e6085fe1"
+  "/en/__docusaurus/debug/content-77e": {
+    "component": "component---theme-debug-contentba-8-ce7",
+    "allContent": "allContent---en-docusaurus-debug-content-4-c-9-b94"
   },
-  "/en/authentication/jwt-e58": {
-    "component": "17896441",
-    "content": "c470ada4"
+  "/en/__docusaurus/debug/globalData-63e": {
+    "component": "component---theme-debug-global-dataede-0fa"
   },
-  "/en/authentication/oauth2-f1b": {
-    "component": "17896441",
-    "content": "782a5a6c"
+  "/en/__docusaurus/debug/metadata-0e8": {
+    "component": "component---theme-debug-site-metadata-68-e-3d4"
   },
-  "/en/authentication/oauth2_server-6ce": {
-    "component": "17896441",
-    "content": "27db0bd5"
+  "/en/__docusaurus/debug/registry-d80": {
+    "component": "component---theme-debug-registry-679-501"
   },
-  "/en/configuration/ads-429": {
-    "component": "17896441",
-    "content": "2b448110"
+  "/en/__docusaurus/debug/routes-127": {
+    "component": "component---theme-debug-routes-946-699"
   },
-  "/en/configuration/moderation-e9f": {
-    "component": "17896441",
-    "content": "4a2f57a1"
+  "/en/-6cc": {
+    "component": "component---theme-doc-page-1-be-9be",
+    "versionMetadata": "versionMetadata---en-f-97-3f9"
   },
-  "/en/configuration/routes-b18": {
-    "component": "17896441",
-    "content": "73ceee77"
+  "/en/-cb1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-56-e-837"
   },
-  "/en/configuration/theme-747": {
-    "component": "17896441",
-    "content": "6787b9c2"
+  "/en/authentication/introduction-dde": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-authentication-introductiond-4-a-766"
   },
-  "/en/faq/performance-a16": {
-    "component": "17896441",
-    "content": "925a5ba8"
+  "/en/authentication/jwt-440": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-authentication-jwt-1-dc-57e"
   },
-  "/en/faq/rgpd-0e8": {
-    "component": "17896441",
-    "content": "714f5397"
+  "/en/authentication/oauth2-39b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-authentication-oauth-20-a-2-8eb"
   },
-  "/en/installation/amp-sdk-37b": {
-    "component": "17896441",
-    "content": "4f0b3041"
+  "/en/authentication/oauth2_server-153": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-authentication-oauth-2-server-346-6d7"
   },
-  "/en/installation/app-sdk-c1d": {
-    "component": "17896441",
-    "content": "3e8bfd70"
+  "/en/configuration/ads-1f5": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-configuration-adsd-12-f43"
   },
-  "/en/installation/javascript-sdk-7e5": {
-    "component": "17896441",
-    "content": "e24041f3"
+  "/en/configuration/moderation-4d2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-configuration-moderation-229-2e4"
   },
-  "/en/installation/server-side-sdk-683": {
-    "component": "17896441",
-    "content": "e1b82459"
+  "/en/configuration/routes-364": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-configuration-routes-1-ce-49b"
   },
-  "/en/installation/wordpress-31e": {
-    "component": "17896441",
-    "content": "def97598"
+  "/en/configuration/theme-437": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-configuration-themef-5-f-e0a"
+  },
+  "/en/faq/performance-e0b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-faq-performance-0-a-3-183"
+  },
+  "/en/faq/rgpd-17e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-faq-rgpdcdc-0f7"
+  },
+  "/en/installation/amp-sdk-ef9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-installation-amp-sdkecd-33b"
+  },
+  "/en/installation/app-sdk-180": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-installation-app-sdkc-62-dc8"
+  },
+  "/en/installation/javascript-sdk-31c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-installation-javascript-sdk-8-ec-96e"
+  },
+  "/en/installation/server-side-sdk-a89": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-installation-server-side-sdk-7-c-4-049"
+  },
+  "/en/installation/wordpress-ef3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---en-installation-wordpress-2-d-2-675"
   }
 }

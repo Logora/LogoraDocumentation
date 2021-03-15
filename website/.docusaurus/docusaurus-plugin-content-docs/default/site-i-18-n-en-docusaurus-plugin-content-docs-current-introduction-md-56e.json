@@ -1,0 +1,16 @@
+{
+  "unversionedId": "introduction",
+  "id": "introduction",
+  "isDocsHomePage": false,
+  "title": "Quickstart",
+  "description": "Logora provides un espace de débat interactif pour animer et faire grandir votre communauté. Logora est intégré sur votre site en marque blanche, et peut être totalement personnalisé pour s'adapter à vos besoins et à vos interfaces. Découvrez notre Démo.",
+  "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\introduction.md",
+  "slug": "/",
+  "permalink": "/en/",
+  "version": "current",
+  "sidebar": "docs",
+  "next": {
+    "title": "Installation Javascript",
+    "permalink": "/en/installation/javascript-sdk"
+  }
+}

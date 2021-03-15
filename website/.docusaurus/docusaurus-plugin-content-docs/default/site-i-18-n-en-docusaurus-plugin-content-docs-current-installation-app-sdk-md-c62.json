@@ -1,0 +1,20 @@
+{
+  "unversionedId": "installation/app-sdk",
+  "id": "installation/app-sdk",
+  "isDocsHomePage": false,
+  "title": "App SDK",
+  "description": "Bientôt disponible...",
+  "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\installation\\app-sdk.md",
+  "slug": "/installation/app-sdk",
+  "permalink": "/en/installation/app-sdk",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Google AMP SDK",
+    "permalink": "/en/installation/amp-sdk"
+  },
+  "next": {
+    "title": "Introduction",
+    "permalink": "/en/authentication/introduction"
+  }
+}

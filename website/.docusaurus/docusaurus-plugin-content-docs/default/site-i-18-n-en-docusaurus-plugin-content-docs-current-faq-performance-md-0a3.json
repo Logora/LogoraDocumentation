@@ -1,0 +1,20 @@
+{
+  "unversionedId": "faq/performance",
+  "id": "faq/performance",
+  "isDocsHomePage": false,
+  "title": "Performance",
+  "description": "Logora met tout en oeuvre pour que le code inséré aie le moins d'impact sur le chargement de vos pages. Voici quelques détails sur le fonctionnement de Logora pour mieux évaluer la performance des scripts insérés.",
+  "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\faq\\performance.md",
+  "slug": "/faq/performance",
+  "permalink": "/en/faq/performance",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Insertions publicitaires",
+    "permalink": "/en/configuration/ads"
+  },
+  "next": {
+    "title": "RGPD",
+    "permalink": "/en/faq/rgpd"
+  }
+}

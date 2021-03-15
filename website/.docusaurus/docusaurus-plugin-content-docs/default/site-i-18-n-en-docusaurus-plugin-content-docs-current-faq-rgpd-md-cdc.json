@@ -1,0 +1,16 @@
+{
+  "unversionedId": "faq/rgpd",
+  "id": "faq/rgpd",
+  "isDocsHomePage": false,
+  "title": "RGPD",
+  "description": "Protection des données personnelles",
+  "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\faq\\rgpd.md",
+  "slug": "/faq/rgpd",
+  "permalink": "/en/faq/rgpd",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Performance",
+    "permalink": "/en/faq/performance"
+  }
+}

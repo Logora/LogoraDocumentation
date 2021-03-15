@@ -1,0 +1,20 @@
+{
+  "unversionedId": "configuration/ads",
+  "id": "configuration/ads",
+  "isDocsHomePage": false,
+  "title": "Insertions publicitaires",
+  "description": "Les pages du plugin Logora sont fournies en marque blanche et hébergées sur votre site.",
+  "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\configuration\\ads.md",
+  "slug": "/configuration/ads",
+  "permalink": "/en/configuration/ads",
+  "version": "current",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Modération",
+    "permalink": "/en/configuration/moderation"
+  },
+  "next": {
+    "title": "Performance",
+    "permalink": "/en/faq/performance"
+  }
+}

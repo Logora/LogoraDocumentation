@@ -4,32 +4,33 @@ title: Google AMP SDK
 description: Insérez Logora sur vos pages Google AMP
 ---
 
-L'intégration Google AMP SDK permet d'afficher la synthèse de débat dans vos pages AMP.
+The Google AMP SDK integration allows you to display the debate summary in your AMP pages.
 
-Pour cela, utilisez le composant [*amp-iframe*](https://amp.dev/documentation/components/amp-iframe) en utilisant le format de lien défini ci-dessous.
+To do this, use the [*amp-iframe*](https://amp.dev/documentation/components/amp-iframe)component using the link format defined below.
 
 
-#### Schéma d'URL
+#### URL scheme
 
-URL de base : 
+Base URL: 
 `https://api.logora.fr/synthese-amp.html`
 
-Paramètres dynamiques à spécifier dans l'URL :
-- `shortname` : nom de l'application
-- `id` : identifiant de la page
+Dynamic parameters to specify in the URL:
+- `shortname` : name of the application
+- `id` : page identifier
 
-Exemple d'URL :
+Example of URL :
 `https://api.logora.fr/synthese-amp.html?shortname=logora-demo&id=1881`
 
 
 #### Insertion
 
-Ajoutez le script suivant dans le conteneur `<head>` en plus de tous les pré-requis de l'intégration AMP :
+Add the following script in the `<head>` container in addition to all the AMP integration prerequisites:
+
 ```html
 <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 ```
 
-Intégrez l'amp-iframe dans votre page afin de charger la synthèse en format AMP (la balise `<div placeholder>` est requise pour que l'iframe soit chargée):
+Embed the amp-iframe in your page to load the summary in AMP format (the `<div placeholder>` tag is required for the iframe to load):
 
 ```html
 <amp-iframe

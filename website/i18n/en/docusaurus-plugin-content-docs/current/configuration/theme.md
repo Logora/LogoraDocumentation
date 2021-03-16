@@ -1,12 +1,12 @@
 ---
 id: theme
 title: Appearance and theme
-description:Logora matches your visual identity via the "Settings" tab.
+description: Logora matches your visual identity via the Settings tab.
 ---
 
 Logora matches your visual identity from the administration space via the "Settings" tab.
 
-Vidéo tutorial : (https://www.youtube.com/watch?v=hQIJW66UP9M&feature=emb_title&ab_channel=Logora)
+Tutorial video : (https://www.youtube.com/watch?v=hQIJW66UP9M&feature=emb_title&ab_channel=Logora)
 
 ### Customize the colors, texts and font
 

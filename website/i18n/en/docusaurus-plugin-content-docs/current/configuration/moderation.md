@@ -1,6 +1,6 @@
 ---
 id: moderation
-title: Modération
+title: Moderation
 description: Logora takes care of the moderation of your debate space. Customize the type of moderation from your administration space.
 ---
 

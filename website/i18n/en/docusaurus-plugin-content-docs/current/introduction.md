@@ -4,9 +4,9 @@ title: Quickstart
 slug: /
 ---
 
-Logora provides an interactive discussion space to animate and grow your community. Logora is integrated on your website as a white label, and can be fully customized to fit your needs and interfaces. Discover our [Demo](https://demo.logora.fr).
+Logora provides an interactive debate space to animate and grow your community. Logora is integrated on your website as a white label, and can be fully customized to fit your needs and interfaces. Discover our [Demo](https://demo.logora.fr).
 
-This documentation will guide you through the installation and use of Logora.
+This documentation will guide you through the installation and usage of Logora.
 
 #### Installation
 

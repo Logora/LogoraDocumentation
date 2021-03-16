@@ -18,8 +18,6 @@ The installation in JavaScript is done in two steps:
 
 For example, if the code is inserted on the page at the URL https://example.com/article/example-article, add the domain https://example.com (warning: do not put a slash at the end). Example: http://localhost:3000 , http://sous-domaine.exemple.com. Important: adding domains on the administration space works like adding a tag, don't forget to press "enter" when inserting your URLs.
 
-Par exemple, si le code inséré sur la page à l'URL https://exemple.com/article/exemple-article, ajoutez le domaine https://exemple.com (attention: ne pas mettre de barre oblique à la fin). Exemple : http://localhost:3000 , http://sous-domaine.exemple.com.  Important : l'ajout des domaines sur l'espace d'administration fonctionne comme un ajout de tag, n'oubliez pas d'appuyer sur "entrer" lors de l'insertion de vos URL.
-
 ### 1. Install the debate space
 
 The debate space is the main platform where your users will be able to participate in debates. The debate space is inserted on a dedicated page on your site. 

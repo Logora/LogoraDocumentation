@@ -3,22 +3,20 @@ id: performance
 title: Performance
 ---
 
-Logora met tout en oeuvre pour que le code inséré aie le moins d'impact sur le chargement de vos pages. Voici quelques détails sur le fonctionnement de Logora pour mieux évaluer la performance des scripts insérés.
+Logora makes every effort to ensure that the inserted code has the least impact on the loading of your pages. Here are some details on how Logora works to better evaluate the performance of inserted scripts.
 
+#### Synthesis at the foot of the article
 
-#### Synthèse en pied d'article
+The synthesis code inserted in your articles proceeds in four steps:
+1. Download the script **synthese.js**. This file, served from AWS Cloudfront, has a size of **8 Ko**. It allows you to launch Logora's functionalities and manages the calls to our API.
+2. Call to the Logora API to check if a debate matches the page in question. This call returns the HTML code of the summary if there is an associated debate. The response has a size of **9 Ko**, and the median response time is **10ms**. Our servers are located in Paris.
+3. Inserting the code in the page. The code is pre-rendered by the server, so it can be inserted directly without additional processing.
+4. (Optional) For the first call of the page only, the script sends the metadata of the page (title, tags, description) to our servers to associate more easily debates to the articles.
 
+> If you have high performance constraints, use the [insert synthesis server side](installation/api.md)
 
-Le code de la synthèse inséré dans vos articles procède en quatre étapes :
-1. Téléchargement du script **synthese.js**. Ce fichier, servi depuis AWS Cloudfront, a une taille de **8 Ko**. Il permet de lancer les fonctionnalités de Logora et gère les appels vers notre API.
-2. Appel vers l'API Logora pour vérifier si un débat correspond à la page en question. Cet appel renvoie le code HTML de la synthèse s'il y a un débat associé. La réponse a une taille de **9 Ko**, et le temps de réponse médian est de **10ms**. Nos serveurs sont situés à Paris.
-3. Insertion du code dans la page. Le code est pré-rendu par le serveur, il peut donc être inséré directement sans traitement supplémentaire.
-4. (Optionnel) Pour le premier appel de la page seulement, le script envoie les métadonnées de la page (titre, étiquettes, description) à nos serveurs pour associer ensuite plus facilement des débats aux articles.
+#### Debate space
 
-> Si vous avez des contraintes élevées en terme de performance, utilisez l'[insertion côté serveur de la synthèse](installation/api.md)
+The debate space code proceeds in the same way as the synthesis code, but downloads more scripts and makes more calls to our API based on the user's actions and navigation. The initial **debat.js** file has a size of **60 KB**.
 
-#### Espace de débat
-
-Le code de l'espace de débat procède de la même manière que celui de la synthèse, mais télécharge plus de scripts et fait plus d'appels à notre API en fonction des actions et de la navigation de l'utilisateur. Le fichier initial **debat.js** a une taille de **60 Ko**.
-
-Notre API a un temps de réponse médian de **15ms** (95è centile 50ms) et compte plusieurs millions de requêtes par jour.
+Our API has a median response time of **15ms** (95th percentile 50ms) and handle several million requests per day.

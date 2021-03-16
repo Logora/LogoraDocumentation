@@ -7,7 +7,7 @@ description: Install Logora with our universal Javascript code.
 Logora can be installed on any site by inserting the native JavaScript code. This documentation is intended for developers. Logora also offers a custom documentation for the [Wordpress installation](installation/wordpress).
 
 The installation in JavaScript is done in two steps:
-1. Insert the discussion space 
+1. Insert the debate space
 2. Insert the debate summary on your pages
 	 
 ### Before starting 

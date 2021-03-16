@@ -1,26 +1,25 @@
 ---
 id: moderation
 title: Modération
-description: Logora s'occupe de la modération de votre espace de débat. Personnalisez le type de modération dans votre espace d'administration
+description: Logora takes care of the moderation of your debate space. Customize the type of moderation from your administration space.
 ---
 
-Choisissez le mode de modération qui vous convient depuis l'espace d'administration *Configuration > Modération*.
+Choose the moderation mode that suits you from the administration space *Configuration > Moderation*.
 
 ![Configuration de la modération](/img/moderation.png)
 
-#### Type de modération
+#### Type of moderation
 
+`Before publication of the content` : contributions will go through moderation before their publication (moderation *a priori*)  
+`After publication of the content`: contributions will be published and then go through moderation (moderation *a posteriori*)
 
-`Avant publication du contenu` : les contributions passeront par la modération avant leur publication (modération *a priori*)  
-`Après publication du contenu` : les contributions seront publiées puis passeront par la modération (modération *a posteriori*)
+#### Moderation method
 
-#### Méthode de modération  
+`Manual`: you manage the moderation via the administration area  
+`Intelligent`: Logora takes care of the moderation. Logora's moderation algorithms have already processed more than 100,000 contributions, with a detection rate of 97% of hateful messages. When a contribution is not certified as 100% compliant by our tools, our moderation team takes over to check the content.
 
-`Manuelle` : vous gérez vous-mêmes la modération via l'espace d'administration  
-`Intelligente` : Logora s'occupe de la modération. Les algorithmes de modération de Logora ont déjà traité plus de 100 000 contributions, avec un taux de détection de messages haineux à hauteur de 97%. Lorsqu'une contribution n'est pas certifiée conforme à 100% par nos outils, notre équipe de modération prend la main pour vérifier le contenu.
-
-`Externe` : Logora s'intègre à des services externes de modération :
+`Third party`: Logora integrates with external moderation services:
 - Netino
 - Bodyguard
     
-Si vous souhaitez utiliser une de ces deux intégrations, contactez notre équipe via `contact@logora.fr`. 
+If you wish to use one of these two integrations or another one not listed here, contact our team via `contact@logora.fr`. 

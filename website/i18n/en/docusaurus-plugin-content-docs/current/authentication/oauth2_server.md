@@ -1,23 +1,24 @@
 ---
 id: oauth2_server
-title: Serveur OAuth 2.0
+title: OAuth 2.0 server
 ---
 
-Le protocole OAuth 2.0 permet la récupération sécurisée des ressources tout en protégeant les données de vos utilisateurs. Logora propose un service authentification conforme OAuth 2.0, qui permet de connecter automatiquement vos utilisateurs à l'application Logora une fois qu'ils sont connectés à votre système d'authentification.
+The OAuth 2.0 protocol allows secure resource recovery while protecting your users' data. Logora offers an OAuth 2.0 compliant authentication service, which allows to automatically connect your users to the Logora application once they are connected to your authentication system.
 
-Ce mode d'authentification permet à Logora de se connecter à votre serveur OAuth 2.0. Après récupération d'un jeton d'accès pour l'utilisateur, nous récupérons son profil via un point d'accès de votre API.
+This authentication mode allows Logora to connect to your OAuth 2.0 server. After retrieving an access token for the user, we retrieve their profile via an access point in your API.
 
-### Mise en place
+### Set up
 
-Pour mettre en place ce mode d'authentification, vous devez créer une application cliente pour Logora sur votre serveur OAuth 2.0 et nous transmettre les informations suivantes :
-- `client_id` : la clé publique de l'application créée
-- `client_secret` : la clé secrète de l'application créée
-- `auth_dialog_endpoint`: l'URL de la page d'authentification
-- `scope` : la portée des jetons d'accès
-- `token_endpoint` : l'URL de la route de récupération de jeton d'accès
-- `token_endpoint_method` : la méthode de la route de récupération de jeton d'accès ("GET" ou "POST")
-- `user_profile_method`: l'URL de la route de récupération du profil utilisateur (méthode "GET")
-- `user_profile_params`: paramètres d'URL à envoyer avec cette route, sous forme de dictionnaire
-- `user_profile_mapping` : liaison entre les attributs renvoyés par la route et ceux demandés par Logora
+To set up this authentication mode, you need to create a client application for Logora on your OAuth 2.0 server and send us the following information:
 
-Transmettez ces paramètres à Logora par email en indiquant votre nom d'application. Nous configurerons ce mode d'authentification pour vous.
+- `client_id` : the public key of the created application
+- `client_secret` : the secret key of the created application
+- `auth_dialog_endpoint`: the URL of the authentication page
+- `scope` : the scope of the access tokens
+- `token_endpoint` : the URL of the access token recovery route
+- `token_endpoint_method` : the method of the token retrieval route ("GET" or "POST")
+- `user_profile_method`: the URL of the user profile retrieval route ("GET" method)
+- `user_profile_params`: URL parameters to send with this route, in dictionary form
+- `user_profile_mapping` : link between the attributes returned by the route and those requested by Logora
+
+Send these parameters to Logora by email (contact@logora.fr), indicating your application name. We will configure this authentication mode for you.

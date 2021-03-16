@@ -3,7 +3,7 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "La fin du commentaire, le début du débat",
+    "tagline": "Debate augmented",
     "docs": {
       "doc2": {
         "title": "document number 2"
@@ -24,12 +24,12 @@
     },
     "links": {
       "Documentation": "Documentation",
-      "Espace d'administration": "Espace d'administration"
+      "Espace d'administration": "Administration Panel"
     },
     "categories": {
       "Introduction": "Introduction",
       "Installation": "Installation",
-      "Authentification unique": "Authentification unique"
+      "Authentification unique": "Single Sign On"
     }
   },
   "pages-strings": {

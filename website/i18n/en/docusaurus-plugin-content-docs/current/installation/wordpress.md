@@ -1,20 +1,20 @@
 ---
 id: wordpress
-title: Installation Wordpress
+title: Wordpress installation
 ---
 
-### Avant de commencer 
+### Before you start 
 
-- Enregistrez votre site sur Logora en vous inscrivant : [Inscription](https://logora.fr/signup)
-- Munissez-vous de votre nom d'application disponible sur votre [espace d'administration](https://admin.logora.fr) dans l'onglet *Configuration > Général*.
-- Autorisez les domaines sur lesquels vous désirez installer Logora. Pour cela, rendez-vous sur votre espace d'administration dans l'onglet *Configuration > Général > Sécurité > Domaines autorisés*. Par exemple, si le code inséré sur la page à l'URL https://exemple.com/article/exemple-article, ajoutez le domaine https://exemple.com (attention: ne pas mettre de barre oblique à la fin). Exemple : http://localhost:3000 , http://sous-domaine.exemple.com.  Important : l'ajout des domaines sur l'espace d'administration fonctionne comme un ajout de tag, n'oubliez pas d'appuyer sur "entrer" lors de l'insertion de vos URL.
+- Register your site on Logora by signing up: [Register](https://logora.fr/en/signup)
+- Get your shortname available on your [administration space](https://admin.logora.fr) in the tab *Configuration > General*.
+- Authorize the domains on which you want to install Logora. To do this, go to your administration space in the tab *Configuration > General > Security > Authorized domains*. For example, if the code inserted on the page at the URL https://example.com/article/example-article, add the domain https://example.com (warning: do not put a slash at the end). Example: http://localhost:3000 , http://sous-domaine.exemple.com.  Important: adding domains on the administration space works like adding a tag, do not forget to press "enter" when inserting your URLs.
 
 ### Installation
 
-- Logora est disponible sur le catalogue Wordpress (https://wordpress.org/plugins/logora/). Sur votre interface Wordpress, téléchargez le plugin via Extensions en recherchant "Logora". Activez l'extension après son téléchargement.
-- Ajoutez votre nom d'application et votre clé secrète dans l'onglet de réglages Logora.
+- Logora is available on the Wordpress catalog (https://wordpress.org/plugins/logora/). On your Wordpress interface, download the plugin via Extensions by searching for "Logora". Activate the extension after downloading it.
+- Add your application name and your secret key in the Logora settings tab.
 
-### Utilisation
+### Use
 
-- Accédez à votre espace de débat sur le chemin `/espace-debat`. 
-- La synthèse de débat est disponible via le shortcode `[logora-synthese]`. Insérez ce shortcode dans votre template d'article pour qu'il soit présent sur toutes les pages. 
+- Access your debate space on the path `/debate-space`. 
+- The debate synthesis is available via the shortcode `[logora-synthese]`. Insert this shortcode into your article template so that it is present on all pages. 

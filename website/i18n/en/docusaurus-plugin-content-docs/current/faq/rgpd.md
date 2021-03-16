@@ -127,4 +127,4 @@ The Processor shall make available to the Controller the documentation necessary
 
 3. ensure, in advance and throughout the processing, that the processor complies with the obligations laid down in the European Data Protection Regulation 
 
-4. supervise the processing, including carrying out audits and inspections of the processor. 
+4. supervise the processing, including carrying out audits and inspections of the processor.  

@@ -1,130 +1,130 @@
 ---
 id: rgpd
 title: RGPD
-description: Protection des données personnelles 
+description: Data Protection Regulation (RGPD)
 ---
 
-### Protection des données personnelles 
+### Protection of personal data
 
-### I. Objet 
+### I. Purpose 
 
-Les présentes clauses ont pour objet de définir les conditions dans lesquelles le sous-traitant (Logora) s'engage à effectuer pour le compte du responsable de traitement les opérations de traitement de données à caractère personnel définies ci-après. 
+The purpose of these clauses is to define the conditions under which the processor (Logora) undertakes to carry out the personal data processing operations defined below on behalf of the controller. 
 
-Il est précisé que constitue une Donnée à caractère personnel toute information identifiant directement ou indirectement une personne physique. 
+It is specified that personal data is any information directly or indirectly identifying a natural person. 
 
-Dans le cadre de leurs relations contractuelles, les parties s'engagent à respecter la réglementation en vigueur applicable au traitement de données à caractère personnel et, en particulier, le règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 applicable depuis le 25 mai 2018 (ci-après, « le règlement européen sur la protection des données ») ainsi que la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés (modifiée). 
+In the context of their contractual relationship, the parties undertake to comply with the regulations in force applicable to the processing of personal data and, in particular, Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 applicable since 25 May 2018 (hereinafter, "the European Data Protection Regulation") as well as Law No. 78-17 of 6 January 1978 relating to information technology, files and freedoms (as amended). 
 
-### II. Description du traitement faisant l'objet de la sous-traitance 
+### II. Description of the processing subject to subcontracting
 
-Le sous-traitant est autorisé à traiter pour le compte du responsable de traitement les données à caractère personnel nécessaires pour fournir le service suivant : 
+The subcontractor is authorized to process on behalf of the controller the personal data necessary to provide the following service: 
 
-Mise à disposition d'un espace contributif, via un widget intégré dans le site et son application, permettant aux internautes ayant un compte, de donner un avis et de répondre à des questions sous forme de débat et de commenter leurs réponses. 
+Provision of a contributory space, via a widget integrated into the site and its application, allowing Internet users with an account, to give an opinion and answer questions in the form of a debate and comment on their answers. 
 
-##### La nature des opérations réalisées sur les données est :
+##### The nature of the operations performed on the data is :
 
-Réception des données ;
+Receipt of data;
 
-Création du profil de la personne concernée via une déduplication du compte dans le système du sous-traitant;
+Creation of the data subject's profile via deduplication of the account in the subcontractor's system;
 
-Utilisation des données ;
+Use of the data ;
 
-Stockage des données ; 
+Storage of the data; 
 
-Destruction des données. 
+Destruction of the data. 
 
-##### Les finalités du traitement sont :
+##### The purposes of the processing are :
 
-La prise en compte de la participation à un débat; 
+The taking into account of the participation in a debate; 
 
-La prise en compte du dépôt des commentaires, des contributions ;
+The taking into account of the deposit of the comments, the contributions;
 
-La gestion de l'espace de débats; 
+The management of the space of debates; 
 
-La modération à priori; 
+The moderation a priori; 
 
-L'envoi de notifications par email lors d'une réponse à la contribution ; 
+The sending of notifications by email when a response to the contribution; 
 
-L'amélioration des services via un test avec des utilisateurs acceptant d'évaluer l'outil ; 
+The improvement of the services via a test with users accepting to evaluate the tool; 
 
-La suggestion des débats; 
+The suggestion of debates; 
 
-La proposition d'un débat à un utilisateur lié à son profil. 
+Suggesting a debate to a user linked to his/her profile. 
 
-##### Les données à caractère personnel traitées sont :
+##### The personal data processed are :
 
-Les données d'identification (Nom, prénom, pseudo, email, notes et commentaires); 
+Identification data (Name, first name, nickname, email, notes and comments); 
 
-Les catégories de personnes concernées sont les internautes, salariés, lecteurs ayant un compte. 
+The categories of persons concerned are Internet users, employees, readers with an account. 
 
-Pour l'exécution du service objet du présent contrat, le responsable de traitement met à la disposition du sous-traitant les informations nécessaires suivantes : l'ensemble des données personnelles traitées. 
+For the performance of the service covered by this contract, the data controller shall provide the subcontractor with the following necessary information: all personal data processed. 
 
-### III. Obligations du sous-traitant vis-à-vis du responsable de traitement 
+### III. Obligations of the processor towards the data controller 
 
-##### Le sous-traitant s'engage à :
+##### The subcontractor undertakes to:
 
-1. traiter les données uniquement pour la ou les seule(s) finalité(s) qui fait/font l'objet de la sous-traitance. 
+1. process the data only for the sole purpose(s) for which it is outsourced 
 
-2. utiliser les données personnelles uniquement dans le cadre des présentes ou sur instruction précise du responsable de traitement
+2. use the personal data only in the context of these terms and conditions or as specifically instructed by the controller
 
-3. traiter les données conformément aux instructions documentées du responsable de traitement figurant en annexe. Si le sous-traitant considère qu'une instruction constitue une violation du règlement européen sur la protection des données ou de toute autre disposition du droit de l'Union ou du droit des Etats membres relative à la protection des données, il en informe immédiatement le responsable de traitement. En outre, si le sous-traitant est tenu de procéder à un transfert de données vers un pays tiers ou à une organisation internationale, en vertu du droit de l'Union ou du droit de l'Etat membre auquel il est soumis, il doit informer le responsable du traitement de cette obligation juridique avant le traitement, sauf si le droit concerné interdit une telle information pour des motifs importants d'intérêt public. 
+3. process the data in accordance with the documented instructions of the data controller set out in the Annex. If the Processor considers that an instruction constitutes a breach of the EU Data Protection Regulation or any other provision of Union or Member State law relating to data protection, it shall immediately inform the Controller. In addition, if the processor is required to transfer data to a third country or to an international organization under Union law or the law of the Member State to which it is subject, it must inform the controller of this legal obligation prior to the processing, unless the law concerned prohibits such information on important grounds of public interest. 
 
-4. garantir la confidentialité des données à caractère personnel traitées dans le cadre du présent contrat. 
+4. guarantee the confidentiality of personal data processed under this contract. 
 
-5. veiller à ce que les personnes autorisées à traiter les données à caractère personnel en vertu du présent contrat : 
+5. ensure that persons authorized to process personal data under this contract: 
 
-- S'engagent à respecter la confidentialité ou soient soumises à une obligation légale appropriée de confidentialité, 
-- reçoivent la formation nécessaire en matière de protection des données à caractère personnel, 
-- prennent en compte, s'agissant de ses outils, produits, applications ou services, les principes de protection des données dès la conception et de protection des données par défaut. 
+- Are committed to confidentiality or are subject to an appropriate legal obligation of confidentiality, 
+- receive the necessary training in the protection of personal data, 
+- take into account, with respect to its tools, products, applications or services, the principles of data protection by design and data protection by default. 
 
-6. Sous-traitance 
+6. Subcontracting 
 
-En cas de sous-traitance autorisée, le sous-traitant ultérieur est tenu de respecter les obligations du présent contrat pour le compte et selon les instructions du responsable de traitement. Il appartient au sous-traitant initial de s'assurer que le sous-traitant ultérieur présente les mêmes garanties suffisantes quant à la mise en œuvre de mesures techniques et organisationnelles appropriées de manière à ce que le traitement réponde aux exigences du règlement européen sur la protection des données. Si le sous-traitant ultérieur ne remplit pas ses obligations en matière de protection des données, le sous-traitant initial demeure pleinement responsable devant le responsable de traitement de l'exécution par l'autre sous-traitant de ses obligations. 
+In the event of authorized subcontracting, the subsequent subcontractor is obliged to comply with the obligations of this contract on behalf of and in accordance with the instructions of the controller. It is the responsibility of the original processor to ensure that the sub-processor provides the same sufficient guarantees regarding the implementation of appropriate technical and organizational measures so that the processing meets the requirements of the European Data Protection Regulation. If the sub-processor fails to fulfill its data protection obligations, the original processor remains fully responsible to the controller for the other processor's performance of its obligations. 
 
-7. Droit d'information des personnes concernées 
+7. Right to information of data subjects 
 
-Il appartient au responsable de traitement de fournir l'information aux personnes concernées par les opérations de traitement au moment de la collecte des données. 
+It is the responsibility of the data controller to provide information to the data subjects of the processing operations at the time of data collection. 
 
-8. Exercice des droits des personnes 
+8. Exercise of the rights of data subjects 
 
-Dans la mesure du possible, le sous-traitant doit aider le responsable de traitement à s'acquitter de son obligation de donner suite aux demandes d'exercice des droits des personnes concernées : droit d'accès, de rectification, d'effacement et d'opposition, droit à la limitation du traitement, droit à la portabilité des données, droit de ne pas faire l'objet d'une décision individuelle automatisée (y compris le profilage). 
+To the extent possible, the processor must assist the controller in fulfilling its obligation to comply with requests to exercise the rights of data subjects: right of access, rectification, erasure and objection, right to restriction of processing, right to data portability, right not to be subject to an automated individual decision (including profiling). 
 
-- Lorsque les personnes concernées exercent auprès du sous-traitant des demandes d'exercice de leurs droits, le sous traitant doit adresser ces demandes dès réception par courrier électronique  
-- Dans le cadre d'une demande de droit d'accès, le sous-traitant s'engage à transmettre immédiatement, après la demande du responsable de traitement, l'ensemble des données dont il dispose sur le demandeur. 
-- Dans le cadre d'une demande de droit d'effacement, le sous-traitant s'engage à répercuter immédiatement cette demande en détruisant toutes les données du demandeur dans ses systèmes d'information.
+- Where data subjects make requests to the processor to exercise their rights, the processor must send such requests immediately upon receipt by e-mail  
+- In the context of a request for right of access, the subcontractor undertakes to transmit immediately, after the request of the data controller, all the data it has on the applicant. 
+- In the event of a request for the right to erasure, the processor undertakes to pass on this request immediately by destroying all the applicant's data in its information systems.
 
-9. Notification des violations de données à caractère personnel 
+9. Notification of personal data breaches 
 
-Le sous-traitant notifie immédiatement dès qu'il en a pris connaissance au responsable de traitement toute violation de données à caractère personnel et par le moyen suivant : par email
-Cette notification est accompagnée de toute documentation utile afin de permettre au responsable de traitement, si nécessaire, de notifier cette violation à l'autorité de contrôle compétente.
+The subcontractor shall immediately notify the data controller of any personal data breach as soon as it becomes aware of it, by the following means: by email
+This notification shall be accompanied by any useful documentation in order to allow the data controller, if necessary, to notify the breach to the competent supervisory authority.
 
-10. Aide du sous-traitant dans le cadre du respect par le responsable de traitement de ses obligations 
+10. Assistance of the processor in the context of the compliance of the controller with its obligations 
 
-Le sous-traitant aide le responsable de traitement pour la réalisation d'analyses d'impact relative à la protection des données. Le sous-traitant aide le responsable de traitement pour la réalisation de la consultation préalable de l'autorité de contrôle. 
+The Processor shall assist the Controller in conducting data protection impact assessments. The processor assists the controller in carrying out the prior consultation with the supervisory authority. 
 
 11. Privacy by design 
 
-Depuis le 25 mai 2018, le sous-traitant aura mis en place les procédures internes permettant la démonstration du respect du principe de prise en compte des principes de protection des données dès la conception et de protection des données par défaut. 
+As of May 25, 2018, the processor will have put in place the internal procedures to demonstrate compliance with the principle of taking into account the principles of data protection by design and data protection by default. 
 
-12. Sort des données 
+12. Destruction of data 
 
-Au terme de la prestation de services relatifs au traitement de ces données, le sous-traitant s'engage à détruire toutes les données à caractère personnel. La suppression doit s'accompagner de la destruction de toutes les copies existantes dans les systèmes d'information du sous-traitant. Une fois détruites, le sous-traitant doit justifier par écrit de la destruction. 
+At the end of the services provided for the processing of such data, the processor undertakes to destroy all personal data. The deletion must be accompanied by the destruction of all existing copies in the information systems of the subcontractor. Once destroyed, the subcontractor must justify the destruction in writing. 
 
-13. Délégué à la protection des données 
+13. Data Protection Officer 
 
-Le sous-traitant communique au responsable de traitement le nom et les coordonnées de son délégué à la protection des données, s'il en a désigné un conformément à l'article 37 du règlement européen sur la protection des données. 
+The processor shall inform the controller of the name and contact details of its data protection officer, if it has appointed one in accordance with Article 37 of the European Data Protection Regulation. 
 
 14. Documentation 
 
-Le sous-traitant met à la disposition du responsable de traitement la documentation nécessaire pour démontrer le respect de toutes ses obligations et pour permettre la réalisation d'audits, y compris des inspections, par le responsable du traitement ou un autre auditeur qu'il a mandaté, et contribuer à ces audits. 
+The Processor shall make available to the Controller the documentation necessary to demonstrate compliance with all of its obligations and to enable and assist in audits, including inspections, by the Controller or another auditor appointed by the Controller. 
 
-### IV. Obligations du responsable de traitement vis-à-vis du sous-traitant 
+### IV. Obligations of the controller towards the processor 
 
-##### Le responsable de traitement s'engage à :
+##### The data controller undertakes to:
 
-1. fournir au sous-traitant les données visées au Il des présentes clauses; 
+1. provide the processor with the data referred to in It of these clauses; 
 
-2. documenter par écrit toute instruction concernant le traitement des données par le sous-traitant; 
+2. document in writing any instructions concerning the processing of data by the processor; 
 
-3. veiller, au préalable et pendant toute la durée du traitement, au respect des obligations prévues par le  règlement européen sur la protection des données de la part du sous-traitant; 
+3. ensure, in advance and throughout the processing, that the processor complies with the obligations laid down in the European Data Protection Regulation 
 
-4. superviser le traitement, y compris réaliser les audits et les inspections auprès du sous-traitant. 
+4. supervise the processing, including carrying out audits and inspections of the processor. 

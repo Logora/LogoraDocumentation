@@ -1,30 +1,30 @@
 ---
 id: jwt
-title: Signature JWT
+title: JWT Signature
 ---
 
-Ce mode d'authentification permet de connecter automatiquement les utilisateurs à Logora une fois qu'il sont authentifiés à travers votre système de connexion. Cette méthode utilise un jeton JWT (JSON Web Token) par votre clé secrète pour transmettre les données de l'utilisateur à Logora.
+This authentication mode allows to automatically connect users to Logora once they are authenticated through your login system. This method uses a JWT token (JSON Web Token) by your secret key to convey the user's data to Logora.
 
-### Avant de commencer
+### Before you start
 
-- Rendez-vous sur votre [Espace d'administration](https://admin.logora.fr) onglet *Configuration > Authentification* pour choisir le mode d'authentification `Signature JWT`.  
-- Munissez-vous de votre clé secrète d'API. Cette clé secrète vous servira à créer le jeton JWT. Elle doit rester confidentielle. 
+- Go to your [Administration space](https://admin.logora.fr) tab *Configuration > Authentication* to choose the authentication mode `JWT signature`.  
+- Get your API secret key. This secret key will be used to create the JWT token. It must be kept confidential.
 
-### Processus d'authentification
+### Authentication process
 
-1. Lorsque l'utilisateur se connecte sur votre site web, vous devez créer jeton JWT contenant les informations de l'utilisateur. Il sera transmis à Logora. 
-2. Lorsque l'utilisateur se rend sur une page où est inséré le code Logora, le jeton JWT est inséré dans les variables de configuration Javascript, via le paramètre `remote_auth`.
-3. L'application Logora détecte le jeton JWT, le décode, le vérifie et inscrit ou connecte l'utilisateur.
+1. When the user connects to your website, you must create a JWT token containing the user's information. It will be transmitted to Logora. 
+2. When the user goes to a page where the Logora code is inserted, the JWT token is inserted in the Javascript configuration variables, via the `remote_auth` parameter.
+3. The Logora application detects the JWT token, decodes it, verifies it and registers or connects the user.
 
-### Mise en place
+### Set up
 
-> ATTENTION : le jeton JWT transmis à Logora doit toujours être mis à jour selon l'état de l'utilisateur, qu'il soit connecté ou non. Si les pages de votre site web sont derrière un cache, notamment les pages qui contiennent la synthèse du débat, il est possible que le jeton JWT ne soit pas mis à jour. Si la mise en cache gêne la création du jeton JWT, utilisez une autre méthode d'authentification.
+> WARNING : the JWT token conveyed to Logora must always be updated according to the state of the user, whether he is connected or not. If the pages of your website are behind a cache, especially the pages that contain the debate summary, it is possible that the JWT token is not updated. If caching is interfering with the creation of the JWT token, use another authentication method.
 
-#### 1. Génération du jeton JWT
+#### 1. Generation of the JWT token
 
-Grâce à la [sérialisation JSON Web Token](https://jwt.io/), les éditeurs peuvent transmettre les données utilisateurs existantes pour fournir aux utilisateurs une session authentifiée transparente sur Logora. Le jeton JWT doit être généré sur vos serveurs puis transmis à Logora via les variables de configuration javascript. Voici la composition du jeton, constitué des trois parties suivantes :
+Using [JSON Web Token serialization](https://jwt.io/), publishers can pass existing user data to provide users with a seamless authenticated session on Logora. The JWT token must be generated on your servers and then passed to Logora via javascript configuration variables. Here is the composition of the token, consisting of the following three parts:
 
-En-tête du jeton
+Token header
 ``` 
 { 
   "alg": "HS256", 
@@ -32,7 +32,7 @@ En-tête du jeton
 }
 ```
 
-Corps du jeton
+Token body
 ```json
 {
   "uid": "12345abc",
@@ -42,14 +42,13 @@ Corps du jeton
   "iat": 1516239022
 }
 ```
-
-Il doit inclure les attributs suivants, sensibles à la casse :
-- `uid` : identifiant unique associé à l'utilisateur dans votre base de données.
-- `first_name` : prénom de l'utilisateur, ou nom d'utilisateur si `last_name` est vide.
-- `last_name` (optionnel) : nom de famille de l'utilisateur.
-- `email` : l'adresse email enregistrée pour ce compte.
-- `avatar` (optionnel) : lien vers l'avatar de l'utilisateur.
-- `iat` : date de génération du jeton JWT
+It must include the following case-sensitive attributes:
+- `uid`: unique identifier associated with the user in your database.
+- `first_name`: user's first name, or username if `last_name` is empty.
+- `last_name` (optional): the user's last name.
+- `email`: the email address registered for this account.
+- `avatar` (optional): link to the user's avatar.
+- `iat`: date of generation of the JWT token
 
 Signature  
 ```
@@ -60,7 +59,7 @@ HMACSHA256(
 )
 ```
 
-Exemple en pseudo-code
+Example in pseudo-code
 ```
 header = { 
   "alg": "HS256", 
@@ -79,14 +78,14 @@ signature = HMACSHA256(
    SECRET_KEY
 )
 
-// Variable transmise à Logora
-jetonJWT = base64UrlEncode(header) + "." + base64UrlEncode(payload) + "." + signature
+// Variable conveyed to Logora
+tokenJWT = base64UrlEncode(header) + "." + base64UrlEncode(payload) + "." + signature
 => "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjNhYmMiLCJmaXJzdF9uYW1lIjoiSmVhbiIsImxhc3RfbmFtZSI6IkR1cG9udCIsImVtYWlsIjoiamVhbmR1cG9udEBleGVtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.ITnJo8VwbP4PkVTANSt651C0olsrdRNCNmvTHkanuYk"
 ```
 
-#### 2. Transmission du jeton à Logora
+#### 2. Transmission of the token to Logora
 
-Une fois que le message a été généré, il doit être transmis via la variable de configuration Javascript, `remote_auth`, dans le code de l'espace de débat.
+Once the message has been generated, it must be transmitted via the Javascript configuration variable, `remote_auth`, in the debate space code.
 
 ```javascript
 var logora_config = {
@@ -94,24 +93,22 @@ var logora_config = {
 }
 ```
 
-#### 3. Déconnexion de l'utilisateur
+#### 3. Disconnecting the user
 
-Pour déconnecter l'utilisateur, retirez le paramètre `remote_auth` ou transmettez une chaîne de caractères vide. Si le paramètre est vide, Logora considère que l'utilisateur est déconnecté.
+To disconnect the user, remove the `remote_auth` parameter or pass an empty string. If the parameter is empty, Logora considers that the user is disconnected.
 
-#### 4. Redirection vers l'espace de débat après connexion de l'utilisateur
+#### 4. Redirection to the debate space after user login
 
-Lorsqu'un utilisateur non connecté veut effectuer une action sur l'espace de débat, il est redirigé vers votre page de connexion ou d'inscription. Lors de l'insertion de l'espace de débat et de la synthèse, vous devez définir les URLs de connexion et d'inscription, respectivement via les variables auth.login_url et auth.registration_url.
+When a user who is not logged in wants to perform an action on the debate space, he is redirected to your login or registration page. When inserting the debate space and the overview, you must define the login and registration URLs via the auth.login_url and auth.registration_url variables respectively.
 
-Lors de la redirection, un paramètre de requête logora_redirect est transmis, contenant l'URL de la page avant redirection. Utilisez ce paramètre pour rediriger l'utilisateur après sa connexion ou son inscription. Le nom du paramètre transmis peut être modifié, il peut être par exemple défini à redirect_to. Pour changer le nom du paramètre, utilisez la variable auth.redirectParameter.
+When redirecting, a logora_redirect request parameter is passed, containing the URL of the page before redirection. Use this parameter to redirect the user after his login or registration. The name of the parameter passed can be changed, it can be for example set to redirect_to. To change the parameter name, use the auth.redirectParameter variable.
 
 ```javascript
 var logora_config = {
     remote_auth: jeton_JWT,
     auth: {
-        login_url: "Votre URL de connexion",
-        registration_url: "Votre URL d'inscription",
+        login_url: "Your login URL",
+        registration_url: "You registration URL",
         redirectParameter: "redirectTo"
 }
 ```
-
-

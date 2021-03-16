@@ -1,22 +1,19 @@
 ---
 id: theme
-title: Apparence et thème
-description: Logora se fond à votre identité visuelle via l'onglet "Paramètres".
-
+title: Appearance and theme
+description:Logora matches your visual identity via the "Settings" tab.
 ---
 
-Logora se fond à votre identité visuelle depuis l'espace d'administration via l'onglet "Paramètres".
+Logora matches your visual identity from the administration space via the "Settings" tab.
 
-Vidéo tutorielle : (https://www.youtube.com/watch?v=hQIJW66UP9M&feature=emb_title&ab_channel=Logora)
+Vidéo tutorial : (https://www.youtube.com/watch?v=hQIJW66UP9M&feature=emb_title&ab_channel=Logora)
 
-### Personnaliser les couleurs, les textes et la police
+### Customize the colors, texts and font
 
+`The colors and the font` can be customized from the administration space via the "Customization" tab.
 
-`Les couleurs et la police sont personnalisables` depuis l'espace d'administration onglet "Personnalisation".
+`All the texts` on the debate space ("Follow the debate", "All the debates" ect ) are also editable from the "Texts" tab.
 
-`L'ensemble des textes` de l'espace de débat ("Suivre le débat", "Tous les débats" ect ) sont également modifiables depuis l'onglet "Textes".
+> For example, the main color, that is to say the color of the main buttons like "Write a message" or "Follow a debate" is modifiable via the hexadecimal code located under the title "Main color".
 
-> À titre d'exemple, la couleur principale, c'est à dire la couleur des boutons principaux comme "Ecrire un message" ou "Suivre un débat" est modifiable via le code hexadecimal situé sous le titre "Couleur principale".
-
-> De la même manière, il vous est possible de modifier la couleur du camp un 'ainsi que la couleurs du camp deux (étiquette des messages, couleur des titres délimitant les sections...).
-
+> In the same manner, it is possible to modify the color of the camp one 'as well as the colors of the thesis two (label of the messages, color of the titles delimiting the sections...).

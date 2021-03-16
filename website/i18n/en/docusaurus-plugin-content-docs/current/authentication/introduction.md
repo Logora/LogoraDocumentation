@@ -3,21 +3,19 @@ id: introduction
 title: Introduction
 ---
 
-If vous n'avez pas de méthode d'inscription et de connexion sur votre site ou que vous souhaitez utiliser le module de connexion de Logora, allez sur votre [Espace d'administration](https://admin.logora.fr) onglet *Configuration > Authentification* et choisissez le mode d'authentification `Social`. Vous pouvez ensuite passer directement à la [personnalisation de votre espace de débat](configuration/theme.md).
+If you don't have a registration and login method on your site or you want to use Logora's login module, go to your [Administration Space](https://admin.logora.fr) tab *Configuration > Authentication* and choose the `Social` authentication mode. You can then go directly to the [customization of your debate space](configuration/theme.md).
 
-Si vous souhaitez que vos utilisateurs utilisent votre propre module d'authentification pour participer sur l'espace de débat, utilisez l'Authentification Unique - ou Single Sign-On (SSO).
+If you want your users to use your own authentication module to participate in the debate space, use Single Sign-On (SSO).
 
+#### Single Sign-On
 
-#### Authentification Unique
-
-L'Authentification Unique permet aux utilisateurs de s'identifier sur votre site pour utiliser le plugin Logora sans s'authentifier une deuxième fois sur Logora.
-
-
-L'Authentification Unique va créer un profil d'utilisateur spécifique au site sur Logora afin de ne pas créer de conflit avec les utilisateurs existant déjà sur Logora.
+Single Sign-On allows users to log in to your site to use the Logora plugin without logging in a second time to Logora.
 
 
-Logora propose plusieurs modes d'authentification possibles :
-- Authentification serveur OAuth 2.0 (vous avez un serveur OAuth 2.0)
-- Authentification client OAuth 2.0 (vous vous connectez à notre serveur OAuth 2.0)
-- Authentification par signature JWT
+Single sign-on will create a site-specific user profile on Logora so as not to conflict with existing Logora users.
 
+
+Logora offers several possible authentication modes:
+- OAuth 2.0 server authentication (you have an OAuth 2.0 server)
+- Client authentication OAuth 2.0 (you connect to our OAuth 2.0 server)
+- Authentication by JWT signature

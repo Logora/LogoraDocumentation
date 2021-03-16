@@ -20,7 +20,7 @@ To insert the ads in the available spaces, you just have to create blocks with t
 #### On the synthesis
 
 - Block between the survey and the contributions highlighted at the foot of the article on mobile: `(300 * 250)`
-- 
+
 #### On the Debate Space
 
 - Fixed sidebar on tablet and desktop format: (300 * 250 or 300 * 600)

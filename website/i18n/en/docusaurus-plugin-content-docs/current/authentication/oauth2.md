@@ -1,101 +1,99 @@
 ---
 id: oauth2
-title: Client OAuth 2.0
+title: OAuth 2.0 client
 ---
 
-Le protocole OAuth 2.0 permet la récupération sécurisée des ressources tout en protégeant les données de vos utilisateurs. Logora propose un service authentification conforme OAuth 2.0, qui permet de connecter automatiquement vos utilisateurs à l'application Logora une fois qu'ils sont connectés à votre système d'authentification.
+The OAuth 2.0 protocol allows secure resource recovery while protecting your users' data. Logora offers an OAuth 2.0 compliant authentication service, which allows you to automatically connect your users to the Logora application once they are connected to your authentication system.
 
+### Before you start
 
-### Avant de commencer
+- Go to your [Administration Space](https://admin.logora.fr) tab *Configuration > Authentication* to choose the authentication mode `OAuth2.0`.
+- Get your API key and your secret key.
 
-- Rendez-vous sur votre [Espace d'administration](https://admin.logora.fr) onglet *Configuration > Authentification* pour choisir le mode d'authentification `OAuth2.0`.
-- Munissez-vous de votre clé d'API et de votre clé secrète .
+### Authentication process
 
-### Processus d'authentification
+1. When a user logs into your website, get a temporary access token by requesting authorization from our OAuth 2.0 server.
+2. Send the user's information to our server by passing the access token, and retrieve a session ID linked to the connected user. If Logora does not know this user, this user is registered with us.
+3. Pass the session ID to the Logora application, which uses it to identify the user.
+4. When the user logs out of your system, you call the Logora logout route.
 
-1. Lorsqu'un utilisateur se connecte sur votre site web, récupérez un jeton temporaire d'accès en demandant une autorisation à notre serveur OAuth 2.0.
-2. Envoyez les informations de l'utilisateur à notre serveur en passant le jeton d'accès, et récupérez un identifiant de session liée à l'utilisateur connecté. Si Logora ne connaît pas cet utilisateur, celui-ci est inscrit chez nous.
-3. Transmettez l'identifiant de session à l'application Logora, qui l'utilise pour identifier l'utilisateur.
-4. Lorsque l'utilisateur se déconnecte de votre système, vous appelez la route de déconnexion de Logora.
+### Set up
 
-### Mise en place
+#### 1. Recover an access token
 
-#### 1. Récupérer un jeton d'accès
-
-
-Un jeton d'accès OAuth 2.0 est généré en utilisant votre clé d'API et votre clé secrète, grâce à une requête POST vers notre route d'autorisation. Exemple utilisant Curl :
+An OAuth 2.0 access token is generated using your API key and secret key, through a POST request to our authorization route. Example using Curl:
 
 ```bash
 curl -d grant_type=client_credentials -d client_id=API_KEY -d client_secret=API_SECRET -d scope=authentication https://app.logora.fr/oauth/token
 
-// Réponse  
+// Response  
 => {"access_token":"Av9wbEK-0QTOdxhzB4S3-B1ZFKj1Z4y8Xcl17iVcHsg","token_type":"Bearer","expires_in":7200,"created_at":1579688184}
 ```
 
-Si la requête est réussie, elle retourne un jeton d'accès dans l'attribut `access_token`. Ce jeton d'accès est valide deux heures. Les attributes `expires_in` et `created_at` permettent de calculer la date d'expiration du jeton.
+If the request is successful, it returns an access token in the `access_token` attribute. This access token is valid for two hours. The `expires_in` and `created_at` attributes are used to calculate the expiration date of the token.
+
+#### 2. Connect the user to Logora
 
 
-#### 2. Connecter l'utilisateur sur Logora
+With the access token, you can pass the user's information to Logora. When a user logs in through your authentication system, call the Logora login route. This route returns a session ID related to the user.
 
+The Bearer OAuth 2.0 access token retrieved in step 1 must be transmitted via the `HTTP Authorization` header.
 
-Grâce au jeton d'accès, vous pouvez transmettre les informations de l'utilisateur à Logora. Lorsqu'un utilisateur se connecte à travers votre système d'authentification, appelez la route de connexion de Logora. Cette route renvoie un identifiant de session lié à l'utilisateur.
+The user informations consists of:  
 
-Le jeton d'accès Bearer OAuth 2.0 récupéré à l'étape 1 doit être transmis via l'en-tête `HTTP Authorization`.
+- `uid` (required): unique identifier of the user in your system, e.g. their ID in your database.  
+- `first_name` (required): the user's first name or nickname.  
+- `last_name` (optional): user's last name.  
+- `email` (required): user's email address.
 
-Les informations utilisateur sont composées de :  
-- `uid` (requis) : identifiant unique de l'utilisateur dans votre système, par exemple son ID dans votre base de données.  
-- `first_name` (requis) : prénom de l'utilisateur ou pseudo.  
-- `last_name` (optionnel) : nom de l'utilisateur.  
-- `email` (requis) : email de l'utilisateur.
-
-Voici un exemple de connexion avec CURL :
+Here is an example of a connection with CURL:
 
 ```bash
 curl -H "Authorization: Bearer Av9wbEK-0QTOdxhzB4S3-B1ZFKj1Z4y8Xcl17iVcHsg" -d uid=12 -d first_name=Jean -d last_name=Dupont -d email=jean.dupont@exemple.com -X POST https://app.logora.fr/api/v1/users/login
  
-// Réponse
+// Response
 => {"success": "true","session_id": "14c98398-08c7-42ae-b1f7-e435920fccec"}
 ```
 
-#### 3. Transmettre l'identifiant de session
+#### 3. Convey the session ID
 
-Pour identifier l'utilisateur connecté, l'application Logora doit connaître son identifiant de session. Transmettez cet identifiant via le paramètre `remote_auth` dans les variables de configuration Javascript de l'espace de débat.
+To identify the connected user, the Logora application must know his session identifier. Convey this identifier via the `remote_auth` parameter in the Javascript configuration variables of the debate space.
 
-> ATTENTION : vérifiez que les paramètres transmis ne sont pas derrière un cache. L'identifiant de session doit toujours être à jour, quel que soit l'état de l'utilisateur, connecté ou non.
+> WARNING: check that the conveyed parameters are not behind a cache. The session id must always be up to date, regardless of the user's state, logged in or not.
 
 ```javascript
 var logora_config = {
     remote_auth: "14c98398-08c7-42ae-b1f7-e435920fccec",
-    //... Autres paramètres
+    //... Other parameters
 }
 ```
 
-#### 4. Déconnecter l'utilisateur
+#### 4. Logging out the user
 
-Lorsque l'utilisateur se déconnecte de votre système d'authentification, appelez la route de déconnexion de Logora en passant l'identifiant de session, ou retirez le paramètre `remote_auth`.
+When the user disconnects from your authentication system, call Logora's logout route by passing the session ID, or remove the `remote_auth` parameter.
 
-Voici un exemple de requête de déconnexion :
+Here is an example of a logout request:
 
 ```
 curl -H "Authorization: Bearer Av9wbEK-0QTOdxhzB4S3-B1ZFKj1Z4y8Xcl17iVcHsg" -d session_id=14c98398-08c7-42ae-b1f7-e435920fccec -X POST https://app.logora.fr/api/v1/users/logout 
 
-// Réponse
+// Response
 => {"success": "true"}
 ```
 
-#### 5. Rediriger vers l'espace de débat après connexion de l'utilisateur
+#### 5. Redirect to the debate space after user login
 
-Lorsqu'un utilisateur non connecté veut effectuer une action sur l'espace de débat ou la synthèse, il est redirigé vers votre page de connexion ou d'inscription. Lors de l'insertion de l'espace de débat ou de la synthèse, vous pouvez définir les URLs de connexion et d'inscription, respectivement via les variables auth.login_url et auth.registration_url :
+When a user who is not logged in wants to perform an action on the debate space or overview, they are redirected to your login or registration page. When inserting the debate space or overview, you can set the login and registration URLs via the auth.login_url and auth.registration_url variables respectively:
 
 ```html
 <div id="logora_app"></div>
 <script>
-    // Variables de configuration
+    // Configuration Variables
     var logora_config = {
-        shortname: "exemple-identifiant", // Nom d'application présent dans votre espace d'administration
+        shortname: "example-identifiant", // Application name available in your administration space
         auth: {
-          login_url: "Votre URL de connexion", // Insérer ici votre url de connexion
-          registration_url: "Votre URL de redirection" // Insérer ici votre url d'inscription
+          login_url: "Your login URL", // Insert here your login url
+          registration_url: "Your redirection URL" // Insert your registration url here
         }
     };
 
@@ -108,4 +106,4 @@ Lorsqu'un utilisateur non connecté veut effectuer une action sur l'espace de d�
 </script>
 ```
 
-Lors de la redirection, un paramètre de requête logora_redirect est transmis, contenant l'URL de la page avant redirection. Utilisez ce paramètre pour rediriger l'utilisateur après sa connexion ou son inscription. Le nom du paramètre transmis peut être modifié, il peut être par exemple défini à redirect_to (https://votresite.fr/login?redirect_to=URL_ORIGINE). Pour changer le nom du paramètre, utilisez la variable auth.redirectParameter.
+When redirecting, a logora_redirect request parameter is passed, containing the URL of the page before redirection. Use this parameter to redirect the user after login or registration. The name of the parameter passed can be changed, it can be set for example to redirect_to (https://yourwebsite.fr/login?redirect_to=URL_ORIGINE). To change the parameter name, use the auth.redirectParameter variable.

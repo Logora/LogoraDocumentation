@@ -1,28 +1,28 @@
 ---
 id: server-side-sdk
 title:  Server side API
-description: Insert Logora on server side with our API
+description: Insert Logora server side with our API
 ---
 
 
-### Retrieving the code of the synthesis
+### Retrieving the code of the debate summary
 
-Logora provides an API route to retrieve the summary in your server-side pages. This API route returns the full HTML code of the synthesis (including CSS and scripts), which you can insert into your page template. This method replaces the insertion of the Logora script on your pages.
+Logora provides an API route to retrieve the debate summary server side. This API route returns the full HTML code of the debate summary (including CSS and scripts), that you can insert into your page template. This method replaces the insertion of the Logora script in your pages.
 
-> This API is also used by the Logora Javascript code to display the synthesis.
+> This API is also used by the Logora Javascript code to display the debate summary.
 
 #### Query
 
 Base URL :
-- `https://render.logora.fr/synthesis` for the synthesis
+- `https://render.logora.fr/synthesis` for the debate summary
 - `https://render.logora.fr/widget` for the widget
 
 Method : `POST`  
 Header : `Content-Type: application/json`
 
 URL parameters :   
-`shortname` (required): name of your application available in your administration space  
-`uid` (required): unique identifier of the page (the same identifier as the one inserted on the client side) 
+`shortname` (required): name of your application available in your administration panel  
+`uid` (required): unique page identifier (it is the same identifier that is inserted on the client side) 
 `insertType` (optional) : insertion mode, do not add if standard insertion. Indicate *amp* for an insertion on an AMP page or *iframe* for an insertion in iframe.  
 
 Request body: The request body must contain metadata about the page, in JSON format.
@@ -66,32 +66,32 @@ https://render.logora.fr/app?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18c
 #### Response
 
 
-The response returned is in this form:
+The response returned follows this format:
 
 ```json
 {
   "success": true, // true if a debate is associated, false if no debate or an error
   "debate": {    
     "slug": "my-debate",    // Unique identifier of the debate, present in the URL
-    "name": "Should proportional representation be introduced in the election of deputies?",     // Debate Title
+    "name": "Should proportional representation be introduced in the election of deputies?",     // Debate title
     "direct_url": "https://exemple.com/debate-space/debate/my-debate"      // Link to the debate
   },
-  "content": CODE_HTML, // HTML code of the synthesis to insert in the page. Attribute not present if success is false
+  "content": CODE_HTML, // HTML code of the debate summary to insert in the page. Attribute not present if success is false
   "source": OBJET_SOURCE, //  Object containing the metadata of the page
   "config": OBJET_CONFIG, // Object containing the application configuration
 }
 ```
 
 
-The returned HTML code has the following container as its root: 
+The returned HTML code has the following container at its root: 
 
 ```html
 <div id="logoraRoot" class="logoraContainer" lang="fr" data-id="synthesis"><div>
 ```
 
-### Retrieve the list of articles
+### Retrieve a list of articles (advanced usage)
 
-To avoid making unnecessary calls and loading the synthesis only on the article pages where a debate is linked, you can use the route provided by the Logora API to retrieve the list of your articles linked to a debate.
+To avoid making unnecessary calls and to load the debate summary only on the pages where a debate is linked, you can use the route provided by the Logora API to retrieve the list of articles linked to a debate.
 
 #### Query
 
@@ -101,7 +101,7 @@ Base URL :
 Method : `GET`
 Header : `Content-Type: application/json`
 URL parameters : 
-- `shortname` (required): name of your application available in your administration space
+- `shortname` (required): name of your application available in your administration panel
 - `timestamp` required): date from which you want to retrieve article updates (if a debate is associated or not), in Unix timestamp format (seconds).
 - `page` (optional): page number
 - `per_page` (optional) : number of items per page, by default 10
@@ -115,7 +115,7 @@ The route returns the set of items that have had an association change to a deba
   "success": true,
   "data": {
       {
-        "identifier": 1, //  Unique identifier of the article that you provide when inserting the synthesis
+        "identifier": 1, //  Unique identifier of the article that you provide when inserting the debate summary
         "title": "Sample Article – Demo", // Title of the article
         "source_url": "https://demo.logora.fr/article-demo", // URL of the article
         "has_debate": false, //  Indicates if the article is associated with a debate

@@ -4,33 +4,15 @@
     "next": "Next",
     "previous": "Previous",
     "tagline": "Debate augmented",
-    "docs": {
-      "doc2": {
-        "title": "document number 2"
-      },
-      "doc3": {
-        "title": "This is document number 3"
-      },
-      "doc4": {
-        "title": "Other Document"
-      },
-      "doc5": {
-        "title": "Fifth Document"
-      },
-      "introduction": {
-        "title": "Introduction",
-        "sidebar_label": "Introduction"
-      }
-    },
     "links": {
       "Documentation": "Documentation",
-      "Espace d'administration": "Administration Panel",
-      "Questions fréquentes": "Q&A"
+      "Espace d'administration": "Administration Panel"
     },
     "categories": {
       "Introduction": "Introduction",
       "Installation": "Installation",
-      "Authentification unique": "Single Sign On"
+      "Authentification unique": "Single Sign On",
+      "Questions fréquentes": "FAQ"
     }
   },
   "pages-strings": {

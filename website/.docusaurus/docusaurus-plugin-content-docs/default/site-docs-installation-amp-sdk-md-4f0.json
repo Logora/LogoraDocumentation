@@ -6,15 +6,15 @@
   "description": "Insérez Logora sur vos pages Google AMP",
   "source": "@site/docs\\installation\\amp-sdk.md",
   "slug": "/installation/amp-sdk",
-  "permalink": "/en/installation/amp-sdk",
+  "permalink": "/installation/amp-sdk",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "API côté serveur",
-    "permalink": "/en/installation/server-side-sdk"
+    "permalink": "/installation/server-side-sdk"
   },
   "next": {
     "title": "App SDK",
-    "permalink": "/en/installation/app-sdk"
+    "permalink": "/installation/app-sdk"
   }
 }

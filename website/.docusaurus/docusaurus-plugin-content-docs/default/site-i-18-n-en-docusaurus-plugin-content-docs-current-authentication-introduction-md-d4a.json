@@ -3,7 +3,7 @@
   "id": "authentication/introduction",
   "isDocsHomePage": false,
   "title": "Introduction",
-  "description": "If vous n'avez pas de méthode d'inscription et de connexion sur votre site ou que vous souhaitez utiliser le module de connexion de Logora, allez sur votre Espace d'administration onglet Configuration > Authentification et choisissez le mode d'authentification Social. Vous pouvez ensuite passer directement à la personnalisation de votre espace de débat.",
+  "description": "If you don't have a registration and login method on your site or you want to use Logora's login module, go to your Administration Space tab Configuration > Authentication and choose the Social authentication mode. You can then go directly to the customization of your debate space.",
   "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\authentication\\introduction.md",
   "slug": "/authentication/introduction",
   "permalink": "/en/authentication/introduction",
@@ -14,7 +14,7 @@
     "permalink": "/en/installation/app-sdk"
   },
   "next": {
-    "title": "Serveur OAuth 2.0",
+    "title": "OAuth 2.0 server",
     "permalink": "/en/authentication/oauth2_server"
   }
 }

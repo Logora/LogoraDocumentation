@@ -3,14 +3,14 @@
   "id": "installation/amp-sdk",
   "isDocsHomePage": false,
   "title": "Google AMP SDK",
-  "description": "Insérez Logora sur vos pages Google AMP",
+  "description": "Insert Logora on your Google AMP pages",
   "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\installation\\amp-sdk.md",
   "slug": "/installation/amp-sdk",
   "permalink": "/en/installation/amp-sdk",
   "version": "current",
   "sidebar": "docs",
   "previous": {
-    "title": "API côté serveur",
+    "title": "Server side API",
     "permalink": "/en/installation/server-side-sdk"
   },
   "next": {

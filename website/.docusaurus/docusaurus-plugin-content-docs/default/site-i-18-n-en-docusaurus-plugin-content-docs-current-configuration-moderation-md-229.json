@@ -2,19 +2,19 @@
   "unversionedId": "configuration/moderation",
   "id": "configuration/moderation",
   "isDocsHomePage": false,
-  "title": "Modération",
-  "description": "Logora s'occupe de la modération de votre espace de débat. Personnalisez le type de modération dans votre espace d'administration",
+  "title": "Moderation",
+  "description": "Logora takes care of the moderation of your debate space. Customize the type of moderation from your administration space.",
   "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\configuration\\moderation.md",
   "slug": "/configuration/moderation",
   "permalink": "/en/configuration/moderation",
   "version": "current",
   "sidebar": "docs",
   "previous": {
-    "title": "Chemins d'URL",
+    "title": "URL paths",
     "permalink": "/en/configuration/routes"
   },
   "next": {
-    "title": "Insertions publicitaires",
+    "title": "Insert Ads",
     "permalink": "/en/configuration/ads"
   }
 }

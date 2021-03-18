@@ -25,7 +25,7 @@ module.exports={
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "sidebars.js",
+          "sidebarPath": "sidebars.json",
           "routeBasePath": "/",
           "path": "docs"
         },
@@ -51,7 +51,7 @@ module.exports={
         },
         {
           href: "https://admin.logora.fr",
-          label: "Espace d'administration",
+          label: "Administration",
           position: "left"
         },
         {

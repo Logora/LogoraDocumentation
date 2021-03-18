@@ -2,8 +2,8 @@
   "unversionedId": "installation/javascript-sdk",
   "id": "installation/javascript-sdk",
   "isDocsHomePage": false,
-  "title": "Installation Javascript",
-  "description": "Installez Logora grâce à notre code universel Javascript.",
+  "title": "Javascript installation",
+  "description": "Install Logora with our universal Javascript code.",
   "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\installation\\javascript-sdk.md",
   "slug": "/installation/javascript-sdk",
   "permalink": "/en/installation/javascript-sdk",
@@ -14,7 +14,7 @@
     "permalink": "/en/"
   },
   "next": {
-    "title": "Installation Wordpress",
+    "title": "Wordpress installation",
     "permalink": "/en/installation/wordpress"
   }
 }

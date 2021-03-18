@@ -6,15 +6,15 @@
   "description": "Logora s'occupe de la modération de votre espace de débat. Personnalisez le type de modération dans votre espace d'administration",
   "source": "@site/docs\\configuration\\moderation.md",
   "slug": "/configuration/moderation",
-  "permalink": "/en/configuration/moderation",
+  "permalink": "/configuration/moderation",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "Chemins d'URL",
-    "permalink": "/en/configuration/routes"
+    "permalink": "/configuration/routes"
   },
   "next": {
     "title": "Insertions publicitaires",
-    "permalink": "/en/configuration/ads"
+    "permalink": "/configuration/ads"
   }
 }

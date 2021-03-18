@@ -28,7 +28,7 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "sidebars.js",
+          "sidebarPath": "sidebars.json",
           "routeBasePath": "/",
           "path": "docs"
         },
@@ -55,7 +55,7 @@ export default {
         },
         {
           "href": "https://admin.logora.fr",
-          "label": "Espace d'administration",
+          "label": "Administration panel",
           "position": "left"
         },
         {

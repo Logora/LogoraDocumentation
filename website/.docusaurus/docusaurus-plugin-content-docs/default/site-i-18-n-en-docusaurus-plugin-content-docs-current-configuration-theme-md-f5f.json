@@ -2,19 +2,19 @@
   "unversionedId": "configuration/theme",
   "id": "configuration/theme",
   "isDocsHomePage": false,
-  "title": "Apparence et thème",
-  "description": "Logora se fond à votre identité visuelle via l'onglet \"Paramètres\".",
+  "title": "Appearance and theme",
+  "description": "Logora matches your visual identity via the Settings tab.",
   "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\configuration\\theme.md",
   "slug": "/configuration/theme",
   "permalink": "/en/configuration/theme",
   "version": "current",
   "sidebar": "docs",
   "previous": {
-    "title": "Signature JWT",
+    "title": "JWT Signature",
     "permalink": "/en/authentication/jwt"
   },
   "next": {
-    "title": "Chemins d'URL",
+    "title": "URL paths",
     "permalink": "/en/configuration/routes"
   }
 }

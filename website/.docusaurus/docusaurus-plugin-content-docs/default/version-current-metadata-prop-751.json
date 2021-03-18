@@ -17,17 +17,17 @@
         "items": [
           {
             "type": "link",
-            "label": "Installation Javascript",
+            "label": "Javascript installation",
             "href": "/en/installation/javascript-sdk"
           },
           {
             "type": "link",
-            "label": "Installation Wordpress",
+            "label": "Wordpress installation",
             "href": "/en/installation/wordpress"
           },
           {
             "type": "link",
-            "label": "API côté serveur",
+            "label": "Server side API",
             "href": "/en/installation/server-side-sdk"
           },
           {
@@ -45,7 +45,7 @@
       {
         "collapsed": true,
         "type": "category",
-        "label": "Authentification unique",
+        "label": "Single Sign On",
         "items": [
           {
             "type": "link",
@@ -54,17 +54,17 @@
           },
           {
             "type": "link",
-            "label": "Serveur OAuth 2.0",
+            "label": "OAuth 2.0 server",
             "href": "/en/authentication/oauth2_server"
           },
           {
             "type": "link",
-            "label": "Client OAuth 2.0",
+            "label": "OAuth 2.0 client",
             "href": "/en/authentication/oauth2"
           },
           {
             "type": "link",
-            "label": "Signature JWT",
+            "label": "JWT Signature",
             "href": "/en/authentication/jwt"
           }
         ]
@@ -76,22 +76,22 @@
         "items": [
           {
             "type": "link",
-            "label": "Apparence et thème",
+            "label": "Appearance and theme",
             "href": "/en/configuration/theme"
           },
           {
             "type": "link",
-            "label": "Chemins d'URL",
+            "label": "URL paths",
             "href": "/en/configuration/routes"
           },
           {
             "type": "link",
-            "label": "Modération",
+            "label": "Moderation",
             "href": "/en/configuration/moderation"
           },
           {
             "type": "link",
-            "label": "Insertions publicitaires",
+            "label": "Insert Ads",
             "href": "/en/configuration/ads"
           }
         ]
@@ -99,7 +99,7 @@
       {
         "collapsed": false,
         "type": "category",
-        "label": "Questions fréquentes",
+        "label": "FAQ",
         "items": [
           {
             "type": "link",

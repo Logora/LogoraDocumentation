@@ -6,11 +6,11 @@
   "description": "Protection des données personnelles",
   "source": "@site/docs\\faq\\rgpd.md",
   "slug": "/faq/rgpd",
-  "permalink": "/en/faq/rgpd",
+  "permalink": "/faq/rgpd",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "Performance",
-    "permalink": "/en/faq/performance"
+    "permalink": "/faq/performance"
   }
 }

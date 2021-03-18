@@ -6,15 +6,15 @@
   "description": "Logora se fond à votre identité visuelle via l'onglet \"Paramètres\".",
   "source": "@site/docs\\configuration\\theme.md",
   "slug": "/configuration/theme",
-  "permalink": "/en/configuration/theme",
+  "permalink": "/configuration/theme",
   "version": "current",
   "sidebar": "docs",
   "previous": {
     "title": "Signature JWT",
-    "permalink": "/en/authentication/jwt"
+    "permalink": "/authentication/jwt"
   },
   "next": {
     "title": "Chemins d'URL",
-    "permalink": "/en/configuration/routes"
+    "permalink": "/configuration/routes"
   }
 }

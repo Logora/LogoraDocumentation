@@ -2,19 +2,19 @@
   "unversionedId": "authentication/jwt",
   "id": "authentication/jwt",
   "isDocsHomePage": false,
-  "title": "Signature JWT",
-  "description": "Ce mode d'authentification permet de connecter automatiquement les utilisateurs à Logora une fois qu'il sont authentifiés à travers votre système de connexion. Cette méthode utilise un jeton JWT (JSON Web Token) par votre clé secrète pour transmettre les données de l'utilisateur à Logora.",
+  "title": "JWT Signature",
+  "description": "This authentication mode allows to automatically connect users to Logora once they are authenticated through your login system. This method uses a JWT token (JSON Web Token) by your secret key to convey the user's data to Logora.",
   "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\authentication\\jwt.md",
   "slug": "/authentication/jwt",
   "permalink": "/en/authentication/jwt",
   "version": "current",
   "sidebar": "docs",
   "previous": {
-    "title": "Client OAuth 2.0",
+    "title": "OAuth 2.0 client",
     "permalink": "/en/authentication/oauth2"
   },
   "next": {
-    "title": "Apparence et thème",
+    "title": "Appearance and theme",
     "permalink": "/en/configuration/theme"
   }
 }

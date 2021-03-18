@@ -2,8 +2,8 @@
   "unversionedId": "authentication/oauth2_server",
   "id": "authentication/oauth2_server",
   "isDocsHomePage": false,
-  "title": "Serveur OAuth 2.0",
-  "description": "Le protocole OAuth 2.0 permet la récupération sécurisée des ressources tout en protégeant les données de vos utilisateurs. Logora propose un service authentification conforme OAuth 2.0, qui permet de connecter automatiquement vos utilisateurs à l'application Logora une fois qu'ils sont connectés à votre système d'authentification.",
+  "title": "OAuth 2.0 server",
+  "description": "The OAuth 2.0 protocol allows secure resource recovery while protecting your users' data. Logora offers an OAuth 2.0 compliant authentication service, which allows to automatically connect your users to the Logora application once they are connected to your authentication system.",
   "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\authentication\\oauth2_server.md",
   "slug": "/authentication/oauth2_server",
   "permalink": "/en/authentication/oauth2_server",
@@ -14,7 +14,7 @@
     "permalink": "/en/authentication/introduction"
   },
   "next": {
-    "title": "Client OAuth 2.0",
+    "title": "OAuth 2.0 client",
     "permalink": "/en/authentication/oauth2"
   }
 }

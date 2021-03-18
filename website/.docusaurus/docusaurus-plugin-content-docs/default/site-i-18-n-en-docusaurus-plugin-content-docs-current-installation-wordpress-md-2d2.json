@@ -2,19 +2,19 @@
   "unversionedId": "installation/wordpress",
   "id": "installation/wordpress",
   "isDocsHomePage": false,
-  "title": "Installation Wordpress",
-  "description": "Avant de commencer",
+  "title": "Wordpress installation",
+  "description": "Before you start",
   "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\installation\\wordpress.md",
   "slug": "/installation/wordpress",
   "permalink": "/en/installation/wordpress",
   "version": "current",
   "sidebar": "docs",
   "previous": {
-    "title": "Installation Javascript",
+    "title": "Javascript installation",
     "permalink": "/en/installation/javascript-sdk"
   },
   "next": {
-    "title": "API côté serveur",
+    "title": "Server side API",
     "permalink": "/en/installation/server-side-sdk"
   }
 }

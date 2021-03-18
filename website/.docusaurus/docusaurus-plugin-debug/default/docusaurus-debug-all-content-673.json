@@ -8,7 +8,7 @@
           "versionPath": "/en/",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "C:\\Users\\Henry\\Documents\\Projets\\Logora\\LogoraDocumentation\\website\\sidebars.js",
+          "sidebarFilePath": "C:\\Users\\Henry\\Documents\\Projets\\Logora\\LogoraDocumentation\\website\\sidebars.json",
           "docsDirPath": "C:\\Users\\Henry\\Documents\\Projets\\Logora\\LogoraDocumentation\\website\\docs",
           "docsDirPathLocalized": "C:\\Users\\Henry\\Documents\\Projets\\Logora\\LogoraDocumentation\\website\\i18n\\en\\docusaurus-plugin-content-docs\\current",
           "mainDocId": "introduction",
@@ -48,7 +48,7 @@
               {
                 "collapsed": true,
                 "type": "category",
-                "label": "Authentification unique",
+                "label": "Single Sign On",
                 "items": [
                   {
                     "type": "doc",
@@ -94,7 +94,7 @@
               {
                 "collapsed": false,
                 "type": "category",
-                "label": "Questions fréquentes",
+                "label": "FAQ",
                 "items": [
                   {
                     "type": "doc",
@@ -132,7 +132,7 @@
               "id": "authentication/introduction",
               "isDocsHomePage": false,
               "title": "Introduction",
-              "description": "If vous n'avez pas de méthode d'inscription et de connexion sur votre site ou que vous souhaitez utiliser le module de connexion de Logora, allez sur votre Espace d'administration onglet Configuration > Authentification et choisissez le mode d'authentification Social. Vous pouvez ensuite passer directement à la personnalisation de votre espace de débat.",
+              "description": "If you don't have a registration and login method on your site or you want to use Logora's login module, go to your Administration Space tab Configuration > Authentication and choose the Social authentication mode. You can then go directly to the customization of your debate space.",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\authentication\\introduction.md",
               "slug": "/authentication/introduction",
               "permalink": "/en/authentication/introduction",
@@ -143,7 +143,7 @@
                 "permalink": "/en/installation/app-sdk"
               },
               "next": {
-                "title": "Serveur OAuth 2.0",
+                "title": "OAuth 2.0 server",
                 "permalink": "/en/authentication/oauth2_server"
               }
             },
@@ -151,19 +151,19 @@
               "unversionedId": "authentication/jwt",
               "id": "authentication/jwt",
               "isDocsHomePage": false,
-              "title": "Signature JWT",
-              "description": "Ce mode d'authentification permet de connecter automatiquement les utilisateurs à Logora une fois qu'il sont authentifiés à travers votre système de connexion. Cette méthode utilise un jeton JWT (JSON Web Token) par votre clé secrète pour transmettre les données de l'utilisateur à Logora.",
+              "title": "JWT Signature",
+              "description": "This authentication mode allows to automatically connect users to Logora once they are authenticated through your login system. This method uses a JWT token (JSON Web Token) by your secret key to convey the user's data to Logora.",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\authentication\\jwt.md",
               "slug": "/authentication/jwt",
               "permalink": "/en/authentication/jwt",
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Client OAuth 2.0",
+                "title": "OAuth 2.0 client",
                 "permalink": "/en/authentication/oauth2"
               },
               "next": {
-                "title": "Apparence et thème",
+                "title": "Appearance and theme",
                 "permalink": "/en/configuration/theme"
               }
             },
@@ -171,19 +171,19 @@
               "unversionedId": "authentication/oauth2",
               "id": "authentication/oauth2",
               "isDocsHomePage": false,
-              "title": "Client OAuth 2.0",
-              "description": "Le protocole OAuth 2.0 permet la récupération sécurisée des ressources tout en protégeant les données de vos utilisateurs. Logora propose un service authentification conforme OAuth 2.0, qui permet de connecter automatiquement vos utilisateurs à l'application Logora une fois qu'ils sont connectés à votre système d'authentification.",
+              "title": "OAuth 2.0 client",
+              "description": "The OAuth 2.0 protocol allows secure resource recovery while protecting your users' data. Logora offers an OAuth 2.0 compliant authentication service, which allows you to automatically connect your users to the Logora application once they are connected to your authentication system.",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\authentication\\oauth2.md",
               "slug": "/authentication/oauth2",
               "permalink": "/en/authentication/oauth2",
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Serveur OAuth 2.0",
+                "title": "OAuth 2.0 server",
                 "permalink": "/en/authentication/oauth2_server"
               },
               "next": {
-                "title": "Signature JWT",
+                "title": "JWT Signature",
                 "permalink": "/en/authentication/jwt"
               }
             },
@@ -191,8 +191,8 @@
               "unversionedId": "authentication/oauth2_server",
               "id": "authentication/oauth2_server",
               "isDocsHomePage": false,
-              "title": "Serveur OAuth 2.0",
-              "description": "Le protocole OAuth 2.0 permet la récupération sécurisée des ressources tout en protégeant les données de vos utilisateurs. Logora propose un service authentification conforme OAuth 2.0, qui permet de connecter automatiquement vos utilisateurs à l'application Logora une fois qu'ils sont connectés à votre système d'authentification.",
+              "title": "OAuth 2.0 server",
+              "description": "The OAuth 2.0 protocol allows secure resource recovery while protecting your users' data. Logora offers an OAuth 2.0 compliant authentication service, which allows to automatically connect your users to the Logora application once they are connected to your authentication system.",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\authentication\\oauth2_server.md",
               "slug": "/authentication/oauth2_server",
               "permalink": "/en/authentication/oauth2_server",
@@ -203,7 +203,7 @@
                 "permalink": "/en/authentication/introduction"
               },
               "next": {
-                "title": "Client OAuth 2.0",
+                "title": "OAuth 2.0 client",
                 "permalink": "/en/authentication/oauth2"
               }
             },
@@ -211,15 +211,15 @@
               "unversionedId": "configuration/ads",
               "id": "configuration/ads",
               "isDocsHomePage": false,
-              "title": "Insertions publicitaires",
-              "description": "Les pages du plugin Logora sont fournies en marque blanche et hébergées sur votre site.",
+              "title": "Insert Ads",
+              "description": "The pages of the Logora plugin are provided in white label and hosted on your site.",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\configuration\\ads.md",
               "slug": "/configuration/ads",
               "permalink": "/en/configuration/ads",
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Modération",
+                "title": "Moderation",
                 "permalink": "/en/configuration/moderation"
               },
               "next": {
@@ -231,19 +231,19 @@
               "unversionedId": "configuration/moderation",
               "id": "configuration/moderation",
               "isDocsHomePage": false,
-              "title": "Modération",
-              "description": "Logora s'occupe de la modération de votre espace de débat. Personnalisez le type de modération dans votre espace d'administration",
+              "title": "Moderation",
+              "description": "Logora takes care of the moderation of your debate space. Customize the type of moderation from your administration space.",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\configuration\\moderation.md",
               "slug": "/configuration/moderation",
               "permalink": "/en/configuration/moderation",
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Chemins d'URL",
+                "title": "URL paths",
                 "permalink": "/en/configuration/routes"
               },
               "next": {
-                "title": "Insertions publicitaires",
+                "title": "Insert Ads",
                 "permalink": "/en/configuration/ads"
               }
             },
@@ -251,19 +251,19 @@
               "unversionedId": "configuration/routes",
               "id": "configuration/routes",
               "isDocsHomePage": false,
-              "title": "Chemins d'URL",
-              "description": "L'espace de débat comprend plusieurs pages qui sont accessibles sur votre site via des URLs différentes. Si vous utilisez l'Installation en Javascript, ces URLs doivent pointer vers la page de votre site web où est inséré l'espace de débat. Si vous utilisez notre plugin Wordpress, les routes sont gérées automatiquement.",
+              "title": "URL paths",
+              "description": "The debate space includes several pages that are accessible on your site via different URLs. If you are using the Javascript installation, these URLs must point to the page on your website where the debate space is inserted. If you use our Wordpress plugin, the routes are handled automatically.",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\configuration\\routes.md",
               "slug": "/configuration/routes",
               "permalink": "/en/configuration/routes",
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Apparence et thème",
+                "title": "Appearance and theme",
                 "permalink": "/en/configuration/theme"
               },
               "next": {
-                "title": "Modération",
+                "title": "Moderation",
                 "permalink": "/en/configuration/moderation"
               }
             },
@@ -271,19 +271,19 @@
               "unversionedId": "configuration/theme",
               "id": "configuration/theme",
               "isDocsHomePage": false,
-              "title": "Apparence et thème",
-              "description": "Logora se fond à votre identité visuelle via l'onglet \"Paramètres\".",
+              "title": "Appearance and theme",
+              "description": "Logora matches your visual identity via the Settings tab.",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\configuration\\theme.md",
               "slug": "/configuration/theme",
               "permalink": "/en/configuration/theme",
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Signature JWT",
+                "title": "JWT Signature",
                 "permalink": "/en/authentication/jwt"
               },
               "next": {
-                "title": "Chemins d'URL",
+                "title": "URL paths",
                 "permalink": "/en/configuration/routes"
               }
             },
@@ -292,14 +292,14 @@
               "id": "faq/performance",
               "isDocsHomePage": false,
               "title": "Performance",
-              "description": "Logora met tout en oeuvre pour que le code inséré aie le moins d'impact sur le chargement de vos pages. Voici quelques détails sur le fonctionnement de Logora pour mieux évaluer la performance des scripts insérés.",
+              "description": "Logora makes every effort to ensure that the inserted code has the least impact on the loading of your pages. Here are some details on how Logora works to better evaluate the performance of inserted scripts.",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\faq\\performance.md",
               "slug": "/faq/performance",
               "permalink": "/en/faq/performance",
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Insertions publicitaires",
+                "title": "Insert Ads",
                 "permalink": "/en/configuration/ads"
               },
               "next": {
@@ -312,7 +312,7 @@
               "id": "faq/rgpd",
               "isDocsHomePage": false,
               "title": "RGPD",
-              "description": "Protection des données personnelles",
+              "description": "Data Protection Regulation (RGPD)",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\faq\\rgpd.md",
               "slug": "/faq/rgpd",
               "permalink": "/en/faq/rgpd",
@@ -328,14 +328,14 @@
               "id": "installation/amp-sdk",
               "isDocsHomePage": false,
               "title": "Google AMP SDK",
-              "description": "Insérez Logora sur vos pages Google AMP",
+              "description": "Insert Logora on your Google AMP pages",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\installation\\amp-sdk.md",
               "slug": "/installation/amp-sdk",
               "permalink": "/en/installation/amp-sdk",
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "API côté serveur",
+                "title": "Server side API",
                 "permalink": "/en/installation/server-side-sdk"
               },
               "next": {
@@ -348,7 +348,7 @@
               "id": "installation/app-sdk",
               "isDocsHomePage": false,
               "title": "App SDK",
-              "description": "Bientôt disponible...",
+              "description": "Soon available...",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\installation\\app-sdk.md",
               "slug": "/installation/app-sdk",
               "permalink": "/en/installation/app-sdk",
@@ -367,8 +367,8 @@
               "unversionedId": "installation/javascript-sdk",
               "id": "installation/javascript-sdk",
               "isDocsHomePage": false,
-              "title": "Installation Javascript",
-              "description": "Installez Logora grâce à notre code universel Javascript.",
+              "title": "Javascript installation",
+              "description": "Install Logora with our universal Javascript code.",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\installation\\javascript-sdk.md",
               "slug": "/installation/javascript-sdk",
               "permalink": "/en/installation/javascript-sdk",
@@ -379,7 +379,7 @@
                 "permalink": "/en/"
               },
               "next": {
-                "title": "Installation Wordpress",
+                "title": "Wordpress installation",
                 "permalink": "/en/installation/wordpress"
               }
             },
@@ -387,15 +387,15 @@
               "unversionedId": "installation/server-side-sdk",
               "id": "installation/server-side-sdk",
               "isDocsHomePage": false,
-              "title": "API côté serveur",
-              "description": "Insérez Logora côté serveur grâce à notre API",
+              "title": "Server side API",
+              "description": "Insert Logora server side with our API",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\installation\\api.md",
               "slug": "/installation/server-side-sdk",
               "permalink": "/en/installation/server-side-sdk",
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Installation Wordpress",
+                "title": "Wordpress installation",
                 "permalink": "/en/installation/wordpress"
               },
               "next": {
@@ -407,19 +407,19 @@
               "unversionedId": "installation/wordpress",
               "id": "installation/wordpress",
               "isDocsHomePage": false,
-              "title": "Installation Wordpress",
-              "description": "Avant de commencer",
+              "title": "Wordpress installation",
+              "description": "Before you start",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\installation\\wordpress.md",
               "slug": "/installation/wordpress",
               "permalink": "/en/installation/wordpress",
               "version": "current",
               "sidebar": "docs",
               "previous": {
-                "title": "Installation Javascript",
+                "title": "Javascript installation",
                 "permalink": "/en/installation/javascript-sdk"
               },
               "next": {
-                "title": "API côté serveur",
+                "title": "Server side API",
                 "permalink": "/en/installation/server-side-sdk"
               }
             },
@@ -428,14 +428,14 @@
               "id": "introduction",
               "isDocsHomePage": false,
               "title": "Quickstart",
-              "description": "Logora provides un espace de débat interactif pour animer et faire grandir votre communauté. Logora est intégré sur votre site en marque blanche, et peut être totalement personnalisé pour s'adapter à vos besoins et à vos interfaces. Découvrez notre Démo.",
+              "description": "Logora provides an interactive debate space to animate and grow your community. Logora is integrated on your website as a white label, and can be fully customized to fit your needs and interfaces. Discover our Demo.",
               "source": "@site/i18n\\en\\docusaurus-plugin-content-docs\\current\\introduction.md",
               "slug": "/",
               "permalink": "/en/",
               "version": "current",
               "sidebar": "docs",
               "next": {
-                "title": "Installation Javascript",
+                "title": "Javascript installation",
                 "permalink": "/en/installation/javascript-sdk"
               }
             }

@@ -89,7 +89,7 @@ Le code HTML renvoyé a pour racine le conteneur suivant  :
 <div id="logoraRoot" class="logoraContainer" lang="fr" data-id="synthesis"><div>
 ```
 
-### Récupérer la liste des articles
+### Récupérer la liste des articles (optionnel)
 
 Pour éviter de faire des appels inutiles et charger la synthèse uniquement sur les pages article où un débat est lié, vous pouvez utiliser la route prévue par l'API de Logora pour récupérer la liste de vos articles liés à un débat.
 

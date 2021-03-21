@@ -77,7 +77,6 @@ The response returned follows this format:
     "direct_url": "https://exemple.com/debate-space/debate/my-debate"      // Link to the debate
   },
   "content": CODE_HTML, // HTML code of the debate summary to insert in the page. Attribute not present if success is false
-  "source": OBJET_SOURCE, //  Object containing the metadata of the page
   "config": OBJET_CONFIG, // Object containing the application configuration
 }
 ```

@@ -3,7 +3,7 @@ id: performance
 title: Performance
 ---
 
-Logora makes every effort to ensure that the inserted code has the least impact on the loading of your pages. Here are some details on how Logora works to better evaluate the performance of inserted scripts.
+Logora makes every effort to ensure that the inserted code has the least impact on page loading. Here are some details on how Logora works to better evaluate the performance of inserted scripts.
 
 #### Synthesis at the foot of the article
 

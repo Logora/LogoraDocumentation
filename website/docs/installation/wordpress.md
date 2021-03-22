@@ -10,7 +10,7 @@ title: Installation Wordpress
 
 ### Installation
 
-- Logora est disponible sur le catalogue Wordpress (https://wordpress.org/plugins/logora/). Sur votre interface Wordpress, téléchargez le plugin via Extensions en recherchant "Logora". Activez l'extension après son téléchargement.
+- Logora est disponible sur le catalogue Wordpress (https://wordpress.org/plugins/logora/). Sur votre interface Wordpress, téléchargez le plugin via Plugins en recherchant "Logora". Activez l'extension après son téléchargement.
 - Ajoutez votre nom d'application et votre clé secrète dans l'onglet de réglages Logora. Votre nom d'application et votre clé secréte sont disponibles sur votre [espace d'administration](https://admin.logora.fr) dans l'onglet *Configuration > Général*.
 
 

@@ -1,20 +1,18 @@
 ---
 id: rgpd
-title: RGPD
-description: Protection des données personnelles 
+title: Données
+description: Traitement des données  
 ---
 
 ### Protection des données personnelles 
 
-### I. Objet 
+**Les données de votre espace de débat vous appartiennent**. Logora traite les données pour vous les rendre enrichis. 
 
-Les présentes clauses ont pour objet de définir les conditions dans lesquelles le sous-traitant (Logora) s'engage à effectuer pour le compte du responsable de traitement les opérations de traitement de données à caractère personnel définies ci-après. 
+> Exemple : Pierre ajoute un argument, Logora ajoute un argument à son profil et vous renvoie ses données. 
 
-Il est précisé que constitue une Donnée à caractère personnel toute information identifiant directement ou indirectement une personne physique. 
+Logora agit en tant que sous-traitant des données pour votre compte. Nous faisons une copie du prénom, nom et mail du débatteur pour les afficher sur l'espace de débat et notifier les utilisateurs par email des derniers débats tendance sur votre espace. 
 
-Dans le cadre de leurs relations contractuelles, les parties s'engagent à respecter la réglementation en vigueur applicable au traitement de données à caractère personnel et, en particulier, le règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 applicable depuis le 25 mai 2018 (ci-après, « le règlement européen sur la protection des données ») ainsi que la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés (modifiée). 
-
-### II. Description du traitement faisant l'objet de la sous-traitance 
+### I. Description du traitement faisant l'objet de la sous-traitance 
 
 Le sous-traitant est autorisé à traiter pour le compte du responsable de traitement les données à caractère personnel nécessaires pour fournir le service suivant : 
 
@@ -52,7 +50,7 @@ La proposition d'un débat à un utilisateur lié à son profil.
 
 ##### Les données à caractère personnel traitées sont :
 
-Les données d'identification (Nom, prénom, pseudo, email, notes et commentaires); 
+**Les données d'identification (Nom, prénom, pseudo, email, notes et commentaires);**
 
 Les catégories de personnes concernées sont les internautes, salariés, lecteurs ayant un compte. 
 

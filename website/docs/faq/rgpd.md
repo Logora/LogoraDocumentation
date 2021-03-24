@@ -6,13 +6,18 @@ description: Traitement des données
 
 ### Protection des données personnelles 
 
+### I. Résumé du présent document 
+
 **Les données de votre espace de débat vous appartiennent**. Logora traite les données pour vous les rendre enrichis. 
 
 > Exemple : Pierre ajoute un argument, Logora ajoute un argument à son profil et vous renvoie ses données. 
 
 Logora agit en tant que sous-traitant des données pour votre compte. Nous faisons une copie du prénom, nom et mail du débatteur pour les afficher sur l'espace de débat et notifier les utilisateurs par email des derniers débats tendance sur votre espace. 
 
-### I. Description du traitement faisant l'objet de la sous-traitance 
+Vous pouvez récupérer vos données automatiquement en appelant notre API. Pour cela contactez-nous (henry@logora.fr). 
+Vous pouvez également les récupérer manuellement depuis votre espace d'administration. Elles sont récupérées sous format CSV. 
+
+### II. Description du traitement faisant l'objet de la sous-traitance 
 
 Le sous-traitant est autorisé à traiter pour le compte du responsable de traitement les données à caractère personnel nécessaires pour fournir le service suivant : 
 

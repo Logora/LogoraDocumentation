@@ -1,18 +1,21 @@
 ---
 id: rgpd
-title: RGPD
+title: Data
 description: Data Protection Regulation (RGPD)
 ---
 
-### Protection of personal data
+### Protection and use of personal data
 
-### I. Purpose 
+### I. Summary
 
-The purpose of these clauses is to define the conditions under which the processor (Logora) undertakes to carry out the personal data processing operations defined below on behalf of the controller. 
+**The data in your debate space belongs to you**. Logora processes the data to return it to you enriched. 
 
-It is specified that personal data is any information directly or indirectly identifying a natural person. 
+> Example: Peter adds an argument, Logora adds an argument to his profile and returns his data to you. 
 
-In the context of their contractual relationship, the parties undertake to comply with the regulations in force applicable to the processing of personal data and, in particular, Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 applicable since 25 May 2018 (hereinafter, "the European Data Protection Regulation") as well as Law No. 78-17 of 6 January 1978 relating to information technology, files and freedoms (as amended). 
+Logora acts as a data processor on your behalf. We make a copy of the debater's first name, last name and email to display on the debate space and notify users by email of the latest debates trending on your space. 
+
+You can get your data back automatically by calling our API. To do so, contact us (henry@logora.fr). 
+You can also retrieve them manually from your administration space. They are retrieved in CSV format. 
 
 ### II. Description of the processing subject to subcontracting
 

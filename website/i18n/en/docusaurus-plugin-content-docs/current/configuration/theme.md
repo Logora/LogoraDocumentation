@@ -12,7 +12,7 @@ Tutorial video : (https://www.youtube.com/watch?v=hQIJW66UP9M&feature=emb_title&
 
 `The colors and the font` can be customized from the administration space via the "Customization" tab.
 
-`All the texts` on the debate space ("Follow the debate", "All the debates" ect ) are also editable from the "Texts" tab.
+`All the texts` on the debate space ("Follow the debate", "All the debates" etc ) are also editable from the "Texts" tab.
 
 > For example, the main color, that is to say the color of the main buttons like "Write a message" or "Follow a debate" is modifiable via the hexadecimal code located under the title "Main color".
 

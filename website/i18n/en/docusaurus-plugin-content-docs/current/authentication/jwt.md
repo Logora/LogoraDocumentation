@@ -3,11 +3,11 @@ id: jwt
 title: JWT Signature
 ---
 
-This authentication mode allows to automatically connect users to Logora once they are authenticated through your login system. This method uses a JWT token (JSON Web Token) by your secret key to convey the user's data to Logora.
+This authentication mode allows to automatically connect users to Logora once they are authenticated through your login system. This method uses a JWT token (JSON Web Token) with your secret key to convey the user's data to Logora.
 
 ### Before you start
 
-- Go to your [Administration space](https://admin.logora.fr) tab *Configuration > Authentication* to choose the authentication mode `JWT signature`.  
+- Go to your [Administration space](https://admin.logora.fr) (*Configuration > Authentication*) to choose the authentication mode `JWT signature`.  
 - Get your API secret key. This secret key will be used to create the JWT token. It must be kept confidential.
 
 ### Authentication process
@@ -18,11 +18,11 @@ This authentication mode allows to automatically connect users to Logora once th
 
 ### Set up
 
-> WARNING : the JWT token conveyed to Logora must always be updated according to the state of the user, whether he is connected or not. If the pages of your website are behind a cache, especially the pages that contain the debate summary, it is possible that the JWT token is not updated. If caching is interfering with the creation of the JWT token, use another authentication method.
+> WARNING : the JWT token transmitted to Logora must always be updated according to the state of the user, whether they are connected or not. If the pages of your website are behind a cache, especially the pages that contain the debate summary, it is possible that the JWT token is not updated. If caching is interfering with the creation of the JWT token, use another authentication method.
 
 #### 1. Generation of the JWT token
 
-Using [JSON Web Token serialization](https://jwt.io/), publishers can pass existing user data to provide users with a seamless authenticated session on Logora. The JWT token must be generated on your servers and then passed to Logora via javascript configuration variables. Here is the composition of the token, consisting of the following three parts:
+Using [JSON Web Token serialization](https://jwt.io/), publishers can pass existing user data to provide users with a seamless authenticated session on Logora. The JWT token must be generated on your servers and then transmitted to Logora via javascript configuration variables. Here is the composition of the token, consisting of the following three parts:
 
 Token header
 ``` 
@@ -95,13 +95,13 @@ var logora_config = {
 
 #### 3. Disconnecting the user
 
-To disconnect the user, remove the `remote_auth` parameter or pass an empty string. If the parameter is empty, Logora considers that the user is disconnected.
+To disconnect the user, remove the `remote_auth` parameter or transmit an empty string. If the parameter is empty, Logora considers that the user is disconnected.
 
 #### 4. Redirection to the debate space after user login
 
-When a user who is not logged in wants to perform an action on the debate space, he is redirected to your login or registration page. When inserting the debate space and the overview, you must define the login and registration URLs via the auth.login_url and auth.registration_url variables respectively.
+When a user who is not logged in wants to perform an action on the debate space, they are redirected to your login or registration page. When inserting the debate space and the overview, you must define the login and registration URLs via the auth.login_url and auth.registration_url variables respectively.
 
-When redirecting, a logora_redirect request parameter is passed, containing the URL of the page before redirection. Use this parameter to redirect the user after his login or registration. The name of the parameter passed can be changed, it can be for example set to redirect_to. To change the parameter name, use the auth.redirectParameter variable.
+When redirecting, a logora_redirect request parameter is passed, containing the URL of the page before redirection. Use this parameter to redirect the user after their login or registration. The name of the parameter passed can be changed, it can be for example set to redirect_to. To change the parameter name, use the auth.redirectParameter variable.
 
 ```javascript
 var logora_config = {

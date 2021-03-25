@@ -40,4 +40,4 @@ Here are the different Debate Space pages with their links and settings:
 
 With the default settings, the home page of the debate space is accessible through the link: https://yourwebsite.com/espace-debat/debats.
 
-The names of these paths can be set in the administration space in the tab *Configuration > Customization > URL paths*.
+The names of these paths can be set in the administration space in the following tab: *Configuration > Customization > URL paths*.

@@ -23,7 +23,7 @@ Header : `Content-Type: application/json`
 URL parameters :   
 `shortname` (required): name of your application available in your administration panel  
 `uid` (required): unique page identifier (it is the same identifier that is inserted on the client side) 
-`insertType` (optional) : insertion mode, do not add if standard insertion. Indicate *amp* for an insertion on an AMP page or *iframe* for an insertion in iframe.  
+`insertType` (optional) : insertion mode, do not add in case of standard insertion. Indicate *amp* for an insertion on an AMP page or *iframe* for an insertion in iframe.  
 
 Request body: The request body must contain metadata about the page, in JSON format.
 ```json
@@ -90,7 +90,7 @@ The returned HTML code has the following container at its root:
 
 ### Retrieving the list of articles (advanced usage)
 
-To avoid making unnecessary calls and to load the debate summary only on the pages where a debate is linked, you can use the route provided by the Logora API to retrieve the list of articles linked to a debate.
+In order to avoid making unnecessary calls and to load the debate summary only on the pages where a debate is linked, you can use the route provided by the Logora API to retrieve the list of articles linked to a debate.
 
 #### Query
 

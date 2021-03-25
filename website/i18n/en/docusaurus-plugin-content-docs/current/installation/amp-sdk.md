@@ -14,7 +14,7 @@ To do this, use the [*amp-iframe*](https://amp.dev/documentation/components/amp-
 Base URL: 
 `https://api.logora.fr/synthese-amp.html`
 
-Dynamic parameters to specify in the URL:
+Dynamic parameters that must be specified in the URL:
 - `shortname` : name of your application
 - `id` : unique page identifier
 

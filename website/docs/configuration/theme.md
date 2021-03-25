@@ -14,7 +14,7 @@ Vidéo tutorielle : (https://www.youtube.com/watch?v=hQIJW66UP9M&feature=emb_tit
 
 `Les couleurs et la police sont personnalisables` depuis l'espace d'administration onglet "Personnalisation".
 
-`L'ensemble des textes` de l'espace de débat ("Suivre le débat", "Tous les débats" ect ) sont également modifiables depuis l'onglet "Textes".
+`L'ensemble des textes` de l'espace de débat ("Suivre le débat", "Tous les débats" etc ) sont également modifiables depuis l'onglet "Textes".
 
 > À titre d'exemple, la couleur principale, c'est à dire la couleur des boutons principaux comme "Ecrire un message" ou "Suivre un débat" est modifiable via le code hexadecimal situé sous le titre "Couleur principale".
 

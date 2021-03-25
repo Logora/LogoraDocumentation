@@ -3,7 +3,7 @@ id: oauth2_server
 title: OAuth 2.0 server
 ---
 
-The OAuth 2.0 protocol allows secure resource recovery while protecting your users' data. Logora offers an OAuth 2.0 compliant authentication service, which allows to automatically connect your users to the Logora application once they are connected to your authentication system.
+The OAuth 2.0 protocol allows secure resource recovery while protecting your users' data. Logora offers an OAuth 2.0 compliant authentication service, which allows your users to automatically connect to the Logora application once they are connected to your authentication system.
 
 This authentication mode allows Logora to connect to your OAuth 2.0 server. After retrieving an access token for the user, we retrieve their profile via an access point in your API.
 

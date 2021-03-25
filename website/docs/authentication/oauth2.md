@@ -8,7 +8,7 @@ Le protocole OAuth 2.0 permet la récupération sécurisée des ressources tout 
 
 ### Avant de commencer
 
-- Rendez-vous sur votre [Espace d'administration](https://admin.logora.fr) onglet *Configuration > Authentification* pour choisir le mode d'authentification `OAuth2.0`.
+- Rendez-vous sur votre [Espace d'administration](https://admin.logora.fr) (onglet *Configuration > Authentification*) pour choisir le mode d'authentification `OAuth2.0`.
 - Munissez-vous de votre clé d'API et de votre clé secrète .
 
 ### Processus d'authentification

@@ -7,7 +7,7 @@ The OAuth 2.0 protocol allows secure resource recovery while protecting your use
 
 ### Before you start
 
-- Go to your [Administration Space](https://admin.logora.fr) tab *Configuration > Authentication* to choose the authentication mode `OAuth2.0`.
+- Go to your [Administration Space](https://admin.logora.fr) (*Configuration > Authentication* tab) to choose the authentication mode `OAuth2.0`.
 - Get your API key and your secret key.
 
 ### Authentication process
@@ -55,11 +55,11 @@ curl -H "Authorization: Bearer Av9wbEK-0QTOdxhzB4S3-B1ZFKj1Z4y8Xcl17iVcHsg" -d u
 => {"success": "true","session_id": "14c98398-08c7-42ae-b1f7-e435920fccec"}
 ```
 
-#### 3. Convey the session ID
+#### 3. Transmit the session ID
 
-To identify the connected user, the Logora application must know his session identifier. Convey this identifier via the `remote_auth` parameter in the Javascript configuration variables of the debate space.
+To identify the connected user, the Logora application must know his session identifier. Transmit this identifier via the `remote_auth` parameter in the Javascript configuration variables of the debate space.
 
-> WARNING: check that the conveyed parameters are not behind a cache. The session id must always be up to date, regardless of the user's state, logged in or not.
+> WARNING: check that the transmited parameters are not behind a cache. The session id must always be up to date, regardless of the user's state, logged in or not.
 
 ```javascript
 var logora_config = {

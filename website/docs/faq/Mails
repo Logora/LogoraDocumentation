@@ -5,15 +5,21 @@ title: Gestion des mails
 
 #### Envoi de mails pour votre compte
 
+**Contenu**
+
 Nous envoyons pour votre compte une newsletter hebdomadaire à l'ensemble des débatteurs inscrits sur votre espace de débat. 
 
 ![Preview Mail](/img/previewmail.png)
 
-Elle propose les meilleurs débats de la semaine aux débatteurs inscrits.  
+Elle propose les dix débats de la semaine les plus populaires aux débatteurs inscrits.  
 
 Nous envoyons également un mail à un débatteur lorsque quelqu'un lui répond directement sur un débat. 
 
+![Answer Mail](/img/answermail.png)
+
 Un maximum d'un mail par jour est envoyé aux utilisateurs. 
+
+**Impact**
 
 > En moyenne, ces mails ont des taux d'ouverture de 26,2% et de clics à 6,3%. 
 

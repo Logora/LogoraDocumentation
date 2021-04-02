@@ -9,15 +9,15 @@ title: Gestion des mails
 
 Nous envoyons pour votre compte une newsletter hebdomadaire à l'ensemble des débatteurs inscrits sur votre espace de débat. 
 
-![Preview Mail](/img/previewmail.png)
-
 Elle propose les dix débats de la semaine les plus populaires aux débatteurs inscrits.  
 
 Nous envoyons également un mail à un débatteur lorsque quelqu'un lui répond directement sur un débat. 
 
-![Answer Mail](/img/answermail.png)
-
 Un maximum d'un mail par jour est envoyé aux utilisateurs. 
+
+::: Seul la newsletter et la réponse directe à un argument font l'objet d'envoi de mails. 
+
+Toutes les autres actions (recevoir un vote, être suivi par quelqu'un...) font l'objet de notifications sur votre espace de débat, on-site. 
 
 **Impact**
 
@@ -27,6 +27,19 @@ Un maximum d'un mail par jour est envoyé aux utilisateurs.
 
 Les débatteurs peuvent se désincrire des emails reçus depuis leur profil de débatteur ou directement depuis le mail reçu. 
 
+Nous indiquons envoyer le mail pour votre compte en pied de mail, positionnant Logora en tant que sous-traitant des données dans le cadre légal en vigueur. 
+
+#### Illustrations
+
+**Preview d'un mail**
+
+![Preview Mail](/img/previewmail.png)
+
+**Réponse à un débatteur**
+
+![Answer Mail](/img/answermail.png)
+
+**Newsletter hebdomadaire**
+
 ![Preview Mail](/img/insidemail.png)
 
-Nous indiquons envoyer le mail pour votre compte en pied de mail, positionnant Logora en tant que sous-traitant des données dans le cadre légal en vigueur. 

@@ -15,7 +15,7 @@ Nous envoyons également un mail à un débatteur lorsque quelqu'un lui répond 
 
 Un maximum d'un mail par jour est envoyé aux utilisateurs. 
 
-::: Seul la newsletter et la réponse directe à un argument font l'objet d'envoi de mails. 
+:::tip Seul la newsletter et la réponse directe à un argument font l'objet d'envoi de mails. 
 
 Toutes les autres actions (recevoir un vote, être suivi par quelqu'un...) font l'objet de notifications sur votre espace de débat, on-site. 
 

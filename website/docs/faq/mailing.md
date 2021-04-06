@@ -33,15 +33,15 @@ Si vous utilisez Google Analytics, vous pouvez retrouver les résultats de vos c
 
 Voici les paramètres ajoutés pour chacun des mails : 
 
-**Résultats mail newsletter**
+**Résultats mails "newsletter"**
 
 utm_source=logora, utm_medium=email, utm_campaign=trending_debate_weekly
 
-**Résultats mail réponse à un argument**
+**Résultats mails "réponse à un argument"**
 
 utm_source=logora, utm_medium=email, utm_campaign=argument_reply
 
-**Résultats mail débat suivi**
+**Résultats mails "débat suivi"**
 
 utm_source=logora, utm_medium=email, utm_campaign=debate_follow
 

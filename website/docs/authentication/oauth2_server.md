@@ -9,7 +9,10 @@ Ce mode d'authentification permet à Logora de se connecter à votre serveur OAu
 
 ### Mise en place
 
-Pour mettre en place ce mode d'authentification, vous devez créer une application cliente pour Logora sur votre serveur OAuth 2.0 et nous transmettre les informations suivantes :
+Pour mettre en place ce mode d'authentification, vous devez créer une application cliente pour Logora sur votre serveur OAuth 2.0, avec le paramètre suivant :
+   `redirect_uri`: `https://app.logora.fr/auth/callback`
+
+Transmettez-nous ensuite les informations suivantes :
 - `client_id` : la clé publique de l'application créée
 - `client_secret` : la clé secrète de l'application créée
 - `auth_dialog_endpoint`: l'URL de la page d'authentification

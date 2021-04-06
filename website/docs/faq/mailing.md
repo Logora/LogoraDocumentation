@@ -5,11 +5,11 @@ title: Gestion des mails
 
 #### Envoi de mails pour votre compte
 
-**Contenu**
+## I.Contenu
 
 Nous envoyons pour votre compte une newsletter hebdomadaire à l'ensemble des débatteurs inscrits sur votre espace de débat. 
 
-Elle propose les dix débats de la semaine les plus populaires aux débatteurs inscrits.  
+Elle propose les dix débats de la semaine les plus populaires à vos débatteurs inscrits.  
 
 Nous envoyons également un mail à un débatteur lorsque quelqu'un lui répond directement sur un débat. 
 
@@ -25,11 +25,11 @@ Seul la newsletter, la réponse directe à un argument et l'ajout d'un argument 
 
 Toutes les autres actions (recevoir un vote, être suivi par quelqu'un...) font l'objet de notifications sur votre espace de débat, on-site. 
 
-**Impact**
-
-En moyenne, ces mails ont des taux d'ouverture de 26,2% et de clics à 6,3%. 
+## II.Impact
 
 Si vous utilisez Google Analytics, vous pouvez retrouver les résultats de vos campagnes de mails grâce aux marquages media de type utm. 
+
+> En moyenne, ces mails ont des taux d'ouverture de 26,2% et de clics à 6,3%. 
 
 Voici les paramètres ajoutés pour chacun des mails : 
 
@@ -45,29 +45,28 @@ utm_source=logora, utm_medium=email, utm_campaign=argument_reply
 
 utm_source=logora, utm_medium=email, utm_campaign=debate_follow
 
-#### Gestion du consentement
+## III.Gestion du consentement
 
 Les débatteurs peuvent se désincrire des emails reçus depuis leur profil de débatteur ou directement depuis le mail reçu. 
 
 Nous indiquons envoyer le mail pour votre compte en pied de mail, positionnant Logora en tant que sous-traitant des données dans le cadre légal en vigueur. 
 
-
-
-
-
-
-
-#### Illustrations
+## IV.Illustrations
 
 **Preview d'un mail**
 
 ![Preview Mail](/img/previewmail.png)
 
-**Réponse à un débatteur**
+**Réponse à un argument**
 
 ![Answer Mail](/img/answermail.png)
 
 **Newsletter hebdomadaire**
 
 ![Preview Mail](/img/insidemail.png)
+
+**Débat suivi**
+
+![Group Follow](/img/groupfollow.png)
+
 

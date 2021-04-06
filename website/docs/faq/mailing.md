@@ -13,11 +13,13 @@ Elle propose les dix débats de la semaine les plus populaires aux débatteurs i
 
 Nous envoyons également un mail à un débatteur lorsque quelqu'un lui répond directement sur un débat. 
 
+Enfin, nous envoyons un mail à un débatteur lorsque quelqu'un ajoute un argument sur un débat qu'il suit. 
+
 Un maximum d'un mail par jour est envoyé aux utilisateurs. 
 
 :::note
 
-Seul la newsletter et la réponse directe à un argument font l'objet d'envoi de mails. 
+Seul la newsletter, la réponse directe à un argument et l'ajout d'un argument sur un débat suivi font l'objet d'envoi de mails. 
 
 :::
 

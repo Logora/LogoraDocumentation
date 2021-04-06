@@ -35,7 +35,7 @@ Voici les paramètres ajoutés pour chacun des mails :
 
 **Résultats mails "newsletter"**
 
-utm_source=logora, utm_medium=email, utm_campaign=trending_debate_weekly
+utm_source=logora, utm_medium=email, utm_campaign=trending_debates_weekly
 
 **Résultats mails "réponse à un argument"**
 

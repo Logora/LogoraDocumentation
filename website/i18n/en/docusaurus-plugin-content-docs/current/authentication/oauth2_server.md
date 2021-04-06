@@ -9,8 +9,10 @@ This authentication mode allows Logora to connect to your OAuth 2.0 server. Afte
 
 ### Set up
 
-To set up this authentication mode, you need to create a client application for Logora on your OAuth 2.0 server and send us the following information:
+To set up this authentication mode, you need to create a client application for Logora on your OAuth 2.0 server, using the following parameter :
+  `redirect_uri`: `https://app.logora.fr/auth/callback`
 
+Send us the following information so that we can configure your application :
 - `client_id` : the public key of the created application
 - `client_secret` : the secret key of the created application
 - `auth_dialog_endpoint`: the URL of the authentication page

@@ -25,13 +25,36 @@ Toutes les autres actions (recevoir un vote, être suivi par quelqu'un...) font 
 
 **Impact**
 
-> En moyenne, ces mails ont des taux d'ouverture de 26,2% et de clics à 6,3%. 
+En moyenne, ces mails ont des taux d'ouverture de 26,2% et de clics à 6,3%. 
+
+Si vous utilisez Google Analytics, vous pouvez retrouver les résultats de vos campagnes de mails grâce aux marquages media de type utm. 
+
+Voici les paramètres ajoutés pour chacun des mails : 
+
+**Résultats mail newsletter**
+
+utm_source=logora conserver utm_medium=email utm_campaign=trending_debate_weekly
+
+**Résultats mail réponse à un argument**
+
+utm_source=logora conserver utm_medium=email utm_campaign=argument_reply
+
+**Résultats mail débat suivi**
+
+utm_source=logora conserver utm_medium=email utm_campaign=debate_follow
+
 
 #### Gestion du consentement
 
 Les débatteurs peuvent se désincrire des emails reçus depuis leur profil de débatteur ou directement depuis le mail reçu. 
 
 Nous indiquons envoyer le mail pour votre compte en pied de mail, positionnant Logora en tant que sous-traitant des données dans le cadre légal en vigueur. 
+
+
+
+
+
+
 
 #### Illustrations
 

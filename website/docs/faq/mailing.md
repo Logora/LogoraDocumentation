@@ -35,16 +35,15 @@ Voici les paramètres ajoutés pour chacun des mails :
 
 **Résultats mail newsletter**
 
-utm_source=logora conserver utm_medium=email utm_campaign=trending_debate_weekly
+utm_source=logora, utm_medium=email, utm_campaign=trending_debate_weekly
 
 **Résultats mail réponse à un argument**
 
-utm_source=logora conserver utm_medium=email utm_campaign=argument_reply
+utm_source=logora, utm_medium=email, utm_campaign=argument_reply
 
 **Résultats mail débat suivi**
 
-utm_source=logora conserver utm_medium=email utm_campaign=debate_follow
-
+utm_source=logora, utm_medium=email, utm_campaign=debate_follow
 
 #### Gestion du consentement
 

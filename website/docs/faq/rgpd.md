@@ -14,7 +14,7 @@ Logora traite les données pour vous les rendre enrichis.
 
 > Exemple : Pierre ajoute un argument, Logora ajoute un argument à son profil et vous renvoie ses données. 
 
-::: info 
+:::note 
 
 Logora agit en tant que sous-traitant des données pour votre compte. Nous faisons une copie du prénom, nom et mail du débatteur pour les afficher sur l'espace de débat et notifier les utilisateurs par email des derniers débats tendance sur votre espace. 
 

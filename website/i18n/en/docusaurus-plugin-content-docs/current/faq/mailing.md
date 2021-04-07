@@ -55,15 +55,15 @@ We indicate to send the email on your behalf at the bottom of the email, positio
 
 **Preview of a mail***.
 
-Preview Mail](/img/previewmail.png)
+[Preview Mail](/img/previewmail.png)
 
 **Answer to an argument**
 
-Answer Mail](/img/answermail.png)
+[Answer Mail](/img/answermail.png)
 
 **Weekly newsletter**
 
-Preview Mail](/img/insidemail.png)
+[Preview Mail](/img/insidemail.png)
 
 **Follow-up debate**
 

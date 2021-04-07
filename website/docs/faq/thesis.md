@@ -25,7 +25,7 @@ Enfin, contribuer demande un effort non négligeable à l'utilisateur.
 
 La plupart des utilisateurs lorsqu'ils participent défendent des idées et des valeurs prononcées qui peuvent se résumer en deux thèses principales. 
 
-:::info
+:::note
 
 Tous les mois nous appelons 50 débatteurs actifs, nous n'avons jamais noté de demande concernant davantage de thèses. Il s'attachent avant tout à la lisibilité du débat et à la qualité des contributions mises en avant.
 

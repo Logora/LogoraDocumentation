@@ -5,31 +5,66 @@ title: Mail management
 
 #### Sending emails for your account
 
-**Content**
+## I.Content
 
-We send a weekly newsletter on your behalf to all the debaters registered on your debate space. 
-Here is an email preview : 
+We send a weekly newsletter on your behalf to all the registered debaters on your debate space. 
 
-![Preview Mail](/img/previewmail.png)
+It offers the ten most popular debates of the week to your registered debaters.  
 
-It presents the ten most popular debates of the week to registered debaters.  
+We also send an email to a debater when someone responds directly to them on a debate. 
 
-We also send an email to a debater when someone replies directly to him/her on a debate. 
-Here is a mail exemple : 
-
-![Answer Mail](/img/answermail.png)
+Finally, we send an email to a debater when someone adds an argument to a debate they are following. 
 
 A maximum of one email per day is sent to users. 
 
-**Impact**
+:::note
+
+Only the newsletter, the direct response to an argument and the addition of an argument to a debate being followed are subject to mailings. 
+
+:::
+
+All other actions (receiving a vote, being followed by someone...) are subject to notifications on your debate space, on-site. 
+
+## II.Impact
+
+If you are using Google Analytics, you can track the results of your email campaigns using utm media tags. 
 
 > On average, these emails have an open rate of 26.2% and a click rate of 6.3%. 
 
-#### Consent management
+Here are the parameters added for each of the mails: 
 
-Debaters can unsubscribe from emails received from their debater profile or directly from the email received.
-Here is a mail exemple : 
+**Results of "newsletter" mails
 
-![Preview Mail](/img/insidemail.png)
+utm_source=logora, utm_medium=email, utm_campaign=trending_debates_weekly
 
-We specify sending the email on your behalf at the bottom of the email, positioning Logora as a data processor within the legal framework. 
+**Results of "reply to an argument" mails
+
+utm_source=logora, utm_medium=email, utm_campaign=argument_reply
+
+**Results of the "debate followed" mails
+
+utm_source=logora, utm_medium=email, utm_campaign=debate_follow
+
+## III. consent management
+
+Debaters can unsubscribe from emails received from their debater profile or directly from the email received. 
+
+We indicate to send the email on your behalf at the bottom of the email, positioning Logora as a data processor within the legal framework in force. 
+
+## IV.Illustrations
+
+**Preview of a mail***.
+
+Preview Mail](/img/previewmail.png)
+
+**Answer to an argument**
+
+Answer Mail](/img/answermail.png)
+
+**Weekly newsletter**
+
+Preview Mail](/img/insidemail.png)
+
+**Follow-up debate**
+
+![Group Follow](/img/groupfollow.png)

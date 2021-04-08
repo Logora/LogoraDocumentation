@@ -16,7 +16,7 @@ Logora traite les données pour vous les rendre enrichis.
 
 :::note 
 
-Logora agit en tant que sous-traitant des données pour votre compte. Nous faisons une copie du prénom, nom et mail du débatteur pour les afficher sur l'espace de débat et notifier les utilisateurs par email des derniers débats tendance sur votre espace. 
+Logora agit en tant que sous-traitant des données pour votre compte. Nous faisons une copie du prénom, nom et mail du débatteur pour les afficher sur l'espace de débat et notifier les utilisateurs par email des derniers débats tendances sur votre espace. 
 
 :::
 

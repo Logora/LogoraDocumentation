@@ -33,8 +33,8 @@ Pour insérer les publicités dans les espaces proposées, il vous suffit de cr�
 
 :::note 
 
-Si vous choisissez le modèle de partage de revenus publicitaire, l'équipe de Logora doit pouvoir avoir accès aux performances de ces publicités. 
-Vous pouvez choisir le format de support qui vous convient (Google Data Studio...). 
+Si vous choisissez le modèle de partage de revenus publicitaires, Logora doit avoir accès aux performances de ces publicités. 
+Vous pouvez choisir le format de support qui vous convient (Google Data Studio...) pour nous transmettre cette vue. 
 
 :::
 

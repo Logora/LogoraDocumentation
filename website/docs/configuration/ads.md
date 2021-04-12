@@ -22,12 +22,20 @@ Pour insérer les publicités dans les espaces proposées, il vous suffit de cr�
 #### Dans la synthèse
 
 - Pavé entre le sondage et les contributions mises en avant en pied d’article sur mobile : `(300 * 250)`
+- Bannière entre le sondage et les contributions mises en avant en pied d’article sur format tablette et ordinateur `(728x90, 1000x90, 970x90)`
 
 #### Sur l'Espace de débat
 
 - Barre latérale fixe sur format tablette et ordinateur : `(300 * 250 ou 300 * 600)`
 - Bannière sous la barre de navigation de l’espace de débat sur format tablette et ordinateur : `(970 * 90 ou 728 * 90 ou 1000 * 90)`
 - Pavé haut au début de la liste d'arguments sur mobile : `(300 * 250)`                        
-- Pavé bas tous les trois d'arguments sur mobile : `(300 * 250)`                        
+- Pavé bas tous les trois d'arguments sur mobile : `(300 * 250)`
+
+:::note 
+
+Si vous choisissez le modèle de partage de revenus publicitaire, l'équipe de Logora doit pouvoir avoir accès aux performances de ces publicités. 
+Vous pouvez choisir le format de support qui vous convient (Google Data Studio...). 
+
+:::
 
     

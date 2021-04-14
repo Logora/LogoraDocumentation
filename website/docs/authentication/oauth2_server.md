@@ -19,7 +19,7 @@ Transmettez-nous ensuite les informations suivantes :
 - `scope` : la portée des jetons d'accès
 - `token_endpoint` : l'URL de la route de récupération de jeton d'accès
 - `token_endpoint_method` : la méthode de la route de récupération de jeton d'accès ("GET" ou "POST")
-- `user_profile_method`: l'URL de la route de récupération du profil utilisateur (méthode "GET")
+- `user_profile_endpoint`: l'URL de la route de récupération du profil utilisateur (méthode "GET")
 - `user_profile_params`: paramètres d'URL à envoyer avec cette route, sous forme de dictionnaire
 - `user_profile_mapping` : liaison entre les attributs renvoyés par la route et ceux demandés par Logora
 

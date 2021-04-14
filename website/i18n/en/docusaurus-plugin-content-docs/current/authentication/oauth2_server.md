@@ -19,7 +19,7 @@ Send us the following information so that we can configure your application :
 - `scope` : the scope of the access tokens
 - `token_endpoint` : the URL of the access token recovery route
 - `token_endpoint_method` : the method of the token retrieval route ("GET" or "POST")
-- `user_profile_method`: the URL of the user profile retrieval route ("GET" method)
+- `user_profile_endpoint`: the URL of the user profile retrieval route ("GET" method)
 - `user_profile_params`: URL parameters to send with this route, in dictionary form
 - `user_profile_mapping` : link between the attributes returned by the route and those requested by Logora
 

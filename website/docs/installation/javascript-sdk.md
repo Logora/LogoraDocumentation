@@ -70,10 +70,9 @@ Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat,
 
 ### 2. Installer la synthèse du débat 
 
+> Si avez des contraintes de performance élevé et que vous souhaitez indexer les pages de débat sur les moteurs de recherche, il est nécessaire d'insérer la synthèse côté serveur. Dans ce cas rendez-vous sur la page d'[installation côté serveur](installation/api.md).
 
 Insérez le code Javascript de la synthèse à l'endroit où vous souhaitez voir apparaître la synthèse du débat, en pied d'article. Ceci est un exemple de code Javascript qui charge et affiche la synthèse du débat en cours lié à votre article. Il doit être inséré sur toutes vos pages d'articles. Ce code n'affichera rien tant que vous n'avez pas associé de débat à la page.
-
-> Si vous préférez insérer la synthèse côté serveur, rendez-vous sur la page d'[installation côté serveur](installation/api.md).
 
 > Si vous souhaitez utiliser le widget, utilisez l'autre lien indiqué dans le code Javascript exemple
 

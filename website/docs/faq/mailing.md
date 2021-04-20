@@ -19,7 +19,7 @@ Un maximum d'un mail par jour est envoyé aux utilisateurs.
 
 :::note
 
-Seul la newsletter, la réponse directe à un argument et l'ajout d'un argument sur un débat suivi font l'objet d'envoi de mails. 
+Seuls la newsletter, la réponse directe à un argument et l'ajout d'un argument sur un débat suivi font l'objet d'envoi de mails. 
 
 :::
 

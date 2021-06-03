@@ -15,7 +15,8 @@ Paramètres à spécifier :
 - `String applicationName` : nom de l'application
 
 
-> Exemple d'insertion
+Exemple d'insertion :
+
 ```java
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

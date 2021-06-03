@@ -1,6 +1,6 @@
 ---
-id: app-sdk
-title: App SDK
+id: android-sdk
+title: Android SDK
 ---
 
 #### Soon available...

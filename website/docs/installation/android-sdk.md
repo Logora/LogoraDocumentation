@@ -4,7 +4,7 @@ title: Android SDK
 ---
 
 Logora peut s'intégrer en natif sur vos applications Android. Voici un guide d'utilisation de notre SDK.
-Une application de test est disponible à l'adresse suivante : [https://github.com/Logora/LogoraAndroidTestApp]
+Une application de test est disponible à l'adresse suivante : [https://github.com/Logora/LogoraAndroidTestApp](https://github.com/Logora/LogoraAndroidTestApp)
 
 #### Installation (Java)
 

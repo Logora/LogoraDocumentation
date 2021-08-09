@@ -9,6 +9,8 @@ description: Insert Logora server side with our API
 
 Logora provides an API route to retrieve the debate summary server side. This API route returns the full HTML code of the debate summary (including CSS and scripts), that you can insert into your page template. This method replaces the insertion of the Logora script in your pages.
 
+To get a more detailed documentation of this API, go to the [Documentation](https://render.logora.fr/docs) page.
+
 > This API is also used by the Logora Javascript code to display the debate summary.
 
 #### Query

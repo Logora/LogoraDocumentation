@@ -72,6 +72,8 @@ Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat,
 
 Logora fournit une route d'API pour récupérer la synthèse dans vos pages côté serveur. Cette route d'API renvoie le code HTML complet de la synthèse (CSS et scripts inclus), que vous pouvez insérer dans votre modèle de page. Cette méthode remplace l'insertion du script Logora sur vos pages.
 
+Pour accéder à une documentation plus détaillée de l'API de pré-rendu, rendez-vous sur la [Documentation](https://render.logora.fr/docs)
+
 > Cette API est utilisée par ailleurs par le code Javascript Logora pour afficher la synthèse.
 
 #### Requête

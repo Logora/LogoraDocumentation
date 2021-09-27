@@ -33,26 +33,24 @@ Créez une page dédiée où sera inséré l'espace de débat. Cette page est di
 #### 1.2. Insérer le code JavaScript et vos variables de configuration
 
 
-Insérez le code Javascript du débat à l'endroit où vous souhaitez voir apparaître l'espace de débat. 
+Insérez les scripts nécessaires à l'espace de débat ainsi qu'un conteneur **logora_app**. 
 
-Le conteneur **logora_app** est l'endroit où l'espace de débat est chargé.
+Le conteneur **logora_app** est l'endroit où l'espace de débat est affiché.
 
 Code standard à copier/coller et compléter : 
 
 ```html
-<div id="logora_app"></div>
+<!-- Insérer les scripts suivants dans la balise <head>, le plus haut possible dans la page -->
 <script>
-    // Variables de configuration
+    // Variables de configuration, le nom d'application est présent dans votre espace d'administration
     var logora_config = {
-        shortname: "NOM_APPLICATION" // Nom d'application présent dans votre espace d'administration
+        shortname: "NOM_APPLICATION"
     };
-
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://api.logora.fr/debat.js';
-        (d.head || d.body).appendChild(s);
-    })();
 </script>
+<script src="https://api.logora.fr/debat.js"></script>
+
+<!-- Insérer cette balise là où l'espace de débat doit être affiché -->
+<div id="logora_app"></div>
 ```
 
 #### 1.3. Réécriture des URLs pour les routes de l'espace de débat

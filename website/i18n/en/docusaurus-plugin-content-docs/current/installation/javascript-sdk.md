@@ -30,26 +30,25 @@ Create a dedicated page where the debate space will be inserted. This page is av
 
 #### 1.2. Inserting the JavaScript code and your configuration variables
 
-Insert the Javascript code of the debate where you want the debate space to appear. 
+Insert the following scripts and the **logora_app** container in your page. 
 
-The **logora_app** container is where the debate space is loaded.
+The **logora_app** container is where the debate space is displayed.
 
 Standard code to copy/paste and complete: 
 
 ```html
-<div id="logora_app"></div>
+<!-- Scripts to load in the <head> section, as high as possible in the page -->
 <script>
-    // Configuration variables
+    // Configuration variables, the application name is available in your administration panel
     var logora_config = {
-        shortname: "NOM_APPLICATION" // Application name available in your administration space
+        shortname: "APPLICATION_NAME"
     };
-
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://api.logora.fr/debat.js';
-        (d.head || d.body).appendChild(s);
-    })();
 </script>
+<script src="https://api.logora.fr/debat.js"></script>
+
+<!-- Container where the debate space will be displayed -->
+<div id="logora_app"></div>
+
 ```
 
 #### 1.3. URL rewriting for debate space routes

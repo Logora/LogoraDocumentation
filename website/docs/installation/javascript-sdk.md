@@ -48,7 +48,9 @@ Code standard à copier/coller et compléter :
     };
 </script>
 <script src="https://api.logora.fr/debat.js"></script>
+```
 
+```html
 <!-- Insérer cette balise là où l'espace de débat doit être affiché -->
 <div id="logora_app"></div>
 ```

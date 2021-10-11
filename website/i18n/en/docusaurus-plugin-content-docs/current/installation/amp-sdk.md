@@ -30,17 +30,18 @@ Add the following script in the `<head>` container in addition to all the AMP in
 <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 ```
 
-Embed the amp-iframe in your page to load the summary in AMP format (the `<div placeholder>` tag is required for the iframe to load):
+Embed the amp-iframe in your page to load the summary in AMP format (the `<div overflow placeholder>` tag is required for the iframe to load). The iframe will resize automatically on load, that's why the height of 10 pixels is required.
 
 ```html
 <amp-iframe
 width="200"
-height="850"
+height="10"
 sandbox="allow-scripts allow-same-origin allow-top-navigation"
 layout="responsive"
+resizable
 frameborder="0"
 src="https://api.logora.fr/synthese-amp.html?shortname=NOM_APPLICATION&id=PAGE_IDENTIFIER"
 >
-    <div placeholder></div>
+    <div overflow placeholder></div>
 </amp-iframe>
 ```

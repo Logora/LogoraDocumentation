@@ -105,4 +105,24 @@ Code standard à copier/coller et compléter :
 Le débat lié à la page doit ensuite être créé dans l'espace d'administration > créer un débat, en fournissant l'identifiant debate.identifier ou en sélectionnant l'article concerné dans la liste des derniers articles récupérés. 
 
 
+#### Écouter le chargement de la synthèse (optionnel)
+
+Pour détecter le chargement de la synthèse, un événement _logoraContentLoaded_ est déclenché sur l'objet _window_.
+Cet événement permet de récupérer des informations sur le débat qui s'affiche sur la page.
+
+```javascript
+window.addEventListener('logoraContentLoaded', event => console.log(event.detail));
+```
+Format de l'objet _event.detail_ :
+```
+debate: {
+  direct_url: "https://www.exemple.fr/espace-debat/debat/mon-debat",
+  id: 1000
+  name: "Faut-il changer la constitution ?"
+  slug: "mon-debat"
+}
+```
+
+
 Il ne reste plus qu'à implémenter l'authentification unique et à personnaliser Logora pour lancer votre premier débat. 
+

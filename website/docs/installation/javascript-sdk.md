@@ -122,6 +122,7 @@ debate: {
   slug: "mon-debat"
 }
 ```
+Si aucun débat n'est associé à la page, l'objet _debate_ sera _null_.
 
 
 Il ne reste plus qu'à implémenter l'authentification unique et à personnaliser Logora pour lancer votre premier débat. 

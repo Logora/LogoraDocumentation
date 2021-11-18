@@ -20,6 +20,5 @@ Choose the moderation mode that suits you from the administration space: *Config
 
 `Third party`: Logora integrates with external moderation services:
 - Netino
-- Bodyguard
     
 If you wish to use one of these two integrations or another one not listed here, contact our team via `contact@logora.fr`. 

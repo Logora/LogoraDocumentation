@@ -21,6 +21,5 @@ Choisissez le mode de modération qui vous convient depuis l'espace d'administra
 
 `Externe` : Logora s'intègre à des services externes de modération :
 - Netino
-- Bodyguard
     
 Si vous souhaitez utiliser une de ces deux intégrations, contactez notre équipe via `contact@logora.fr`. 

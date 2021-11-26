@@ -13,7 +13,7 @@
 	  {
       "type": "category",
       "label": "Single Sign On",
-      "items": ["authentication/introduction", "authentication/oauth2_server", "authentication/oauth2", "authentication/jwt"]
+      "items": ["authentication/introduction", "authentication/oauth2_server", "authentication/jwt"]
     },
 	  {
       "type": "category",

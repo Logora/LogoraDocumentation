@@ -1,6 +1,6 @@
 ---
 id: rgpd
-title: Données
+title: RGPD
 description: Traitement des données  
 ---
 

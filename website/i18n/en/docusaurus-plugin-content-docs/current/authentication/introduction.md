@@ -17,5 +17,4 @@ Single sign-on will create a site-specific user profile on Logora so as not to c
 
 Logora offers several possible authentication modes:
 - OAuth 2.0 server authentication (you have an OAuth 2.0 server)
-- Client authentication OAuth 2.0 (you connect to our OAuth 2.0 server)
 - Authentication by JWT signature

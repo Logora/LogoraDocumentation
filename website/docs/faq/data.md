@@ -27,12 +27,19 @@ Ce jeton Bearer doit être ajouté dans l'en-tête `Authentication` des requête
 #### 2. Récupérer les données
 
 URL : `https://app.logora.fr/api/v1/users`
+
 Méthode : `GET`
+
 En-tête : `Content-Type: application/json`
+
 Authentification : `Bearer`
+
 Paramètres d'URL :
+
 `page` : numéro de page de la liste d'utilisateurs
+
 `per_page`: nombre d'éléments par page
+
 
 ```
 // Exemple de réponse

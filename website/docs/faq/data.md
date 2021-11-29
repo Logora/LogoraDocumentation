@@ -5,12 +5,12 @@ title: Données utilisateurs
 
 L'API Logora vous permet de récupérer les utilisateurs inscrits sur votre application.
 
-### Avant de commencer
+#### Avant de commencer
 
 - Rendez-vous sur votre [Espace d'administration](https://admin.logora.fr) (onglet *Configuration > Général*).
 - Récupérez votre clé d'API et de votre clé secrète qui serviront pour l'authentification.
 
-### 1. Récupérer un jeton d'accès
+#### 1. Récupérer un jeton d'accès
 
 Un jeton d'accès OAuth 2.0 est généré en utilisant votre clé d'API et votre clé secrète, grâce à une requête POST vers notre route d'autorisation. Exemple utilisant Curl :
 

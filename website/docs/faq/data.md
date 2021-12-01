@@ -34,12 +34,17 @@ En-tête : `Content-Type: application/json`
 
 Authentification : `Bearer`
 
-Paramètres d'URL :
+Paramètres d'URL (optionnels) :
 
 `page` : numéro de page de la liste d'utilisateurs
 
 `per_page`: nombre d'éléments par page
 
+`is_expert` : sélectionne seulement les utilisateurs dits "experts"
+
+`is_selected` : sélectionne les utilisateurs mis en avant
+
+`sub_application_name` : nom de la sous-application à laquelle appartient l'utilisateur
 
 ```
 // Exemple de réponse

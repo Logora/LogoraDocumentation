@@ -46,6 +46,9 @@ Paramètres d'URL (optionnels) :
 
 `sub_application_name` : nom de la sous-application à laquelle appartient l'utilisateur
 
+Exemple de requête :
+`https://app.logora.fr/api/v1/users?page=1&per_page=10&is_expert=false&is_selected=false&sub_application_name=app-test`
+
 ```
 // Exemple de réponse
 {

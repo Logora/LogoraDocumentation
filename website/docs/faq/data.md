@@ -15,7 +15,7 @@ L'API Logora vous permet de récupérer les utilisateurs inscrits sur votre appl
 Un jeton d'accès OAuth 2.0 est généré en utilisant votre clé d'API et votre clé secrète, grâce à une requête POST vers notre route d'autorisation. Exemple utilisant Curl :
 
 ```bash
-curl -d grant_type=client_credentials -d client_id=API_KEY -d client_secret=API_SECRET -d scope=admin https://app.logora.fr/oauth/token
+curl -d grant_type=client_credentials -d client_id=API_KEY -d client_secret=API_SECRET -d scopes=admin https://app.logora.fr/oauth/token
 
 // Réponse  
 => {"access_token":"Av9wbEK-0QTOdxhzB4S3-B1ZFKj1Z4y8Xcl17iVcHsg","token_type":"Bearer","expires_in":7200,"created_at":1579688184}

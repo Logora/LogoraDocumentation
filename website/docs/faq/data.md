@@ -36,15 +36,15 @@ Authentification : `Bearer`
 
 Paramètres d'URL (optionnels) :
 
-`page` : numéro de page de la liste d'utilisateurs
+`page` (entier) : numéro de page de la liste d'utilisateurs
 
-`per_page`: nombre d'éléments par page
+`per_page` (entier) : nombre d'éléments par page
 
-`is_expert` : sélectionne seulement les utilisateurs dits "experts"
+`is_expert` (booléen) : sélectionne seulement les utilisateurs dits "experts"
 
-`is_selected` : sélectionne les utilisateurs mis en avant
+`is_selected` (booléen) : sélectionne les utilisateurs mis en avant
 
-`sub_application_name` : nom de la sous-application à laquelle appartient l'utilisateur
+`sub_application_name` (chaîne de caractères) : nom de la sous-application à laquelle appartient l'utilisateur
 
 Exemple de requête :
 `https://app.logora.fr/api/v1/users?page=1&per_page=10&is_expert=false&is_selected=false&sub_application_name=app-test`

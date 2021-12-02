@@ -48,7 +48,7 @@ Il doit inclure les attributs suivants, sensibles à la casse :
 - `first_name` : prénom de l'utilisateur, ou nom d'utilisateur si `last_name` est vide.
 - `last_name` (optionnel) : nom de famille de l'utilisateur.
 - `email` : l'adresse email enregistrée pour ce compte.
-- `avatar` (optionnel) : lien vers l'avatar de l'utilisateur.
+- `image_url` (optionnel) : lien vers l'avatar de l'utilisateur.
 - `iat` : date de génération du jeton JWT
 
 Signature  

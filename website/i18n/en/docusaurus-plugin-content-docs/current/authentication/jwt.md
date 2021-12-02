@@ -47,7 +47,7 @@ It must include the following case-sensitive attributes:
 - `first_name`: user's first name, or username if `last_name` is empty.
 - `last_name` (optional): the user's last name.
 - `email`: the email address registered for this account.
-- `avatar` (optional): link to the user's avatar.
+- `image_url` (optional): link to the user's avatar.
 - `iat`: date of generation of the JWT token
 
 Signature  

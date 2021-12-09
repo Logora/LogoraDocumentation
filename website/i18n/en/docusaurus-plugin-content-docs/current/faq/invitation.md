@@ -44,5 +44,3 @@ His/her main role is to create debates. They also have access to the arguments a
 ### 3) Moderator
 
 Can only do moderation, often a role dedicated to the Logora teams or to your service providers in charge of moderation. 
-
-Translated with www.DeepL.com/Translator (free version)

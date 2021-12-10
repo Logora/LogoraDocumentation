@@ -1,6 +1,6 @@
 ---
 id: invitation
-title: Invitation et gestion des rôles
+title: Invitations et gestion des rôles
 ---
 
 ## I.Invitations

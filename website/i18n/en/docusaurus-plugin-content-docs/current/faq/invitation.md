@@ -1,6 +1,6 @@
 ---
 id: invitation
-title: Invitation and role management
+title: Invitations and role management
 ---
 
 ## I.Invitations

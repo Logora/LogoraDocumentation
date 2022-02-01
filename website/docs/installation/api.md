@@ -87,7 +87,8 @@ En-tête : `Content-Type: application/json`
 
 Paramètres d'URL :   
 `shortname` (requis) : nom de votre application disponible dans votre espace d'administration  
-`uid` (requis) : identifiant unique de la page (le même identifiant que celui inséré côté client)    
+`uid` (requis) : identifiant unique de la page (le même identifiant que celui inséré côté client)
+`device` (optionnel) : indique le type d'appareil de l'utilisateur. Les choix possibles sont : `mobile`, `tablet`, `desktop`. Ce paramètre est utilisé pour adapté le design du module en fonction de la taille de l'écran.
 `insertType` (optionnel) : mode d'insertion, ne pas ajouter si insertion standard. Indiquer *amp* pour une insertion sur une page AMP ou *iframe* pour une insertion en iframe.  
 
 Corps de la requête : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.

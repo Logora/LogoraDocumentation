@@ -75,6 +75,8 @@ Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat,
 
 Insérez le code Javascript de la synthèse à l'endroit où vous souhaitez voir apparaître la synthèse du débat, en pied d'article. Ceci est un exemple de code Javascript qui charge et affiche la synthèse du débat en cours lié à votre article. Il doit être inséré sur toutes vos pages d'articles. Ce code n'affichera rien tant que vous n'avez pas associé de débat à la page.
 
+#### 2.1 Cas de l'espace de débat sans module de consultation
+
 > Si vous souhaitez utiliser le widget, utilisez l'autre lien indiqué dans le code Javascript exemple
 
 Le conteneur **logora_synthese** est l'endroit où la synthèse est chargée.
@@ -102,8 +104,15 @@ Code standard à copier/coller et compléter :
 
 **debate.identifier (requis)** : identifiant unique lié à la page. Cet identifiant doit être unique pour chaque page où est insérée la synthèse. Il permettra de récupérer le débat correspondant à la page. Par exemple, l'identifiant peut être l'ID dans votre base de données de l'article présent sur la page, ou un slug unique ('exemple-identifiant').
 
-
 Le débat lié à la page doit ensuite être créé dans l'espace d'administration > créer un débat, en fournissant l'identifiant debate.identifier ou en sélectionnant l'article concerné dans la liste des derniers articles récupérés. 
+
+#### 2.2 Cas de l'espace de débat incluant le module de consultation
+
+Il s'agit du même code que dans le cas de l'espace de débat sans consultation (voir le point 2.1), mais en ajoutant le paramètre "consultation" dans la variable logora_config. 
+
+var logora_config = { shortname: "my-shortname", debate: { identifier: "my-identifier" },    consultation: {slug: "presidentielle", tags: ["politique", "élections"] }}
+
+Les tags correspondent aux étiquettes des articles qui afficheront le bloc de consultation plutôt qu'une synthèse de débat.  
 
 
 #### Écouter le chargement de la synthèse (optionnel)

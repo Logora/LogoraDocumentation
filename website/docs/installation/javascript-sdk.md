@@ -110,7 +110,7 @@ Le débat lié à la page doit ensuite être créé dans l'espace d'administrati
 
 Il s'agit du même code que dans le cas de l'espace de débat sans consultation (voir le point 2.1), mais en ajoutant le paramètre "consultation" dans la variable logora_config. 
 
-var logora_config = { shortname: "my-shortname", debate: { identifier: "my-identifier" },    consultation: {slug: "presidentielle", tags: ["politique", "élections"] }}
+```var logora_config = { shortname: "my-shortname", debate: { identifier: "my-identifier" },    consultation: {slug: "presidentielle", tags: ["politique", "élections"] }}```
 
 Les tags correspondent aux étiquettes des articles qui afficheront le bloc de consultation plutôt qu'une synthèse de débat.  
 

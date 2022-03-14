@@ -57,15 +57,16 @@ Code standard à copier/coller et compléter :
 
 #### 1.3. Réécriture des URLs pour les routes de l'espace de débat
 
+Cette étape permet aux utilisateurs d'accéder à l'espace de débat directement depuis leur navigateur. 
+Par exemple, s'il souhaite accéder accéder directement à son profil via l'url https://www.votresite.com/espace-debat/utilisateur/votre-profil, sans procéder à la réécriture des urls, il sera redirigé vers une page d'erreur. 
+
+La réécriture des urls permet également à l'équipe Logora de rajouter directement de nouveaux modules sur de nouvelles urls de votre site sans vous demander d'intervenir. 
 
 Utilisez la réécriture d'URL sur votre plateforme ou CMS pour que les chemins commençant par 'espace-debat/' (ou le préfixe que vous avez choisi) pointent vers la page où est inséré l'espace de débat.
 
-
 Accédez à la page https://votresite.com/espace-debat/debats. Vous êtes sur la page d'accueil de l'espace de débat !
 
-
 Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat, rendez-vous sur [la configuration des chemins d'URL](configuration/routes.md).
-
 
 
 ### 2. Installer la synthèse du débat 

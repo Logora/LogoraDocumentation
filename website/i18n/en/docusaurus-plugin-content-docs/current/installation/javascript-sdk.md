@@ -68,7 +68,9 @@ To change the prefix and the URL paths of the debate space pages, go to [the URL
 
 Insert the Javascript code of the summary where you want the summary of the debate to appear, on the article footer. This is an example of Javascript code that loads and displays the debate summary linked to your article. It must be inserted on all your article pages. This code will not display anything until you have associated a debate with the page.
 
-> If you prefer to insert the server-side summary, go to the [server-side installation] page (installation/api.md).
+> If you have high performance constraints and want to index the debate pages on search engines, it is necessary to insert the server side synthesis. If you prefer to insert the server-side summary, go to the [server-side installation] page (installation/api.md).
+
+#### 2.1 The case of the debate space without a consultation module
 
 > If you want to use the widget, use the widget.js link displayed in the sample Javascript code below. 
 
@@ -100,3 +102,11 @@ Standard code to copy/paste and complete :
 The debate linked to the page must then be created in the administration area > create a debate, by providing the debate.identifier or by selecting the article concerned in the list of last retrieved articles. 
 
 All you have to do now is implement a unique sign-on and customize Logora to launch your first debate. 
+
+#### 2.2 Case of the debate space including the consultation module
+
+This is the same code as in the case of the debate space without consultation (see point 2.1), but with the addition of the "consultation" parameter in the logora_config variable.
+
+```var logora_config = { shortname: "my-shortname", debate: { identifier: "my-identifier" }, consultation: {slug: "presidentielle", tags: ["politique", "élections"] }}```
+
+The tags correspond to the labels of the articles that will display the consultation block rather than a debate summary.

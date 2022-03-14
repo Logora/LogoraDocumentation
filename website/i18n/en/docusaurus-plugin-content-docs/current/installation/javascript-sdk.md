@@ -53,6 +53,11 @@ Standard code to copy/paste and complete:
 
 #### 1.3. URL rewriting for debate space routes
 
+This step allows users to access the debate space directly from their browser. 
+For example, if they wish to access their profile directly via the https://www.yourwebsite.com/debate-space/user/your-profile url, without rewriting the urls, they will be redirected to an error page. 
+
+The rewriting of urls also allows the Logora team to directly add new modules on new urls of your site without asking you to intervene. 
+
 Use URL rewriting on your platform or CMS to make paths starting with 'debate-space/' (or whatever prefix you choose) point to the page where the debate space is inserted.
 
 Go to https://yourwebsite.com/debate-space/debates. You are on the Debate Space home page!

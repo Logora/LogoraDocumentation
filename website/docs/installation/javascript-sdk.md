@@ -58,9 +58,9 @@ Code standard à copier/coller et compléter :
 #### 1.3. Réécriture des URLs pour les routes de l'espace de débat
 
 Cette étape permet aux utilisateurs d'accéder à l'espace de débat directement depuis leur navigateur. 
-Par exemple, s'il souhaite accéder accéder directement à son profil via l'url https://www.votresite.com/espace-debat/utilisateur/votre-profil, sans procéder à la réécriture des urls, il sera redirigé vers une page d'erreur. 
+Par exemple, si un utilisateur souhaite accéder directement à son profil via l'URL https://www.votresite.com/espace-debat/utilisateur/votre-profil, sans procéder à la réécriture des URLs, il sera redirigé vers une page d'erreur. 
 
-La réécriture des urls permet également à l'équipe Logora de rajouter directement de nouveaux modules sur de nouvelles urls de votre site sans vous demander d'intervenir. 
+La réécriture des URLs permet également à l'équipe Logora de rajouter directement de nouveaux modules sur de nouvelles URLs de votre site sans vous demander d'intervenir. 
 
 Utilisez la réécriture d'URL sur votre plateforme ou CMS pour que les chemins commençant par 'espace-debat/' (ou le préfixe que vous avez choisi) pointent vers la page où est inséré l'espace de débat.
 
@@ -110,7 +110,14 @@ Le débat lié à la page doit ensuite être créé dans l'espace d'administrati
 
 Il s'agit du même code que dans le cas de l'espace de débat sans consultation (voir le point 2.1), mais en ajoutant le paramètre "consultation" dans la variable logora_config. 
 
-```var logora_config = { shortname: "my-shortname", debate: { identifier: "my-identifier" },    consultation: {slug: "presidentielle", tags: ["politique", "élections"] }}```
+```javascript
+var logora_config = 
+    { 
+        shortname: "my-shortname", 
+	debate: { identifier: "my-identifier" },
+	consultation: {slug: "presidentielle", tags: ["politique", "élections"] }
+    }
+```
 
 Les tags correspondent aux étiquettes des articles qui afficheront le bloc de consultation plutôt qu'une synthèse de débat.  
 

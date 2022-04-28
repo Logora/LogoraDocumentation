@@ -113,21 +113,24 @@ Par défaut, Logora récupère les méta-données des articles de automatiquemen
 Vous pouvez, par exemple, choisir d'envoyer les étiquettes de l'article concerné manuellement :
 
 ```json
-{
-  "source": 
-  {
-    "tag_objects": [  // (Optionnel) Étiquettes de l'article sous forme de tableau d'objets
-        { 
-          "name": "politique",  // (Requis) Nom affiché de l'étiquette
-          "uid": "politique-001" // (Optionnel) Identifiant unique de l'étiquette. Peut être omis si les noms sont déjà uniques
-        }, 
-        { 
-          "name": "santé", 
-          "uid": "sante-003" 
-        },
-    ]
-  }
-}
+   var logora_config = {
+	[...]
+		{
+		  "source": 
+		  {
+		    "tag_objects": [  // (Optionnel) Étiquettes de l'article sous forme de tableau d'objets
+			{ 
+			  "name": "politique",  // (Requis) Nom affiché de l'étiquette
+			  "uid": "politique-001" // (Optionnel) Identifiant unique de l'étiquette. Peut être omis si les noms sont déjà uniques
+			}, 
+			{ 
+			  "name": "santé", 
+			  "uid": "sante-003" 
+			},
+		    ]
+		  }
+		}
+	}
 ```
 
 Il n'est pas obligatoire d'envoyer toutes les méta-données manuellement, les manquantes seront récupérées automatiquement. Les métadonnées envoyées manuellement ont la priorité sur les données récupérées automatiquement.

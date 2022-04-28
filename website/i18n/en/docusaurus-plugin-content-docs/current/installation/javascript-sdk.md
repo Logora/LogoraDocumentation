@@ -121,21 +121,21 @@ Here is an exemple of metadatas being sent from configuration variables:
 	    identifier: "PAGE_IDENTIFIER" // Page unique identifier
 	},
 	source: {
-	    "source_url": "https://yoursite.com/article", // canonical URL
-	    "uid": "a3f4e033-9e13-4abb-be11-2d87a2294013", // Page unique identifier
-	    "title": "Article title", // Article title
-	    "description": "Page description", // Page description
-	    "origin_image_url": "https://image.com/image.png", // Image URL
-	    "published_date": "2020-12-01T12:00:00+01:00", // Article date of publishing (format ISO_8601)
-	    "publisher": "My website", // Website's name
-	    "tag_objects": [  // Article tags (array of objects)
+	    source_url: "https://yoursite.com/article", // canonical URL
+	    uid: "a3f4e033-9e13-4abb-be11-2d87a2294013", // Page unique identifier
+	    title: "Article title", // Article title
+	    description: "Page description", // Page description
+	    origin_image_url: "https://image.com/image.png", // Image URL
+	    published_date: "2020-12-01T12:00:00+01:00", // Article date of publishing (format ISO_8601)
+	    publisher: "My website", // Website's name
+	    tag_objects: [  // Article tags (array of objects)
 		{ 
-		  "name": "politics",  // Tag name
-		  "uid": "politics-001" // Tag unique identifier. Can be omitted if name is already unique
+		  name: "politics",  // Tag name
+		  uid: "politics-001" // Tag unique identifier. Can be omitted if name is already unique
 		}, 
 		{ 
-		  "name": "health", 
-		  "uid": "health-003" 
+		  name: "health", 
+		  uid: "health-003" 
 		},
 	    ]
 	}

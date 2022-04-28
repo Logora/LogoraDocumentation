@@ -110,7 +110,7 @@ Le débat lié à la page doit ensuite être créé dans l'espace d'administrati
 
 Par défaut, Logora récupère les méta-données des articles automatiquement. Cependant vous pouvez choisir de les envoyer manuellement via les variables de configuration.
 
-Vous pouvez, par exemple, choisir d'envoyer les étiquettes de l'article concerné manuellement :
+Voici un exemple de meta-données envoyées depuis les variables de configuration :
 
 ```html
 <div class="logora_synthese" data-object-id="logora_config"></div>

@@ -112,26 +112,38 @@ Par défaut, Logora récupère les méta-données des articles de automatiquemen
 
 Vous pouvez, par exemple, choisir d'envoyer les étiquettes de l'article concerné manuellement :
 
-```json
-   var logora_config = {
-	[...]
-		{
-		  "source": 
-		  {
-		    "tag_objects": [  // (Optionnel) Étiquettes de l'article sous forme de tableau d'objets
-			{ 
-			  "name": "politique",  // (Requis) Nom affiché de l'étiquette
-			  "uid": "politique-001" // (Optionnel) Identifiant unique de l'étiquette. Peut être omis si les noms sont déjà uniques
-			}, 
-			{ 
-			  "name": "santé", 
-			  "uid": "sante-003" 
-			},
-		    ]
-		  }
-		}
+```html
+<div class="logora_synthese" data-object-id="logora_config"></div>
+<script>
+    // Variables de configuration
+    var logora_config = {
+        shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
+        debate: {
+            identifier: "PAGE_IDENTIFIER" // Identifiant unique de la page
+        },
+	{
+	  "source": 
+	  {
+	    "tag_objects": [  // (Optionnel) Étiquettes de l'article sous forme de tableau d'objets
+		{ 
+		  "name": "politique",  // (Requis) Nom affiché de l'étiquette
+		  "uid": "politique-001" // (Optionnel) Identifiant unique de l'étiquette. Peut être omis si les noms sont déjà uniques
+		}, 
+		{ 
+		  "name": "santé", 
+		  "uid": "sante-003" 
+		},
+	    ]
+	  }
 	}
-```
+    };
+
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://api.logora.fr/synthese.js'; // 'https://api.logora.fr/widget.js' pour le widget
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
 
 Il n'est pas obligatoire d'envoyer toutes les méta-données manuellement, les manquantes seront récupérées automatiquement. Les métadonnées envoyées manuellement ont la priorité sur les données récupérées automatiquement.
 

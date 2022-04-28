@@ -108,7 +108,7 @@ Le débat lié à la page doit ensuite être créé dans l'espace d'administrati
 
 #### 2.2 Envoyer les méta-données des articles manuellement (Optionel)
 
-Par défaut, Logora récupère les méta-données des articles de automatiquement. Cependant vous pouvez choisir de les envoyer manuellement via les variables de configuration.
+Par défaut, Logora récupère les méta-données des articles automatiquement. Cependant vous pouvez choisir de les envoyer manuellement via les variables de configuration.
 
 Vous pouvez, par exemple, choisir d'envoyer les étiquettes de l'article concerné manuellement :
 

@@ -106,13 +106,13 @@ Code standard à copier/coller et compléter :
 
 Le débat lié à la page doit ensuite être créé dans l'espace d'administration > créer un débat, en fournissant l'identifiant debate.identifier ou en sélectionnant l'article concerné dans la liste des derniers articles récupérés. 
 
-#### 2.2 Envoyer les méta-données des articles manuellement (Optionel)
+#### 2.2 Envoyer les méta-données des articles manuellement (optionnel)
 
 Par défaut, Logora récupère les méta-données des articles automatiquement :
 - via les balises html _meta_
-- via le script _json_ld_
+- via le format JSON-LD
 
-Cependant vous pouvez choisir de les envoyer manuellement via les variables de configuration.
+Cependant vous pouvez choisir de les envoyer manuellement avec les variables de configuration.
 
 Voici un exemple de meta-données envoyées depuis les variables de configuration :
 

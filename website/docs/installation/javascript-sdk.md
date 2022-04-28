@@ -106,20 +106,31 @@ Code standard à copier/coller et compléter :
 
 Le débat lié à la page doit ensuite être créé dans l'espace d'administration > créer un débat, en fournissant l'identifiant debate.identifier ou en sélectionnant l'article concerné dans la liste des derniers articles récupérés. 
 
-#### 2.2 Cas de l'espace de débat incluant le module de consultation
+#### 2.2 Envoyer les méta-données des articles manuellement
 
-Il s'agit du même code que dans le cas de l'espace de débat sans consultation (voir le point 2.1), mais en ajoutant le paramètre "consultation" dans la variable logora_config. 
+Par défaut, Logora récupère les méta-données des articles de automatiquement. Cependant vous pouvez choisir de les envoyer manuellement via les variables de configuration.
 
-```javascript
-var logora_config = 
-    { 
-        shortname: "my-shortname", 
-	debate: { identifier: "my-identifier" },
-	consultation: {slug: "presidentielle", tags: ["politique", "élections"] }
-    }
+Vous pouvez, par exemple, choisir d'envoyer les étiquettes de l'article concerné manuellement :
+
+```json
+{
+  "source": 
+  {
+    "tag_objects": [  // (Optionnel) Étiquettes de l'article sous forme de tableau d'objets
+        { 
+          "name": "politique",  // (Requis) Nom affiché de l'étiquette
+          "uid": "politique-001" // (Optionnel) Identifiant unique de l'étiquette. Peut être omis si les noms sont déjà uniques
+        }, 
+        { 
+          "name": "santé", 
+          "uid": "sante-003" 
+        },
+    ]
+  }
+}
 ```
 
-Les tags correspondent aux étiquettes des articles qui afficheront le bloc de consultation plutôt qu'une synthèse de débat.  
+Vous pouvez choisir d'envoyer seulement une partie des méta-données, les manquantes seront récupérées automatiquement. Les métadonnées envoyées manuellement ont la priorité sur les données récupérées automatiquement.
 
 
 #### Écouter le chargement de la synthèse (optionnel)

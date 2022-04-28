@@ -119,10 +119,10 @@ Voici un exemple de meta-données envoyées depuis les variables de configuratio
 ```javascript
     // Variables de configuration
     var logora_config = {
-        shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
-        debate: {
-            identifier: "PAGE_IDENTIFIER" // Identifiant unique de la page
-        },
+	shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
+	debate: {
+	    identifier: "PAGE_IDENTIFIER" // Identifiant unique de la page
+	},
 	source: {
 	    "source_url": "https://votresite.com/article", // URL canonique de la page
 	    "uid": "a3f4e033-9e13-4abb-be11-2d87a2294013", // Identifiant unique de la page

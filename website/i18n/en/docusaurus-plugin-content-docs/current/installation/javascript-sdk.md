@@ -70,7 +70,7 @@ Insert the Javascript code of the summary where you want the summary of the deba
 
 > If you have high performance constraints and want to index the debate pages on search engines, it is necessary to insert the server side synthesis. If you prefer to insert the server-side summary, go to the [server-side installation] page (installation/api.md).
 
-#### 2.1 The case of the debate space without a consultation module
+#### 2.1 Insert the JavaScript code and your configuration variables
 
 > If you want to use the widget, use the widget.js link displayed in the sample Javascript code below. 
 
@@ -105,18 +105,22 @@ All you have to do now is implement a unique sign-on and customize Logora to lau
 
 #### 2.2 Sending metadata manually
 
-Logora fetch metadatas from your articles automatically by default. If you wish, you can send those metadatas manually from the configurations variables:
+Logora fetch metadatas from your articles automatically by default:
+- via the html tag _meta_
+- via the script _json_ld_
+
+If you wish, you can send those metadatas manually from the configurations variables:
 
 Here is an exemple of metadatas being sent from configuration variables:
 
 ```javascript
     // Configuration variables
     var logora_config = {
-        shortname: "APP_NAME", // Application name from admin panel
-        debate: {
-            identifier: "PAGE_IDENTIFIER" // Page unique identifier
-        },
-	"source": {
+	shortname: "APP_NAME", // Application name from admin panel
+	debate: {
+	    identifier: "PAGE_IDENTIFIER" // Page unique identifier
+	},
+	source": {
 	    "source_url": "https://yoursite.com/article", // canonical URL
 	    "uid": "a3f4e033-9e13-4abb-be11-2d87a2294013", // Page unique identifier
 	    "title": "Article title", // Article title

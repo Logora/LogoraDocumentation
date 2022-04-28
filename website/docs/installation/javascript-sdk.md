@@ -108,20 +108,22 @@ Le débat lié à la page doit ensuite être créé dans l'espace d'administrati
 
 #### 2.2 Envoyer les méta-données des articles manuellement (Optionel)
 
-Par défaut, Logora récupère les méta-données des articles automatiquement. Cependant vous pouvez choisir de les envoyer manuellement via les variables de configuration.
+Par défaut, Logora récupère les méta-données des articles automatiquement :
+- via les balises html _meta_
+- via le script _json_ld_
+
+Cependant vous pouvez choisir de les envoyer manuellement via les variables de configuration.
 
 Voici un exemple de meta-données envoyées depuis les variables de configuration :
 
-```html
-<div class="logora_synthese" data-object-id="logora_config"></div>
-<script>
+```javascript
     // Variables de configuration
     var logora_config = {
         shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
         debate: {
             identifier: "PAGE_IDENTIFIER" // Identifiant unique de la page
         },
-	"source": {
+	source: {
 	    "source_url": "https://votresite.com/article", // URL canonique de la page
 	    "uid": "a3f4e033-9e13-4abb-be11-2d87a2294013", // Identifiant unique de la page
 	    "title": "Titre de l'article", // Titre de la page
@@ -141,15 +143,9 @@ Voici un exemple de meta-données envoyées depuis les variables de configuratio
 	    ]
 	  }
     };
+```
 
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://api.logora.fr/synthese.js'; // 'https://api.logora.fr/widget.js' pour le widget
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-
-Il n'est pas obligatoire d'envoyer toutes les méta-données manuellement, les manquantes seront récupérées automatiquement. Les métadonnées envoyées manuellement ont la priorité sur les données récupérées automatiquement.
+Il n'est pas obligatoire d'envoyer toutes les méta-données manuellement, les champs manquants seront récupérés automatiquement. Les métadonnées envoyées manuellement ont la priorité sur les données récupérées automatiquement.
 
 
 #### Écouter le chargement de la synthèse (optionnel)

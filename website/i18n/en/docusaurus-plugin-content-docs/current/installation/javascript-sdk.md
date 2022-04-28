@@ -103,10 +103,50 @@ The debate linked to the page must then be created in the administration area > 
 
 All you have to do now is implement a unique sign-on and customize Logora to launch your first debate. 
 
-#### 2.2 Case of the debate space including the consultation module
+#### 2.2 Sending metadata manually
 
-This is the same code as in the case of the debate space without consultation (see point 2.1), but with the addition of the "consultation" parameter in the logora_config variable.
+Logora fetch metadatas from your articles automatically by default. If you wish, you can send those metadatas manually from the configurations variables:
 
-```var logora_config = { shortname: "my-shortname", debate: { identifier: "my-identifier" }, consultation: {slug: "presidentielle", tags: ["politique", "élections"] }}```
+Here is an exemple of metadatas being sent from configuration variables:
 
-The tags correspond to the labels of the articles that will display the consultation block rather than a debate summary.
+```html
+<div class="logora_synthese" data-object-id="logora_config"></div>
+<script>
+    // Configuration variables
+    var logora_config = {
+        shortname: "APP_NAME", // Application name from admin panel
+        debate: {
+            identifier: "PAGE_IDENTIFIER" // Page unique identifier
+        },
+	{
+	  "source": 
+	  {
+	    "source_url": "https://yoursite.com/article", // canonical URL
+	    "uid": "a3f4e033-9e13-4abb-be11-2d87a2294013", // Page unique identifier
+	    "title": "Article title", // Article title
+	    "description": "Page description", // Page description
+	    "origin_image_url": "https://image.com/image.png", // Image URL
+	    "published_date": "2020-12-01T12:00:00+01:00", // Article date of publishing (format ISO_8601)
+	    "publisher": "My website", // Website's name
+	    "tag_objects": [  // Article tags (array of objects)
+		{ 
+		  "name": "politics",  // Tag name
+		  "uid": "politics-001" // Tag unique identifier. Can be omitted if name is already unique
+		}, 
+		{ 
+		  "name": "health", 
+		  "uid": "health-003" 
+		},
+	    ]
+	  }
+	}
+    };
+
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://api.logora.fr/synthese.js'; // 'https://api.logora.fr/widget.js' pour le widget
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+Every metadata that you send manually is optional, the missing ones will be fetched automatically.

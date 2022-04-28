@@ -75,7 +75,7 @@ Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat,
 
 Insérez le code Javascript de la synthèse à l'endroit où vous souhaitez voir apparaître la synthèse du débat, en pied d'article. Ceci est un exemple de code Javascript qui charge et affiche la synthèse du débat en cours lié à votre article. Il doit être inséré sur toutes vos pages d'articles. Ce code n'affichera rien tant que vous n'avez pas associé de débat à la page.
 
-#### 2.1 Cas de l'espace de débat sans module de consultation
+#### 2.1 Insérer le code JavaScript et vos variables de configuration
 
 > Si vous souhaitez utiliser le widget, utilisez l'autre lien indiqué dans le code Javascript exemple
 
@@ -121,9 +121,7 @@ Voici un exemple de meta-données envoyées depuis les variables de configuratio
         debate: {
             identifier: "PAGE_IDENTIFIER" // Identifiant unique de la page
         },
-	{
-	  "source": 
-	  {
+	"source": {
 	    "source_url": "https://votresite.com/article", // URL canonique de la page
 	    "uid": "a3f4e033-9e13-4abb-be11-2d87a2294013", // Identifiant unique de la page
 	    "title": "Titre de l'article", // Titre de la page
@@ -142,7 +140,6 @@ Voici un exemple de meta-données envoyées depuis les variables de configuratio
 		},
 	    ]
 	  }
-	}
     };
 
     (function() {

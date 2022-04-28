@@ -120,7 +120,7 @@ Here is an exemple of metadatas being sent from configuration variables:
 	debate: {
 	    identifier: "PAGE_IDENTIFIER" // Page unique identifier
 	},
-	source": {
+	source: {
 	    "source_url": "https://yoursite.com/article", // canonical URL
 	    "uid": "a3f4e033-9e13-4abb-be11-2d87a2294013", // Page unique identifier
 	    "title": "Article title", // Article title

@@ -130,7 +130,7 @@ Vous pouvez, par exemple, choisir d'envoyer les étiquettes de l'article concern
 }
 ```
 
-Vous pouvez choisir d'envoyer seulement une partie des méta-données, les manquantes seront récupérées automatiquement. Les métadonnées envoyées manuellement ont la priorité sur les données récupérées automatiquement.
+Il n'est pas obligatoire d'envoyer toutes les méta-données manuellement, les manquantes seront récupérées automatiquement. Les métadonnées envoyées manuellement ont la priorité sur les données récupérées automatiquement.
 
 
 #### Écouter le chargement de la synthèse (optionnel)

@@ -106,7 +106,7 @@ Code standard à copier/coller et compléter :
 
 Le débat lié à la page doit ensuite être créé dans l'espace d'administration > créer un débat, en fournissant l'identifiant debate.identifier ou en sélectionnant l'article concerné dans la liste des derniers articles récupérés. 
 
-#### 2.2 Envoyer les méta-données des articles manuellement
+#### 2.2 Envoyer les méta-données des articles manuellement (Optionel)
 
 Par défaut, Logora récupère les méta-données des articles de automatiquement. Cependant vous pouvez choisir de les envoyer manuellement via les variables de configuration.
 
@@ -124,10 +124,17 @@ Vous pouvez, par exemple, choisir d'envoyer les étiquettes de l'article concern
 	{
 	  "source": 
 	  {
-	    "tag_objects": [  // (Optionnel) Étiquettes de l'article sous forme de tableau d'objets
+	    "source_url": "https://votresite.com/article", // URL canonique de la page
+	    "uid": "a3f4e033-9e13-4abb-be11-2d87a2294013", // Identifiant unique de la page
+	    "title": "Titre de l'article", // Titre de la page
+	    "description": "Description de la page", // Description de la page
+	    "origin_image_url": "https://image.com/image.png", // URL de l'image de la page
+	    "published_date": "2020-12-01T12:00:00+01:00", // Date de publication de la page au format ISO_8601
+	    "publisher": "Mon site", // Nom du site
+	    "tag_objects": [  // Étiquettes de l'article sous forme de tableau d'objets
 		{ 
-		  "name": "politique",  // (Requis) Nom affiché de l'étiquette
-		  "uid": "politique-001" // (Optionnel) Identifiant unique de l'étiquette. Peut être omis si les noms sont déjà uniques
+		  "name": "politique",  // Nom affiché de l'étiquette
+		  "uid": "politique-001" // Identifiant unique de l'étiquette. Peut être omis si les noms sont déjà uniques
 		}, 
 		{ 
 		  "name": "santé", 

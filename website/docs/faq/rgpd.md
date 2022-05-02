@@ -62,9 +62,12 @@ Nous fournissons une API pour que vous procédiez à l'anonymisation des donnée
 Cette route anonymise toutes les données personnelles liées à l'utilisateur : prénom, nom, email, identifiant unique, image, tout en gardant ses contributions et son activité.
 
 **URL** : https://app.logora.fr/api/v1/users/{uid}/anonymize
+
 **Méthode**: POST
+
 **Paramètres**:
     - uid: identifiant unique de l'utilisateur que vous passez à Logora lors de l'inscription de l'utilisateur
+
 **Autorisation**: Bearer token avec le scope `authentication`
 
 L'autorisation utilise le standard OAuth2.0. Voilà comment obtenir un jeton d'accès :

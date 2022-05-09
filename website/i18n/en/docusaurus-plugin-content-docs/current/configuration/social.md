@@ -22,7 +22,7 @@ By regularly calling your RSS feed, you can automatically post new debates where
 
 For example, by using the Zapier tool, you can automate a post on your social networks as soon as a new item (debate or consultation) is posted. 
 
-The documentation link for Zapier is [available here](https://zapier.com/apps/facebook-pages/integrations/rss/39/post-new-rss-items-to-a-facebook-page)
+The documentation link for Zapier is [available here.](https://zapier.com/apps/facebook-pages/integrations/rss/39/post-new-rss-items-to-a-facebook-page)
 
 `Many tools offer a similar service, you probably already have an equivalent.`
 

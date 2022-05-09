@@ -22,7 +22,7 @@ En appelant régulièrement votre flux RSS, vous pouvez poster automatiquement l
 
 Par exemple, en utilisant l'outil Zapier, vous automatisez un post sur vos réseaux sociaux dès qu'un nouvel élément (débat ou consultation) est posté. 
 
-Le lien de documentation de Zapier est [disponible ici.](https://zapier.com/apps/facebook-pages/integrations/rss/39/post-new-rss-items-to-a-facebook-page
+Le lien de documentation de Zapier est [disponible ici.](https://zapier.com/apps/facebook-pages/integrations/rss/39/post-new-rss-items-to-a-facebook-page)
 
 `De nombreux outils proposent un service similaire, vous êtes probablement déjà équipé d'un équivalent.`
 

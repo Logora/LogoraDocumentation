@@ -1,6 +1,6 @@
 ---
 id: social
-title: Automatiser le partage RS
+title: Flux RSS des débats
 ---
 
 ### 1) Accédez à votre flux RSS

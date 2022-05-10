@@ -1,6 +1,6 @@
 ---
 id: social
-title: Automate social sharing
+title: RSS feed of debates
 ---
 
 ### 1) Access your RSS feed

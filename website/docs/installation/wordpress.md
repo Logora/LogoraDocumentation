@@ -17,5 +17,5 @@ title: Installation Wordpress
 ### Utilisation
 
 - Accédez à votre espace de débat sur le chemin `/espace-debat`. L'espace de débat apparait vide, vous pouvez le peupler en créant un débat depuis votre espace d'administration. 
-- La synthèse de débat est disponible via le shortcode `[logora-synthese]`. Insérez-la en tapant `/` et en choissisant `shortocode`. Disposez le shortcode dans votre template d'article pour qu'il soit présent sur toutes les pages. Pour que la synthèse apparait en pied d'un article, il faut que l'article (au format `Post`) en question soit lié à un débat. Il vous faut donc créer un débat depuis votre [espace d'administration](https://admin.logora.fr) et sélectionner l'article à lier au débat. 
+- La synthèse de débat est disponible via le shortcode `[logora-synthese]`. Insérez-la en tapant `/` et en choissisant `shortcode`. Disposez le shortcode dans votre template d'article pour qu'il soit présent sur toutes les pages. Pour que la synthèse apparait en pied d'un article, il faut que l'article (au format `Post`) en question soit lié à un débat. Il vous faut donc créer un débat depuis votre [espace d'administration](https://admin.logora.fr) et sélectionner l'article à lier au débat. 
  

@@ -33,7 +33,7 @@ Des publicités en bannière haute, droite et basse sont chargées en même temp
 
 Sur mobile, il s'agit d'insérer des pavés dans l'espace de débat. 
 
-**Dans ce cas là, il vous faut passer par la configuration Logora pour servir vos publicités dans notre espace**.
+**En format mobile, il vous faut passer par la configuration Logora pour servir vos publicités dans notre espace**.
 
 Vous pouvez insérer une publicité sur votre page article, au niveau de la question de débat comme ici : 
 
@@ -68,8 +68,8 @@ Les formats des publicités sont tous les mêmes, vous pouvez mettre les mêmes 
 
 - La valeur `path`correspond au chemin de l'ad slot de votre publicité.
 - La valeur `id` est l'ID unique du conteneur de votre publicité, également définie à la création de votre ad slot.
-- La valeur `targeting key` est le nom de la clef de la publicité, elle n'a pas à être unique.
-- La valeur `targeting value` est le nom de la valeur de la publicité, elle n'a pas à être unique.
+- La valeur `targeting key` est le nom de clé du ciblage personnalisé, elle n'a pas à être unique.
+- La valeur `targeting value` est le nom devValeur du ciblage personnalisé, elle n'a pas à être unique.
 
 :::note 
 

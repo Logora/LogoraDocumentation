@@ -11,9 +11,11 @@ The advertisements can be displayed around but also between the elements of the 
 
 If you have contracted with a revenue sharing model, you are required to fill all the ad spaces offered by Logora.
 
-Logora is compatible with Google Adsense, Google Ad Manager and all other advertising networks.
+Logora is compatible with Google Adsense and Google Ad Manager.
 
 ## Desktop format
+
+**You don't have to go through the Logora system to insert desktop ads as they are displayed around the space.**
 
 The debate space is a widget that generates new pages on your site. 
 
@@ -29,10 +31,11 @@ Top, right and bottom banner ads are loaded at the same time as the debate space
 
 ## Mobile format
 
+**In mobile format, you need to go through the Logora configuration to serve your ads in our space**.
+
 On mobile, this consists of inserting blocks into the debate space. 
 
 You can insert an ad on your article page, at the debate question area, like here: 
-
 
 ![Article_ad](/img/article_ad.png)
 
@@ -65,8 +68,8 @@ The ad formats are all the same, you can insert the same values everywhere or di
 
 - The `path` value is the path to the ad slot of your ad.
 - The `id` value is the unique container ID of your ad, also set at ad slot creation.
-- The `targeting key` value is the name of the ad key, it does not have to be unique.
-- The `targeting value` is the name of the value of the ad, it does not have to be unique.
+- The `targeting key` is the key name of the custom targeting, it does not have to be unique.
+- The `targeting value` is the value name of the custom targeting, it does not have to be unique.
 
 :::note 
 

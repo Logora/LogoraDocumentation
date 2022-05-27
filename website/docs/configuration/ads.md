@@ -11,7 +11,7 @@ Les publicités peuvent s'afficher autour mais aussi entre les éléments de l'e
 
 Si vous avez contractualisé avec un modèle de partage de revenu, il vous est demandé de remplir l'ensemble des espaces publicitaires proposés par Logora.
 
-Logora est compatible avec Google Adsense, Google Ad Manager et toutes les autres régies publicitaires.
+Logora est compatible avec Google Adsense et Google Ad Manager.
 
 ## Format desktop
 
@@ -20,6 +20,8 @@ L'espace de débat est un widget qui génére de nouvelles pages sur votre site.
 Vous contrôlez les insertions d'éléments autour de l'espace. 
 
 Sur desktop, vous pouvez directement insérer des formats publicitaires autour de l'espace comme sur les autres pages de votre site. 
+
+**Vous n'avez pas à passer par le système Logora pour insérer des publicités au format desktop puisqu'elles sont affichées autour de l'espace.**
 
 Par exemple, voici l'écran de chargement de l'espace de débat sur Capital.fr :
 
@@ -31,8 +33,9 @@ Des publicités en bannière haute, droite et basse sont chargées en même temp
 
 Sur mobile, il s'agit d'insérer des pavés dans l'espace de débat. 
 
-Vous pouvez insérer une publicité sur votre page article, au niveau de la question de débat comme ici : 
+**Dans ce cas là, il vous faut passer par la configuration Logora pour servir vos publicités dans notre espace**.
 
+Vous pouvez insérer une publicité sur votre page article, au niveau de la question de débat comme ici : 
 
 ![Article ad](/img/article_ad.png)
 
@@ -56,7 +59,6 @@ Les titres des publicités correspondent au positionnement de la publicité.
 - **Pavé haut** correspond au 2) `Pavé haut au début de la liste d'arguments`
 - **Pavé haut secondaire** correspond au 3) `Pavé bas tous les trois d'arguments`
 - **Pavé haut terciaire** correspond au 3) `Pavé bas tous les trois d'arguments`
-
 
 :::note 
 

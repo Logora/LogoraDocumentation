@@ -33,9 +33,8 @@ Sur mobile, il s'agit d'insérer des pavés dans l'espace de débat.
 
 Vous pouvez insérer une publicité sur votre page article, au niveau de la question de débat comme ici : 
 
-![Article ad](/img/article_ad.png) {
-  max-width: 200px;
-}
+
+![Article ad](/img/article_ad.png)
 
 Vous pouvez également insérer une publicité tous les trois arguments à l'intérieur des débats, disposés sur vos nouvelles pages. 
 

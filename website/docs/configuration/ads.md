@@ -13,7 +13,7 @@ Si vous avez contractualisé avec un modèle de partage de revenu, il vous est d
 
 Logora est compatible avec Google Adsense, Google Ad Manager et toutes les autres régies publicitaires.
 
-## Insertions publicitaires format desktop
+## Format desktop
 
 L'espace de débat est un widget qui génére de nouvelles pages sur votre site. 
 
@@ -27,13 +27,15 @@ Par exemple, voici l'écran de chargement de l'espace de débat sur Capital.fr :
 
 Des publicités en bannière haute, droite et basse sont chargées en même temps que l'espace de débat. 
 
-## Insertions publicitaires format mobile
+## Format mobile
 
 Sur mobile, il s'agit d'insérer des pavés dans l'espace de débat. 
 
 Vous pouvez insérer une publicité sur votre page article, au niveau de la question de débat comme ici : 
 
-![Configure ads](/img/configure_ads.png)
+![Article ad](/img/article_ad.png) {
+  max-width: 200px;
+}
 
 Vous pouvez également insérer une publicité tous les trois arguments à l'intérieur des débats, disposés sur vos nouvelles pages. 
 
@@ -43,9 +45,9 @@ Pour celà, nous avons créé des espaces que vous pouvez remplir avec en créea
 2) Pavé haut au début de la liste d'arguments : `(300 * 250)`                        
 3) Pavé bas tous les trois d'arguments : `(300 * 250)`
 
-Pour insérer les publicités, allez sur votre espace d'administration dans `Configuration`puis dans `Publicité`
+Pour insérer les publicités, allez sur votre espace d'administration dans `Configuration` puis dans `Publicité`.
 
-![Article ad](/img/article_ad.png)
+![Configure ads](/img/configure_ads.png)
 
 Il vous faut cocher la case `Autoriser les publicités`
 

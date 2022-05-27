@@ -40,9 +40,9 @@ You can also insert an ad every three arguments inside the debates, arranged on 
 
 For this, we have created spaces that you can fill with by creating blocks in the formats defined below: 
 
-1) Block between the poll and the contributions highlighted in the footer: `(300 * 250)`.
-2) Top block at the beginning of the argument list: `(300 * 250)`.                        
-3) Box down every third argument: `(300 * 250)`.
+- 1) Block between the poll and the contributions highlighted in the footer: `(300 * 250)`.
+- 2) Top block at the beginning of the argument list: `(300 * 250)`.                        
+- 3) Box every third argument: `(300 * 250)`.
 
 To insert the ads, go to your administration area in `Configuration` and then in `Advertising`.
 
@@ -52,14 +52,14 @@ You need to check the `Allow ads` box.
 
 The ad titles correspond to the positioning of the ad. 
 
-- Footer Ad** corresponds to 1) `Page between the survey and the footer contributions`.
-- Top banner** corresponds to 2) `Top banner at the beginning of the argument list`.
-- Secondary Header** corresponds to 3) `Lower Header all three arguments`.
-- Tertiary high key** corresponds to 3) `Low key all three arguments`.
+- **Footer Ad** corresponds to 1) ` Block between the poll and the contributions`.
+- **Top banner** corresponds to 2) `Top block at the beginning of the argument`.
+- **Secondary Header** corresponds to the first 3) `Box every third argument`.
+- **Tertiary Header**  corresponds to the following 3) `Box every third argument`.
 
 :::note 
 
-The ad formats are all the same, you can put the same values everywhere or different values to analyse the performance of the slots. 
+The ad formats are all the same, you can insert the same values everywhere or different values to analyse the performance of the slots. 
 
 :::
 

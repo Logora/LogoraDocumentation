@@ -13,7 +13,7 @@ Si vous avez contractualisé avec un modèle de partage de revenu, il vous est d
 
 Logora est compatible avec Google Adsense, Google Ad Manager et toutes les autres régies publicitaires.
 
-### Insertions publicitaires format desktop
+## Insertions publicitaires format desktop
 
 L'espace de débat est un widget qui génére de nouvelles pages sur votre site. 
 

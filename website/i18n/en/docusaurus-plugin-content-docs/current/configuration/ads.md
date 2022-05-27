@@ -33,7 +33,10 @@ On mobile, this consists of inserting blocks into the debate space.
 
 You can insert an ad on your article page, at the debate question area, like here: 
 
-![Configure ads](/img/configure_ads.png)
+
+![Article_ad](/img/article_ad.png) {
+  max-width: 200px;
+}
 
 You can also insert an ad every three arguments inside the debates, arranged on your new pages. 
 
@@ -45,9 +48,7 @@ For this, we have created spaces that you can fill with by creating blocks in th
 
 To insert the ads, go to your administration area in `Configuration` and then in `Advertising`.
 
-![Article_ad](/img/article_ad.png) {
-  max-width: 200px;
-}
+![Configure ads](/img/configure_ads.png)
 
 You need to check the `Allow ads` box.
 

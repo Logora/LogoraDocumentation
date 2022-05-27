@@ -57,6 +57,7 @@ Les titres des publicités correspondent au positionnement de la publicité.
 - **Pavé haut secondaire** correspond au 3) `Pavé bas tous les trois d'arguments`
 - **Pavé haut terciaire** correspond au 3) `Pavé bas tous les trois d'arguments`
 
+
 :::note 
 
 Les formats des publicités sont tous les mêmes, vous pouvez mettre les mêmes valeurs partout ou des valeurs différentes pour analyser les performances des emplacements. 

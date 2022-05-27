@@ -38,7 +38,7 @@ Vous pouvez insérer une publicité sur votre page article, au niveau de la ques
 
 Vous pouvez également insérer une publicité tous les trois arguments à l'intérieur des débats, disposés sur vos nouvelles pages. 
 
-Pour celà, nous avons créé des espaces que vous pouvez remplir avec en créeant des blocs aux formats définis ci-dessous : 
+Pour celà, nous avons créé des espaces que vous pouvez remplir avec en créant des blocs aux formats définis ci-dessous : 
 
 1) Pavé entre le sondage et les contributions mises en avant en pied d’article : `(300 * 250)`
 2) Pavé haut au début de la liste d'arguments : `(300 * 250)`                        

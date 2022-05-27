@@ -13,7 +13,7 @@ If you have contracted with a revenue sharing model, you are required to fill al
 
 Logora is compatible with Google Adsense, Google Ad Manager and all other advertising networks.
 
-## Desktop advertising inserts
+## Desktop format
 
 The debate space is a widget that generates new pages on your site. 
 
@@ -27,7 +27,7 @@ For example, here is the loading screen of the debate space on Capital.fr :
 
 Top, right and bottom banner ads are loaded at the same time as the debate space. 
 
-## Mobile advertising inserts
+## Mobile format
 
 On mobile, this consists of inserting blocks into the debate space. 
 
@@ -45,7 +45,9 @@ For this, we have created spaces that you can fill with by creating blocks in th
 
 To insert the ads, go to your administration area in `Configuration` and then in `Advertising`.
 
-![Article_ad](/img/article_ad.png)
+![Article_ad](/img/article_ad.png) {
+  max-width: 200px;
+}
 
 You need to check the `Allow ads` box.
 

@@ -26,6 +26,11 @@ Le lien de documentation de Zapier est [disponible ici.](https://zapier.com/apps
 
 `De nombreux outils proposent un service similaire, vous êtes probablement déjà équipé d'un équivalent.`
 
+A titre d'exemple, Zapier permet d'automatiser gratuitement 100 actions par mois, si vous publiez 40 débats / mois vous pouvez donc automatiquement les partager sur Facebook et Twitter gratuitement (80 actions). 
+
+Vous pouvez automatiser 750 actions par mois pour 19$ / mois. Leur tarification est [disponible ici.](https://zapier.com/app/pricing)
+
+
 Vous récupérez **le titre, le lien, et l'image du débat ou de la consultation**. 
 Vous pouvez également ajouter une description personnalisée à chaque partage. 
 

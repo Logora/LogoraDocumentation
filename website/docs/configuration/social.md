@@ -35,3 +35,7 @@ Vous récupérez **le titre, le lien, et l'image du débat ou de la consultation
 Vous pouvez également ajouter une description personnalisée à chaque partage. 
 
 > Exemple pour un post sur Facebook : "La question {title} est à l'affiche sur le New York Times ! Suivez le lien pour participer sur notre espace dédié au débat.
+
+Un exemple de publication automatisée sans description personnalisée : 
+
+![Un exemple de publication FB](/img/publicationfb.png)

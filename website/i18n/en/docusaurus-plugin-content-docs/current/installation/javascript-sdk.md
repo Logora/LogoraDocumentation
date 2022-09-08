@@ -53,6 +53,11 @@ Standard code to copy/paste and complete:
 
 #### 1.3. URL rewriting for debate space routes
 
+This step allows users to access the debate space directly from their browser. 
+For example, if they wish to access their profile directly via the https://www.yourwebsite.com/debate-space/user/your-profile url, without rewriting the urls, they will be redirected to an error page. 
+
+The rewriting of urls also allows the Logora team to directly add new modules on new urls of your site without asking you to intervene. 
+
 Use URL rewriting on your platform or CMS to make paths starting with 'debate-space/' (or whatever prefix you choose) point to the page where the debate space is inserted.
 
 Go to https://yourwebsite.com/debate-space/debates. You are on the Debate Space home page!
@@ -63,7 +68,9 @@ To change the prefix and the URL paths of the debate space pages, go to [the URL
 
 Insert the Javascript code of the summary where you want the summary of the debate to appear, on the article footer. This is an example of Javascript code that loads and displays the debate summary linked to your article. It must be inserted on all your article pages. This code will not display anything until you have associated a debate with the page.
 
-> If you prefer to insert the server-side summary, go to the [server-side installation] page (installation/api.md).
+> If you have high performance constraints and want to index the debate pages on search engines, it is necessary to insert the server side synthesis. If you prefer to insert the server-side summary, go to the [server-side installation] page (installation/api.md).
+
+#### 2.1 Insert the JavaScript code and your configuration variables
 
 > If you want to use the widget, use the widget.js link displayed in the sample Javascript code below. 
 
@@ -95,3 +102,44 @@ Standard code to copy/paste and complete :
 The debate linked to the page must then be created in the administration area > create a debate, by providing the debate.identifier or by selecting the article concerned in the list of last retrieved articles. 
 
 All you have to do now is implement a unique sign-on and customize Logora to launch your first debate. 
+
+#### 2.2 Sending metadata manually
+
+Logora fetch metadatas from your articles automatically by default:
+- via the html tag _meta_
+- via the script _json_ld_
+
+If you wish, you can send those metadatas manually from the configurations variables:
+
+Here is an exemple of metadatas being sent from configuration variables:
+
+```javascript
+    // Configuration variables
+    var logora_config = {
+	shortname: "APP_NAME", // Application name from admin panel
+	debate: {
+	    identifier: "PAGE_IDENTIFIER" // Page unique identifier
+	},
+	source: {
+	    source_url: "https://yoursite.com/article", // canonical URL
+	    uid: "a3f4e033-9e13-4abb-be11-2d87a2294013", // Page unique identifier
+	    title: "Article title", // Article title
+	    description: "Page description", // Page description
+	    origin_image_url: "https://image.com/image.png", // Image URL
+	    published_date: "2020-12-01T12:00:00+01:00", // Article date of publishing (format ISO_8601)
+	    publisher: "My website", // Website's name
+	    tag_objects: [  // Article tags (array of objects)
+		{ 
+		  name: "politics",  // Tag name
+		  uid: "politics-001" // Tag unique identifier. Can be omitted if name is already unique
+		}, 
+		{ 
+		  name: "health", 
+		  uid: "health-003" 
+		},
+	    ]
+	}
+    };
+```
+
+Every metadata that you send manually is optional, the missing ones will be fetched automatically.

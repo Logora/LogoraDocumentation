@@ -57,15 +57,16 @@ Code standard à copier/coller et compléter :
 
 #### 1.3. Réécriture des URLs pour les routes de l'espace de débat
 
+Cette étape permet aux utilisateurs d'accéder à l'espace de débat directement depuis leur navigateur. 
+Par exemple, si un utilisateur souhaite accéder directement à son profil via l'URL https://www.votresite.com/espace-debat/utilisateur/votre-profil, sans procéder à la réécriture des URLs, il sera redirigé vers une page d'erreur. 
+
+La réécriture des URLs permet également à l'équipe Logora de rajouter directement de nouveaux modules sur de nouvelles URLs de votre site sans vous demander d'intervenir. 
 
 Utilisez la réécriture d'URL sur votre plateforme ou CMS pour que les chemins commençant par 'espace-debat/' (ou le préfixe que vous avez choisi) pointent vers la page où est inséré l'espace de débat.
 
-
 Accédez à la page https://votresite.com/espace-debat/debats. Vous êtes sur la page d'accueil de l'espace de débat !
 
-
 Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat, rendez-vous sur [la configuration des chemins d'URL](configuration/routes.md).
-
 
 
 ### 2. Installer la synthèse du débat 
@@ -73,6 +74,8 @@ Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat,
 > Si avez des contraintes de performance élevé et que vous souhaitez indexer les pages de débat sur les moteurs de recherche, il est nécessaire d'insérer la synthèse côté serveur. Dans ce cas rendez-vous sur la page d'[installation côté serveur](installation/api.md).
 
 Insérez le code Javascript de la synthèse à l'endroit où vous souhaitez voir apparaître la synthèse du débat, en pied d'article. Ceci est un exemple de code Javascript qui charge et affiche la synthèse du débat en cours lié à votre article. Il doit être inséré sur toutes vos pages d'articles. Ce code n'affichera rien tant que vous n'avez pas associé de débat à la page.
+
+#### 2.1 Insérer le code JavaScript et vos variables de configuration
 
 > Si vous souhaitez utiliser le widget, utilisez l'autre lien indiqué dans le code Javascript exemple
 
@@ -101,8 +104,50 @@ Code standard à copier/coller et compléter :
 
 **debate.identifier (requis)** : identifiant unique lié à la page. Cet identifiant doit être unique pour chaque page où est insérée la synthèse. Il permettra de récupérer le débat correspondant à la page. Par exemple, l'identifiant peut être l'ID dans votre base de données de l'article présent sur la page, ou un slug unique ('exemple-identifiant').
 
+> Pour des raisons de performance, les articles publiées il y a plus de 18 mois ne sont pas récupérés. La synthèse ne s'affichera pas.
 
 Le débat lié à la page doit ensuite être créé dans l'espace d'administration > créer un débat, en fournissant l'identifiant debate.identifier ou en sélectionnant l'article concerné dans la liste des derniers articles récupérés. 
+
+#### 2.2 Envoyer les méta-données des articles manuellement (optionnel)
+
+Par défaut, Logora récupère les méta-données des articles automatiquement :
+- via les balises html _meta_
+- via le format JSON-LD
+
+Cependant vous pouvez choisir de les envoyer manuellement avec les variables de configuration.
+
+Voici un exemple de meta-données envoyées depuis les variables de configuration :
+
+```javascript
+    // Variables de configuration
+    var logora_config = {
+	shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
+	debate: {
+	    identifier: "PAGE_IDENTIFIER" // Identifiant unique de la page
+	},
+	source: {
+	    source_url: "https://votresite.com/article", // URL canonique de la page
+	    uid: "a3f4e033-9e13-4abb-be11-2d87a2294013", // Identifiant unique de la page
+	    title: "Titre de l'article", // Titre de la page
+	    description: "Description de la page", // Description de la page
+	    origin_image_url: "https://image.com/image.png", // URL de l'image de la page
+	    published_date: "2020-12-01T12:00:00+01:00", // Date de publication de la page au format ISO_8601
+	    publisher: "Mon site", // Nom du site
+	    tag_objects: [  // Étiquettes de l'article sous forme de tableau d'objets
+		{ 
+		  name: "politique",  // Nom affiché de l'étiquette
+		  uid: "politique-001" // Identifiant unique de l'étiquette. Peut être omis si les noms sont déjà uniques
+		}, 
+		{ 
+		  name: "santé", 
+		  uid: "sante-003" 
+		},
+	    ]
+	  }
+    };
+```
+
+Il n'est pas obligatoire d'envoyer toutes les méta-données manuellement, les champs manquants seront récupérés automatiquement. Les métadonnées envoyées manuellement ont la priorité sur les données récupérées automatiquement.
 
 
 #### Écouter le chargement de la synthèse (optionnel)

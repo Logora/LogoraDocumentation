@@ -13,19 +13,19 @@
 	  {
       "type": "category",
       "label": "Single Sign On",
-      "items": ["authentication/introduction", "authentication/oauth2_server", "authentication/oauth2", "authentication/jwt"]
+      "items": ["authentication/introduction", "authentication/oauth2_server", "authentication/jwt"]
     },
 	  {
       "type": "category",
       "label": "Configuration",
 	    "collapsed": false,
-      "items": ["configuration/theme", "configuration/routes", "configuration/moderation", "configuration/ads"]
+      "items": ["configuration/theme", "configuration/routes", "configuration/moderation", "configuration/social", "configuration/ads"]
     },
 	  {
       "type": "category",
       "label": "FAQ",
 	    "collapsed": false,
-      "items": ["faq/performance", "faq/rgpd", "faq/mailing", "faq/thesis"]
+      "items": ["faq/performance", "faq/rgpd", "faq/data", "faq/mailing", "faq/thesis", "faq/invitation"]
     }
   ]
 }

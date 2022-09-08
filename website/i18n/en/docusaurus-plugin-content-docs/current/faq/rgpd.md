@@ -6,24 +6,18 @@ description: Data Protection Regulation (RGPD)
 
 ### Protection of personal data 
 
-## I. Summary of this document 
-
-Logora processes data to make it richer for you. 
+## 1. Summary of this document 
 
 **The data in your discussion space belongs to you**. 
 
-> Example: Peter adds an argument, Logora adds an argument to his profile and returns his data to you. 
+Logora acts as a data processor on your behalf. We make a copy of the debater's first name, last name and email to display on the debate space and notify users by email of the latest debates trending on your space.
 
-:::note 
+We do not place any advertising or analytics cookies on the debate platform.
 
-Logora acts as a data processor on your behalf. We make a copy of the debater's first name, last name and email to display on the debate space and notify users by email of the latest debates trending on your space. 
-
-:::
-
-You can get your data back automatically by calling our API. To do so, contact us (henry@logora.fr). 
+You can get your data back automatically by calling our API. To do so, contact us (contact@logora.fr). 
 You can also retrieve them manually from your administration space. They are retrieved in CSV format. 
 
-## II. Description of the processing subject to subcontracting 
+## 2. Description of the processing subject to subcontracting 
 
 The processor is authorised to process on behalf of the data controller the personal data necessary to enable Internet users with an account to give an opinion and answer questions in the form of a debate and to comment on their answers. 
 
@@ -45,7 +39,7 @@ Destruction of data.
 
 3) Management of the debate area; 
 
-4) Moderation a priori; 
+4) Moderation; 
 
 5) Sending [email notifications](faq/mailing.md); 
 
@@ -57,4 +51,32 @@ Destruction of data.
 
 Our contracts were created with the help of some of the leading publishing companies (Ouest-France, Prisma Media, Bayard Presse). 
 
-If you would like to receive a full copy, please contact pierre@logora.fr
+If you would like to receive a full copy, please contact contact@logora.fr
+
+
+## 3. Anonymization of user data
+
+In accordance with the GDPR, users can request the deletion of their data from the debate platform. 
+
+We provide an API for you to proceed to anonymize a user's data.
+
+This route anonymizes all personal data related to the user: first name, last name, email, unique identifier, image, while keeping their contributions and activity.
+
+**URL**: https://app.logora.fr/api/v1/users/{uid}/anonymize
+
+**Method**: POST
+
+**Parameters**:
+    
+- uid: unique user ID that you pass to Logora when the user registers
+
+**Authorization**: Bearer token with the scope `authentication`.
+
+The authorization uses the OAuth2.0 standard. Here is how to get an access token :
+```
+curl -d grant_type=client_credentials -d client_id=API_KEY -d client_secret=API_SECRET -d scope=authentication https://app.logora.fr/oauth/token
+```
+
+The API key and secret key are available in your administration area.
+
+This operation is not reversible. Please take precautions when using this API route.

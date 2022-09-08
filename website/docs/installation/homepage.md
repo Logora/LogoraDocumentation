@@ -1,6 +1,6 @@
 ---
 id: homepage
-title: homepage
+title: Module de page d'accueil
 ---
 
 Logora vous fournit un module présentant le dernier débat créé à intégrer sur votre page d'accueil. Il se met automatiquement à jour avec votre dernier débat.

@@ -8,7 +8,7 @@
       "type": "category",
       "label": "Installation",
 	    "collapsed": false,
-      "items": ["installation/javascript-sdk", "installation/wordpress", "installation/server-side-sdk", "installation/amp-sdk", "installation/android-sdk", "installation/ios-sdk"]
+      "items": ["installation/javascript-sdk", "installation/wordpress", "installation/server-side-sdk", "installation/amp-sdk", "installation/android-sdk", "installation/ios-sdk", "installation/homepage"]
     },
 	  {
       "type": "category",

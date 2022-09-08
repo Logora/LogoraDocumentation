@@ -20,7 +20,7 @@ Code standard à copier/coller et compléter :
     // Variables de configuration
     var logora_config = {
         shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
-        debate: {
+        resource: {
             id: "vote_embed", // Paramètres non variables
             name: "vote_embed" // Paramètres non variables
         }

@@ -20,8 +20,8 @@ Standard code to copy/paste and complete:
     var logora_config = {
         shortname: "NOM_APPLICATION", // Application name 
         resource: {
-            id: "vote_embed", // Non-variable parameters
-            name: "vote_embed" // Non-variable parameters
+            id: "vote", // Non-variable parameters
+            name: "vote" // Non-variable parameters
         }
     };
 

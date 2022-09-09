@@ -21,8 +21,8 @@ Code standard à copier/coller et compléter :
     var logora_config = {
         shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
         resource: {
-            id: "vote_embed", // Paramètres non variables
-            name: "vote_embed" // Paramètres non variables
+            id: "vote", // Paramètres non variables
+            name: "vote" // Paramètres non variables
         }
     };
 

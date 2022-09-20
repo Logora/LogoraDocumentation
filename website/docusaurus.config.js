@@ -62,7 +62,7 @@ module.exports={
     },
     footer: {
       links: [],
-      copyright: "Copyright © 2021 Logora",
+      copyright: "Copyright © 2022-23 Logora",
     }
   }
 }

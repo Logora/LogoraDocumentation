@@ -5,6 +5,10 @@ title: Homepage module
 
 Logora provides you with a module presenting the latest debate created to integrate on your home page. It automatically updates with your latest debate.
 
+A mobile format example : 
+
+![Widget instance](/img/widget_instance.png)
+
 #### Installation
 
 Insert the Javascript code of the home page module where you want the module to appear. This is an example of Javascript code that loads and displays the last created debate module.

@@ -5,6 +5,10 @@ title: Module de page d'accueil
 
 Logora vous fournit un module présentant le dernier débat créé à intégrer sur votre page d'accueil. Il se met automatiquement à jour avec votre dernier débat.
 
+Un exemple en format mobile : 
+
+![Widget instance](/img/widget_instance.png)
+
 #### Installation
 
 Insérez le code Javascript du module de page d'accueil à l'endroit où vous souhaitez voir apparaître le module. Ceci est un exemple de code Javascript qui charge et affiche le module du dernier débat débat créé.

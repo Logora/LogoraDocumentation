@@ -59,6 +59,8 @@ Nous indiquons envoyer le mail pour votre compte en pied de mail, positionnant L
 
 **Réponse à un argument**
 
+<img src="answermail.png" alt="test" width="600"/>
+
 ![Answer Mail](/img/answermail.png)
 
 **Newsletter hebdomadaire**

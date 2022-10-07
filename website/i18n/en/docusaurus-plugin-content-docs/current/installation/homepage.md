@@ -7,7 +7,7 @@ Logora provides you with a module presenting the latest debate created to integr
 
 A mobile format example : 
 
-![Widget instance](/img/widget_instance.png)
+<img src="/img/widget_instance.png" alt="Home widget" width="200"/>
 
 #### Installation
 

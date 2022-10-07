@@ -1,6 +1,6 @@
 
 ---
-id: Registration
+id: registration
 title: Optimisez votre parcours d'inscription
 ---
 

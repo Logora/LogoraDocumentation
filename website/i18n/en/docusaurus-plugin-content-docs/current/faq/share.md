@@ -11,4 +11,4 @@ This allows you to feed your articles, but especially to highlight your privileg
 
 To do so, you need to click on the share argument button, then on the "Embed content" icon located on the right side of the bubble.
 
-![Share argument](/img/share_argument.png)
+<img src="/img/share_argument.png" alt="Share argument" width="400"/>

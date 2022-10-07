@@ -1,5 +1,5 @@
 ---
-id: Premium
+id: premium
 title: Accédez aux nouvelles fonctionnalités en avant-première  
 ---
 

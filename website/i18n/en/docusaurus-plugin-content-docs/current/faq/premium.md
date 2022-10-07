@@ -1,6 +1,6 @@
 ---
 id: premium
-title: Get a sneak preview of new features  
+title: Preview of new features  
 ---
 
 Logora's technical team imagines, designs and develops new projects every month to improve your space. 

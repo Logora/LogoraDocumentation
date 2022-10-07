@@ -1,6 +1,6 @@
 ---
 id: premium
-title: Accédez aux nouvelles fonctionnalités en avant-première  
+title: Fonctionnalités en avant-première  
 ---
 
 L'équipe technique de Logora imagine, dessine et développe de nouveaux projets tous les mois pour améliorer votre espace. 

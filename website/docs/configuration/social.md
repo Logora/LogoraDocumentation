@@ -38,4 +38,4 @@ Vous pouvez également ajouter une description personnalisée à chaque partage.
 
 Un exemple de publication automatisée sans description personnalisée : 
 
-![Un exemple de publication FB](/img/publicationfb.png)
+<img src="/img/publicationfb.png" alt="RSS to Facebook" width="400"/>

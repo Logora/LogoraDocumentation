@@ -23,4 +23,24 @@ Vous pouvez demander d'autres informations mais le plus court reste le plus effi
 
 #### Exemples à suivre
 
+Nous mettons à votre disposition une inscription toute faite, que vous pouvez activer depuis la configuration en choisissant `Social`. 
 
+<img src="/img/logora_registration.png" alt="Logora registration" width="400"/>
+
+Elle facilite l'inscription en proposant des options sociales (Facebook, Google). 
+
+Quelque soit le choix de l'utilisateur, nous récupérons son prénom, nom et mail. 
+
+<img src="/img/logora_sign_up.png" alt="Logora sign up" width="400"/>
+
+L'inscription apparaît sous la forme d'une pop-up, non scrollable et réunissant toutes les informations nécessaires en quelques lignes. 
+
+Si vous utilisez l'inscription SSO, nous recommandons que votre page d'inscription soit la plus légère possible, comme celle-ci : 
+
+<img src="/img/capital_registration.png" alt="Capital registration"/>
+
+#### Optimisation continue 
+
+Analysez votre parcours en utilisant les outils à votre disposition (Hotjar, Google Analytics, Google Tag Manager) pour évaluer les performances de chacun des champs et optimiser votre conversion. 
+
+Nous nous mettons à votre disposition pour vous accompagner sur ce sujet.  

@@ -1,46 +1,46 @@
 ---
 id: Registration
-title: Optimisez votre parcours d'inscription
+title: Optimise your registration process
 ---
 
-L'efficacité de votre parcours d'inscription est fondamentale à la réussite de votre espace contributif. 
+The efficiency of your registration path is fundamental to the success of your contributory space. 
 
-Cette étape peut sembler évidente, mais nous avons découvert que certains de nos partenaires les plus importants présentaient des pages d'inscription cassées, mal comprises ou peu performantes (taux de rebond allant jusqu'à 80% sur le parcours d'inscription !). 
+This step may seem obvious, but we have found that some of our most important partners have broken, misunderstood or poorly performing registration pages (bounce rate up to 80% on the registration path!). 
 
+#### Problems encountered 
 
-#### Problèmes rencontrés 
+1) Redirection to a registration page with a different graphic representation than the previous one: This change poses a problem from the point of view of the "feeling of security" that the user might be looking for. Indeed, since registration is an important point of friction between the user and the brand, redirecting the user at this crucial stage to a page with a different graphic presentation risks giving him the impression that his data is not perfectly secure;
 
-1) La redirection vers une page d'inscription avec une représentation graphique différente de celle précédente : Ledit changement pose  problème d’un point de vue du “sentiment sécuritaire” que pourrait rechercher l’utilisateur. En effet, l’inscription étant un point important de friction entre l’utilisateur et la marque, rediriger le user à cette étape cruciale vers une page avec une présentation graphique différente, risque de lui donner l’impression que ses données ne sont pas en parfaite sécurité;
+It would be preferable for the entire registration process to take place within a synthetic pop-up window, such as the one that currently displays the "register" button. In this way, the user remains focused on the purpose of the process, without being disturbed by a change in presentation.
 
-Il serait préférable que l’intégralité du parcours d’inscription se fasse au sein d’une pop-in synthétique, telle que celle qui affiche actuellement le bouton “s’inscrire”. De cette manière, l’utilisateur reste concentré sur le but de sa démarche, sans être perturbé par un changement de présentation.
+2) The heaviness of the page itself (page with scroll) and the number of fields required for registration.
+An example of an inefficient registration: request for First Name + Email + Password with instructions + Acceptance of the GTC + Proposal to receive commercial offers + Proposal to subscribe to the newsletter + Header menu + Footer menu.
 
-2) La lourdeur de la page en tant que telle (page avec scroll) et le nombre de champs demandés pour l'inscription.
-Un  exemple d'inscription peu efficace : demande de Prénom + Email + Mot de passe avec consignes + Acceptation des C.G.U. + Proposition de réception d’offres commerciales + Proposition d’abonnement à la newsletter + Menu header + Menu footer.
+Only the email is necessary for the proper functioning of the space. 
 
-Seul l'email est nécessaire au bon fonctionnement de l'espace. 
+You can ask for other information but the shorter the better. 
 
-Vous pouvez demander d'autres informations mais le plus court reste le plus efficace. 
+#### Examples to follow
 
-#### Exemples à suivre
-
-Nous mettons à votre disposition une inscription toute faite, que vous pouvez activer depuis la configuration en choisissant `Social`. 
+We provide you with a ready-made registration, which you can activate from the configuration by choosing `Social`. 
 
 <img src="/img/logora_registration.png" alt="Logora registration" width="400"/>
 
-Elle facilite l'inscription en proposant des options sociales (Facebook, Google). 
+It facilitates registration by offering social options (Facebook, Google). 
 
-Quelque soit le choix de l'utilisateur, nous récupérons son prénom, nom et mail. 
+Whatever the user chooses, we get their first name, last name and email. 
 
 <img src="/img/logora_sign_up.png" alt="Logora sign up" width="400"/>
 
-L'inscription apparaît sous la forme d'une pop-up, non scrollable et réunissant toutes les informations nécessaires en quelques lignes. 
+The registration appears as a pop-up, non-scrollable and gathering all the necessary information in a few lines. 
 
-Si vous utilisez l'inscription SSO, nous recommandons que votre page d'inscription soit la plus légère possible, comme celle-ci : 
+If you use SSO registration, we recommend that your registration page is as light as possible, like this one: 
 
 <img src="/img/capital_registration.png" alt="Capital registration"/>
 
-#### Optimisation continue 
+#### Continuous optimization 
 
-Analysez votre parcours en utilisant les outils à votre disposition (Hotjar, Google Analytics, Google Tag Manager) pour évaluer les performances de chacun des champs et optimiser votre conversion. 
+Analyse your journey using the tools at your disposal (Hotjar, Google Analytics, Google Tag Manager) to evaluate the performance of each field and optimise your conversion. 
 
-Nous nous mettons à votre disposition pour vous accompagner sur ce sujet.  
+We are at your disposal to help you with this.  
+

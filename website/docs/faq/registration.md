@@ -1,8 +1,9 @@
-
 ---
 id: registration
-title: Optimisez votre parcours d'inscription
+title: Parcours d'inscription
 ---
+
+#### Optimisez votre parcours d'inscription
 
 L'efficacité de votre parcours d'inscription est fondamentale à la réussite de votre espace contributif. 
 

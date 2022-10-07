@@ -5,7 +5,7 @@ title: Mail management
 
 #### Sending emails for your account
 
-## I.Content
+## I. Content
 
 We send a weekly newsletter on your behalf to all the registered debaters on your debate space. 
 
@@ -25,7 +25,7 @@ Only the newsletter, the direct response to an argument and the addition of an a
 
 All other actions (receiving a vote, being followed by someone...) are subject to notifications on your debate space, on-site. 
 
-## II.Impact
+## II. Impact
 
 If you are using Google Analytics, you can track the results of your email campaigns using utm media tags. 
 
@@ -45,13 +45,13 @@ utm_source=logora, utm_medium=email, utm_campaign=argument_reply
 
 utm_source=logora, utm_medium=email, utm_campaign=debate_follow
 
-## III. consent management
+## III. Consent management
 
 Debaters can unsubscribe from emails received from their debater profile or directly from the email received. 
 
 We indicate to send the email on your behalf at the bottom of the email, positioning Logora as a data processor within the legal framework in force. 
 
-## IV.Illustrations
+## IV. Illustrations
 
 **Preview of a mail***.
 

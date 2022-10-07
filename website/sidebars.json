@@ -25,7 +25,7 @@
       "type": "category",
       "label": "FAQ",
 	    "collapsed": false,
-      "items": ["faq/performance", "faq/rgpd", "faq/data", "faq/mailing", "faq/thesis", "faq/invitation", "faq/share"]
+      "items": ["faq/performance", "faq/rgpd", "faq/data", "faq/mailing", "faq/thesis", "faq/invitation", "faq/share", "faq/registration"]
     }
   ]
 }

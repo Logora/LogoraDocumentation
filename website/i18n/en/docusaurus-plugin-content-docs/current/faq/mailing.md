@@ -59,12 +59,12 @@ We indicate to send the email on your behalf at the bottom of the email, positio
 
 **Answer to an argument**
 
-[Answer Mail](/img/answermail.png)
+<img src="/img/answermail.png" alt="Answering mail" width="600"/>
 
 **Weekly newsletter**
 
-[Preview Mail](/img/insidemail.png)
+<img src="/img/insidemail.png" alt="Weekly mail" width="600"/>
 
 **Follow-up debate**
 
-![Group Follow](/img/groupfollow.png)
+<img src="/img/groupfollow.png" alt="Followed debate" width="600"/>

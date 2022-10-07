@@ -11,4 +11,4 @@ Cela permet de nourrir vos articles, mais surtout de mettre en lumière votre re
 
 Pour se faire, il vous faut cliquer sur le bouton de partage de l'argument, puis sur l'icône "Intégrer le contenu" située le plus à droite de la bulle.
 
-![Share argument](/img/share_argument.png)
+<img src="/img/share_argument.png" alt="Share argument" width="400"/>

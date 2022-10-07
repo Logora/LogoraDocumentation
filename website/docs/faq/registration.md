@@ -1,105 +1,47 @@
+
 ---
 id: Registration
 title: Optimisez votre parcours d'inscription
 ---
 
-L'API Logora vous permet de récupérer les utilisateurs inscrits sur votre application.
+L'efficacité de votre parcours d'inscription est fondamentale à la réussite de votre espace contributif. 
 
-#### Avant de commencer
+Cette étape peut sembler évidente, mais nous avons découvert que certains de nos partenaires les plus importants présentaient des pages d'inscription cassées, mal comprises ou peu performantes (taux de rebond allant jusqu'à 80% sur le parcours d'inscription !). 
 
-- Rendez-vous sur votre [Espace d'administration](https://admin.logora.fr) (onglet *Configuration > Général*).
-- Récupérez votre clé d'API et de votre clé secrète qui serviront pour l'authentification.
 
-#### 1. Récupérer un jeton d'accès
+#### Problèmes rencontrés 
 
-Un jeton d'accès OAuth 2.0 est généré en utilisant votre clé d'API et votre clé secrète, grâce à une requête POST vers notre route d'autorisation. Exemple utilisant Curl :
+1) La redirection vers une page d'inscription avec une représentation graphique différente de celle précédente : Ledit changement pose  problème d’un point de vue du “sentiment sécuritaire” que pourrait rechercher l’utilisateur. En effet, l’inscription étant un point important de friction entre l’utilisateur et la marque, rediriger le user à cette étape cruciale vers une page avec une présentation graphique différente, risque de lui donner l’impression que ses données ne sont pas en parfaite sécurité;
 
-```bash
-curl -d grant_type=client_credentials -d client_id=API_KEY -d client_secret=API_SECRET -d scopes=admin https://app.logora.fr/oauth/token
+Il serait préférable que l’intégralité du parcours d’inscription se fasse au sein d’une pop-in synthétique, telle que celle qui affiche actuellement le bouton “s’inscrire”. De cette manière, l’utilisateur reste concentré sur le but de sa démarche, sans être perturbé par un changement de présentation.
 
-// Réponse  
-=> {"access_token":"Av9wbEK-0QTOdxhzB4S3-B1ZFKj1Z4y8Xcl17iVcHsg","token_type":"Bearer","expires_in":7200,"created_at":1579688184}
-```
+2) La lourdeur de la page en tant que telle (page avec scroll) et le nombre de champs demandés pour l'inscription.
+Un  exemple d'inscription peu efficace : demande de Prénom + Email + Mot de passe avec consignes + Acceptation des C.G.U. + Proposition de réception d’offres commerciales + Proposition d’abonnement à la newsletter + Menu header + Menu footer.
 
-Si la requête est réussie, elle retourne un jeton d'accès dans l'attribut `access_token`. Ce jeton d'accès est valide deux heures. Les attributes `expires_in` et `created_at` permettent de calculer la date d'expiration du jeton.
-Ce jeton Bearer doit être ajouté dans l'en-tête `Authentication` des requêtes.
+Seul l'email est nécessaire au bon fonctionnement de l'espace. 
 
-#### 2. Récupérer les données
+Vous pouvez demander d'autres informations mais le plus court reste le plus efficace. 
 
-URL : `https://app.logora.fr/api/v1/users`
+#### Exemples à suivre
 
-Méthode : `GET`
+Nous mettons à votre disposition une inscription toute faite, que vous pouvez activer depuis la configuration en choisissant `Social`. 
 
-En-tête : `Content-Type: application/json`
+<img src="/img/logora_registration.png" alt="Logora registration" width="400"/>
 
-Authentification : `Bearer`
+Elle facilite l'inscription en proposant des options sociales (Facebook, Google). 
 
-Paramètres d'URL (optionnels) :
+Quelque soit le choix de l'utilisateur, nous récupérons son prénom, nom et mail. 
 
-`page` (entier) : numéro de page de la liste d'utilisateurs
+<img src="/img/logora_sign_up.png" alt="Logora sign up" width="400"/>
 
-`per_page` (entier) : nombre d'éléments par page
+L'inscription apparaît sous la forme d'une pop-up, non scrollable et réunissant toutes les informations nécessaires en quelques lignes. 
 
-`is_expert` (booléen) : sélectionne seulement les utilisateurs dits "experts"
+Si vous utilisez l'inscription SSO, nous recommandons que votre page d'inscription soit la plus légère possible, comme celle-ci : 
 
-`is_selected` (booléen) : sélectionne les utilisateurs mis en avant
+<img src="/img/capital_registration.png" alt="Capital registration"/>
 
-`sub_application_name` (chaîne de caractères) : nom de la sous-application à laquelle appartient l'utilisateur
+#### Optimisation continue 
 
-Exemple de requête :
-`https://app.logora.fr/api/v1/users?page=1&per_page=10&is_expert=false&is_selected=false&sub_application_name=app-test`
+Analysez votre parcours en utilisant les outils à votre disposition (Hotjar, Google Analytics, Google Tag Manager) pour évaluer les performances de chacun des champs et optimiser votre conversion. 
 
-```
-// Exemple de réponse
-{
-  "success": true,
-  "data": [
-      {
-        "id": 21,
-        "uid": "02b3a18e-be9c-4f47-a2b3-a5867278cdc7",
-        "image_url": "https://dfrx2oay1w3r9.cloudfront.net/uploads/standard_69835d290a622014fa921df8287b7fd7.jpg",
-        "full_name": "Jean Dupont",
-        "level": {
-          "id": 1,
-          "name": "Novice du débat",
-          "icon_url": "https://d2vtyvk9fq7442.cloudfront.net/level_1.png"
-        },
-        "score": 0,
-        "slug": "jean-dupont",
-        "points": 0,
-        "description": null,
-        "created_at": "2021-11-25T16:15:38.874Z",
-        "messages_count": 10,
-        "votes_count": 123,
-        "email": "jean.dupont@exemple.fr",
-        "age": 58,
-        "city": "Strasbourg",
-        "occupation": "Jardinier",
-        "interests": "nature,économie"
-      },
-      {
-        "id": 26,
-        "uid": "dd976c14-bf88-4a94-835d-eb09f1074048",
-        "image_url": "https://dfrx2oay1w3r9.cloudfront.net/uploads/standard_9b71d3b9c6c06959dbc58ea3f0a128d0.jpg",
-        "full_name": "Martine Durand",
-        "level": {
-          "id": 1,
-          "name": "Novice du débat",
-          "icon_url": "https://d2vtyvk9fq7442.cloudfront.net/level_1.png"
-        },
-        "score": 0,
-        "slug": "martine-durand",
-        "points": 1,
-        "description": null,
-        "created_at": "2021-02-15T14:09:48.619Z",
-        "messages_count": 4,
-        "votes_count": 1,
-        "email": "martine.durand@exemple.fr",
-        "age": 23,
-        "city": "Nice",
-        "occupation": "Médecin",
-        "interests": "politique,économie"
-      }
-  ]
-}
-```
+Nous nous mettons à votre disposition pour vous accompagner sur ce sujet.  

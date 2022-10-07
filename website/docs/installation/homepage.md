@@ -7,7 +7,7 @@ Logora vous fournit un module présentant le dernier débat créé à intégrer 
 
 Un exemple en format mobile : 
 
-![Widget instance](/img/widget_instance.png)
+<img src="/img/widget_instance.png" alt="Home widget" width="200"/>
 
 #### Installation
 

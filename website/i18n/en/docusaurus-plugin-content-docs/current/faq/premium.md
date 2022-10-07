@@ -1,5 +1,5 @@
 ---
-id: Premium
+id: premium
 title: Get a sneak preview of new features  
 ---
 

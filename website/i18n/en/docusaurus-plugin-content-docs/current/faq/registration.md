@@ -1,5 +1,5 @@
 ---
-id: Registration
+id: registration
 title: Optimise your registration process
 ---
 

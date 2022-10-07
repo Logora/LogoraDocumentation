@@ -30,3 +30,7 @@ You get **the title, link, and image of the debate or consultation**.
 You can also add a custom description to each share. 
 
 > Example for a Facebook post: "The {title} issue is featured on the New York Times! Follow the link to participate on our dedicated debate space."
+
+An example of an automated publication without a custom description: 
+
+<img src="/img/publicationfb.png" alt="RSS to Facebook" width="400"/>

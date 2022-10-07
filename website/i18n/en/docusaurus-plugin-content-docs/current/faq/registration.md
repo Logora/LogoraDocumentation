@@ -1,6 +1,6 @@
 ---
 id: registration
-title: Optimise your registration process
+title: Registration process
 ---
 
 The efficiency of your registration path is fundamental to the success of your contributory space. 

@@ -59,16 +59,13 @@ Nous indiquons envoyer le mail pour votre compte en pied de mail, positionnant L
 
 **Réponse à un argument**
 
-<img src="/img/answermail.png" alt="test" width="600"/>
-
-![Answer Mail](/img/answermail.png)
+<img src="/img/answermail.png" alt="Answering mail" width="600"/>
 
 **Newsletter hebdomadaire**
 
-![Preview Mail](/img/insidemail.png)
+<img src="/img/insidemail.png" alt="Weekly mail" width="600"/>
 
 **Débat suivi**
 
-![Group Follow](/img/groupfollow.png)
-
+<img src="/img/groupfollow.png" alt="Followed debate" width="600"/>
 

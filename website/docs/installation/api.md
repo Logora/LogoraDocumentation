@@ -86,9 +86,12 @@ Méthode : `POST`
 En-tête : `Content-Type: application/json`
 
 Paramètres d'URL :   
-`shortname` (requis) : nom de votre application disponible dans votre espace d'administration\
-`uid` (requis) : identifiant unique de la page (le même identifiant que celui inséré côté client)\
-`device` (optionnel) : indique le type d'appareil de l'utilisateur. Les choix possibles sont : `mobile`, `tablet`, `desktop`. Ce paramètre est utilisé pour adapté le design du module en fonction de la taille de l'écran.\
+`shortname` (requis) : nom de votre application disponible dans votre espace d'administration
+
+`uid` (requis) : identifiant unique de la page (le même identifiant que celui inséré côté client)
+
+`device` (optionnel) : indique le type d'appareil de l'utilisateur. Les choix possibles sont : `mobile`, `tablet`, `desktop`. Ce paramètre est utilisé pour adapté le design du module en fonction de la taille de l'écran.
+
 `insertType` (optionnel) : mode d'insertion, ne pas ajouter si insertion standard. Indiquer *amp* pour une insertion sur une page AMP ou *iframe* pour une insertion en iframe.  
 
 Corps de la requête : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.
@@ -120,8 +123,8 @@ Corps de la requête : Le corps de la requête doit contenir des métadonnées s
 
 Exemples d'URL de requête :
 ```
-https://render.logora.fr/app?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6
-https://render.logora.fr/app?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6&insertType=amp
+https://render.logora.fr/synthesis?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6
+https://render.logora.fr/synthesis?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6&insertType=amp
 ```
 
 > Le paramètre `source_url` doit avoir un nom de domaine identique à un des domaines autorisés de votre application (modifiable dans *Configuration > Général*), sinon, la source envoyée ne sera pas prise en compte.

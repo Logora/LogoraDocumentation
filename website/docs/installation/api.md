@@ -94,6 +94,9 @@ Paramètres d'URL :
 
 `insertType` (optionnel) : mode d'insertion, ne pas ajouter si insertion standard. Indiquer *amp* pour une insertion sur une page AMP ou *iframe* pour une insertion en iframe.  
 
+`cache` (optionnel) : _true_ ou _false_. Permet de désactiver le cache pour tester en environnement de développement. Par défaut, les requêtes sont mises en cache quelques minutes. Ne pas désactiver le cache en production.
+
+
 Corps de la requête : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.
 ```json
 {

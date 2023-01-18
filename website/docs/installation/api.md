@@ -129,7 +129,7 @@ https://render.logora.fr/synthesis?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d
 
 > Le paramètre `source_url` doit avoir un nom de domaine identique à un des domaines autorisés de votre application (modifiable dans *Configuration > Général*), sinon, la source envoyée ne sera pas prise en compte.
 
-> Pour des raisons de performance, les sources publiées avant le 1er janvier 2019 ne sont pas prises en compte.
+> Pour des raisons de performance, les sources publiées il y a plus de 18 mois ne sont pas prises en compte.
 
 
 #### Réponse

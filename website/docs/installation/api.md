@@ -90,7 +90,7 @@ Paramètres d'URL :
 
 `uid` (requis) : identifiant unique de la page
 
-`device` (optionnel) : indique le type d'appareil de l'utilisateur. Les choix possibles sont : `mobile`, `tablet`, `desktop`. Ce paramètre est utilisé pour adapté le design du module en fonction de la taille de l'écran.
+`device` (optionnel) : indique le type d'appareil de l'utilisateur. Les choix possibles sont : `mobile`, `tablet`, `desktop`. Ce paramètre est utilisé pour adapter le design du module en fonction de la taille de l'écran.
 
 `insertType` (optionnel) : mode d'insertion, ne pas ajouter si insertion standard. Indiquer *amp* pour une insertion sur une page AMP ou *iframe* pour une insertion en iframe.  
 

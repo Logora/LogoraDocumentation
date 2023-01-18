@@ -88,7 +88,7 @@ En-tête : `Content-Type: application/json`
 Paramètres d'URL :   
 `shortname` (requis) : nom de votre application disponible dans votre espace d'administration
 
-`uid` (requis) : identifiant unique de la page (le même identifiant que celui inséré côté client)
+`uid` (requis) : identifiant unique de la page
 
 `device` (optionnel) : indique le type d'appareil de l'utilisateur. Les choix possibles sont : `mobile`, `tablet`, `desktop`. Ce paramètre est utilisé pour adapté le design du module en fonction de la taille de l'écran.
 

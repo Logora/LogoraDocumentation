@@ -38,6 +38,12 @@ module.exports={
     ]
   ],
   plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        language: ["fr", "en"]
+      },
+    ],
   ],
   themeConfig: {
     navbar: {
@@ -60,6 +66,12 @@ module.exports={
           type: 'localeDropdown',
           position: 'right',
         },
+        {
+          href: 'https://github.com/Logora/LogoraDocumentation',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+        }
       ]
     },
     footer: {

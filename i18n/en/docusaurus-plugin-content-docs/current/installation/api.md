@@ -27,6 +27,8 @@ URL parameters :
 `uid` (required): unique page identifier (it is the same identifier that is inserted on the client side)\
 `device` (optional) : user screen size. Possible choices are : `mobile`, `tablet`, `desktop`. This parameter is used to make the module responsive.\
 `insertType` (optional) : insertion mode, do not add in case of standard insertion. Indicate *amp* for an insertion on an AMP page or *iframe* for an insertion in iframe.  
+`cache` (optional) : _true_ or _false_. By default, requests are cached for a few minutes. If this parameter is false, will disable request cache. Useful during development or for debugging purposes. Do not set to _false_ in production.
+
 
 Request body: The request body must contain metadata about the page, in JSON format.
 ```json
@@ -57,13 +59,13 @@ Request body: The request body must contain metadata about the page, in JSON for
 
 Examples of query URLs:
 ```
-https://render.logora.fr/app?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6
-https://render.logora.fr/app?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6&insertType=amp
+https://render.logora.fr/synthesis?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6
+https://render.logora.fr/synthesis?shortname=demo-app&uid=cc7c1624-9d5c-4206-b2d4-d18cb36c59d6&insertType=amp
 ```
 
 > The `source_url` parameter must have a domain name identical to one of the authorized domains of your application (editable in *Configuration > General*), otherwise the source sent will not be taken into account.
 
-> For performance reasons, sources published before January 1st 2019 are not taken into account.
+> For performance reasons, sources published more than 18 months ago are not taken into account.
 
 
 #### Response
@@ -79,8 +81,7 @@ The response returned follows this format:
     "name": "Should proportional representation be introduced in the election of deputies?",     // Debate title
     "direct_url": "https://exemple.com/debate-space/debate/my-debate"      // Link to the debate
   },
-  "content": CODE_HTML, // HTML code of the debate summary to insert in the page. Attribute not present if success is false
-  "config": OBJET_CONFIG, // Object containing the application configuration
+  "content": CODE_HTML  // HTML code of the debate summary to insert in the page. Attribute not present if success is false
 }
 ```
 
@@ -90,6 +91,7 @@ The returned HTML code has the following container at its root:
 ```html
 <div id="logoraRoot" class="logoraContainer" lang="fr" data-id="synthesis"><div>
 ```
+
 
 ### Retrieving the list of articles (advanced usage)
 

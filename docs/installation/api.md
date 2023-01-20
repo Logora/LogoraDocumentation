@@ -148,8 +148,7 @@ La réponse renvoyée est sous cette forme :
     "name": "Faut-il introduire une dose de proportionnelle dans l'élection des députés ?",     // Titre du débat
     "direct_url": "https://exemple.com/espace-debat/debat/mon-debat"      // Lien vers le débat
   },
-  "content": CODE_HTML, // Code HTML de la synthèse à insérer dans la page. Attribut non présent si success à false
-  "config": OBJET_CONFIG, // Objet contenant la configuration de l'application
+  "content": CODE_HTML // Code HTML de la synthèse à insérer dans la page. Attribut non présent si success à false
 }
 ```
 

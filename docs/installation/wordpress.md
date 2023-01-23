@@ -11,11 +11,12 @@ title: Installation Wordpress
 ### Installation
 
 - Logora est disponible sur le catalogue Wordpress (https://wordpress.org/plugins/logora/). Sur votre interface Wordpress, téléchargez l'extension via Plugins en recherchant "Logora". Activez l'extension après son téléchargement.
-- Ajoutez votre nom d'application et votre clé secrète dans l'onglet de réglages Logora. Votre nom d'application et votre clé secréte sont disponibles sur votre [espace d'administration](https://admin.logora.fr) dans l'onglet *Configuration > Général*.
+- Ajoutez votre nom d'application dans l'onglet de réglages Logora. Votre nom d'application et votre clé secréte sont disponibles sur votre [espace d'administration](https://admin.logora.fr) dans l'onglet *Configuration > Général*.
+- Si vous souhaitez que vos utilisateurs puissent débattre avec leur compte Wordpress, cochez la case "Activer l'authentification unique (SSO)" et renseignez votre clé secète, disponible sur votre espace d'administration Logora.
 
 
 ### Utilisation
 
-- Accédez à votre espace de débat sur le chemin `/espace-debat`. L'espace de débat apparait vide, vous pouvez le peupler en créant un débat depuis votre espace d'administration. 
-- La synthèse de débat est disponible via le shortcode `[logora-synthese]`. Insérez-la en tapant `/` et en choissisant `shortcode`. Disposez le shortcode dans votre template d'article pour qu'il soit présent sur toutes les pages. Pour que la synthèse apparait en pied d'un article, il faut que l'article (au format `Post`) en question soit lié à un débat. Il vous faut donc créer un débat depuis votre [espace d'administration](https://admin.logora.fr) et sélectionner l'article à lier au débat. 
+- Accédez à votre espace de débat sur le chemin `/espace-debat`. L'espace de débat apparait vide, vous pouvez commencer à créer des débats depuis votre espace d'administration ou directement depuis vos articles Wordpress. 
+- La synthèse de débat s'insère automatiquement sur vos pages articles (au format `Post`). Pour faire apparaitre un débat sous un article, vous pouvez soit le lier depuis votre espace d'administration Logora, soit indiquer le débat dans votre article Wordpress, dans la section "Logora"
  

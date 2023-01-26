@@ -3,7 +3,7 @@ id: ios-sdk
 title: iOS SDK
 ---
 
-ogora can be integrated natively on your iOS applications. Here is a guide to using our SDK.
+Logora can be integrated natively on your iOS applications. Here is a guide to using our SDK.
 
 #### Installation (Swift)
 

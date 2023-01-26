@@ -23,11 +23,17 @@ Method : `POST`
 Header : `Content-Type: application/json`
 
 URL parameters :   
-`shortname` (required): name of your application available in your administration panel\
-`uid` (required): unique page identifier (it is the same identifier that is inserted on the client side)\
-`device` (optional) : user screen size. Possible choices are : `mobile`, `tablet`, `desktop`. This parameter is used to make the module responsive.\
-`insertType` (optional) : insertion mode, do not add in case of standard insertion. Indicate *amp* for an insertion on an AMP page or *iframe* for an insertion in iframe.  
+`shortname` (required): name of your application available in your administration panel
+
+`uid` (required): unique page identifier (it is the same identifier that is inserted on the client side)
+
+`device` (optional) : user screen size. Possible choices are : `mobile`, `tablet`, `desktop`. This parameter is used to make the module responsive.
+
+`insertType` (optional) : insertion mode, do not add in case of standard insertion. Indicate *amp* for an insertion on an AMP page or *iframe* for an insertion in iframe. 
+
 `cache` (optional) : _true_ or _false_. By default, requests are cached for a few minutes. If this parameter is false, will disable request cache. Useful during development or for debugging purposes. Do not set to _false_ in production.
+
+`noHtml` (optional) : _true_. Skip HTML code generation. You only retrieve necessary information to implement your own design.
 
 
 Request body: The request body must contain metadata about the page, in JSON format.

@@ -96,6 +96,8 @@ Paramètres d'URL :
 
 `cache` (optionnel) : _true_ ou _false_. Permet de désactiver le cache pour tester en environnement de développement. Par défaut, les requêtes sont mises en cache quelques minutes. Ne pas désactiver le cache en production.
 
+`noHtml` (optionnel) : _true_. Permet d'éviter la génération du code HTML pour seulement récupérer les informations nécessaires pour intégrer votre design. 
+
 
 Corps de la requête : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.
 ```json

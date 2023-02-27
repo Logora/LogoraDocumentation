@@ -3,7 +3,9 @@ id: homepage
 title: Homepage module
 ---
 
-Logora provides you with a module presenting the latest debate created to integrate on your home page. It automatically updates with your latest debate.
+Logora provides you with a module presenting a debate to be integrated on your home page. By default, the module will automatically update with your last created debate. You can also choose to pin a debate from your administration space, this will replace the default behavior of the module (you can unpin the debate at any time and return to the default behavior or pin another debate of your choice).
+
+Translated with www.DeepL.com/Translator (free version)
 
 A mobile format example : 
 
@@ -11,7 +13,7 @@ A mobile format example :
 
 #### Installation
 
-Insert the Javascript code of the home page module where you want the module to appear. This is an example of Javascript code that loads and displays the last created debate module.
+Insert the Javascript code of the home page module where you want the module to appear. This is an example of Javascript code that loads and displays the module.
 
 The **logora_embed** container is where the module is loaded.
 

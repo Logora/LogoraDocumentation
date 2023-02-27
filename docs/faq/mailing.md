@@ -7,23 +7,18 @@ title: Gestion des mails
 
 ## I. Contenu
 
-Nous envoyons pour votre compte une newsletter hebdomadaire à l'ensemble des débatteurs inscrits sur votre espace de débat. 
+**NL :**
+Nous envoyons pour votre compte une newsletter hebdomadaire aux débatteurs inscrits sur votre espace de débat et actifs lors des 90 derniers jours. 
+Elle présente les dix débats de la semaine les plus populaires à vos débatteurs inscrits. 
 
-Elle propose les dix débats de la semaine les plus populaires à vos débatteurs inscrits.  
+**Mail de réponse :**
+Nous envoyons un mail à un débatteur lorsque quelqu'un lui répond directement sur un débat. 
 
-Nous envoyons également un mail à un débatteur lorsque quelqu'un lui répond directement sur un débat. 
-
+**Débat suivi :**
 Enfin, nous envoyons un mail à un débatteur lorsque quelqu'un ajoute un argument sur un débat qu'il suit. 
 
-Un maximum d'un mail par jour est envoyé aux utilisateurs. 
-
-:::note
-
-Seuls la newsletter, la réponse directe à un argument et l'ajout d'un argument sur un débat suivi font l'objet d'envoi de mails. 
-
-:::
-
-Toutes les autres actions (recevoir un vote, être suivi par quelqu'un...) font l'objet de notifications sur votre espace de débat, on-site. 
+Un maximum d'un mail par jour est envoyé aux utilisateurs.
+Toutes les autres actions (recevoir un vote, être suivi par quelqu'un...) font l'objet de notifications sur votre espace de débat, on-site.
 
 ## II. Impact
 
@@ -45,6 +40,8 @@ utm_source=logora, utm_medium=email, utm_campaign=argument_reply
 
 utm_source=logora, utm_medium=email, utm_campaign=debate_follow
 
+Si vous souhaitez suivre d'autres indicateurs, transmettez-nous votre demande par mail. 
+
 ## III. Gestion du consentement
 
 Les débatteurs peuvent se désincrire des emails reçus depuis leur profil de débatteur ou directement depuis le mail reçu. 
@@ -57,15 +54,5 @@ Nous indiquons envoyer le mail pour votre compte en pied de mail, positionnant L
 
 ![Preview Mail](/img/previewmail.png)
 
-**Réponse à un argument**
-
-<img src="/img/answermail.png" alt="Answering mail" width="600"/>
-
-**Newsletter hebdomadaire**
-
-<img src="/img/insidemail.png" alt="Weekly mail" width="600"/>
-
-**Débat suivi**
-
-<img src="/img/groupfollow.png" alt="Followed debate" width="600"/>
+L'ensemble des mails sont disponibles sur Dropbox via ce lien : https://www.dropbox.com/sh/s1h4un7eymlzhvn/AAAf0WKhU0rgCJYsPTQp_OvFa?dl=0
 

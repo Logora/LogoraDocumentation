@@ -4,16 +4,16 @@ title: Appearance and theme
 description: Logora matches your visual identity via the Settings tab.
 ---
 
-Logora matches your visual identity from the administration space via the "Settings" tab.
+Logora blends in with your visual identity from the administration area via the "Customisation" tab.
 
-Tutorial video : (https://www.youtube.com/watch?v=hQIJW66UP9M&feature=emb_title&ab_channel=Logora)
+### Customise colours, texts and fonts
 
-### Customize the colors, texts and font
+The colours, the font and the texts and the urls of your space` are customisable from the tab "Configuration" > "Customisation".
 
-`The colors and the font` can be customized from the administration space via the "Customization" tab.
+All colours are available. There are about ten fonts available, if yours is missing please let us know so that we can add it to your space. 
 
-`All the texts` on the debate space ("Follow the debate", "All the debates" etc ) are also editable from the "Texts" tab.
+Most of the texts in the debate space ("Follow the debate", "All the debates" etc ) can be modified from the "Texts" tab. If one of the texts you wish to modify is missing, please let us know so that we can add it to your space. 
 
-> For example, the main color, that is to say the color of the main buttons like "Write a message" or "Follow a debate" is modifiable via the hexadecimal code located under the title "Main color".
+### Customise other elements of the debate space
 
-> In the same manner, it is possible to modify the color of the camp one 'as well as the colors of the thesis two (label of the messages, color of the titles delimiting the sections...).
+If you have additional customisation elements that you would like to see (icons, evolution of the gamification navigation system or other), please send us your ideas. We'll take a close look at them. Ideally, you send us mock-ups of what you want.  

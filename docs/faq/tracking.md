@@ -51,6 +51,6 @@ Clic sur la cloche “Notifications” : `data-tid=”action_view_notifications"
 
 Clic sur votre profil : `data-tid="view_user_profile"`
 
-Clik sur "Modifier le profil" : data-tid="action_edit_profile"`
+Clik sur "Modifier le profil" : `data-tid="action_edit_profile"`
 
 

@@ -9,11 +9,11 @@ Vous pouvez suivre le nombre de pages vues, la rétention et d'autres statistiqu
 Pour ce qui est des éléments à l'intérieur de l'espace de débat, nous avons mis en place des éléments "data-tid" sur les principaux appels à l'action pour que vous puissiez suivre ces éléments (à l'affichage ou au clic par exemple).
 Voici les "data-tid" de ces différents appels à l'action.
 
-## I. Suivi d'un utilisateur déconnecté
+### Suivi d'un utilisateur déconnecté
 
 Clic sur “Connexion” : `data-tid=”action_login_link”`
 
-## II. Suivi identiques utilisateur déconnecté / connecté
+### Suivi identiques utilisateur déconnecté / connecté
 
 Clic sur un vote : `data-tid=”action_vote”`
 
@@ -23,7 +23,7 @@ Clic sur un lien de partage : `data-tid="action_share_debate_facebook"`, `data-t
 
 Clic sur un tag de débat : `data-tid="action_search_debate_tag"`
 
-Click sur une image de débat : `data-tid="view_debate_image"`
+Clic sur une image de débat : `data-tid="view_debate_image"`
 
 Clic sur “Sources” : `data-tid="action_add_source"`
 
@@ -35,15 +35,15 @@ Clic sur le lien vers l’index des débats: `data-tid="view_index"`
 
 Clic sur le profil d'un autre : `data-tid="action_view_argument_author_name"`
 
-Click sur "Suggerer un débat": `data-tid="action_suggestions_banner"`
+Clic sur "Suggerer un débat": `data-tid="action_suggestions_banner"`
 
-Click sur "Voir plus de suggestions" : `data-tid="action_suggestions_banner_view_more"`
+Clic sur "Voir plus de suggestions" : `data-tid="action_suggestions_banner_view_more"`
 
-Click sur la tab "Consultation" : `data-tid="view_consultation"`
+Clic sur la tab "Consultation" : `data-tid="view_consultation"`
 
-Clik sur la tab "Suggestion" : `data-tid="view_suggestions"`
+Clic sur la tab "Suggestion" : `data-tid="view_suggestions"`
 
-## III. Suivi spécifique à l’utilisateur connecté
+### Suivi spécifique à l’utilisateur connecté
 
 Clic sur “Update” du vote : `data-tid="action_edit_vote"`
 
@@ -51,6 +51,6 @@ Clic sur la cloche “Notifications” : `data-tid=”action_view_notifications"
 
 Clic sur votre profil : `data-tid="view_user_profile"`
 
-Clik sur "Modifier le profil" : `data-tid="action_edit_profile"`
+Clic sur "Modifier le profil" : `data-tid="action_edit_profile"`
 
 

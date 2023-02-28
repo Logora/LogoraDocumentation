@@ -17,4 +17,4 @@ La plupart des textes de l'espace de débat ("Suivre le débat", "Tous les déba
 
 ### Personnaliser d'autres éléments de l'espace de débat
 
-Si vous avez des éléments de personnalisations supplémentaires que vous souhaitez voir apparaître (icônes, évolution du système de gamification navigation ou autre), merci de nous faire parvenir vos idées. Nous les regarderons avec précision. Dans l'idéal, vous nous envoyez des maquettes de ce que vous attendez.  
+Si vous avez des éléments de personnalisations supplémentaires que vous souhaitez voir apparaître (icônes spécifiques, évolution du système de gamification ou autre), merci de nous faire parvenir vos idées. Nous les regarderons avec précision. Dans l'idéal, vous nous envoyez des maquettes de ce que vous attendez.  

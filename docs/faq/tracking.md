@@ -23,6 +23,8 @@ Clic sur un lien de partage : `data-tid="action_share_debate_facebook"`, `data-t
 
 Clic sur un tag de débat : `data-tid="action_search_debate_tag"`
 
+Click sur une image de débat : data-tid="view_debate_image"
+
 Clic sur “Sources” : `data-tid="action_add_source"`
 
 Clic sur l’envoi d’argument : `data-tid="action_submit_argument"`
@@ -31,10 +33,24 @@ Clic sur “Voir l’article lié au débat” : `data-tid="link_back_source"`
 
 Clic sur le lien vers l’index des débats: `data-tid="view_index"`
 
+Clic sur le profil d'un autre : data-tid="action_view_argument_author_name"
+
+Click sur "Suggerer un débat": data-tid="action_suggestions_banner"
+
+Click sur "Voir plus de suggestions" : data-tid="action_suggestions_banner_view_more"
+
+Click sur la tab "Consultation" : data-tid="view_consultation"
+
+Clik sur la tab "Suggestion" : data-tid="view_suggestions"
+
 ## III. Suivi spécifique à l’utilisateur connecté
 
 Clic sur “Update” du vote : `data-tid="action_edit_vote"`
 
 Clic sur la cloche “Notifications” : `data-tid=”action_view_notifications"`
 
-Clic sur l’avatar du profil Logora : `data-tid="view_user_profile"`
+Clic sur votre profil : `data-tid="view_user_profile"`
+
+Clik sur "Modifier le profil" : data-tid="action_edit_profile"
+
+

@@ -9,13 +9,25 @@ Vous pouvez suivre le nombre de pages vues, la rétention et d'autres statistiqu
 Pour ce qui est des éléments à l'intérieur de l'espace de débat, nous avons mis en place des éléments "data-tid" sur les principaux appels à l'action pour que vous puissiez suivre ces éléments (à l'affichage ou au clic par exemple).
 Voici les "data-tid" de ces différents appels à l'action.
 
+### Suivi des performances du bloc en pied d'article
+
+Clic sur "Voir le résultat": `data-tid="show_vote_result"`
+
+Clic sur un des votes du pied d'article: `data-tid="action_vote_embed"`
+
+Clic sur "Débat des lecteurs" : `data-tid="link_debate_index_embed"`
+
+Clic sur le titre du débat de la synthèse : `data-tid="link_debate_title_embed"`
+
+Clic sur "Voir plus" d'un argument : `data-tid="link_argument_read_more"` 
+
 ### Suivi d'un utilisateur déconnecté
 
 Clic sur “Connexion” : `data-tid=”action_login_link”`
 
 ### Suivi identiques utilisateur déconnecté / connecté
 
-Clic sur un vote : `data-tid=”action_vote”`
+Clic sur un vote sur l'espace de débat : `data-tid=”action_vote”`
 
 Clic sur le suivi du débat : `data-tid="action_follow_debate"`
 

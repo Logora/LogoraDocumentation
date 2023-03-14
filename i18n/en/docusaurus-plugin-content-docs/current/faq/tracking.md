@@ -10,13 +10,25 @@ You can track page views, retention and other statistics directly from your anal
 As for the elements within the debate space, we have set up "data-tid" elements on the main calls to action so that you can track these elements (per view or per click for example).
 Here are the data-tid for these different calls to action.
 
+### Monitoring the performance of the footer block
+
+Click on "View result": `data-tid="show_vote_result"`
+
+Click on one of the votes in the footer: `data-tid="action_vote_embed"`
+
+Click on "Readers' debate": `data-tid="link_debate_index_embed"`
+
+Click on the title of the summary debate: `data-tid="link_debate_title_embed"`
+
+Click on "See more" of an argument: `data-tid="link_argument_read_more"` 
+
 ### Monitoring a disconnected user
 
 Click on "Connection" : `data-tid=”action_login_link”`
 
 ### Identical user tracking offline / online
 
-Click on a vote : `data-tid=”action_vote”`
+Click on a vote on the debate space : `data-tid=”action_vote”`
 
 Click on the debate follow-up : `data-tid="action_follow_debate"`
 

@@ -15,7 +15,7 @@ En cliquant sur "Inviter un nouveau membre", vous pouvez envoyer une invitation 
 
 ![Click invitation](/img/invitebutton.png)
 
-![Invite teammates](/img/invite.png)
+![Invite teammates](/img/Invite.png)
 
 :::note
 

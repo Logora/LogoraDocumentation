@@ -36,7 +36,7 @@ Our moderation interface is visible from your administration area. Our work is t
 
 On this example, you can see a list of arguments passed by the moderation algorithm: some are automatically accepted, others rejected and pending. 
 
-[Moderation interface](/img/moderationtab.png)
+![Moderation interface](/img/moderationtab.png)
 
 A low moderation score means that the algorithm considers the argument to be safe: several such arguments have been accepted in the past, it may accept it automatically. 
 A high moderation score means that this kind of argument is unknown or has been rejected in the past. In this case, the argument is put on hold for human review.
@@ -59,7 +59,7 @@ For example, respect for spelling, punctuation and the addition of reliable sour
 
 This operation is fully automated, however the grade of an argument can be modified a posteriori from your administration space. 
 
-[Relevant content](/img/qualitycontent.png)
+![Relevant content](/img/qualitycontent.png)
 
 Between two well written, developed and sourced arguments, it is difficult to judge that one argument is more interesting than another.
 However, this feature allows the best written arguments to be rewarded by distinguishing them from shorter and less constructed arguments. 

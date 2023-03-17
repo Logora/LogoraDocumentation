@@ -1,6 +1,6 @@
 ---
 id: quality
-title: Qualité de contenus
+title: Qualité des contenus
 description: La qualité des contenus publiés sur votre site est notre priorité. 
 ---
 

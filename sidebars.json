@@ -19,7 +19,7 @@
       "type": "category",
       "label": "Configuration",
 	    "collapsed": false,
-      "items": ["configuration/theme", "configuration/routes", "configuration/moderation", "configuration/social", "configuration/ads"]
+      "items": ["configuration/synthesis", "configuration/theme", "configuration/routes", "configuration/moderation", "configuration/social", "configuration/ads"]
     },
 	  {
       "type": "category",

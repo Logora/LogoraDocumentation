@@ -6,7 +6,13 @@ title: Tracking des données
 #### Tracking des éléments de l'espace de débat
 
 Vous pouvez suivre le nombre de pages vues, la rétention et d'autres statistiques directement depuis votre système d'analyse (Google Analytics, Matomo, Webtrekk, Parsely).
+
 Pour ce qui est des éléments à l'intérieur de l'espace de débat, nous avons mis en place des éléments "data-tid" sur les principaux appels à l'action pour que vous puissiez suivre ces éléments (à l'affichage ou au clic par exemple).
+
+Par exemple, dans le cas de Google, vous pouvez créer un déclencheur sur chacun des éléments qui vous intéressent depuis Google Tag Manager. 
+
+Ces déclencheurs remontent dans vos statistiques Google Analytics, vous pouvez suivre les parcours / comportements de vos utilisateurs. 
+
 Voici les "data-tid" de ces différents appels à l'action.
 
 ### Suivi des performances du bloc en pied d'article

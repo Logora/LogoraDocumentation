@@ -19,6 +19,7 @@ La plupart de nos partenaires affichent l'espace contributif à l'issue de l'art
 La question de débat, appelée "synthèse" s'affiche à l'endroit où le code est inséré sur votre page d'article (coeur d'article, pied d'article, où autre part).
 
 1) Le bloc recommandé de question de débat (meilleur taux d'engagement), s'affiche comme ici : https://demo.logora.fr/synthese
+
 2) Si vous rencontrez des contraintes en terme de taille, nous proposons un appel à l'action plus discret (moins bon taux d'engagement) comme ici : https://demo.logora.fr/synthese_iframe_compressed
 
 **Insertion hors article :**

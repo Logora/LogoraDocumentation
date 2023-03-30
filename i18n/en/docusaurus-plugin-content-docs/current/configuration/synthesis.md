@@ -18,6 +18,7 @@ Most of our partners display the contributor space at the end of the article, bu
 The debate question, called "summary" is displayed where the code is inserted on your article page (heart of the article, footer, or elsewhere).
 
 1) The recommended debate question block (best engagement rate) is displayed as here: https://demo.logora.fr/synthese
+
 2) If you have size constraints, we propose a more discreet call to action (lower engagement rate) like here: https://demo.logora.fr/synthese_iframe_compressed
 
 **Outside article insertion :**

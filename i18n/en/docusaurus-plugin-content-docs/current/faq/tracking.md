@@ -5,10 +5,13 @@ title: Data tracking
 
 #### Tracking elements of the debate space
 
-You can track page views, retention and other statistics directly from your analytics system (Google Analytics, Matomo, Webtrekk, Parsely).
+You can follow the number of page views, retention, and other stats directly from your analytics system (Google Analytics, Matomo, Webtrekk, Parsely).
 
-As for the elements within the debate space, we have set up "data-tid" elements on the main calls to action so that you can track these elements (per view or per click for example).
-Here are the data-tid for these different calls to action.
+For items within the debate space, we have put in place "data-tid" elements on the main calls to action for you to track these elements (display or click for example).
+
+For example, in the case of Google, you can create a trigger on each of the elements that interest you from Google Tag Manager.
+
+These triggers are returned in your Google Analytics statistics, you can track the paths / behaviors of your users.
 
 ### Monitoring the performance of the footer block
 

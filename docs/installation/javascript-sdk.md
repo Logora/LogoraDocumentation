@@ -8,7 +8,7 @@ Logora peut être installé sur n'importe quel site en insérant le code natif J
 
 L'installation en Javascript se fait en deux temps :
 1. Insérer l'espace de débat 
-2. Insérer la synthèse du débat sur vos pages
+2. Insérer la synthèse du débat sur vos pages articles
 	 
 ### Avant de commencer 
 

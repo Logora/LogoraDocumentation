@@ -8,15 +8,15 @@ Logora can be installed on any site by inserting the native JavaScript code. Thi
 
 The JavaScript installation is done in two steps:
 1. Insert the debate space
-2. Insert the debate summary on your pages
+2. Insert the debate summary on your article pages
 	 
 ### Before starting 
 
-- Register your site on Logora by signing up : [Register](https://logora.fr/signup)
+- If the Logora team has not created an administration space for you, create your Logora administration space: [Inscription](https://logora.fr/signup)
 - Get your **shortname** available on your [administration space](https://admin.logora.fr) in the following tab: *Configuration > General*.
 - Authorize the domains on which you want to install Logora. To do this, go to your administration space in the following tab: *Configuration > General > Security > Authorized domains*.
 
-For example, if the code is inserted on the page at the URL https://example.com/article/example-article, add the domain https://example.com (warning: do not put a slash at the end). Example: http://localhost:3000 , http://sous-domaine.exemple.com. Important: adding domains on the administration space works like adding a tag, don't forget to press "enter" when inserting your URLs.
+For example, if the code is inserted on the page at the URL https://example.com/article/example-article, add the domain https://example.com (warning: do not put a slash at the end). Example: http://localhost:3000 , http://sub-domain.example.com. Important: adding domains on the administration space works like adding a tag, don't forget to press "enter" when inserting your URLs.
 
 ### 1. Install the debate space
 
@@ -60,15 +60,16 @@ The rewriting of urls also allows the Logora team to directly add new modules on
 
 Use URL rewriting on your platform or CMS to make paths starting with 'debate-space/' (or whatever prefix you choose) point to the page where the debate space is inserted.
 
-Go to https://yourwebsite.com/debate-space/debates. You are on the Debate Space home page!
+Go to https://yourwebsite.com/debate-space/debates. You are on the debate space home page!
 
 To change the prefix and the URL paths of the debate space pages, go to [the URL paths configuration](configuration/routes.md).
 
 ### 2. Install the debate synthesis
 
+> If you have high performance constraints and want to index the debate pages on search engines, it is necessary to insert the server side synthesis. If you prefer to insert the server-side summary, go to the [server-side installation] page (installation/api.md).
+
 Insert the Javascript code of the summary where you want the summary of the debate to appear, on the article footer. This is an example of Javascript code that loads and displays the debate summary linked to your article. It must be inserted on all your article pages. This code will not display anything until you have associated a debate with the page.
 
-> If you have high performance constraints and want to index the debate pages on search engines, it is necessary to insert the server side synthesis. If you prefer to insert the server-side summary, go to the [server-side installation] page (installation/api.md).
 
 #### 2.1 Insert the JavaScript code and your configuration variables
 
@@ -99,9 +100,9 @@ Standard code to copy/paste and complete :
 
 **debate.identifier (required)** : unique identifier linked to the page. This identifier must be unique for each page where the synthesis is inserted. It will allow you to retrieve the debate corresponding to the page. For example, the identifier can be the ID in your database of the article on the page, or a unique slug ('example-identifier').
 
-The debate linked to the page must then be created in the administration area > create a debate, by providing the debate.identifier or by selecting the article concerned in the list of last retrieved articles. 
+> For performance reasons, articles published more than 18 months ago are not retrieved. The summary will not be displayed on these articles.
 
-All you have to do now is implement a unique sign-on and customize Logora to launch your first debate. 
+The debate linked to the page must then be created in the administration area > create a debate, by providing the debate.identifier or by selecting the article concerned in the list of last retrieved articles. 
 
 #### 2.2 Sending metadata manually
 
@@ -142,4 +143,26 @@ Here is an exemple of metadatas being sent from configuration variables:
     };
 ```
 
-Every metadata that you send manually is optional, the missing ones will be fetched automatically.
+It is not mandatory to send all metadata manually, missing fields will be retrieved automatically. Manually submitted metadata has priority over automatically retrieved data.
+
+#### Listen for synthesis loading (optional)
+
+To detect the loading of the synthesis, a _logoraContentLoaded_ event is triggered on the _window_ object.
+This event retrieves information about the debate that is displayed on the page.
+
+```javascript
+window.addEventListener('logoraContentLoaded', event => console.log(event.detail));
+```
+Object format _event.detail_ :
+```
+debate: {
+  direct_url: "https://www.example.fr/debate-space/debate/my-debate",
+  id: 1000
+  name: "Should the constitution be changed?"
+  slug: "my-debate"
+}
+```
+If no debate is associated with the page, the _debate_ object will be _null_.
+
+
+All that remains is to implement single sign-on and customize Logora to launch your first debate. 

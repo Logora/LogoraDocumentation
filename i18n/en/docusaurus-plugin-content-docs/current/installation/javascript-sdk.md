@@ -12,7 +12,7 @@ The JavaScript installation is done in two steps:
 	 
 ### Before starting 
 
-- If the Logora team has not created an administration space for you, create your Logora administration space: [Inscription](https://logora.fr/signup)
+- If the Logora team has not created an administration space for you, create your Logora administration space: [registration](https://logora.fr/signup)
 - Get your **shortname** available on your [administration space](https://admin.logora.fr) in the following tab: *Configuration > General*.
 - Authorize the domains on which you want to install Logora. To do this, go to your administration space in the following tab: *Configuration > General > Security > Authorized domains*.
 

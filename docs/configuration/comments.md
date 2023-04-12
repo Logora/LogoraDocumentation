@@ -10,13 +10,13 @@ Nous avons développé un espace de commentaires complémentaire à votre espace
 
 Si aucune question de débat ou de consultation n'est liée à l'article, un appel à l'action vers les commentaires est affiché sur l'article. 
 
-L'appel à l'action propose au lecteur de commenter. S'il clique sur un des appels à l'action, il est redirigé vers l'espace contributif d'où il peut commenter mais aussi découvrir la richesse des autres modules. 
+L'appel à l'action propose au lecteur de commenter. Au clic, il redirige vers le lecteur vers vos pages d'espace contributifn, où il peut participer mais aussi découvrir la richesse des autres modules. 
 
 Voici une vidéo présentant le rendu visuel pour le lecteur en date d'avril 2023 : https://www.loom.com/share/f36e14002c3a456f85aed8484f9fb7ed
 
 Si une question de débat ou consultation est liée à postériori sur l'article, elle remplace l'espace de commentaires.
 
-Dans ce cas, l'accès au commentaires n'est plus disponible depuis la page article. Les commentaires existent toujours pour ceux qui y ont participé, ils peuvent les retrouver depuis leur profil et continuer à contribuer. 
+Dans ce cas, l'accès au commentaires n'est plus disponible depuis la page article. Les commentaires existent toujours pour ceux qui y ont participé. Ils peuvent les retrouver depuis leur profil et continuer à contribuer. 
 
 #### Activer le module de commentaires
 

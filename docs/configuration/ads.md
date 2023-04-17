@@ -43,9 +43,11 @@ Vous pouvez également insérer une publicité tous les trois arguments à l'int
 
 Pour celà, nous avons créé des espaces que vous pouvez remplir avec en créant des blocs aux formats définis ci-dessous : 
 
-1) Pavé entre le sondage et les contributions mises en avant en pied d’article : `(300 * 250)`
-2) Pavé haut au début de la liste d'arguments : `(300 * 250)`                        
-3) Pavé bas tous les trois d'arguments : `(300 * 250)`
+`1) Pavé entre le sondage et les contributions mises en avant en pied d’article : (300 * 250)`
+
+`2) Pavé haut au début de la liste d'arguments : (300 * 250)`                        
+
+`3) Pavé bas tous les trois d'arguments : (300 * 250)`
 
 Pour insérer les publicités, allez sur votre espace d'administration dans `Configuration` puis dans `Publicité`.
 
@@ -55,10 +57,10 @@ Il vous faut cocher la case `Autoriser les publicités`
 
 Les titres des publicités correspondent au positionnement de la publicité. 
 
-- **Publicité en pied d'article** correspond au 1) `Pavé entre le sondage et les contributions mises en avant en pied d’article`
-- **Pavé haut** correspond au 2) `Pavé haut au début de la liste d'arguments`
-- **Pavé haut secondaire** correspond au 3) `Pavé bas tous les trois d'arguments`
-- **Pavé haut terciaire** correspond au 3) `Pavé bas tous les trois d'arguments`
+- **Publicité en pied d'article** correspond au `1) Pavé entre le sondage et les contributions mises en avant en pied d’article`
+- **Pavé haut** correspond au `2) Pavé haut au début de la liste d'arguments`
+- **Pavé haut secondaire** correspond au `3) Pavé bas tous les trois d'arguments`
+- **Pavé haut terciaire** correspond également au `3) Pavé bas tous les trois d'arguments`
 
 :::note 
 

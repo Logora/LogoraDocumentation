@@ -83,6 +83,8 @@ signature = HMACSHA256(
 jetonJWT = base64UrlEncode(header) + "." + base64UrlEncode(payload) + "." + signature
 => "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjNhYmMiLCJmaXJzdF9uYW1lIjoiSmVhbiIsImxhc3RfbmFtZSI6IkR1cG9udCIsImVtYWlsIjoiamVhbmR1cG9udEBleGVtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.ITnJo8VwbP4PkVTANSt651C0olsrdRNCNmvTHkanuYk"
 ```
+Avant de passer à la deuxième étape, vérifier le bon fonctionnement du jeton sur le site web : https://jwt.io/
+
 
 #### 2. Transmission du jeton à Logora
 

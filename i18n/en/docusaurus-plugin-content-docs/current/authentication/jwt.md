@@ -82,6 +82,8 @@ signature = HMACSHA256(
 tokenJWT = base64UrlEncode(header) + "." + base64UrlEncode(payload) + "." + signature
 => "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjNhYmMiLCJmaXJzdF9uYW1lIjoiSmVhbiIsImxhc3RfbmFtZSI6IkR1cG9udCIsImVtYWlsIjoiamVhbmR1cG9udEBleGVtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.ITnJo8VwbP4PkVTANSt651C0olsrdRNCNmvTHkanuYk"
 ```
+Before proceeding to the second step, check the correct functioning of the token on the website: https://jwt.io/
+
 
 #### 2. Transmission of the token to Logora
 

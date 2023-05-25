@@ -161,14 +161,17 @@ window.addEventListener('logoraContentLoaded', event => console.log(event.detail
 Format de l'objet _event.detail_ :
 ```
 debate: {
+  id: 1000,
+  name: "Faut-il changer la constitution ?", // Titre de la consultation ou de l'article pour les commentaires
+  slug: "mon-debat",
   direct_url: "https://www.exemple.fr/espace-debat/debat/mon-debat",
-  id: 1000
-  name: "Faut-il changer la constitution ?"
-  slug: "mon-debat"
+  created_at: "2023-03-16T09:36:31.204Z",
+  image_url: "https://image.com/debate",
+  type: "Group", // "Source" pour les commentaires, "Consultation" pour les consultations
+  contributions_count: 12 // Seulement pour les commentaires, nombre de commentaires
 }
 ```
 Si aucun débat n'est associé à la page, l'objet _debate_ sera _null_.
-
 
 Il ne reste plus qu'à implémenter l'authentification unique et à personnaliser Logora pour lancer votre premier débat. 
 

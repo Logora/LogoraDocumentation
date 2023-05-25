@@ -148,7 +148,7 @@ It is not mandatory to send all metadata manually, missing fields will be retrie
 #### Listen for synthesis loading (optional)
 
 To detect the loading of the synthesis, a _logoraContentLoaded_ event is triggered on the _window_ object.
-This event retrieves information about the debate that is displayed on the page.
+This event retrieves information about the content that is displayed on the page.
 
 ```javascript
 window.addEventListener('logoraContentLoaded', event => console.log(event.detail));

@@ -153,7 +153,7 @@ Il n'est pas obligatoire d'envoyer toutes les méta-données manuellement, les c
 #### Écouter le chargement de la synthèse (optionnel)
 
 Pour détecter le chargement de la synthèse, un événement _logoraContentLoaded_ est déclenché sur l'objet _window_.
-Cet événement permet de récupérer des informations sur le débat qui s'affiche sur la page.
+Cet événement permet de récupérer des informations sur le contenu qui s'affiche sur la page.
 
 ```javascript
 window.addEventListener('logoraContentLoaded', event => console.log(event.detail));

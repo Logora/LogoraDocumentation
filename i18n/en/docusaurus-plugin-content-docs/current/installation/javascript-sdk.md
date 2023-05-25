@@ -156,10 +156,14 @@ window.addEventListener('logoraContentLoaded', event => console.log(event.detail
 Object format _event.detail_ :
 ```
 debate: {
+  id: 1000,
+  name: "Should the constitution be changed?", // Title of the debate, consultation or title of the article for comments
+  slug: "my-debate",
   direct_url: "https://www.example.fr/debate-space/debate/my-debate",
-  id: 1000
-  name: "Should the constitution be changed?"
-  slug: "my-debate"
+  created_at: "2023-03-16T09:36:31.204Z",
+  image_url: "https://image.com/debate",
+  type: "Group", // "Source" for comments, "Consultation" for consultations
+  contributions_count: 12 // Only for comments, number of comments
 }
 ```
 If no debate is associated with the page, the _debate_ object will be _null_.

@@ -18,5 +18,5 @@ L'Authentification Unique va créer un profil d'utilisateur spécifique au site 
 
 Logora propose plusieurs modes d'authentification possibles :
 - Authentification serveur OAuth 2.0 (vous avez un serveur OAuth 2.0)
-- Authentification par signature JWT
+- Authentification par JWT avec signature
 

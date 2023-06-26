@@ -4,5 +4,8 @@
   },
   "item.label.Administration": {
     "message": "Administration Panel"
+  },
+  "item.label.Status": {
+    "message": "Status"
   }
 }

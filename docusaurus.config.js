@@ -63,6 +63,11 @@ module.exports={
           position: "left"
         },
         {
+          href: "https://stats.uptimerobot.com/OGqZrf5pEw",
+          label: "Status",
+          position: "left"
+        },
+        {
           type: 'localeDropdown',
           position: 'right',
         },

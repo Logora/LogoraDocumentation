@@ -63,7 +63,7 @@ module.exports={
           position: "left"
         },
         {
-          href: "https://stats.uptimerobot.com/OGqZrf5pEw",
+          href: "https://status.logora.fr",
           label: "Status",
           position: "left"
         },

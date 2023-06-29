@@ -1,7 +1,7 @@
 ---
 id: auth-sdk
-title: Librairie d'authentification
-description: Utilisez notre librairie d'authentification autonome
+title: Authentication library
+description: Use our autonomous authentication library
 ---
 
 Our authentication library can be used independently of the debate space. If you want to integrate our user system into your own platform, use this library.

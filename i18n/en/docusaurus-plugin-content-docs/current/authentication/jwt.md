@@ -14,7 +14,7 @@ This authentication mode automatically connects users to Logora once they have b
 
 1. When the user connects to your website, you must create a JWT token containing the user's information. It will be transmitted to Logora. 
 2. When the user goes to a page where the Logora code is inserted, the JWT token is inserted in the Javascript configuration variables, via the `remote_auth` parameter.
-3. The Logora application detects the JWT token, decodes it, verifies it and registers or connects the user.
+3. The Logora application detects the JWT token, decodes it, verifies it and signs in or signs up the user.
 
 ### Set up
 

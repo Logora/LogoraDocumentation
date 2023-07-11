@@ -86,17 +86,13 @@ Méthode : `POST`
 En-tête : `Content-Type: application/json`
 
 Paramètres d'URL :   
-`shortname` (requis) : nom de votre application disponible dans votre espace d'administration
-
-`uid` (requis) : identifiant unique de la page
-
-`device` (optionnel) : indique le type d'appareil de l'utilisateur. Les choix possibles sont : `mobile`, `tablet`, `desktop`. Ce paramètre est utilisé pour adapter le design du module en fonction de la taille de l'écran.
-
-`insertType` (optionnel) : mode d'insertion, ne pas ajouter si insertion standard. Indiquer *amp* pour une insertion sur une page AMP ou *iframe* pour une insertion en iframe.  
-
-`cache` (optionnel) : _true_ ou _false_. Permet de désactiver le cache pour tester en environnement de développement. Par défaut, les requêtes sont mises en cache quelques minutes. Ne pas désactiver le cache en production.
-
-`noHtml` (optionnel) : _true_. Permet d'éviter la génération du code HTML pour seulement récupérer les informations nécessaires pour intégrer votre design. 
+- `shortname` (requis) : nom de votre application disponible dans votre espace d'administration
+- `uid` (requis) : identifiant unique de la page
+- `device` (optionnel) : indique le type d'appareil de l'utilisateur. Les choix possibles sont : `mobile`, `tablet`, `desktop`. Ce paramètre est utilisé pour adapter le design du module en fonction de la taille de l'écran.
+- `language` (optionnel) : indique la langue des textes de la synthèse. Les choix possibles sont : `fr`, `es`, `en`, `de`, `it`.
+- `insertType` (optionnel) : mode d'insertion, ne pas ajouter si insertion standard. Indiquer *amp* pour une insertion sur une page AMP ou *iframe* pour une insertion en iframe.  
+- `cache` (optionnel) : _true_ ou _false_. Permet de désactiver le cache pour tester en environnement de développement. Par défaut, les requêtes sont mises en cache quelques minutes. Ne pas désactiver le cache en production.
+- `noHtml` (optionnel) : _true_. Permet d'éviter la génération du code HTML pour seulement récupérer les informations nécessaires pour intégrer votre design. 
 
 
 Corps de la requête : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.
@@ -158,7 +154,7 @@ La réponse renvoyée est sous cette forme :
 Le code HTML renvoyé a pour racine le conteneur suivant  : 
 
 ```html
-<div id="logoraRoot" class="logoraContainer" lang="fr" data-id="synthesis"><div>
+<div id="logoraRoot" class="logoraContainer" data-id="synthesis"><div>
 ```
 
 ### Récupérer la liste des articles (optionnel)

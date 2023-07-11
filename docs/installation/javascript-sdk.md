@@ -104,7 +104,7 @@ Code standard à copier/coller et compléter :
 
 **debate.identifier (requis)** : identifiant unique lié à la page. Cet identifiant doit être unique pour chaque page où est insérée la synthèse. Il permettra de récupérer le débat correspondant à la page. Par exemple, l'identifiant peut être l'ID dans votre base de données de l'article présent sur la page, ou un slug unique ('exemple-identifiant').
 
-> Pour des raisons de performance, les articles publiées il y a plus de 18 mois ne sont pas récupérés. La synthèse ne s'affichera pas.
+> Pour des raisons de performance, les articles publiés il y a plus de 18 mois ne sont pas récupérés. La synthèse ne s'affichera pas.
 
 Le débat lié à la page doit ensuite être créé dans l'espace d'administration > créer un débat, en fournissant l'identifiant debate.identifier ou en sélectionnant l'article concerné dans la liste des derniers articles récupérés. 
 

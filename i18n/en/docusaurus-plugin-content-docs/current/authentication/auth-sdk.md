@@ -52,3 +52,17 @@ window.dispatchEvent(new Event("logora:authentication:require"));
 The user will then be presented with a window in which to log in or begin the registration process. The authentication method depends on the settings chosen in your administration area.
 
 Once authentication is complete, the user will be redirected to the page on which they started the process.
+
+#### 3. Login event
+
+An event is triggered when the user is successfully logged in. This event returns information about the logged-in user.
+
+js
+window.addEventListener("logora:authentication:success", event => console.log(event.detail.user));
+```
+
+Here is a preview of the `user` object:
+
+```json
+{ "first_name": "Jean", "last_name": "Dupont", "image_url": "https://image.com/my-image", "points": 100 }
+```

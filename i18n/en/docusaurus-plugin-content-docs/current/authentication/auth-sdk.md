@@ -57,7 +57,7 @@ Once authentication is complete, the user will be redirected to the page on whic
 
 An event is triggered when the user is successfully logged in. This event returns information about the logged-in user.
 
-js
+```js
 window.addEventListener("logora:authentication:success", event => console.log(event.detail.user));
 ```
 

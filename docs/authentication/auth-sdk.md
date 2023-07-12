@@ -54,3 +54,16 @@ Une fenêtre sera alors présentée à l'utilisateur pour qu'il se connecte ou c
 
 Une fois l'authentification terminée, l'utilisateur sera redirigé vers la page sur laquelle il a commencé le processus.
 
+#### 3. Événement de connexion
+
+Un événement est déclenché lorsque l'utilisateur est connecté. Cet événement renvoie des informations sur l'utilisateur connecté.
+
+```js
+window.addEventListener("logora:authentication:success", event => console.log(event.detail.user));
+```
+
+Voici un aperçu de l'objet `user` :
+
+```json
+{ "first_name": "Jean", "last_name": "Dupont", "image_url": "https://image.com/my-image", "points": 100 }
+```

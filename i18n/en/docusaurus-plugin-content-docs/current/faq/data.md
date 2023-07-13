@@ -20,7 +20,7 @@ An OAuth 2.0 access token is generated using your API key and your secret key, t
 
 Example using Curl :
 ```bash
-curl -d grant_type=client_credentials -d client_id=API_KEY -d client_secret=API_SECRET -d scopes=authentication https://app.logora.fr/oauth/token
+curl -d grant_type=client_credentials -d client_id=API_KEY -d client_secret=API_SECRET -d scope=authentication https://app.logora.fr/oauth/token
 
 // Response  
 => {"access_token":"Av9wbEK-0QTOdxhzB4S3-B1ZFKj1Z4y8Xcl17iVcHsg","token_type":"Bearer","expires_in":7200,"created_at":1579688184}

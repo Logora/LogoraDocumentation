@@ -53,33 +53,3 @@ Nos contrats ont été créé avec l'aide de quelques unes des références de l
 
 Si vous souhaitez en recevoir une copie complète contactez à contact@logora.fr
 
-## 3. Anonymisation des données utilisateur
-
-Conformément au RGPD, les utilisateurs peuvent demander la suppression de leurs données de l'espace de débat. 
-
-Nous fournissons une API pour que vous procédiez à l'anonymisation des données d'un utilisateur.
-
-Cette route anonymise toutes les données personnelles liées à l'utilisateur : prénom, nom, email, identifiant unique, image, tout en gardant ses contributions et son activité.
-
-**URL** : https://app.logora.fr/api/v1/users/{uid}/anonymize
-
-**Méthode**: POST
-
-**Paramètres**:
-    
-- uid: identifiant unique de l'utilisateur que vous passez à Logora lors de l'inscription de l'utilisateur
-
-**Autorisation**: Bearer token avec le scope `authentication`
-
-L'autorisation utilise le standard OAuth2.0. Voilà comment obtenir un jeton d'accès :
-```
-curl -d grant_type=client_credentials -d client_id=API_KEY -d client_secret=API_SECRET -d scope=authentication https://app.logora.fr/oauth/token
-```
-
-Les clé d'API et clé secrète sont disponibles dans votre espace d'administration.
-
-Cette opération n'est pas réversible. Veuillez prendre des précautions lorsque vous utilisez cette route d'API.
-
-
-
-

@@ -53,30 +53,6 @@ Our contracts were created with the help of some of the leading publishing compa
 
 If you would like to receive a full copy, please contact contact@logora.fr
 
-
-## 3. Anonymization of user data
-
-In accordance with the GDPR, users can request the deletion of their data from the debate platform. 
-
-We provide an API for you to proceed to anonymize a user's data.
-
-This route anonymizes all personal data related to the user: first name, last name, email, unique identifier, image, while keeping their contributions and activity.
-
-**URL**: https://app.logora.fr/api/v1/users/{uid}/anonymize
-
-**Method**: POST
-
-**Parameters**:
-    
-- uid: unique user ID that you pass to Logora when the user registers
-
-**Authorization**: Bearer token with the scope `authentication`.
-
-The authorization uses the OAuth2.0 standard. Here is how to get an access token :
-```
-curl -d grant_type=client_credentials -d client_id=API_KEY -d client_secret=API_SECRET -d scope=authentication https://app.logora.fr/oauth/token
-```
-
 The API key and secret key are available in your administration area.
 
 This operation is not reversible. Please take precautions when using this API route.

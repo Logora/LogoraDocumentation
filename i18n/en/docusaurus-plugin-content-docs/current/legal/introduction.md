@@ -11,9 +11,9 @@ These documents can be added as they are to your site or can help you update you
 
 #### Legal documents for your site
 
-1) [Confidentiality policy](terms.md) for your users
+1) [Confidentiality policy](confidentiality.md) for your users
    
-2) [The General Terms of Use](cgu.md) of your users
+2) [The General Terms of Use](terms.md) of your users
    
 Concerning the contract between Logora and your organisation, we can send you an example by email. 
 

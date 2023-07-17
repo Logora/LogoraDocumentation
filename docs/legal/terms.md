@@ -101,7 +101,7 @@ Enfin, les Contributions pourront être utilisées par l’Éditeur sur tous les
 
 Dans le cadre de la mise à disposition de l’Espace de débats, des données à caractère personnel des Utilisateurs concernant seront traitées par l’Éditeur, qui s’engage à mettre en œuvre les meilleurs moyens pour respecter l’ensemble des dispositions légales et réglementaires relatives à la protection des données à caractère personnel et notamment les dispositions du Règlement général européen de protection des données personnelles UE 2016/679 (RGPD) et celles de la loi Informatique et Libertés n°78-17 du 6 janvier 1978 modifiée (LIL).
 
-Pour plus d'informations sur les traitements mis en œuvre et sur les droits des Utilisateurs sur leurs données à caractère personnel, les Utilisateurs sont invités à consulter la Politique de confidentialité des Utilisateurs de l’Espace de débats accessible [ici](terms.md).
+Pour plus d'informations sur les traitements mis en œuvre et sur les droits des Utilisateurs sur leurs données à caractère personnel, les Utilisateurs sont invités à consulter [la Politique de confidentialité des Utilisateurs de l’Espace de débats accessible ici](terms.md).
 
 ## 7. Évolution des Conditions Générales d’Utilisation
 

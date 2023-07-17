@@ -23,7 +23,7 @@
     },
 	 {
       "type": "category",
-      "label": "legal",
+      "label": "Legal",
 	    "collapsed": false,
       "items": ["legal/introduction", "legal/rgpd", "legal/terms", "legal/confidentiality"]
     },

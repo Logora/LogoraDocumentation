@@ -11,9 +11,9 @@ Ces documents peuvent être ajoutés tels quels sur votre site ou peuvent vous a
 
 #### Documents juridiques pour votre site
 
-1) [La politique de confidentialité](terms.md) de vos utilisateurs
+1) [La politique de confidentialité](confidentiality.md) de vos utilisateurs
    
-2) [Les Conditions Générales d'Utilisation](cgu.md) de vos utilisateurs
+2) [Les Conditions Générales d'Utilisation](terms.md) de vos utilisateurs
    
 Concernant le contrat entre Logora et votre structure, nous pouvons vous en faire parvenir un exemple par mail. 
 

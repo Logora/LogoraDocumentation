@@ -4,7 +4,7 @@ title: General Terms and Conditions of Use
 description: General Terms of Use for users of your site  
 ---
 
-## 1 Purpose
+## 1. Purpose
 
 **1.1 The purpose of these General Terms and Conditions of Use** (hereinafter "the GTCU") is to provide a legal framework for the use of the Debate Forum on websites offering the Debate Forum to their readership.
 

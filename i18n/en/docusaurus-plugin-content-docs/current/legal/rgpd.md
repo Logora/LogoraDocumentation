@@ -6,7 +6,7 @@ description: Data processing
 
 ### Protection of personal data
 
-## 1 Logora's compliance with the RGPD
+## 1. Logora's compliance with the RGPD
 
 When Logora interacts with you in your capacity as a customer or prospect, Logora processes your personal data in its capacity as data controller. In the context of the provision of your debate space, Logora acts as a data processor on your behalf and according to the instructions you give it in its capacity as data controller. 
 

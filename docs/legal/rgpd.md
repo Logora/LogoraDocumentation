@@ -52,6 +52,3 @@ https://app.logora.fr/oauth/token
 
 Les clé d'API et clé secrète sont disponibles dans votre espace d'administration.
 Cette opération n'est pas réversible. Veuillez prendre des précautions lorsque vous utilisez cette route d'API.
-
-
-

@@ -1,5 +1,5 @@
 ---
-id: confidentialite
+id: confidentiality
 title: Politique de confidentialité
 description: Modèle de politique de confidentialité pour les utilisateurs de votre site
 ---

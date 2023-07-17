@@ -21,6 +21,12 @@
 	    "collapsed": false,
       "items": ["configuration/synthesis", "configuration/theme", "configuration/routes", "configuration/moderation", "configuration/social", "configuration/ads", "configuration/comments"]
     },
+	 {
+      "type": "category",
+      "label": "Legal",
+	    "collapsed": false,
+      "items": ["legal/introduction", "legal/rgpd", "legal/terms", "legal/cgu"]
+    },
 	  {
       "type": "category",
       "label": "FAQ",

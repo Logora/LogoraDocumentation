@@ -1,5 +1,5 @@
 ---
-id: Journalist
+id: journalist
 title: Participer en tant que journaliste sur l'espace de débat
 ---
 

@@ -8,21 +8,20 @@ Une application de test est disponible à l'adresse suivante : [https://github.c
 
 #### Installation (Java)
 
-Le SDK est téléchargeable depuis un dépôt maven. Ajoutez le dépôt et la dépendance dans le fichier *build.gradle* de votre application,
-en utilisant des identifiants que nous vous fournirons.
+Le SDK est téléchargeable depuis un [dépôt maven sur Github Packages](https://github.com/Logora/LogoraAndroidSDK/packages/1952809). Ajoutez le dépôt et la dépendance dans le fichier *build.gradle* de votre application, en indiquant le numéro de la dernière version. Utilisez des identifiants Github pour vous authentifier (voir: [https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-gradle-registry#using-a-published-package]).
 ```
 repositories {
     maven {
-        url = "https://maven.pkg.github.com/Logora/LogoraAndroidSDK"
+        url = uri("https://maven.pkg.github.com/Logora/LogoraAndroidSDK")
         credentials {
-            username = "LOGORA_USERNAME"
-            password = "LOGORA_PASSWORD"
+            username = "GITHUB_USERNAME"
+            password = "GITHUB_TOKEN"
         }
     }
 }
 
 dependencies {
-    implementation 'com.logora:logora-sdk:0.1.4'
+    implementation 'com.logora:logora-sdk:VERSION_NAME'
 }
 ```
 

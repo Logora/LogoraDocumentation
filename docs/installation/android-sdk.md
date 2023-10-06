@@ -38,7 +38,7 @@ Paramètres :
 - `Context context`: contexte de l'application
 - `String pageUid`: identifiant unique de la page, doit être le même que pour l'insertion web.
 - `String applicationName`: nom de l'application disponible sur votre espace d'administration Logora.
-- 'String assertion' : jeton JWT (JSON Web Token)  pour l'authentification de l'utilisateur.
+- `String assertion`: jeton JWT (JSON Web Token)  pour l'authentification de l'utilisateur.
 
 Exemple d'insertion :
 

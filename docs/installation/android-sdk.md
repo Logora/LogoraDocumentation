@@ -32,12 +32,13 @@ contient des liens vers l'espace de débat qui se lancera dans une nouvelle acti
 en pied d'article.
 
 Constructeur :
-`public WidgetFragment(Context context, String pageUid, String applicationName)`
+`public WidgetFragment(Context context, String pageUid, String applicationName, String assertion)`
 
 Paramètres :
 - `Context context`: contexte de l'application
 - `String pageUid`: identifiant unique de la page, doit être le même que pour l'insertion web.
 - `String applicationName`: nom de l'application disponible sur votre espace d'administration Logora.
+- 'String assertion' : jeton JWT (JSON Web Token)  pour l'authentification de l'utilisateur.
 
 Exemple d'insertion :
 
@@ -46,7 +47,7 @@ Exemple d'insertion :
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        WidgetFragment widget = new WidgetFragment(this.getApplicationContext(), "mon-article", "logora-demo");
+        WidgetFragment widget = new WidgetFragment(this.getApplicationContext(), "mon-article", "logora-demo", null);
 
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.logora_widget_container, widget)

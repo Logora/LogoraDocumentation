@@ -87,7 +87,7 @@ Pour cette route, utilisez un jeton avec le scope `public`, ou utilisez l'autori
 - `page` (entier) : numéro de page de la liste d'utilisateurs
 - `per_page` (entier) : nombre d'éléments par page
 - d'autres champs sont décrits dans la [documentation de notre API](https://app.logora.fr/docs)
-- api_key : clé d'API, si autorisation par clé d'API
+- `api_key` : clé d'API, si autorisation par clé d'API
 
 Exemple de requête :
 `https://app.logora.fr/api/v1/users?page=1&per_page=10`

@@ -77,6 +77,7 @@ Cette route supprime l'utilisateur ainsi que toutes ces données associées, c'e
 ##### 2.3. Récupérer les données d'une liste d'utilisateurs
 
 Cette route renvoie une liste d'utilisateurs avec leurs données associées.
+Pour cette route, utilisez un jeton avec le scope `public`, ou utilisez l'autorisation par clé d'API.
 
 **URL**: `https://app.logora.fr/api/v1/users`
 
@@ -86,6 +87,7 @@ Cette route renvoie une liste d'utilisateurs avec leurs données associées.
 - `page` (entier) : numéro de page de la liste d'utilisateurs
 - `per_page` (entier) : nombre d'éléments par page
 - d'autres champs sont décrits dans la [documentation de notre API](https://app.logora.fr/docs)
+- api_key : clé d'API, si autorisation par clé d'API
 
 Exemple de requête :
 `https://app.logora.fr/api/v1/users?page=1&per_page=10`

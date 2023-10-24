@@ -72,6 +72,7 @@ This endpoint deletes the user and all associated data, including all contributi
 ##### 2.3. Retrieving data from a list of users
 
 This route returns a list of users with their associated data.
+For this endpoint, use an bearer token with scope `public`, or use the API key authorization.
 
 **URL**: `https://app.logora.fr/api/v1/users`
 
@@ -81,6 +82,7 @@ This route returns a list of users with their associated data.
 - `page` (integer): page number of the list
 - `per_page` (integer): number of elements per page
 - other fields are described in our [API documentation](https://app.logora.fr/docs)
+- `api_key` : API key if authorization with API key
 
 A sample response is available in our API documentation.
 

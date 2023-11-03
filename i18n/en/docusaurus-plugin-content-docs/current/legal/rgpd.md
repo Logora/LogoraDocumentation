@@ -1,12 +1,12 @@
 ---
 id: rgpd
-title: RGPD
+title: GDPR
 description: Data processing  
 ---
 
 ### Protection of personal data
 
-## 1. Logora's compliance with the RGPD
+## 1. Logora's compliance with the GDPR
 
 When Logora interacts with you in your capacity as a customer or prospect, Logora processes your personal data in its capacity as data controller. In the context of the provision of your debate space, Logora acts as a data processor on your behalf and according to the instructions you give it in its capacity as data controller. 
 
@@ -15,7 +15,7 @@ In all cases, Logora undertakes to comply with the applicable regulations, i.e. 
 As such, Logora has implemented the following measures:
 - Adoption of a confidentiality policy for its customers and prospects,
 - Provision of a model confidentiality policy for users of the discussion forums made available to you;
-- Updating its customer contracts to take account of the obligations set out in Article 28 of the RGPD on subcontracting;
+- Updating its customer contracts to take account of the obligations set out in Article 28 of the GDPR on subcontracting;
 - Keeping a register of processing operations carried out in its capacity as controller and processor,
 - Cooperate closely with you on all matters relating to the processing of personal data;
 - Engage in an accountability procedure and adopt procedures to be followed in the event of receiving a request from a data subject to exercise his or her rights or being exposed to a data breach.
@@ -28,7 +28,7 @@ In its capacity as subcontractor, Logora is authorised to process the personal d
 
 ## 3. Anonymisation of user data
 
-In accordance with the RGPD, users may request the deletion of their data from the discussion forum.
+In accordance with the GDPR, users may request the deletion of their data from the discussion forum.
 We provide an API for you to anonymise a user's data.
 
 This route anonymises all the personal data linked to the user: first name, surname, email, unique identifier, image, while retaining their contributions and activity.

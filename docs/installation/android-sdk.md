@@ -21,7 +21,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.logora:logora-sdk:VERSION_NAME'
+    implementation 'com.logora:logora_sdk:VERSION_NAME'
 }
 ```
 

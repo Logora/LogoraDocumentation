@@ -24,6 +24,13 @@ dependencies {
     implementation 'com.logora:logora_sdk:VERSION_NAME'
 }
 ```
+Add this code to the AndroidManifest.xml file.
+```
+   <intent-filter>
+          <action android:name="android.intent.action.RUN" />
+          <category android:name="android.intent.category.DEFAULT"/>
+   </intent-filter>
+```
 
 #### Utilisation (Java)
 

@@ -25,6 +25,13 @@ dependencies {
 }
 ```
 
+Ajoutez ce code au fichier AndroidManifest.xml
+```
+   <intent-filter>
+          <action android:name="android.intent.action.RUN" />
+          <category android:name="android.intent.category.DEFAULT"/>
+   </intent-filter>
+```
 #### Utilisation (Java)
 
 Le SDK fournit un fragment `WidgetFragment` qui contient le bloc de synthèse en pied d'article. Insérez ce fragment dans votre page d'article, celui-ci

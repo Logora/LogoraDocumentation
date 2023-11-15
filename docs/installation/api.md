@@ -82,8 +82,10 @@ URL de base :
 - `https://render.logora.fr/synthesis` pour la synthèse  
 - `https://render.logora.fr/widget` pour le widget
 
-Méthode : `POST`  
+Méthode : `POST`
+
 En-tête : `Content-Type: application/json`
+
 
 Paramètres d'URL :   
 - `shortname` (requis) : nom de votre application disponible dans votre espace d'administration

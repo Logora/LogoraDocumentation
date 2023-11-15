@@ -38,7 +38,7 @@ Cette route anonymise toutes les données personnelles liées à l'utilisateur :
 **Méthode**: POST
 
 **Paramètres**:
-- uid: identifiant unique de l'utilisateur que vous passez à Logora lors de l'inscription de l'utilisateur
+- `uid`: identifiant unique de l'utilisateur que vous passez à Logora lors de l'inscription de l'utilisateur
   
 **Autorisation**: Bearer token avec le scope authentication
 

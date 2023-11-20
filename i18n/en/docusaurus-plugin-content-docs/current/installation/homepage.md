@@ -31,7 +31,7 @@ Standard code to copy/paste and complete:
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://api.logora.fr/embed.js';
+        s.src = 'https://cdn.logora.com/embed.js';
         (d.head || d.body).appendChild(s);
     })();
 </script>

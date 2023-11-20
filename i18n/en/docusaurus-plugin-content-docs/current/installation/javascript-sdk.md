@@ -44,7 +44,7 @@ Standard code to copy/paste and complete:
         shortname: "APPLICATION_NAME"
     };
 </script>
-<script src="https://api.logora.fr/debat.js"></script>
+<script src="https://cdn.logora.com/debat.js"></script>
 
 <!-- Container where the debate space will be displayed -->
 <div id="logora_app"></div>
@@ -92,7 +92,7 @@ Standard code to copy/paste and complete :
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://api.logora.fr/synthese.js'; // 'https://api.logora.fr/widget.js' for the widget
+        s.src = 'https://cdn.logora.com/synthese.js'; // 'https://cdn.logora.com/widget.js' for the widget
         (d.head || d.body).appendChild(s);
     })();
 </script>

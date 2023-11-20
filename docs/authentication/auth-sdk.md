@@ -32,7 +32,7 @@ Code standard à copier/coller et compléter :
         shortname: "NOM_APPLICATION"
     };
 </script>
-<script src="https://api.logora.fr/auth.js"></script>
+<script src="https://cdn.logora.com/auth.js"></script>
 ```
 
 ```html

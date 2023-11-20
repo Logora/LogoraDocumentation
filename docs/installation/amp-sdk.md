@@ -12,14 +12,14 @@ Pour cela, utilisez le composant [*amp-iframe*](https://amp.dev/documentation/co
 #### Schéma d'URL
 
 URL de base : 
-`https://api.logora.fr/synthese-amp.html`
+`https://cdn.logora.com/synthese-amp.html`
 
 Paramètres dynamiques à spécifier dans l'URL :
 - `shortname` : nom de l'application
 - `id` : identifiant de la page
 
 Exemple d'URL :
-`https://api.logora.fr/synthese-amp.html?shortname=logora-demo&id=1881`
+`https://cdn.logora.com/synthese-amp.html?shortname=logora-demo&id=1881`
 
 
 #### Insertion
@@ -39,7 +39,7 @@ sandbox="allow-scripts allow-same-origin allow-top-navigation"
 layout="responsive"
 resizable
 frameborder="0"
-src="https://api.logora.fr/synthese-amp.html?shortname=NOM_APPLICATION&id=PAGE_IDENTIFIER"
+src="https://cdn.logora.com/synthese-amp.html?shortname=NOM_APPLICATION&id=PAGE_IDENTIFIER"
 >
     <div overflow placeholder></div>
 </amp-iframe>

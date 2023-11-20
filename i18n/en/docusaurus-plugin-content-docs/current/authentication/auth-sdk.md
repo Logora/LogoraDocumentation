@@ -31,7 +31,7 @@ Standard code to copy/paste and complete:
         shortname: "APPLICATION_NAME"
     };
 </script>
-<script src="https://api.logora.fr/auth.js"></script>
+<script src="https://cdn.logora.com/auth.js"></script>
 ```
 
 ```html

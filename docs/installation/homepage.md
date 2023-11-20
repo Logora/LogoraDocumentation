@@ -32,7 +32,7 @@ Code standard à copier/coller et compléter :
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://api.logora.fr/embed.js';
+        s.src = 'https://cdn.logora.com/embed.js';
         (d.head || d.body).appendChild(s);
     })();
 </script>

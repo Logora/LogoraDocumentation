@@ -47,7 +47,7 @@ Code standard à copier/coller et compléter :
         shortname: "NOM_APPLICATION"
     };
 </script>
-<script src="https://api.logora.fr/debat.js"></script>
+<script src="https://cdn.logora.com/debat.js"></script>
 ```
 
 ```html
@@ -96,7 +96,7 @@ Code standard à copier/coller et compléter :
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://api.logora.fr/synthese.js'; // 'https://api.logora.fr/widget.js' pour le widget
+        s.src = 'https://cdn.logora.com/synthese.js'; // 'https://cdn.logora.com/widget.js' pour le widget
         (d.head || d.body).appendChild(s);
     })();
 </script>

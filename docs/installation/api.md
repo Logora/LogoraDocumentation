@@ -51,7 +51,7 @@ Code standard à copier/coller et compléter :
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://api.logora.fr/debat.js';
+        s.src = 'https://cdn.logora.com/debat.js';
         (d.head || d.body).appendChild(s);
     })();
 </script>

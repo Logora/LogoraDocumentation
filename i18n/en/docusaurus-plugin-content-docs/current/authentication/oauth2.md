@@ -100,7 +100,7 @@ When a user who is not logged in wants to perform an action on the debate space 
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://api.logora.fr/debat.js';
+        s.src = 'https://cdn.logora.com/debat.js';
         (d.head || d.body).appendChild(s);
     })();
 </script>

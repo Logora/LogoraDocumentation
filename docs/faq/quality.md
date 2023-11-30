@@ -51,16 +51,32 @@ L'objectif est de rendre votre espace contributif le plus intéressant possible 
 
 L'algorithme de pertinence est indépendant de l'algorithme de modération. 
 
-La question que nous posons est la suivante : une fois que les arguments sont de bonne tenue (après modération), comment choisir ceux qui méritent d'être mis en avant ?
+> La question que nous posons est la suivante : une fois que les arguments sont de bonne tenue (après modération), comment choisir ceux qui méritent d'être mis en avant ?
+> Nous n'avons pas pour rôle de juger le fond des arguments, nous nous attachons donc à leurs formes et leurs structures pour les distinguer. 
 
-Nous n'avons pas pour rôle de juger le fond des arguments, nous nous attachons donc à leurs formes et leurs structures pour les distinguer. 
+L'algorithme calcule la qualité du texte. Quatre indicateurs importants sont pris en compte :
 
-Par exemple, le respect de l'ortographe, de la ponctuation, l'ajout de sources fiables impactent positivement la note donnée à l'argument. 
+- Longueur du texte
+- Pourcentage de majuscules
+- Le pourcentage de caractères de ponctuation
+- Le pourcentage de fautes de grammaire ou d'orthographe
+  
+Ce dernier indicateur utilise la bibliothèque Open Source LanguageTool (https://languagetool.org) pour calculer le nombre d'erreurs dans un texte.
+Exemple : "Hello, here's a teexte test" contient trois erreurs, une pour la ponctuation, une pour la grammaire et une pour l'orthographe.
+
+Le nombre de votes n'est pas pris en compte comme indicateur dans notre modèle. L'objectif est de calculer la qualité pure du texte. Le vote sera ajouté à la note par la suite et aura une influence sur la note finale, mais n'est pas inclus dans notre modèle.
+
+**La note finale est calculée comme suit : S(x,y) = x + (y/100)^1.1 * (1 - x), où x est le score de qualité et y le nombre de votes.**
+
+Lorsqu'un utilisateur publie un argument, le modèle prédit un score entre 0 et 100.
 
 Cette opération est totalement automatisée, toutefois la note d'un argument peut être modifié a posteriori depuis votre espace d'administration. 
+
+Nous avons effectué des milliers d'annotations sur différents types de contenu, contribuant ainsi de manière significative au développement de l'algorithme. La moyenne de nos annotations a été utilisée pour effectuer une régression et trouver une fonction appropriée pour calculer le score.
+Un modèle de forêt aléatoire a ensuite été formé sur les annotations. Ce modèle correspond le plus possible à notre vision du score de pertinence.
 
 ![Contenus pertinents](/img/qualitycontent.png)
 
 Entre deux arguments bien écrits, développés et sourcés, il est difficile de juger qu'un argument est plus intéressant qu'un autre.
 
-Ce fonctionnement permet toutefois de récompenser les arguments les mieux écrits en les distinguant des arguments plus courts et moins construits. 
+Ce fonctionnement permet de récompenser les arguments les mieux écrits en les distinguant des arguments plus courts et moins construits. 

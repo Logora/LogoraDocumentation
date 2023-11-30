@@ -45,19 +45,35 @@ To learn more about setting up moderation, read our documentation article in *Co
 
 #### How the argument prioritisation works
 
-We have created a "relevance" algorithm that highlights the best written arguments. 
+We have created a 'relevance' algorithm that highlights the best-written arguments. 
 
-The objective is to make your contribution space as interesting as possible on the one hand, and to reward the most invested participants on the other hand. 
+The aim is to make your contribution space as interesting as possible and to reward the most committed participants. 
 
 The relevance algorithm is independent of the moderation algorithm. 
 
-The question we ask is: once the arguments are good (after moderation), how do we choose which ones deserve to be put forward?
+> The question we're asking is this: once the arguments are in good order (after moderation), how do you choose which ones deserve to be highlighted?
+> Our role is not to judge the substance of the arguments, so we focus on their form and structure to distinguish them. 
 
-It is not our role to judge the substance of arguments, so we look at their form and structure to distinguish them. 
+The algorithm calculates the quality of the text. Four important indicators are taken into account:
 
-For example, respect for spelling, punctuation and the addition of reliable sources have a positive impact on the score given to the argument. 
+- Text length
+- Percentage of capital letters
+- Percentage of punctuation characters
+- Percentage of grammatical or spelling errors
+  
+This last indicator uses the Open Source LanguageTool library (https://languagetool.org) to calculate the number of errors in a text.
+Example: "Hello, here's a teexte test" contains three errors, one each for punctuation, grammar and spelling.
 
-This operation is fully automated, however the grade of an argument can be modified a posteriori from your administration space. 
+The number of votes is not taken into account as an indicator in our model. The aim is to calculate the pure quality of the text. The vote will be added to the score afterwards and will have an influence on the final score, but is not included in our model.
+
+**The final score is calculated as follows: S(x,y) = x + (y/100)^1.1 * (1 - x), where x is the quality score and y is the number of votes.**
+
+When a user publishes an argument, the model predicts a score between 0 and 100.
+
+This operation is fully automated, although the score of an argument can be modified a posteriori from your administration space. 
+
+We have carried out thousands of annotations on different types of content, making a significant contribution to the development of the algorithm. The average of our annotations was used to run a regression and find an appropriate function to calculate the score.
+A random forest model was then trained on the annotations. This model corresponds as closely as possible to our vision of the relevance score.
 
 ![Relevant content](/img/qualitycontent.png)
 

@@ -31,7 +31,7 @@
       "type": "category",
       "label": "FAQ",
 	    "collapsed": false,
-      "items": ["faq/quality", "faq/performance", "faq/data", "faq/mailing", "faq/tracking", "faq/registration", "faq/thesis", "faq/invitation", "faq/journalist", "faq/share", "faq/premium"]
+      "items": ["faq/quality", "faq/comments", "faq/performance", "faq/data", "faq/mailing", "faq/tracking", "faq/registration", "faq/thesis", "faq/invitation", "faq/journalist", "faq/share", "faq/premium"]
     }
   ]
 }

@@ -4,7 +4,7 @@ title: Comments
 description: Install comments on your articles thanks to our Javascript code.
 ---
 
-In case you want to insert the comments and the debate summary on the same page, you can use this Javascript insertion method to embed the comments independently of the debate summary. If you want to embed either the summary or the comments on your article, simply enable comments and use only the JavaScript code from the summary.
+In case you want to insert the comments and the debate summary on the same page, you can use this Javascript insertion method to embed the comments independently of the debate summary. If you want to embed either the summary or the comments on your article, use Javascript installation [/installation/javascript-sdk](installation/javascript-sdk) and enable comments in your admin area configuration. Comments will be displayed if the article is not associated with a debate.
 
 #### Inserting the JavaScript code and your configuration variables
 

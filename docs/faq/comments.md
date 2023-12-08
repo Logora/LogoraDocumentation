@@ -4,7 +4,7 @@ title: Commentaires
 description: Installez les commentaires sur vos articles grâce à notre code universel Javascript.
 ---
 
-Dans le cas ou vous souhaiteriez insérer les commentaires et la synthèse de débat sur la même page, vous pouvez utiliser cette méthode d'insertion Javascript pour intégrer les commentaires indépendamment de la synthèse des débats. Si vous souhaitez intégrer soit la synthèse soit les commentaires sur votre article, activez simplement les commentaires et utilisez seulement le code Javascript de la synthèse.
+Dans le cas ou vous souhaiteriez insérer les commentaires et la synthèse de débat sur la même page, vous pouvez utiliser cette méthode d'insertion Javascript pour intégrer les commentaires indépendamment de la synthèse des débats. Si vous souhaitez intégrer soit la synthèse soit les commentaires sur votre article, utilisez l’installation Javascript [/installation/javascript-sdk](installation/javascript-sdk) et activez les commentaires dans la configuration de votre espace d’administration. Les commentaires seront affichés si l’article n’est pas associé à un débat.
 
 #### Insérer le code JavaScript et vos variables de configuration
 

@@ -4,6 +4,8 @@ title: Comments
 description: Install comments on your articles thanks to our Javascript code.
 ---
 
+In case you want to insert the comments and the debate summary on the same page, you can use this Javascript insertion method to embed the comments independently of the debate summary. If you want to embed either the summary or the comments on your article, simply enable comments and use only the JavaScript code from the summary.
+
 #### Inserting the JavaScript code and your configuration variables
 
 The **logora_embed** container is where the comments are displayed.

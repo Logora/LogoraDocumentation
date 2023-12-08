@@ -4,6 +4,8 @@ title: Commentaires
 description: Installez les commentaires sur vos articles grâce à notre code universel Javascript.
 ---
 
+Dans le cas ou vous souhaiteriez insérer les commentaires et la synthèse de débat sur la même page, vous pouvez utiliser cette méthode d'insertion Javascript pour intégrer les commentaires indépendamment de la synthèse des débats. Si vous souhaitez intégrer soit la synthèse soit les commentaires sur votre article, activez simplement les commentaires et utilisez seulement le code Javascript de la synthèse.
+
 #### Insérer le code JavaScript et vos variables de configuration
 
 Le conteneur **logora_embed** est l'endroit où les commentaires sont chargés.

@@ -19,8 +19,6 @@ en pied d'article.
 
 Insérer le `WidgetView` dans votre page article :
 
-Constructeur : ` WidgetFragment(String pageUid, String applicationName, String assertion)`
-
 Paramètres :
 - `String pageUid`: identifiant unique de la page, doit être le même que pour l'insertion web.
 - `String applicationName`: nom de l'application disponible sur votre espace d'administration Logora.

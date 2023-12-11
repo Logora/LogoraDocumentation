@@ -19,9 +19,13 @@ en pied d'article.
 
 Insérer le `WidgetView` dans votre page article :
 
+Constructeur : ` WidgetFragment(String pageUid, String applicationName, String assertion)`
+
 Paramètres :
 - `String pageUid`: identifiant unique de la page, doit être le même que pour l'insertion web.
 - `String applicationName`: nom de l'application disponible sur votre espace d'administration Logora.
+- `String assertion`: jeton JWT (JSON Web Token) pour l'authentification de l'utilisateur.
+
 
 Exemple d'insertion :
 
@@ -36,7 +40,7 @@ class ViewController: UIViewController {
     }
     
     func initLayout() {
-      let widget: WidgetView! = WidgetView(applicationName: "logora-demo", pageUid: "mon-article")
+      let widget: WidgetView! = WidgetView(applicationName: "logora-demo", pageUid: "mon-article", null)
       self.view.addSubview(widget)
     }
 }

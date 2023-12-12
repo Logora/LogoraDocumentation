@@ -24,6 +24,17 @@ Paramètres :
 - `String applicationName`: nom de l'application disponible sur votre espace d'administration Logora.
 - `String assertion`: jeton JWT (JSON Web Token) pour l'authentification de l'utilisateur.
 
+Insérer ce code dans la fonction `scene` de la classe `SceneDelegate.swift`.
+
+```
+guard let windowScene = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: windowScene)
+        let navigationController = UINavigationController()
+        navigationController.viewControllers = [ViewController()]
+        window.rootViewController = navigationController
+        self.window = window
+        window.makeKeyAndVisible()
+```
 
 Exemple d'insertion :
 

@@ -4,13 +4,14 @@ title: iOS SDK
 ---
 
 Logora can be integrated natively on your iOS applications. Here is a guide to using our SDK.
+A test application is available at the following address: [https://github.com/Logora/LogoraiOSTestApp](https://github.com/Logora/LogoraiOSTestApp)
 
 #### Installation (Swift)
 
-The SDK is downloadable as a Swift Package. Add the repository link by referencing the _master_ branch.
+The SDK is downloadable as a Swift Package. Add the repository link by referencing the _master_ branch : [https://github.com/Logora/LogoraiOSSDK.git](https://github.com/Logora/LogoraiOSSDK.git).
 
 
-#### Use (Swift)
+#### Usage (Swift)
 
 The SDK provides a `WidgetView` which contains the summary block in the footer. Insert this view into your article page, it contains links to the discussion area which will launch in a new ViewController. There is therefore no need to insert the debate area, only the footer block.
 

@@ -8,7 +8,7 @@ Une application de test est disponible à l'adresse suivante : [https://github.c
 
 #### Installation (Swift)
 
-Le SDK est téléchargeable en tant que Swift Package. Ajoutez le lien du dépôt en référencant la branche _master_.
+Le SDK est téléchargeable en tant que Swift Package. Ajoutez le lien du dépôt en référencant la branche _master_:  [https://github.com/Logora/LogoraiOSSDK.git](https://github.com/Logora/LogoraiOSSDK.git). 
 
 
 #### Utilisation (Swift)

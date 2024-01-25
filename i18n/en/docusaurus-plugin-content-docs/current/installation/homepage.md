@@ -37,3 +37,4 @@ Standard code to copy/paste and complete:
 </script>
 ```
 
+Once you have installed the code, let the Logora team (contact@logora.fr) know so that they can activate the possibility of pinning a debate from your administration space. 

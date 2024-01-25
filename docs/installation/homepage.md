@@ -37,3 +37,5 @@ Code standard à copier/coller et compléter :
     })();
 </script>
 ```
+
+Après avoir installé le code, prévenez l'équipe Logora (contact@logora.fr) pour qu'elle active la possibilité d'épingler un débat depuis votre espace d'administration. 

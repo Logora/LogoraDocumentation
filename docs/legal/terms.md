@@ -4,7 +4,7 @@ title: Conditions Générales d'Utilisation
 description: Conditions Générales d'Utilisation des utilisateurs de votre site  
 ---
 
-Ce document est un exemple de politique de confidentialité que vous pouvez proposer à vos utilisateurs lorsque vous installez Logora. 
+Ce document est un exemple de Conditions Générales d'Utilisation que vous pouvez proposer à vos utilisateurs lorsque vous installez Logora. 
 
 Vous pouvez l'adapter et le modifier si nécessaire. 
 

@@ -4,6 +4,10 @@ title: General Terms and Conditions of Use
 description: General Terms of Use for users of your site  
 ---
 
+This document is an example of the General Terms and Condition of Use that you can propose to your users when you install Logora.
+
+You can adapt and modify it if necessary.
+
 ## 1. Purpose
 
 **1.1 The purpose of these General Terms and Conditions of Use** (hereinafter "the GTCU") is to provide a legal framework for the use of the Debate Forum on websites offering the Debate Forum to their readership.
@@ -113,4 +117,4 @@ These GTUs shall be governed, interpreted and applied in accordance with French 
 
 ## 9. Date of last update
 
-The TOS were last updated on [to be completed]. 
+The TOS were last updated on [to be replaced]. 

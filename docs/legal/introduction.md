@@ -11,7 +11,7 @@ Ces documents peuvent être ajoutés tels quels sur votre site ou peuvent vous a
 
 #### Documents juridiques pour votre site
 
-1) [La politique de confidentialité](confidentiality.md) de vos utilisateurs
+1) [La Politique de Confidentialité](confidentiality.md) de vos utilisateurs
    
 2) [Les Conditions Générales d'Utilisation](terms.md) de vos utilisateurs
    

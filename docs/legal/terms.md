@@ -117,5 +117,5 @@ Les présentes CGU sont régies, interprétées et appliquées conformément au 
 
 ## 9. Date de la dernière mise à jour
 
-La dernière mise à jour des CGU date du [à completer]. 
+La dernière mise à jour des CGU date du [à remplacer]. 
 

@@ -8,7 +8,7 @@ Une application de test est disponible à l'adresse suivante : [https://github.c
 
 #### Installation (Swift)
 
-Le SDK est téléchargeable en tant que Swift Package. Ajoutez le lien du dépôt en référencant la branche _master_.
+Le SDK est téléchargeable en tant que Swift Package. Ajoutez le lien du dépôt en référencant la branche _master_ :  [https://github.com/Logora/LogoraiOSSDK.git](https://github.com/Logora/LogoraiOSSDK.git). 
 
 
 #### Utilisation (Swift)
@@ -22,6 +22,19 @@ Insérer le `WidgetView` dans votre page article :
 Paramètres :
 - `String pageUid`: identifiant unique de la page, doit être le même que pour l'insertion web.
 - `String applicationName`: nom de l'application disponible sur votre espace d'administration Logora.
+- `String assertion`: jeton JWT (JSON Web Token) pour l'authentification de l'utilisateur.
+
+Insérer ce code dans la fonction `scene` de la classe `SceneDelegate.swift`.
+
+```
+guard let windowScene = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: windowScene)
+        let navigationController = UINavigationController()
+        navigationController.viewControllers = [ViewController()]
+        window.rootViewController = navigationController
+        self.window = window
+        window.makeKeyAndVisible()
+```
 
 Exemple d'insertion :
 
@@ -36,7 +49,7 @@ class ViewController: UIViewController {
     }
     
     func initLayout() {
-      let widget: WidgetView! = WidgetView(applicationName: "logora-demo", pageUid: "mon-article")
+      let widget: WidgetView! = WidgetView(applicationName: "logora-demo", pageUid: "mon-article", null)
       self.view.addSubview(widget)
     }
 }

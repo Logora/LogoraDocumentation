@@ -4,11 +4,16 @@ title: Politique de confidentialité
 description: Modèle de politique de confidentialité pour les utilisateurs de votre site
 ---
 
+Ce document est un exemple de Politique de Confidentialité que vous pouvez proposer à vos utilisateurs lorsque vous installez Logora. 
+Vos informations sont à ajouter à tous les endroits marqués comme suit : [à remplacer].
+
+Vous pouvez l'adapter et le modifier si nécessaire. 
+
 ### Politique de confidentialité à l'attention des utilisateurs de l’espace contributif
 
 ## Article 1. Préambule et objet
 
-La société [**Votre société**] telle qu’identifiée ci-dessous (la « **Société** ») édite un site internet de presse (le « **Site** ») sur lequel elle met à la disposition des internautes un espace contributif leur permettant de déposer des contributions susceptibles d’y être publiées (l’« **Espace de débats** »). Ces contributions peuvent consister en des avis, votes, sources et participations aux différents débats qui animent l’Espace de débats (les « **Contributions** »). Les internautes qui utilisent l’Espace de débats (les « **Utilisateurs** ») doivent au préalable avoir créé un compte sur celui-ci et accepté ses Conditions Générales d’Utilisation accessibles [ici](rgpd.md).
+La société [à remplacer] telle qu’identifiée ci-dessous (la « **Société** ») édite un site internet de presse (le « **Site** ») sur lequel elle met à la disposition des internautes un espace contributif leur permettant de déposer des contributions susceptibles d’y être publiées (l’« **Espace de débats** »). Ces contributions peuvent consister en des avis, votes, sources et participations aux différents débats qui animent l’Espace de débats (les « **Contributions** »). Les internautes qui utilisent l’Espace de débats (les « **Utilisateurs** ») doivent au préalable avoir créé un compte sur celui-ci et accepté ses Conditions Générales d’Utilisation accessibles [ici](rgpd.md).
 
 La mise à disposition de l’Espace de débats suppose la mise en œuvre d’un Traitement de Données à caractère personnel des Utilisateurs (les « **Personnes Concernées** ») pour lesquels la Société agit en qualité de Responsable de traitement. En tant que tel, la Société s’engage à se conformer à la règlementation applicable, soit à date le Règlement n°2016/679 (UE) du 27 avril 2016 dit règlement général sur la protection des données (« **RGPD** ») et la Loi Informatique et Libertés du 6 janvier 1978 dans sa version actualisée (la « **Règlementation RGPD** »). 
 
@@ -22,7 +27,7 @@ Pour une meilleure compréhension des présentes, le terme de « Données » doi
 
 ## Article 3. Identité du Responsable de traitement
 
-[●], société [●] immatriculée au Registre du Commerce et des Sociétés (RCS) de [●] sous le numéro [●], dont le siège social est situé [●], agit en qualité de Responsable de traitement s’agissant des traitements des données des Personnes Concernées mis en œuvre dans le cadre de la mise à disposition de l’Espace de débats et la gestion de leurs Contributions.
+[à remplacer], société [à remplacer] immatriculée au Registre du Commerce et des Sociétés (RCS) de [à remplacer] sous le numéro [à remplacer], dont le siège social est situé [à remplacer], agit en qualité de Responsable de traitement s’agissant des traitements des données des Personnes Concernées mis en œuvre dans le cadre de la mise à disposition de l’Espace de débats et la gestion de leurs Contributions.
 
 ## Article 4. Caractéristiques du Traitement mis en œuvre
 
@@ -124,7 +129,7 @@ La présente Politique peut être modifiée à tout moment pour tenir compte d�
 
 Les Personnes Concernées peuvent adresser à la Société toute question ou réclamation relative à la Politique ou lui faire part de recommandations ou de commentaires relatifs à cette dernière par écrit aux coordonnées suivantes : 
 
-- Par courrier : [●].
-- Par email : [●].
+- Par courrier : [à remplacer].
+- Par email : [à remplacer].
 
 Les Personnes Concernées peuvent également poser toute question à la CNIL ou introduire une plainte auprès de cette dernière à l’adresse suivante : Service des plaintes de la CNIL, 3 place de Fontenoy – TSA 80751, 75334 Paris Cedex 07 ou par téléphone au 01.53.73.22.22 ou en ligne en cliquant sur le lien suivant : https://www.cnil.fr/fr/plainte

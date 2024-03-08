@@ -4,6 +4,10 @@ title: Conditions Générales d'Utilisation
 description: Conditions Générales d'Utilisation des utilisateurs de votre site  
 ---
 
+Ce document est un exemple de Conditions Générales d'Utilisation que vous pouvez proposer à vos utilisateurs lorsque vous installez Logora. 
+
+Vous pouvez l'adapter et le modifier si nécessaire. 
+
 ## 1. Objet
 
 **1.1 Les présentes Conditions Générales d'Utilisation** (ci-après « les CGU ») ont pour objet l'encadrement juridique de l’utilisation de l’Espace de débats sur les sites proposant l'espace débat à leur lectorat.
@@ -101,7 +105,7 @@ Enfin, les Contributions pourront être utilisées par l’Éditeur sur tous les
 
 Dans le cadre de la mise à disposition de l’Espace de débats, des données à caractère personnel des Utilisateurs concernant seront traitées par l’Éditeur, qui s’engage à mettre en œuvre les meilleurs moyens pour respecter l’ensemble des dispositions légales et réglementaires relatives à la protection des données à caractère personnel et notamment les dispositions du Règlement général européen de protection des données personnelles UE 2016/679 (RGPD) et celles de la loi Informatique et Libertés n°78-17 du 6 janvier 1978 modifiée (LIL).
 
-Pour plus d'informations sur les traitements mis en œuvre et sur les droits des Utilisateurs sur leurs données à caractère personnel, les Utilisateurs sont invités à consulter [la Politique de confidentialité des Utilisateurs de l’Espace de débats accessible ici](terms.md).
+Pour plus d'informations sur les traitements mis en œuvre et sur les droits des Utilisateurs sur leurs données à caractère personnel, les Utilisateurs sont invités à consulter [la Politique de confidentialité des Utilisateurs de l’Espace de débats accessible ici](confidentiality.md).
 
 ## 7. Évolution des Conditions Générales d’Utilisation
 
@@ -113,5 +117,5 @@ Les présentes CGU sont régies, interprétées et appliquées conformément au 
 
 ## 9. Date de la dernière mise à jour
 
-La dernière mise à jour des CGU date du [à completer]. 
+La dernière mise à jour des CGU date du [à remplacer]. 
 

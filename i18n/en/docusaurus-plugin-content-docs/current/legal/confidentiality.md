@@ -4,11 +4,15 @@ title: Privacy policy
 description: Model privacy policy for users of your site
 ---
 
+This document is an example of a Privacy Policy that you can propose to your users when you install Logora. Your information should be added to all the places marked as follows: [to be replaced].
+
+You can adapt and modify it if necessary.
+
 ### Privacy policy for users of the contributor area
 
 ## Article 1. Preamble and purpose
 
-The company [**Your company**] as identified below (the "**Company**") publishes a press website (the "**Site**") on which it provides Internet users with a contributory space enabling them to post contributions that may be published there (the "**Discussion Space**"). These contributions may consist of opinions, votes, sources and participation in the various debates that take place in the Debate Forum (the "**Contributions**"). Internet users who use the Debate Space (the "**Users**") must first have created an account on the Debate Space and accepted its Terms and Conditions of Use, which can be accessed [here] (rgpd.md).
+The company [to be replaced] as identified below (the "**Company**") publishes a press website (the "**Site**") on which it provides Internet users with a contributory space enabling them to post contributions that may be published there (the "**Discussion Space**"). These contributions may consist of opinions, votes, sources and participation in the various debates that take place in the Debate Forum (the "**Contributions**"). Internet users who use the Debate Space (the "**Users**") must first have created an account on the Debate Space and accepted its Terms and Conditions of Use, which can be accessed [here] (rgpd.md).
 
 The provision of the Debate Forum implies the processing of Users' personal data (the "Data Subjects") for which the Company acts as Data Controller. As such, the Company undertakes to comply with the applicable regulations, i.e. to date Regulation n°2016/679 (EU) of 27 April 2016 known as the General Data Protection Regulation ("**RGPD**") and the French Data Protection Act of 6 January 1978 in its updated version (the "**RGPD Regulations**"). 
 
@@ -22,7 +26,7 @@ For a better understanding of the present, the term "Data" must be understood as
 
 ## Article 3. Identity of the Data Controller
 
-[●], a company [●] registered with the Trade and Companies Register (RCS) of [●] under number [●], whose registered office is located at [●], is acting as Data Controller with regard to the processing of Data Subjects' data implemented as part of the provision of the Debate Space and the management of their Contributions.
+[to be replaced], a company [to be replaced] registered with the Trade and Companies Register (RCS) of [to be replaced] under number [to be replaced], whose registered office is located at [to be replaced], is acting as Data Controller with regard to the processing of Data Subjects' data implemented as part of the provision of the Debate Space and the management of their Contributions.
 
 ## Article 4. Characteristics of the Processing implemented
 
@@ -124,7 +128,7 @@ This Policy may be amended at any time to take account of changes in regulations
 
 Data Subjects may address any questions or complaints relating to the Policy to the Company or make recommendations or comments relating to the Policy in writing to the following address: 
 
-- By post: [●].
-- By email: [●].
+- By post: [to be replaced].
+- By email: [to be replaced].
 
 Data Subjects may also ask the CNIL any question or lodge a complaint with the CNIL at the following address: CNIL Complaints Department, 3 place de Fontenoy - TSA 80751, 75334 Paris Cedex 07 or by telephone on 01.53.73.22.22 or online by clicking on the following link: https://www.cnil.fr/fr/plainte

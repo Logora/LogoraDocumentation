@@ -1,6 +1,6 @@
 ---
 id: iframes
-title: iframes
+title: Resizing iframes
 description: Dynamically resize Logora iframes.
 ---
 
@@ -14,7 +14,7 @@ If you wish to use Logora's iframes in your articles and dynamically resize them
     <script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.5/js/iframeResizer.min.js"></script>
   </head>
   <!-- Logora iframe available in the admin space -->
-<iframe class="logoraIframe" style="border: 0;" src="https://cdn.logora.com/embed.html?shortname=test&id=1111&resource=group" width="100%" height="285"></iframe>
+<iframe class="logoraIframe" style="border: 0;" src="https://cdn.logora.com/embed.html?shortname=demo&id=14593&resource=group" width="100%" height="285"></iframe>
 <script>
     iFrameResize( [{}], ".logoraIframe");
 </script>

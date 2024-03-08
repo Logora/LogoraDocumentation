@@ -4,7 +4,7 @@ title: iframes
 description: Redimensionner dynamiquement les iframes de Logora.
 ---
 
-Dans le cas où vous souhaiteriez utiliser les iframes de Logora dans vos articles et utiliser un redimensionnement dynamique selon la taille du contenu de l'iframe, vous pouvez utiliser un script externe qui utilise la package npm [iframe-resizer](https://www.npmjs.com/package/iframe-resizer). Il faut simplement ajouter un script qui charge le code minifié permettant le redimensionnement et appeler la fonction correspondante.
+Dans le cas où vous souhaiteriez utiliser les iframes de Logora dans vos articles et utiliser un redimensionnement dynamique selon la taille du contenu de l'iframe, vous pouvez utiliser un script externe qui utilise la librairie npm [iframe-resizer](https://www.npmjs.com/package/iframe-resizer). Il faut simplement ajouter un script qui charge le code minifié permettant le redimensionnement et appeler la fonction correspondante.
 
 #### Insérer le code minifié de redimensionnement et appeler la fonction.
 

@@ -44,7 +44,7 @@ Un module de commentaires, complémentaire à l'espace contributif existant vous
 
 Le module peut aussi présenter un simple appel à l'action "Commenter" sans afficher les meilleurs commentaires dans le cas où vous n'avez pas assez d'espace. 
 
-## III.Consultations
+## III. Consultations
 
 Le [module de "Consultation"](https://demo.logora.fr/consultation_embed.html) s'affiche en présentant la meilleure contribution et un appel à l'action "Donner votre avis". 
 

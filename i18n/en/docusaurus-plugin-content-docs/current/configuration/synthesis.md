@@ -39,11 +39,11 @@ The "home page" module displays the debate question you wish to pin. It only off
 
 A comments module, complementary to the existing contributor space, allows you to activate comments when an article is not concerned by a debate.
 
-[The module displays the best comments (https://demo.logora.fr/comments.html) and can be used as a bridge to the debate area, as here. 
+[The module displays the best comments](https://demo.logora.fr/comments.html) and can be used as a bridge to the debate area, as here. 
 
 The module can also present a simple call to action "Comment" without displaying the best comments if you don't have enough space. 
 
-## III.consultations
+## III. Consultations
 
 The [Consultation module](https://demo.logora.fr/consultation_embed.html) is displayed with the best contribution and a call to action "Give your opinion". 
 

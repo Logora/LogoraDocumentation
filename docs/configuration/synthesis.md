@@ -52,4 +52,4 @@ Le [module de "Consultation"](https://demo.logora.fr/consultation_embed.html) s'
 
 À la manière d'un embed de tweet, vous pouvez insérer des arguments et des commentaires dans vos articles. 
 
-Un [exemple d'argument inséré ici.](https://demo.logora.fr/argument_embed.html)https://demo.logora.fr/argument_embed.html 
+Un [exemple d'argument inséré ici.](https://demo.logora.fr/argument_embed.html)

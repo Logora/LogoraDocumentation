@@ -7,7 +7,7 @@ The debate space can be integrated as a drawer that opens from the right of the 
 
 #### Installation
 
-Insert the script that manages the drawer integration in the page, in the <head> tag, as well as a tag with the identifier *logora_app*, and the Logora configuration parameters.
+Insert the script that manages the drawer integration in the page, in the head tag, as well as a tag with the identifier *logora_app*, and the Logora configuration parameters.
 
 ```html
  <!DOCTYPE html>

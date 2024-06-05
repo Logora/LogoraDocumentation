@@ -1,4 +1,3 @@
-1 102 / 5 000
 ---
 id: drawer
 title: Drawer integration

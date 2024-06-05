@@ -7,7 +7,7 @@ L'espace de débat peut être intégré sous forme de tiroir qui s'ouvre par la 
 
 #### Installation
 
-Insérez le script qui gère l'intégration en tiroir dans la page, dans la balise <head>, ainsi qu'une balise ayant l'identifiant *logora_app*, et les paramètres de configuration Logora.
+Insérez le script qui gère l'intégration en tiroir dans la page, dans la balise head, ainsi qu'une balise ayant l'identifiant *logora_app*, et les paramètres de configuration Logora.
 
 ```html
   <!DOCTYPE html>

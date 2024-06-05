@@ -3,7 +3,7 @@ id: drawer
 title: Intégration en tiroir
 ---
 
-L'espace de débat peut être intégré sous forme de tiroir qui s'ouvre par la droite de l'écran [(démo)](https://demo.logora.fr/drawer.html).
+L'espace de débat peut être intégré sous forme de tiroir qui s'ouvre par la droite de l'écran ([démo](https://demo.logora.fr/drawer.html)).
 
 #### Installation
 

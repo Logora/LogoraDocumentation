@@ -9,7 +9,8 @@ You can invite the members of your team to create an account on your administrat
 
 To do so, you need to click on "Team" at the top right of the screen.
 
-![Find profile](/img/teambutton.png)
+![Find profile](https://github.com/Logora/LogoraDocumentation/assets/28570918/3a2566d6-6d11-4fb0-91dc-83c8af32d004)
+
 
 By clicking on "Invite a new members", you can send an invitation to members of your choice, assigning them a specific role. 
 

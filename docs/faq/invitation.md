@@ -9,7 +9,7 @@ Vous pouvez inviter les membres de votre équipe à se créer un compte sur votr
 
 Pour se faire, il vous faut cliquer en haut à droite de l'écran, sur "Equipe".
 
-![Find profile](/img/teambutton.png)
+![Find profile](https://github.com/Logora/LogoraDocumentation/assets/28570918/3a2566d6-6d11-4fb0-91dc-83c8af32d004)
 
 En cliquant sur "Inviter un nouveau membre", vous pouvez envoyer une invitation aux membres de votre choix, en leur assignant un rôle spécifique. 
 

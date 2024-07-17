@@ -11,6 +11,8 @@ A mobile format example :
 
 #### Installation
 
+##### A) Install a unique module on your homepage
+
 Insert the Javascript code of the home page module where you want the module to appear. This is an example of Javascript code that loads and displays the module.
 
 The **logora_embed** container is where the module is loaded.
@@ -38,3 +40,38 @@ Standard code to copy/paste and complete:
 ```
 
 Once you have installed the code, let the Logora team (contact@logora.fr) know so that they can activate the possibility of pinning a debate from your administration space. 
+
+##### B) Installing a Different Homepage Module on Each Section
+
+If you wish to install different questions on various sections, you need to install the **logora_synthese** container as described in the "Javascript Installation" article on each of the relevant section pages, by adding the following information:
+
+```html
+synthesis: {
+            hideArguments: true
+       }
+```
+
+The entire code looks like this:
+
+```html
+<div class="logora_synthese" data-object-id="logora_config"></div>
+<script>
+    // Configuration variables
+    var logora_config = {
+        shortname: "APPLICATION_NAME", // Application name as it appears in your administration area
+        debate: {
+            identifier: "PAGE_IDENTIFIER" // Unique identifier for the page
+        },
+        synthesis: {
+            hideArguments: true
+       }
+    };
+
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://cdn.logora.com/synthese.js'; // 'https://cdn.logora.com/widget.js' for the widget
+        (d.head || d.body).appendChild(s);
+    })();
+```
+
+This will allow you to insert debate questions in the form of votes on the relevant section.

@@ -11,6 +11,9 @@ Un exemple en format mobile :
 
 #### Installation
 
+##### A) Installer un module de page d'accueil unique
+
+
 Insérez le code Javascript du module de page d'accueil à l'endroit où vous souhaitez voir apparaître le module. Ceci est un exemple de code Javascript qui intègre le module :
 
 
@@ -39,3 +42,38 @@ Code standard à copier/coller et compléter :
 ```
 
 Après avoir installé le code, prévenez l'équipe Logora (contact@logora.fr) pour qu'elle active la possibilité d'épingler un débat depuis votre espace d'administration. 
+
+##### B) Installer un module de page d'accueil différent sur chaque rubrique
+
+Si vous souhaitez installer différentes questions sur différentes rubriques, il vous faut installer le conteneur **logora_synthese** commme décrit dans l'article "Installation Javascript" sur chaque des pages rubriques concernés, en ajoutant l'information 
+
+```html
+synthesis: {
+            hideArguments: true
+       }
+```
+
+Le code entier revient à ceci : 
+
+```html
+<div class="logora_synthese" data-object-id="logora_config"></div>
+<script>
+    // Variables de configuration
+    var logora_config = {
+        shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
+        debate: {
+            identifier: "PAGE_IDENTIFIER" // Identifiant unique de la page
+        }
+        synthesis: {
+            hideArguments: true
+       }
+    };
+
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://cdn.logora.com/synthese.js'; // 'https://cdn.logora.com/widget.js' pour le widget
+        (d.head || d.body).appendChild(s);
+    })();
+```
+
+Vous pourrez ainsi insérer des questions de débats sous forme de vote sur vos pages rubriques concernés. 

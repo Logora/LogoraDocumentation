@@ -3,7 +3,7 @@ id: drawer
 title: Intégration en tiroir
 ---
 
-Cet article de documentation est complétementaire à l'installation "classique" via Javascript ou côté serveur. 
+Cet article de documentation est complémentaire à l'installation "classique" via Javascript ou côté serveur. 
 
 L'espace de débat peut être intégré sous forme de tiroir qui s'ouvre par la droite de l'écran ([démo](https://demo.logora.fr/drawer.html)).
 
@@ -38,7 +38,7 @@ Insérez le script qui gère l'intégration en tiroir dans la page, dans la bali
 
 La balise avec l'identifiant *logora_app* peut être placée n'importe où, car le tiroir s'ouvre par-dessus la page.
   
-#### Utilisation (avancée)
+#### Utilisation (optionnelle et avancée)
 
 Pour ouvrir le tiroir, utilisez l'événement *logora:drawer:display* avec en argument le chemin de la page de l'espace de débat :
 

@@ -13,7 +13,7 @@ In any case, the first step is to set up a "classic" discussion forum.
 
 From your administration area, go to “Configuration” > “Modules” and activate drawer mode installation. 
 
-![Drawer navigation](static/img/drawernavigation.png)
+![Drawer navigation](/img/drawernavigation.png)
 
 #### Code installation
 

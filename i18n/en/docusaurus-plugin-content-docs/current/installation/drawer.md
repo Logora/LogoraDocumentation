@@ -15,32 +15,24 @@ From your administration area, go to “Configuration” > “Modules” and act
 
 ![Drawer navigation](/img/drawernavigation.png)
 
-#### Code installation
+#### Installation
 
-Insert the script that manages the drawer integration in the page, in the head tag, as well as a tag with the identifier *logora_app*, and the Logora configuration parameters.
+Insert the script that manages the drawer integration in the page, in the head tag.
 
 ```html
  <!DOCTYPE html>
  <html>
    <head>
-     <script>
-       var logora_config = {
-         "shortname": "demo"
-       };
-     </script>
      <script src="https://cdn.logora.com/drawer.js"></script>
    </head>
-   <body>
-     <div id="logora_app"></div>
-   </body>
  </html>
 ```
 
-The tag with the *logora_app* id can be placed anywhere, as the drawer opens on top of the page.
 
-#### Usage (optional and advanced)
 
-To open the drawer, use the *logora:drawer:display* event with the path of the debate space page as an argument:
+#### Advanced usage (optional)
+
+If necessary, to open the drawer, use the *logora:drawer:display* event with the path of the debate space page as an argument:
 
 ```js
  const event = new CustomEvent("logora:drawer:display", { detail: { initialPath: "/debate/my-debate" }});

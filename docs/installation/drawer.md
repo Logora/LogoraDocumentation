@@ -13,7 +13,8 @@ Il faut quoi qu'il en soit d'abord installer l'espace de débat de manière "cla
 
 Depuis votre espace d'administration, allez dans "Configuration" > "Modules" et activez l'installation du mode tiroir. 
 
-![Drawer navigation](/img/drawer_navigation.png)
+static/img/drawernavigation.png
+![Drawer navigation](static/img/drawernavigation.png)
 
 #### Installation du code
 

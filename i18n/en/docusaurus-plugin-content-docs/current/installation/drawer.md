@@ -29,12 +29,20 @@ Insert the script that manages the drawer integration in the page, in the head t
 ```
 
 
-
 #### Advanced usage (optional)
 
-If necessary, to open the drawer, use the *logora:drawer:display* event with the path of the debate space page as an argument:
+Two events are available to control the drawer :
+
+- *logora:drawer:display* to open the drawer, and that takes the initial path of the debate space as an argument :
 
 ```js
  const event = new CustomEvent("logora:drawer:display", { detail: { initialPath: "/debate/my-debate" }});
  window.dispatchEvent(event);
+```
+
+- *logora:drawer:close* to close the drawer
+
+```js
+  const event = new CustomEvent("logora:drawer:close");
+  window.dispatchEvent(event);
 ```

@@ -30,9 +30,17 @@ Insérez le script qui gère l'intégration en tiroir dans vos pages, dans la ba
   
 #### Utilisation avancée (optionnel)
 
-Si nécessaire, pour ouvrir le tiroir, vous pouvez utiliser l'événement *logora:drawer:display* avec en argument le chemin de la page de l'espace de débat :
+Deux événements sont disponibles pour gérer le tiroir :
+
+- *logora:drawer:display* qui prend en argument le chemin de la page de l'espace de débat :
 
 ```js
   const event = new CustomEvent("logora:drawer:display", { detail: { initialPath: "/debat/mon-debat" }});
+  window.dispatchEvent(event);
+```
+
+- *logora:drawer:close* qui permet de fermer le tiroir
+```js
+  const event = new CustomEvent("logora:drawer:close");
   window.dispatchEvent(event);
 ```

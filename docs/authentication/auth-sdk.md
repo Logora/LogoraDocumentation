@@ -67,3 +67,11 @@ Voici un aperçu de l'objet `user` :
 ```json
 { "first_name": "Jean", "last_name": "Dupont", "image_url": "https://image.com/my-image", "points": 100 }
 ```
+
+#### 4. Événement de déconnexion
+
+Un événement est déclenché lorsque l'utilisateur se déconnecte. Il ne renvoie pas d'informations.
+
+```js
+window.addEventListener("logora:authentication:logout");
+```

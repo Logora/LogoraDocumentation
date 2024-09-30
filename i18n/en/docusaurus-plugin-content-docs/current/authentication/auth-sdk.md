@@ -66,3 +66,12 @@ Here is a preview of the `user` object:
 ```json
 { "first_name": "Jean", "last_name": "Dupont", "image_url": "https://image.com/my-image", "points": 100 }
 ```
+
+
+#### 4. Logout event
+
+An event is triggered when the user logs out. It does not return anything.
+
+```js
+window.addEventListener("logora:authentication:logout");
+```

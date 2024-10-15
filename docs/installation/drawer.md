@@ -9,12 +9,6 @@ L'espace de débat peut être intégré sous forme de tiroir qui s'ouvre par la 
 
 Il faut quoi qu'il en soit d'abord installer l'espace de débat de manière "classique". 
 
-#### Activation depuis votre espace d'administration
-
-Depuis votre espace d'administration, allez dans "Configuration" > "Modules" et activez l'installation du mode tiroir. 
-
-![Drawer navigation](/img/drawernavigation.png)
-
 #### Installation
 
 Insérez le script qui gère l'intégration en tiroir dans vos pages, dans la balise head.

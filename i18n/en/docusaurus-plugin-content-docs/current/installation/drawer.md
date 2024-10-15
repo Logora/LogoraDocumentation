@@ -9,11 +9,6 @@ The debate space can be integrated as a drawer that opens from the right of the 
 
 In any case, the first step is to set up a "classic" discussion forum. 
 
-#### Activation from your administration area
-
-From your administration area, go to “Configuration” > “Modules” and activate drawer mode installation. 
-
-![Drawer navigation](/img/drawernavigation.png)
 
 #### Installation
 

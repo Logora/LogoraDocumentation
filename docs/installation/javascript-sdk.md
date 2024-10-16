@@ -175,3 +175,25 @@ Si aucun débat n'est associé à la page, l'objet _debate_ sera _null_.
 
 Il ne reste plus qu'à implémenter l'authentification unique et à personnaliser Logora pour lancer votre premier débat. 
 
+#### Installer les débats ET les commentaires dans la même page (optionnel)
+
+Un installant une seule fois le code javascript, vous proposez aux lecteurs un seul appel à l'action par page (débat OU commentaires OU consultations). Si vous souhaitez proposer systématiquement des questions de débats ET des commentaires sur la même page, vous pouvez insérer ce script pour afficher les commentaires : 
+
+```html
+<div class="logora_embed" data-object-id="logora_config"></div>
+<script>
+    // Variables de configuration
+    var logora_config = {
+        shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
+        debate: {
+            identifier: "PAGE_IDENTIFIER" // Identifiant unique de la page
+        }
+    };
+
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://cdn.logora.com/comments.js'; // 'https://cdn.logora.com/widget.js' pour le widget
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+```

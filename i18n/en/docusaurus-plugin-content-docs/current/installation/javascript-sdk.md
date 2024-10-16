@@ -170,3 +170,26 @@ If no debate is associated with the page, the _debate_ object will be _null_.
 
 
 All that remains is to implement single sign-on and customize Logora to launch your first debate. 
+
+#### Install debates AND comments on the same page (optional)
+
+By installing the javascript code just once, you can offer readers just one call to action per page (debate OR comments OR consultations). If you want to systematically offer debate questions AND comments on the same page, you can insert this script to display the comments: 
+
+```html
+<div class="logora_embed" data-object-id="logora_config"></div>
+<script>
+    // Configuration variables
+    var logora_config = {
+        shortname: "SHORTNAME", // Shortname available in your administration space
+        debate: {
+            identifier: "PAGE_IDENTIFIER" // Unique identifier of the page
+        }
+    };
+
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://cdn.logora.com/comments.js'; // 'https://cdn.logora.com/widget.js' for the widget
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+```

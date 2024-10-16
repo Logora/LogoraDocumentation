@@ -5,9 +5,10 @@ title: Module de page d'accueil
 
 Logora vous fournit un module présentant un débat à intégrer sur votre page d'accueil. Par défaut, le module se met automatiquement à jour avec votre dernier débat créé. Vous pouvez aussi choisir d'épingler un débat depuis votre espace d'administration, cela remplacera le comportement par défaut du module (vous pourrez dé-épingler le débat a tout moment et revenir au comportement par défaut ou épingler un autre débat de votre choix).
 
-Un exemple en format mobile : 
+Un exemple sur Ouest-France : 
 
-<img src="/img/widget_instance.png" alt="Home widget" width="200"/>
+<img src="/img/ouest-france-homepage.png" alt="Home widget on Ouest-France" width="200"/>
+
 
 #### Installation
 

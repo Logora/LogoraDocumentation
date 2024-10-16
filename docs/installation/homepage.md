@@ -7,7 +7,7 @@ Logora vous fournit un module présentant un débat à intégrer sur votre page 
 
 Un exemple sur Ouest-France : 
 
-![Ouest-France homepage](/img/ouest-france-homepage.png)
+![Ouest-France homepage](/img/ouest-france-homepage .png)
 
 #### Installation
 

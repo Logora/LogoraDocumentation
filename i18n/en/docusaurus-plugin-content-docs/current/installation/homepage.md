@@ -41,6 +41,14 @@ Standard code to copy/paste and complete:
 
 Once you have installed the code, let the Logora team (contact@logora.fr) know so that they can activate the possibility of pinning a debate from your administration space. 
 
+You can then choose to pin a debate from the ‘Advanced’ tab. 
+
+![Ouest-France homepage](/img/pin-advanced.png)
+
+This will take the form of a pin in your list of debates. 
+
+![Pin debate](/img/pin_debate.png)
+
 ##### B) Installing a Different Homepage Module on Each Section
 
 If you wish to install different questions on various sections, you need to install the **logora_synthese** container as described in the "Javascript Installation" article on each of the relevant section pages, by adding the following information:

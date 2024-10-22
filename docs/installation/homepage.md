@@ -43,6 +43,15 @@ Code standard à copier/coller et compléter :
 
 Après avoir installé le code, prévenez l'équipe Logora (contact@logora.fr) pour qu'elle active la possibilité d'épingler un débat depuis votre espace d'administration. 
 
+Vous pourrez ensuite choisir d'épingler un débat depuis l'onglet "Avancé". 
+
+![Ouest-France homepage](/img/pin-advanced.png)
+
+Cela se matérialisera par un épingle dans votre liste de débats. 
+
+![Pin debate](/img/pin_debate.png)
+
+
 ##### B) Installer un module de page d'accueil différent sur chaque rubrique
 
 Si vous souhaitez installer différentes questions sur différentes rubriques, il vous faut installer le conteneur **logora_synthese** commme décrit dans l'article "Installation Javascript" sur chaque des pages rubriques concernés, en ajoutant l'information 

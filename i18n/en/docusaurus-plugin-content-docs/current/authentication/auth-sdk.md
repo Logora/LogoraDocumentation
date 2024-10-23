@@ -4,7 +4,7 @@ title: Authentication library
 description: Use our autonomous authentication library
 ---
 
-Our authentication library can be used independently of the debate space. If you want to integrate our user system into your own platform, use this library.
+Our authentication library can be used independently of the debate space. If you want to integrate our user system into your own platform, use this library. **If you have already installed the debate space, you can skip point 1, as the library is included in our code.**
 
 The library is written in React, and the code for the main component is available  [here](https://bit.cloud/logora/debate/auth/auth_initializer).
 

@@ -4,7 +4,7 @@ title: Librairie d'authentification
 description: Utilisez notre librairie d'authentification autonome
 ---
 
-Notre librairie d'authentification peut être utilisée indépendamment de l'espace de débat. Si vous souhaitez intégrer notre système d'utilisateurs à votre propre plateforme, utilisez cette librairie.
+Notre librairie d'authentification peut être utilisée indépendamment de l'espace de débat. Si vous souhaitez intégrer notre système d'utilisateurs à votre propre plateforme, utilisez cette librairie. **Si vous avez déjà installé l'espace de débat, vous pouvez sauter le point 1, la librairie est incluse dans notre code.**
 
 La librairie est écrite en React, et le code du composant principal est disponible [ici](https://bit.cloud/logora/debate/auth/auth_initializer).
 

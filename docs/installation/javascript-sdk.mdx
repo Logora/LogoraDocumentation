@@ -118,7 +118,7 @@ Le name indique par défaut la valeur "synthese".
 
 ```
  resource: {
-            name: "synthese",
+            name: "synthesis",
             id: "PAGE_IDENTIFIER" // Identifiant unique de la page
         }
 ```
@@ -126,8 +126,8 @@ Le name indique par défaut la valeur "synthese".
 Vous pouvez explorer dans les Tabs suivantes toutes les possibilités d'affichage que propose l'objet resource. 
 
 <Tabs>
-  <TabItem value="Synthese" label="Synthese" default>
-    La valeur synthese est la valeur par défaut qui est utilisé dans la très grande majorité des cas par nos partenaires. L'ID est l'identifiant de l'article. Synthese permet d'afficher une question de débat lorsqu'un débat est lié à l'article comme ici : 
+  <TabItem value="Synthesis" label="Synthesis" default>
+    La valeur synthesis est la valeur par défaut qui est utilisé dans la très grande majorité des cas par nos partenaires. L'ID est l'identifiant de l'article. Synthesis permet d'afficher une question de débat lorsqu'un débat est lié à l'article comme ici : 
 ![Marianne synthesis](https://github.com/Logora/LogoraDocumentation/blob/87c76acdd92b559ddd59a145e32abe4c5d8e6075/static/img/synthese.png)
 
 Si aucun débat n'est lié à l'article, vous pouvez décider d'afficher des commentaires à la place, en autorisant l'ajout dans commentaires dans la configuration de l'espace d'administration. 
@@ -169,19 +169,62 @@ Un comportement recommandé : ils affichent le nombre de commentaires en haut de
 
   </TabItem>
   <TabItem value="Commentaires" label="Commentaires">
-    This is a banana 🍌
+     ```
+ resource: {
+            name: "comments",
+            id: "PAGE_IDENTIFIER" // Identifiant unique de la page
+        }
+```
+
+L'ID est l'identifiant de l'article. 
+
+Ce code propose d'afficher uniquement des commentaires, sans la fonctionnalité des débats. 
+
   </TabItem>
  <TabItem value="Vote" label="Vote">
-    This is a banana 🍌
+         ```
+ resource: {
+            name: "vote",
+            id: "vote" // Pas d'ID à passer ici. 
+        }
+```
+
+Pas d'ID à passer ici. 
+
+Vote permet d'épingler un débat ou d'afficher le dernier créer. 
+
   </TabItem>
  <TabItem value="Group" label="Group">
-    This is a banana 🍌
+           ```
+ resource: {
+            name: "group",
+            id: "DEBATE_IDENTIFIER" // L'ID du débat qu'on souhaite afficher.
+        }
+```
+
+L'ID correspond ici à celui du débat. Group permet d'afficher un débat en particulier via son ID. 
+
   </TabItem>
  <TabItem value="Consultation" label="Consultation">
-    This is a banana 🍌
+            ```
+ resource: {
+            name: "consultation",
+            id: "CONSULTATION_IDENTIFIER" // L'ID de la consultation qu'on souhaite afficher.
+        }
+```
+
+L'ID correspond ici à celui de la consultation. Group permet d'afficher une consultation en particulier via son ID. 
+
   </TabItem>
- <TabItem value="Argument & proposition" label="Argument & proposition">
-    This is a banana 🍌
+ <TabItem value="Arguments" label="Arguments">
+   resource: {
+            name: "argument" OU "proposal",
+            id: "OBJECT_IDENTIFIER" // L'ID de l'argument ou de la proposition
+        }
+```
+
+L'ID correspond ici à celui de l'argument ou de la proposition. Argument ou proposal permet d'afficher un arugment ou une proposition en particulier via son ID. 
+
   </TabItem>
 </Tabs>
 

@@ -7,19 +7,7 @@ description: Installez Logora grâce à notre code universel Javascript.
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs>
-  <TabItem value="apple" label="Apple" default>
-    This is an apple 🍎
-  </TabItem>
-  <TabItem value="orange" label="Orange">
-    This is an orange 🍊
-  </TabItem>
-  <TabItem value="banana" label="Banana">
-    This is a banana 🍌
-  </TabItem>
-</Tabs>
-
-Logora peut être installé sur n'importe quel site en insérant le code natif JavaScript. Cette documentation est à destination des développeurs. Logora propose également une documentation personnalisée pour l'[installation Wordpress](wordpress).
+Logora peut être installé sur n'importe quel site en insérant le code natif JavaScript. Cette documentation est à destination des développeurs. Logora propose également une documentation personnalisée pour l'[installation Wordpress](../wordpress).
 
 L'installation en Javascript se fait en deux temps :
 1. Insérer l'espace de débat 
@@ -134,6 +122,31 @@ Le name indique par défaut la valeur "synthese".
             id: "PAGE_IDENTIFIER" // Identifiant unique de la page
         }
 ```
+
+<Tabs>
+  <TabItem value="synthese" label="synthese" default>
+    La valeur synthese permet d'afficher une question de débat lorsqu'un débat est lié à l'article. Si aucun débat n'est lié à l'article, vous pouvez décider d'afficher des commentaires à la place, en autorisant l'ajout dans commentaires dans la configuration de l'espace d'administration. 
+  </TabItem>
+  <TabItem value="widget" label="widget">
+    This is an orange 🍊
+  </TabItem>
+  <TabItem value="comments" label="comments">
+    This is a banana 🍌
+  </TabItem>
+ <TabItem value="vote" label="vote">
+    This is a banana 🍌
+  </TabItem>
+ <TabItem value="group" label="group">
+    This is a banana 🍌
+  </TabItem>
+ <TabItem value="consultation" label="consultation">
+    This is a banana 🍌
+  </TabItem>
+ <TabItem value="argument proposal" label="argument proposal">
+    This is a banana 🍌
+  </TabItem>
+</Tabs>
+
 #### 2.3 Envoyer les méta-données des articles manuellement (optionnel)
 
 Par défaut, Logora récupère les méta-données des articles automatiquement :

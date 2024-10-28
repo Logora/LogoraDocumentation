@@ -19,7 +19,7 @@
       "type": "category",
       "label": "Configuration",
 	    "collapsed": false,
-      "items": ["configuration/synthesis", "configuration/theme", "configuration/routes", "configuration/moderation", "configuration/social", "configuration/ads", "configuration/comments"]
+      "items": ["configuration/synthesis", "configuration/theme", "configuration/routes", "configuration/moderation", "configuration/social", "configuration/ads"]
     },
 	 {
       "type": "category",
@@ -31,7 +31,7 @@
       "type": "category",
       "label": "FAQ",
 	    "collapsed": false,
-      "items": ["faq/quality", "faq/comments", "faq/performance", "faq/data", "faq/mailing", "faq/tracking", "faq/registration", "faq/thesis", "faq/invitation", "faq/journalist", "faq/share", "faq/premium", "faq/iframes"]
+      "items": ["faq/quality", "faq/performance", "faq/data", "faq/mailing", "faq/tracking", "faq/registration", "faq/thesis", "faq/invitation", "faq/journalist", "faq/share", "faq/premium", "faq/iframes"]
     }
   ]
 }

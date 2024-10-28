@@ -228,7 +228,52 @@ L'ID correspond ici à celui de l'argument ou de la proposition. Argument ou pro
   </TabItem>
 </Tabs>
 
-#### 2.3 Envoyer les méta-données des articles manuellement (optionnel)
+#### 2.3 Afficher plusieurs blocs dans la page article (optionnel)
+
+S'il y a plusieurs blocs dans la page, le script embed.js ne doit être inséré qu'une seule fois.
+Dans ce cas-là, il faut créer un objet de configuration par bloc, et mettre le nom dans "data-object-id". Exemple pour insérer une question de débat et des commentaires dans la même page :
+
+```
+// Conteneur de chaque bloc
+<div class="logora_embed" data-object-id="logora_config"></div>
+<div class="logora_embed" data-object-id="logora_config_2"></div>
+
+// Configuration
+<script>
+    // Variables de configuration
+    var logora_config = {
+        shortname: "NOM_APPLICATION",
+        resource: {
+            name: "synthese",
+            id: "PAGE_IDENTIFIER" // Identifiant unique de la page
+        }
+    };
+
+    var logora_config_2 = {
+        shortname: "NOM_APPLICATION",
+        resource: {
+            name: "comments",
+            id: "PAGE_IDENTIFIER" // Identifiant unique de la page
+        }
+    };
+
+    // Le script n'est inséré qu'une fois même s'il y a deux blocs
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://cdn.logora.com/embed.js';
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+```
+
+Dans ce cas, la synthèse et les commentaires s'afficheront à l'endroit de l'insertion de :
+
+```
+<div class="logora_embed" data-object-id="logora_config"></div>
+<div class="logora_embed" data-object-id="logora_config_2"></div>
+```
+
+#### 2.4 Envoyer les méta-données des articles manuellement (optionnel)
 
 Par défaut, Logora récupère les méta-données des articles automatiquement :
 - via les balises html _meta_

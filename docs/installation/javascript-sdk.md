@@ -75,7 +75,7 @@ Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat,
 
 Insérez le code Javascript à l'endroit où vous souhaitez voir apparaître les appels à l'action (commentaires, questions de  débats ou de consultations). Ce bloc est souvent inséré après l'article mais il peut être ajouté en coeur d'article si certaines contraintes vous interdisent d'ajouter de nouvelles fonctionnalités après l'article. Ceci est un exemple de code Javascript qui charge et affiche le bloc dans votre article. Il doit être inséré sur toutes vos pages d'articles. 
 
-#### 2.1 Insérer le code JavaScript et vos variables de configuration
+#### 2.1 Insérer le code JavaScript
 
 Le conteneur **logora_embed** est l'endroit où le bloc est chargé.
 
@@ -107,7 +107,19 @@ Code standard à copier/coller et compléter :
 
 Pour créer un débat lié à la page, allez dans l'espace d'administration > créer un débat en sélectionnant l'article concerné dans la liste des derniers articles récupérés. 
 
-#### 2.2 Envoyer les méta-données des articles manuellement (optionnel)
+#### 2.2 Configurer l'appel à l'action que vous souhaitez
+
+Changer le contenu de l'objet *resource* vous permet de spécifier ce que vous souhaitez insérer dans l'article. 
+
+Le name indique par défaut la valeur "synthese". 
+
+```
+ resource: {
+            name: "synthese",
+            id: "PAGE_IDENTIFIER" // Identifiant unique de la page
+        }
+```
+#### 2.3 Envoyer les méta-données des articles manuellement (optionnel)
 
 Par défaut, Logora récupère les méta-données des articles automatiquement :
 - via les balises html _meta_

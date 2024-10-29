@@ -1,0 +1,10 @@
+.uniqueTabs .tabItem {
+    margin-right: 1em;
+}
+
+.uniqueTabs .tabItem[aria-selected='true'] {
+    color:#fff;
+    border-radius:6px;
+    background-color:#417ec7;
+    border:0
+}

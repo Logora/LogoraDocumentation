@@ -110,7 +110,7 @@ Pour créer un débat lié à la page, allez dans l'espace d'administration > cr
 
 Changer le contenu de l'objet _resource_ vous permet de spécifier ce que vous souhaitez insérer dans l'article.
 
-Le name indique par défaut la valeur "synthesis".
+Le name indique le plus souvent la valeur "synthesis".
 
 <CodeBlock language="javascript">
     {`
@@ -126,12 +126,14 @@ Vous pouvez explorer dans les onglets suivants toutes les possibilités d'affich
 <Tabs className="unique-tabs">
     <TabItem value="Synthesis" label="Synthesis" default>
         <div>
-            La valeur synthesis est la valeur par défaut qui est utilisé dans la très grande majorité des cas par nos partenaires. L'ID est l'identifiant de l'article. Synthesis permet d'afficher une question de débat lorsqu'un débat est lié à l'article comme ici :
+            La valeur synthesis est la valeur qui est utilisée dans la très grande majorité des cas par nos partenaires. L'ID est l'identifiant de l'article. Synthesis permet d'afficher une question de débat lorsqu'un débat est lié à l'article comme ici :
             <figure> 
                 <img src="/img/synthese.png" alt="Marianne synthèse" /> 
             </figure>
             Si aucun débat n'est lié à l'article, vous pouvez décider d'afficher des commentaires à la place, en autorisant l'ajout dans commentaires dans la configuration de l'espace d'administration.
-            <h4>Permettre l'ajout de commentaires lorsqu'aucun débat n'est lié à l'article (optionnel)</h4>
+
+            <h4>Optionnel : Permettre l'ajout de commentaires lorsqu'aucun débat n'est lié à l'article</h4>
+
             Vous pouvez activer un espace de commentaires sur votre espace contributif depuis votre espace d'administration <i>Configuration > Modules</i>.
             Voici <a href="https://www.loom.com/share/f36e14002c3a456f85aed8484f9fb7ed" target="_blank">une vidéo</a> démo concernant l'installation des commentaires et les visuels proposés aux lecteurs.
             <figure> 
@@ -163,6 +165,7 @@ Vous pouvez explorer dans les onglets suivants toutes les possibilités d'affich
                 }
             `}
         </CodeBlock>
+
         Ce code propose la même chose que synthèse mais la question de débat s'affiche avec un format en une ligne. L'ID est l'identifiant de l'article.
         <figure> 
             <img src="/img/synthese_widget.png" /> 
@@ -177,6 +180,7 @@ Vous pouvez explorer dans les onglets suivants toutes les possibilités d'affich
                 }
             `}
         </CodeBlock>
+
         L'ID est l'identifiant de l'article. 
         Ce code propose d'afficher uniquement des commentaires, sans la fonctionnalité des débats. 
     </TabItem>
@@ -201,6 +205,7 @@ Vous pouvez explorer dans les onglets suivants toutes les possibilités d'affich
                 }
             `}
         </CodeBlock>
+
         L'ID correspond ici à celui du débat. Group permet d'afficher un débat en particulier via son ID. 
     </TabItem>
     <TabItem value="Consultation" label="Consultation">
@@ -212,6 +217,7 @@ Vous pouvez explorer dans les onglets suivants toutes les possibilités d'affich
                 }
             `}
         </CodeBlock>
+
         L'ID correspond ici à celui de la consultation. Group permet d'afficher une consultation en particulier via son ID. 
     </TabItem>
     <TabItem value="Arguments" label="Arguments">
@@ -223,6 +229,7 @@ Vous pouvez explorer dans les onglets suivants toutes les possibilités d'affich
                 }
             `}
         </CodeBlock>
+
         L'ID correspond ici à celui de l'argument ou de la proposition. Argument ou proposal permet d'afficher un arugment ou une proposition en particulier via son ID. 
   </TabItem>
 </Tabs>

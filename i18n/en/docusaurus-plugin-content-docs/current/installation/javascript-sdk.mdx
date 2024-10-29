@@ -111,51 +111,52 @@ Standard code to copy/paste and complete:
 
 To create a debate linked to the page, go to the administration area > create a debate and select the desired article from the list of recently retrieved articles.
 
-#### 2.2 Configurer l'appel à l'action que vous souhaitez
+#### 2.2 Configure the call to action you want
 
-Changer le contenu de l'objet _resource_ vous permet de spécifier ce que vous souhaitez insérer dans l'article.
+Changing the content of the _resource_ object lets you specify what you want to insert in the article.
 
-Le name indique le plus souvent la valeur "synthesis".
+The name usually indicates the value "synthesis".
 
 <CodeBlock language="javascript">
     {`
         resource: {
             name: "synthesis",
-            id: "PAGE_IDENTIFIER" // Identifiant unique de la page
+            id: "PAGE_IDENTIFIER" // Unique identifier for the page
         }
     `}
 </CodeBlock>
 <p style={{ marginTop: "1em" }}>
-    Vous pouvez explorer dans les onglets suivants toutes les possibilités d'affichage que propose l'objet resource.
+In the following tabs, you can explore all the display possibilities offered by the resource object.
 </p>
 
 <Tabs className={styles.uniqueTabs}>
     <TabItem value="Synthesis" label="Synthesis" default attributes={{className: styles.tabItem}}>
         <div>
-            La valeur synthesis est la valeur qui est utilisée dans la très grande majorité des cas par nos partenaires. L'ID est l'identifiant de l'article. Synthesis permet d'afficher une question de débat lorsqu'un débat est lié à l'article comme ici :
+The synthesis value is the value used in the vast majority of cases by our partners. The ID is the article identifier. Synthesis is used to display a debate question when a debate is linked to the article, as shown here :
             <figure> 
-                <img src="/img/synthese.png" alt="Marianne synthèse" /> 
+                <img src="/img/synthese.png" alt="Marianne synthesis" /> 
             </figure>
-            Si aucun débat n'est lié à l'article, vous pouvez décider d'afficher des commentaires à la place, en autorisant l'ajout dans commentaires dans la configuration de l'espace d'administration.
-            <h4>Optionnel : Permettre l'ajout de commentaires lorsqu'aucun débat n'est lié à l'article</h4>
-            Vous pouvez activer un espace de commentaires sur votre espace contributif depuis votre espace d'administration <i>Configuration > Modules</i>.
-            Voici <a href="https://www.loom.com/share/f36e14002c3a456f85aed8484f9fb7ed" target="_blank">une vidéo</a> démo concernant l'installation des commentaires et les visuels proposés aux lecteurs.
+If no discussion is linked to the article, you can decide to display comments instead, by authorising the addition of comments in the administration space configuration.
+            <h4>Optional: Allow comments to be added when no debate is linked to the article
+</h4>
+            You can activate a comments area on your contributor space from your administration area <i>Configuration > Modules</i>.
+            Here <a href="https://www.loom.com/share/f36e14002c3a456f85aed8484f9fb7ed" target="_blank">une vidéo</a> is a demo demo on how to install comments and visuals for readers.
             <figure> 
                 <img src="https://github.com/Logora/LogoraDocumentation/assets/28570918/529423a0-eaf6-4736-8174-64c3c303b9b4" /> 
             </figure>
-            Par défaut, cela activera un bandeau simple présentant un appel à l'action "Vous souhaitez réagir à cet article ? Commentez".
-            Un <a href="https://www.marianne.net/agora/avis-aux-lecteurs-rejoignez-notre-espace-logora-et-devenez-le-debatteur-a-suivre" target="_blank">exemple sur Marianne ici</a>
+           By default, this will activate a simple banner with a call to action "Would you like to comment on this article? Comment on it".
+            An <a href="https://www.marianne.net/agora/avis-aux-lecteurs-rejoignez-notre-espace-logora-et-devenez-le-debatteur-a-suivre" target="_blank">example on Marianne here</a>
             <figure> 
                 <img src="https://github.com/Logora/LogoraDocumentation/assets/28570918/bb31dd2b-b7f6-46c3-8757-b7dbbccdf186" /> 
             </figure>
-            Pour générer davantage d'interactions, vous pouvez choisir de présenter les meilleurs commentaires en plus de l'appel à l'action (1, 2 ou 3).
-            Cette option est à favoriser si vous avez la possibilité de donner plus de place aux commentaires.
-            Un exemple sur Milenio avec 3 commentaires affichés :
+           To generate more interaction, you can choose to present the best comments in addition to the call to action (1, 2 or 3).
+           This option should be favoured if you have the possibility of giving more space to the comments.
+          An example on Milenio with 3 comments displayed:
             <figure> 
                 <img src="https://github.com/Logora/LogoraDocumentation/assets/28570918/c8a9421a-0c03-471b-9641-d12fb444ec31" /> 
             </figure>
-            Un comportement recommandé : ils affichent le nombre de commentaires en haut de l'article avec la possibilité de cliquer sur l'icône commenter ce qui permet de descendre automatiquement vers les commentaires.
-            <figure> 
+            Recommended behaviour: they display the number of comments at the top of the article with the option of clicking on the comment icon, which automatically scrolls down to the comments.            
+<figure> 
                 <img src="https://github.com/Logora/LogoraDocumentation/assets/28570918/eabed076-0667-42d6-b89f-584c89202bc0" /> 
             </figure>
         </div>
@@ -165,29 +166,28 @@ Le name indique le plus souvent la valeur "synthesis".
             {`
                 resource: {
                     name: "widget",
-                    id: "PAGE_IDENTIFIER" // Identifiant unique de la page
+                    id: "PAGE_IDENTIFIER" // Unique identifier for the page
                 }
             `}
         </CodeBlock>
         <p style={{ marginTop: "1em" }}>
-            Ce code propose la même chose que synthèse mais la question de débat s'affiche avec un format en une ligne. L'ID est l'identifiant de l'article.
-        </p>
+        This code proposes the same thing as synthesis, but the debate question is displayed in a one-line format. The ID is the article identifier.        </p>
         <figure> 
             <img src="/img/synthese_widget.png" /> 
         </figure>
     </TabItem>
-    <TabItem value="Commentaires" label="Commentaires" attributes={{className: styles.tabItem}}>
+    <TabItem value="Comments" label="Comments" attributes={{className: styles.tabItem}}>
         <CodeBlock language="javascript">
             {`
                 resource: {
                     name: "comments",
-                    id: "SOURCE_IDENTIFIER" // Identifiant unique de la page
+                    id: "SOURCE_IDENTIFIER" // Unique identifier for the page
                 }
             `}
         </CodeBlock>
         <p style={{ marginTop: "1em" }}>
-            L'ID est l'identifiant de l'article. 
-            Ce code propose d'afficher uniquement des commentaires, sans la fonctionnalité des débats.
+           The ID is the article identifier. 
+           This code proposes to display only comments, without the debates functionality.
         </p>
     </TabItem>
     <TabItem value="Vote" label="Vote" attributes={{className: styles.tabItem}}>
@@ -195,13 +195,13 @@ Le name indique le plus souvent la valeur "synthesis".
             {`
                 resource: {
                     name: "vote",
-                    id: "vote" // Pas d'ID ici
+                    id: "vote" // No ID needed here
                 }
             `}
         </CodeBlock>
         <p style={{ marginTop: "1em" }}>
-            Pas d'ID à passer ici. 
-            Vote permet d'épingler un débat ou d'afficher le dernier créer.
+            No ID required. 
+            Vote allows you to pin a debate or display the last one created.
         </p> 
     </TabItem>
     <TabItem value="Group" label="Group" attributes={{className: styles.tabItem}}>
@@ -209,12 +209,12 @@ Le name indique le plus souvent la valeur "synthesis".
             {`
                 resource: {
                     name: "group",
-                    id: "DEBATE_IDENTIFIER" // Identifiant du débat
+                    id: "DEBATE_IDENTIFIER" // Unique identifier for the debate
                 }
             `}
         </CodeBlock>
         <p style={{ marginTop: "1em" }}>
-            L'ID correspond ici à celui du débat. Group permet d'afficher un débat en particulier via son ID.
+        The ID here corresponds to that of the debate. Group can be used to display a particular debate via its ID.
         </p>
     </TabItem>
     <TabItem value="Consultation" label="Consultation" attributes={{className: styles.tabItem}}>
@@ -222,59 +222,59 @@ Le name indique le plus souvent la valeur "synthesis".
             {`
                 resource: {
                     name: "consultation",
-                    id: "CONSULTATION_IDENTIFIER" // Identifiant unique de la consultation
+                    id: "CONSULTATION_IDENTIFIER" // Unique identifier for the consultation
                 }
             `}
         </CodeBlock>
         <p style={{ marginTop: "1em" }}>
-            L'ID correspond ici à celui de la consultation. Group permet d'afficher une consultation en particulier via son ID.
+          The ID here corresponds to that of the consultation. Group can be used to display a particular consultation via its ID.
         </p>
     </TabItem>
     <TabItem value="Arguments" label="Arguments" attributes={{className: styles.tabItem}}>
         <CodeBlock language="javascript">
             {`
                 resource: {
-                    name: "argument", // Valeur alternative: "proposition"
-                    id: "ARGUMENT_IDENTIFIER" // Identifiant unique de la contribution
+                    name: "argument", // Alternative value: "proposal"
+                    id: "ARGUMENT_IDENTIFIER" // Unique contribution identifier
                 }
             `}
         </CodeBlock>
         <p style={{ marginTop: "1em" }}>
-            L'ID correspond ici à celui de l'argument ou de la proposition. Argument ou proposal permet d'afficher un arugment ou une proposition en particulier via son ID. 
+            The ID here corresponds to that of the argument or proposal. Argument or proposal is used to display a particular argument or proposal via its ID.
         </p>
   </TabItem>
 </Tabs>
 
-#### 2.3 Afficher plusieurs blocs dans la page article (optionnel)
+#### 2.3 Display several blocks in the article page (optional)
 
-S'il y a plusieurs blocs dans la page, le script embed.js ne doit être inséré qu'une seule fois.
-Dans ce cas-là, il faut créer un objet de configuration par bloc, et mettre le nom dans "data-object-id". Exemple pour insérer une question de débat et des commentaires dans la même page :
+If there are several blocks in the page, the embed.js script only needs to be inserted once.
+In this case, you need to create a configuration object for each block, and put the name in ‘data-object-id’. Example for inserting a debate question and comments on the same page:
 
 ```javascript
-// Conteneur de chaque bloc
+// Container for each block
 <div class="logora_embed" data-object-id="logora_config"></div>
 <div class="logora_embed" data-object-id="logora_config_2"></div>
 
 // Configuration
 <script>
-    // Variables de configuration
+    // Configuration variables
     var logora_config = {
-        shortname: "NOM_APPLICATION",
+        shortname: "APPLICATION_NAME",
         resource: {
             name: "synthese",
-            id: "PAGE_IDENTIFIER" // Identifiant unique de la page
+            id: "PAGE_IDENTIFIER" // Unique identifier for the page
         }
     };
 
     var logora_config_2 = {
-        shortname: "NOM_APPLICATION",
+        shortname: "APPLICATION_NAME",
         resource: {
             name: "comments",
-            id: "PAGE_IDENTIFIER" // Identifiant unique de la page
+            id: "PAGE_IDENTIFIER" // Unique identifier for the page
         }
     };
 
-    // Le script n'est inséré qu'une fois même s'il y a deux blocs
+    // The script is only inserted once, even if there are two blocks.
     (function() {
         var d = document, s = d.createElement('script');
         s.src = 'https://cdn.logora.com/embed.js';
@@ -283,60 +283,60 @@ Dans ce cas-là, il faut créer un objet de configuration par bloc, et mettre le
 </script>
 ```
 
-Dans ce cas, la synthèse et les commentaires s'afficheront à l'endroit de l'insertion de :
+In this case, the summary and comments will be displayed at the point where the :
 
 ```javascript
 <div class="logora_embed" data-object-id="logora_config"></div>
 <div class="logora_embed" data-object-id="logora_config_2"></div>
 ```
 
-#### 2.4 Envoyer les méta-données des articles manuellement (optionnel)
+#### 2.4 Send article metadata manually (optional)
 
-Par défaut, Logora récupère les méta-données des articles automatiquement :
+By default, Logora retrieves the metadata of articles automatically:
 
-- via les balises html _meta_
-- via le format JSON-LD
+- via html _meta_ tags
+- via JSON-LD format
 
-Cependant vous pouvez choisir de les envoyer manuellement avec les variables de configuration.
+However, you can choose to send them manually with the configuration variables.
 
-Voici un exemple de meta-données envoyées depuis les variables de configuration :
+Here is an example of metadata sent from configuration variables:
 
 ```javascript
 // Variables de configuration
 var logora_config = {
-  shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
+  shortname: "APPLICATION_NAME", // Application name in your administration space
   debate: {
-    identifier: "PAGE_IDENTIFIER", // Identifiant unique de la page
+    identifier: "PAGE_IDENTIFIER", // Unique identifier for the page
   },
   source: {
-    source_url: "https://votresite.com/article", // URL canonique de la page
-    uid: "a3f4e033-9e13-4abb-be11-2d87a2294013", // Identifiant unique de la page
-    title: "Titre de l'article", // Titre de la page
-    description: "Description de la page", // Description de la page
-    origin_image_url: "https://image.com/image.png", // URL de l'image de la page
-    published_date: "2020-12-01T12:00:00+01:00", // Date de publication de la page au format ISO_8601
-    publisher: "Mon site", // Nom du site
+    source_url: "https://votresite.com/article", // Canonical URL of the page
+    uid: "a3f4e033-9e13-4abb-be11-2d87a2294013", // Unique identifier for the page
+    title: "Page title", // Page title
+    description: "Page description", // Page description
+    origin_image_url: "https://image.com/image.png", // URL of the page image
+    published_date: "2020-12-01T12:00:00+01:00", // Date of publication of the page in ISO_8601 format
+    publisher: "Site name", // Site name
     tag_objects: [
-      // Étiquettes de l'article sous forme de tableau d'objets
+      // Article labels in the form of an array of objects
       {
-        name: "politique", // Nom affiché de l'étiquette
-        uid: "politique-001", // Identifiant unique de l'étiquette. Peut être omis si les noms sont déjà uniques
+        name: "politics", // Displayed label name
+        uid: "politique-001", // Unique identifier for the label. Can be omitted if names are already unique
       },
       {
-        name: "santé",
-        uid: "sante-003",
+        name: "health",
+        uid: "health-003",
       },
     ],
   },
 };
 ```
 
-Il n'est pas obligatoire d'envoyer toutes les méta-données manuellement, les champs manquants seront récupérés automatiquement. Les métadonnées envoyées manuellement ont la priorité sur les données récupérées automatiquement.
+You do not need to send all the metadata manually, as any missing fields will be retrieved automatically. Metadata sent manually has priority over data retrieved automatically.
 
-#### Écouter le chargement de la synthèse (optionnel)
+#### Listen to the summary loading (optional)
 
-Pour détecter le chargement de la synthèse, un événement _logoraContentLoaded_ est déclenché sur l'objet _window_.
-Cet événement permet de récupérer des informations sur le contenu qui s'affiche sur la page.
+To detect the loading of the synthesis, a _logoraContentLoaded_ event is triggered on the _window_ object.
+This event is used to retrieve information about the content displayed on the page.
 
 ```javascript
 window.addEventListener("logoraContentLoaded", (event) =>
@@ -344,21 +344,21 @@ window.addEventListener("logoraContentLoaded", (event) =>
 );
 ```
 
-Format de l'objet _event.detail_ :
+Object format _event.detail_ :
 
 ```javascript
 debate: {
   id: 1000,
-  name: "Faut-il changer la constitution ?", // Titre de la consultation ou de l'article pour les commentaires
-  slug: "mon-debat",
+  name: "Should the constitution be changed?", // Title of consultation or article for comments
+  slug: "my-debate",
   direct_url: "https://www.exemple.fr/espace-debat/debat/mon-debat",
   created_at: "2023-03-16T09:36:31.204Z",
   image_url: "https://image.com/debate",
-  type: "Group", // "Source" pour les commentaires, "Consultation" pour les consultations
-  contributions_count: 12 // Seulement pour les commentaires, nombre de commentaires
+  type: "Group", // "Source" for comments, "Consultation" for consultations
+  contributions_count: 12 // Only for comments, number of comments
 }
 ```
 
-Si aucun débat n'est associé à la page, l'objet _debate_ sera _null_.
+If no debate is associated with the page, the _debate_ object will be _null_.
 
-Il ne reste plus qu'à implémenter l'authentification unique et à personnaliser Logora pour lancer votre premier débat.
+All that's left to do is implement single sign-on and customise Logora to launch your first debate.

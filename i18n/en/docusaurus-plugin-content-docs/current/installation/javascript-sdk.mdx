@@ -1,18 +1,13 @@
 ---
 id: javascript-sdk
 title: Installation Javascript
-description: Installez Logora grâce à notre code universel Javascript.
+description: Install Logora using our universal Javascript code.
 ---
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import CodeBlock from '@theme/CodeBlock';
 import styles from '../../../../../docs/installation/styles.module.css';
-
-
-import Tabs from "@theme/Tabs";
-import TabItem from "@theme/TabItem";
-import CodeBlock from '@theme/CodeBlock';
 import styles from './styles.module.css';
 
 
@@ -78,27 +73,27 @@ Go to *https://votresite.com/espace-debat/debats*. You are now on the discussion
 
 To change the prefix and URL paths of the debate forum pages, go to [URL path configuration](configuration/routes.md).
 
-### 2. Installer le bloc contributif dans vos articles
+### 2. Install the contributor block in your articles
 
-> Si avez des contraintes de performance élevé et que vous souhaitez indexer les pages de débat sur les moteurs de recherche, il est nécessaire d'insérer ce bloc côté serveur. Dans ce cas rendez-vous sur la page d'[installation côté serveur](installation/api.md).
+>If you have high performance constraints and want to index the debate pages on search engines, you need to insert this block on the server side. In this case, go to the [server-side installation] page (installation/api.md).
 
-Insérez le code Javascript à l'endroit où vous souhaitez voir apparaître les appels à l'action (commentaires, questions de débats ou de consultations). Ce bloc est souvent inséré après l'article mais il peut être ajouté en coeur d'article si certaines contraintes vous interdisent d'ajouter de nouvelles fonctionnalités après l'article. Ceci est un exemple de code Javascript qui charge et affiche le bloc dans votre article. Il doit être inséré sur toutes vos pages d'articles.
+Insert the Javascript code where you want the calls to action to appear (comments, debate or consultation questions). This block is often inserted after the article, but it can be added inside the article if certain constraints prevent you from adding new functionalities after the article. This is an example of the Javascript code that loads and displays the block in your article. It must be inserted on all your article pages.
 
-#### 2.1 Insérer le code JavaScript
+#### 2.1 Insert JavaScript code
 
-Le conteneur **logora_embed** est l'endroit où le bloc est chargé.
+The **logora_embed** container is where the block is loaded.
 
-Code standard à copier/coller et compléter :
+Standard code to copy/paste and complete:
 
 ```javascript
 <div class="logora_embed" data-object-id="logora_config"></div>
 <script>
-    // Variables de configuration
+    // Configuration variables
     var logora_config = {
-        shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
+        shortname: "APPLICATION_NAME", // Application name in your administration space
         resource: {
             name: "synthesis",
-            id: "PAGE_IDENTIFIER" // Identifiant unique de la page
+            id: "PAGE_IDENTIFIER" // Unique identifier for the page
         }
     };
 
@@ -110,11 +105,11 @@ Code standard à copier/coller et compléter :
 </script>
 ```
 
-**resource.id (requis)** : identifiant unique lié à la page. Cet identifiant doit être unique pour chaque page où est inséré le bloc. Il permettra de récupérer l'appel contributif correspondant à la page. Par exemple, l'identifiant peut être l'ID dans votre base de données de l'article présent sur la page, ou un slug unique ('exemple-identifiant').
+**resource.id (required)**: unique identifier linked to the page. This identifier must be unique for each page where the block is inserted. It will be used to retrieve the call for contributions corresponding to the page. For example, the identifier can be the ID in your database of the article on the page, or a unique slug ('example-identifier').
 
-> Pour des raisons de performance, les articles publiés il y a plus de 18 mois ne sont pas récupérés. La synthèse ne s'affichera pas.
+> For performance reasons, articles published more than 18 months ago are not retrieved. The synthesis will not be displayed.
 
-Pour créer un débat lié à la page, allez dans l'espace d'administration > créer un débat en sélectionnant l'article concerné dans la liste des derniers articles récupérés.
+To create a debate linked to the page, go to the administration area > create a debate and select the desired article from the list of recently retrieved articles.
 
 #### 2.2 Configurer l'appel à l'action que vous souhaitez
 

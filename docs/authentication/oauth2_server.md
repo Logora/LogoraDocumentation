@@ -15,7 +15,7 @@ Pour mettre en place ce mode d'authentification, vous devez créer une applicati
 Transmettez-nous ensuite les informations suivantes :
 - `client_id` : la clé publique de l'application créée
 - `client_secret` : la clé secrète de l'application créée
-- `auth_dialog_endpoint`: l'URL de la page d'authentification
+- `login_url`: l'URL de la page d'authentification
 - `scope` : la portée des jetons d'accès
 - `token_endpoint` : l'URL de la route de récupération de jeton d'accès
 - `token_endpoint_method` : la méthode de la route de récupération de jeton d'accès ("GET" ou "POST")

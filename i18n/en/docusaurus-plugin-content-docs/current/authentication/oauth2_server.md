@@ -15,7 +15,7 @@ To set up this authentication mode, you need to create a client application for 
 Send us the following information so that we can configure your application :
 - `client_id` : the public key of the created application
 - `client_secret` : the secret key of the created application
-- `auth_dialog_endpoint`: the URL of the authentication page
+- `login_url`: the URL of the authentication page
 - `scope` : the scope of the access tokens
 - `token_endpoint` : the URL of the access token recovery route
 - `token_endpoint_method` : the method of the token retrieval route ("GET" or "POST")

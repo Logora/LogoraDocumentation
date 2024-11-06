@@ -12,15 +12,16 @@ Ce mode d'authentification permet à Logora de se connecter à votre serveur OAu
 Pour mettre en place ce mode d'authentification, vous devez créer une application cliente pour Logora sur votre serveur OAuth 2.0, avec le paramètre suivant :
    `redirect_uri`: `https://app.logora.fr/auth/callback`
 
-Transmettez-nous ensuite les informations suivantes :
+Récupérez les informations suivantes depuis votre fournisseur OAuth2 :
 - `client_id` : la clé publique de l'application créée
 - `client_secret` : la clé secrète de l'application créée
 - `login_url`: l'URL de la page d'authentification
 - `scope` : la portée des jetons d'accès
 - `token_endpoint` : l'URL de la route de récupération de jeton d'accès
-- `token_endpoint_method` : la méthode de la route de récupération de jeton d'accès ("GET" ou "POST")
+- `token_endpoint_method` : la méthode de la route de récupération de jeton d'accès ("GET" ou "POST").
 - `user_profile_endpoint`: l'URL de la route de récupération du profil utilisateur (méthode "GET")
-- `user_profile_params`: paramètres d'URL à envoyer avec cette route, sous forme de dictionnaire
+- `user_profile_params`: paramètres d'URL à envoyer avec cette route, sous forme de dictionnaire (optionnel)
 - `user_profile_mapping` : liaison entre les attributs renvoyés par la route et ceux demandés par Logora
 
-Transmettez ces paramètres à Logora par email en indiquant votre nom d'application. Nous configurerons ce mode d'authentification pour vous.
+Entrez ces informations dans votre espace d'administration Logora, onglet Configuration > Authentification.
+Une fois que c'est fait, vos utilisateurs pourront directement se connecter.

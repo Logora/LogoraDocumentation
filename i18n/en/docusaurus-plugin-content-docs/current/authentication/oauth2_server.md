@@ -12,7 +12,8 @@ This authentication mode allows Logora to connect to your OAuth 2.0 server. Afte
 To set up this authentication mode, you need to create a client application for Logora on your OAuth 2.0 server, using the following parameter :
   `redirect_uri`: `https://app.logora.fr/auth/callback`
 
-Send us the following information so that we can configure your application :
+Retrieve the following information from your OAuth2 provider:
+
 - `client_id` : the public key of the created application
 - `client_secret` : the secret key of the created application
 - `login_url`: the URL of the authentication page
@@ -23,4 +24,4 @@ Send us the following information so that we can configure your application :
 - `user_profile_params`: URL parameters to send with this route, in dictionary form
 - `user_profile_mapping` : link between the attributes returned by the route and those requested by Logora
 
-Send these parameters to Logora by email (contact@logora.fr), indicating your application name. We will configure this authentication mode for you.
+Enter this information in your Logora administration area, Configuration > Authentication tab. Once this is done, your users will be able to log in directly to your debate space.

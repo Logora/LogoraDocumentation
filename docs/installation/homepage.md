@@ -83,6 +83,7 @@ Le code entier revient à ceci :
         s.src = 'https://cdn.logora.com/synthese.js'; // 'https://cdn.logora.com/widget.js' pour le widget
         (d.head || d.body).appendChild(s);
     })();
+</script>
 ```
 
 Vous pourrez ainsi insérer des questions de débats sous forme de vote sur vos pages rubriques concernés. 

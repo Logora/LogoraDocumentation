@@ -80,6 +80,7 @@ The entire code looks like this:
         s.src = 'https://cdn.logora.com/synthese.js'; // 'https://cdn.logora.com/widget.js' for the widget
         (d.head || d.body).appendChild(s);
     })();
+</script>
 ```
 
 This will allow you to insert debate questions in the form of votes on the relevant section.

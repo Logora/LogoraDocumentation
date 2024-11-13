@@ -19,7 +19,9 @@ L'installation en Javascript se fait en deux temps :
 ### Avant de commencer
 
 1) Si l'équipe Logora ne vous a pas créé d'espace d'administration, créez votre espace d'administration Logora : [Inscription](https://admin.logora.fr/#/signup)
+
 2) Munissez-vous de votre **nom d'application** disponible sur votre [espace d'administration](https://admin.logora.fr) dans l'onglet _Configuration > Général_.
+
 3) Autorisez les domaines sur lesquels vous désirez installer Logora. Pour cela, rendez-vous sur votre espace d'administration dans l'onglet _Configuration > Général > Sécurité > Domaines autorisés_. Par exemple, si le code inséré sur la page à l'URL _https://exemple.com/article/exemple-article_, ajoutez le domaine _https://exemple.com_ et _https://www.exemple.com_. 
 
 Exemples : _http://localhost:3000_ , _http://sous-domaine.exemple.com_, _http://www.localhost:3000_ , _http://www.sous-domaine.exemple.com_.
@@ -119,7 +121,7 @@ Pour créer un débat lié à la page, allez dans l'espace d'administration > cr
 
 Changer le contenu de l'objet _resource_ vous permet de spécifier ce que vous souhaitez insérer dans l'article.
 
-Le name indique le plus souvent la valeur "synthesis".
+Sur le code ci-avant l'objet _resource_ indique la valeur "synthesis".
 
 <CodeBlock language="javascript">
     {`
@@ -130,7 +132,10 @@ Le name indique le plus souvent la valeur "synthesis".
     `}
 </CodeBlock>
 <p style={{ marginTop: "1em" }}>
-    Vous pouvez explorer dans les onglets suivants toutes les possibilités d'affichage que propose l'objet resource.
+
+Cela permet d'afficher une question de débat quand un débat est lié à l'article. Si vous activez le module de commentaires, les commentaires s'afficheront quand aucun débat n'est lié à l'article. 
+
+    Vous pouvez explorer dans les onglets suivants toutes les possibilités de personnalisation que propose l'objet resource.
 </p>
 
 <Tabs className={styles.uniqueTabs}>

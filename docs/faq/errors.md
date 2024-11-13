@@ -34,5 +34,3 @@ Lors de l'installation de Logora pour enrichir vos articles avec des discussions
 ### Conclusion :
 
 Si, après avoir suivi toutes ces vérifications, le problème persiste, il est possible que l'origine du dysfonctionnement soit liée à Logora. Dans ce cas, nous vous invitons à contacter notre support technique pour obtenir de l'aide supplémentaire.
-
-Ne peut faire que la modération, souvent un rôle dédié aux équipes de Logora ou à vos prestataires en charge de la modération. 

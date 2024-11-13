@@ -25,7 +25,7 @@ Lors de l'installation de Logora pour enrichir vos articles avec des discussions
    - Assurez-vous que l'appel vers `render.logora.fr` s'exécute correctement. Vous pouvez vérifier cela également dans l'onglet "Réseau" de la console.
 
 6. **Analyse de la Réponse de `render`**
-   - Enfin, examinez la réponse de l'appel à `render`. Assurez-vous que le débat ou la consultation est bien retourné. Si les champs "content" ou "html" sont vides, il est probable qu'il s'agisse d'un problème de notre côté.
+   - Enfin, examinez la réponse de l'appel à `render`. Assurez-vous que le débat ou la consultation est bien retourné. Si les champs "content" ou "html" sont vides, il est probable qu'il s'agisse d'un problème du côté de Logora.
 
 7. **Association d'un Débat ou Activation des Commentaires**
    - Vérifiez que votre article ou consultation est bien associé à un débat Logora ou que les commentaires sont activés sur votre espace d'administration.

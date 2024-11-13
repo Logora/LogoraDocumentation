@@ -27,7 +27,7 @@ When installing Logora to enhance your articles with interactive discussions, is
    - Ensure the call to `render.logora.fr` is successfully executed. You can also verify this in the "Network" tab of the console.
 
 6. **Analysis of the Response from `render`**
-   - Finally, examine the response of the call to `render`. Ensure the debate or consultation is correctly returned. If the "content" or "html" fields are empty, it is likely a problem on our side.
+   - Finally, examine the response of the call to `render`. Ensure the debate or consultation is correctly returned. If the "content" or "html" fields are empty, it is likely a problem on Logora side.
 
 7. **Association of a Debate or Activation of Comments**
    - Verify that your article or consultation is associated with a Logora debate or that comments are activated in your administration area.

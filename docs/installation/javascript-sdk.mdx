@@ -141,7 +141,7 @@ Cela permet d'afficher une question de débat quand un débat est lié à l'arti
 </p>
 
 <Tabs className={styles.uniqueTabs}>
-    <TabItem value="Installation classique" label="Synthesis" default attributes={{className: styles.tabItem}}>
+    <TabItem value="Installation classique" label="Installation classique" default attributes={{className: styles.tabItem}}>
         <div>
             La valeur synthesis est la valeur qui est utilisée dans la très grande majorité des cas par nos partenaires. L'ID est l'identifiant de l'article. Synthesis permet d'afficher une question de débat lorsqu'un débat est lié à l'article comme ici :
             <figure> 
@@ -171,7 +171,7 @@ Cela permet d'afficher une question de débat quand un débat est lié à l'arti
             </figure>
         </div>
     </TabItem>
-    <TabItem value="Widget" label="Widget" attributes={{className: styles.tabItem}}>
+    <TabItem value="Widget" label="Débats raccourcis" attributes={{className: styles.tabItem}}>
         <CodeBlock language="javascript">
             {`
                 resource: {
@@ -184,10 +184,10 @@ Cela permet d'afficher une question de débat quand un débat est lié à l'arti
             Ce code propose la même chose que synthèse mais la question de débat s'affiche avec un format en une ligne. L'ID est l'identifiant de l'article.
         </p>
         <figure> 
-            <img src="/img/synthese_widget.png" /> 
+            <img src="/img/synthese_widget.png" alt="Debate with a light design" className={styles.width600} /> 
         </figure>
     </TabItem>
-    <TabItem value="Commentaires" label="Commentaires" attributes={{className: styles.tabItem}}>
+    <TabItem value="Commentaires" label="Commentaires (uniquement)" attributes={{className: styles.tabItem}}>
         <CodeBlock language="javascript">
             {`
                 resource: {
@@ -203,7 +203,7 @@ Cela permet d'afficher une question de débat quand un débat est lié à l'arti
             <img src="/img/emptycomment.png" alt="Empty comment system"  className={styles.maxwidth}/> 
         </figure>
     </TabItem>
-    <TabItem value="Vote" label="Vote" attributes={{className: styles.tabItem}}>
+    <TabItem value="Vote" label="Vote (uniquement)" attributes={{className: styles.tabItem}}>
         <CodeBlock language="javascript">
             {`
                 resource: {
@@ -213,7 +213,7 @@ Cela permet d'afficher une question de débat quand un débat est lié à l'arti
             `}
         </CodeBlock>
         <p style={{ marginTop: "1em" }}>
-            Pas d'ID à passer ici. Vote permet d'épingler un débat ou d'afficher le dernier créé.
+            Pas d'ID à passer ici. Vote permet d'épingler un question de débat avec le vote uniquement.
         </p> 
         <figure> 
             <img src="/img/voteinstallation.png" alt="Vote installation"  className={styles.midwidth}/> 
@@ -235,7 +235,7 @@ Cela permet d'afficher une question de débat quand un débat est lié à l'arti
             <img src="/img/argumentinstallation.png" alt="Displaying an argument"  className={styles.maxwidth}/> 
         </figure>
     </TabItem>
-    <TabItem value="Group" label="Group" attributes={{className: styles.tabItem}}>
+    <TabItem value="Group" label="Débat (par id)" attributes={{className: styles.tabItem}}>
         <CodeBlock language="javascript">
             {`
                 resource: {
@@ -248,7 +248,7 @@ Cela permet d'afficher une question de débat quand un débat est lié à l'arti
             L'ID correspond ici à celui du débat. Group permet d'afficher un débat en particulier via son ID.
         </p>
     </TabItem>
-    <TabItem value="Consultation" label="Consultation" attributes={{className: styles.tabItem}}>
+    <TabItem value="Consultation" label="Consultation (uniquement)" attributes={{className: styles.tabItem}}>
        <CodeBlock language="javascript">
             {`
                 resource: {
@@ -258,13 +258,14 @@ Cela permet d'afficher une question de débat quand un débat est lié à l'arti
             `}
         </CodeBlock>
         <p style={{ marginTop: "1em" }}>
-            L'ID correspond ici à celui de la consultation. Group permet d'afficher une consultation en particulier via son ID.
+            L'ID correspond ici à celui de la consultation. Consultation permet d'afficher une consultation en particulier via son ID.
         </p>
     </TabItem>
 </Tabs>
 
 #### 2.3 Afficher plusieurs blocs dans la page article (optionnel)
 
+Dans le cas où vous voulez insérer des débats ET des commentaires sur la page article (par exemple), voici la procédure à suivre.
 S'il y a plusieurs blocs dans la page, le script embed.js ne doit être inséré qu'une seule fois.
 Dans ce cas-là, il faut créer un objet de configuration par bloc, et mettre le nom dans "data-object-id". Exemple pour insérer une question de débat et des commentaires dans la même page :
 

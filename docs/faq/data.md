@@ -15,7 +15,7 @@ Voici un manuel pour utiliser ces routes, que vous pouvez tester à l'aide de la
 - Récupérez votre clé d'API et votre clé secrète qui serviront pour l'authentification.
 
 
-#### 1. Récupérer un jeton d'accès
+### 1. Récupérer un jeton d'accès
 
 Un jeton d'accès OAuth 2.0 est généré en utilisant votre clé d'API et votre clé secrète, grâce à une requête POST vers notre route d'autorisation. Le scope à demander est le scope `authentication`. 
 
@@ -33,7 +33,7 @@ Ce jeton `Bearer` doit être ajouté dans l'en-tête `Authentication` des requê
 
 
 
-#### 2. Appeler l'API
+### 2. Appeler l'API
 
 Pour toutes les routes décrites ci-dessous :
 
@@ -44,7 +44,7 @@ Pour toutes les routes décrites ci-dessous :
 **Authentification**: jeton `Bearer` avec le scope `authentication`
 
 
-##### 2.1. Anonymiser un utilisateur
+#### 2.1. Anonymiser un utilisateur
 
 Cette route anonymise toutes les données personnelles liées à l'utilisateur : prénom, nom, email, identifiant unique, image, tout en gardant ses contributions et son activité.
 > :warning: Cette opération n'est pas réversible. Veuillez prendre des précautions lorsque vous utilisez cette route d'API.
@@ -59,7 +59,7 @@ Cette route anonymise toutes les données personnelles liées à l'utilisateur :
 **Réponse**: Code 200 si l'anonymisation est réussie.
 
 
-##### 2.2. Supprimer un utilisateur
+#### 2.2. Supprimer un utilisateur
 
 Cette route supprime l'utilisateur ainsi que toutes ces données associées, c'est-à-dire l'ensemble de ces contributions.
 > :warning: Cette opération n'est pas réversible. Veuillez prendre des précautions lorsque vous utilisez cette route d'API.
@@ -74,7 +74,7 @@ Cette route supprime l'utilisateur ainsi que toutes ces données associées, c'e
 **Réponse**: Code 200 si la suppression est réussie.
 
 
-##### 2.3. Récupérer les données d'une liste d'utilisateurs
+#### 2.3. Récupérer les données d'une liste d'utilisateurs
 
 Cette route renvoie une liste d'utilisateurs avec leurs données associées.
 Pour cette route, utilisez un jeton avec le scope `public`, ou utilisez l'autorisation par clé d'API.

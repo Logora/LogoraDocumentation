@@ -6,7 +6,7 @@ title: Performance
 Logora met tout en oeuvre pour que le code inséré aie le moins d'impact sur le chargement de vos pages. Voici quelques détails sur le fonctionnement de Logora pour mieux évaluer la performance des scripts insérés.
 
 
-#### Synthèse en pied d'article
+### 1) Synthèse en pied d'article
 
 
 Le code de la synthèse inséré dans vos articles procède en quatre étapes :
@@ -17,7 +17,7 @@ Le code de la synthèse inséré dans vos articles procède en quatre étapes :
 
 > Si vous avez des contraintes élevées en terme de performance, utilisez l'[insertion côté serveur de la synthèse](installation/api.md)
 
-#### Espace de débat
+### 2) Espace de débat
 
 Le code de l'espace de débat procède de la même manière que celui de la synthèse, mais télécharge plus de scripts et fait plus d'appels à notre API en fonction des actions et de la navigation de l'utilisateur. Le fichier initial **debat.js** a une taille de **60 Ko**.
 

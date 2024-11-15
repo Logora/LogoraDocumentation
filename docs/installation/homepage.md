@@ -9,9 +9,8 @@ Un exemple sur Ouest-France :
 
 ![Ouest-France homepage](/img/ouest-france-homepage.png)
 
-#### Installation
 
-##### A) Installer un module de page d'accueil unique
+### 1) Installer un module de page d'accueil unique
 
 
 Insérez le code Javascript du module de page d'accueil à l'endroit où vous souhaitez voir apparaître le module. Ceci est un exemple de code Javascript qui intègre le module :
@@ -52,7 +51,7 @@ Cela se matérialisera par un épingle dans votre liste de débats.
 ![Pin debate](/img/pin_debate.png)
 
 
-##### B) Installer un module de page d'accueil différent sur chaque rubrique
+### 2) Installer un module de page d'accueil différent sur chaque rubrique
 
 Si vous souhaitez installer différentes questions sur différentes rubriques, il vous faut installer le conteneur **logora_synthese** commme décrit dans l'article "Installation Javascript" sur chaque des pages rubriques concernés, en ajoutant l'information 
 

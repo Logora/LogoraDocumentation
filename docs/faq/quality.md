@@ -18,7 +18,7 @@ Ils sont modérés a priori. 80% à 85% des arguments sont traités automatiquem
 
 2) Les arguments validés par la modération sont publiés. Notre algorithme de pertinence note chacune des contributions et met en avant celles qui paraissent les plus travaillées. 
 
-#### Fonctionnement de la modération
+### 1) Fonctionnement de la modération
 
 La gestion de la modération est proposée par Logora (solution recommandée), elle peut aussi être prise en charge par vos prestataires de modération. 
 
@@ -43,7 +43,7 @@ Un score de modération haut signifie que ce genre d'argument est inconnu ou a �
 
 Pour en savoir plus sur la mise en place de la modération, lisez notre article de documentation dans *Configuration > Modération*. 
 
-#### Fonctionnement de la hiérarchisation des arguments
+### 2) Fonctionnement de la hiérarchisation des arguments
 
 Nous avons créé un algorithme "de pertinence" mettant en avant les arguments les mieux écrits. 
 

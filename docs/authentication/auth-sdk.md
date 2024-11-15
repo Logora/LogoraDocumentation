@@ -40,7 +40,7 @@ Code standard à copier/coller et compléter :
 <div id="logora_app"></div>
 ```
 
-#### 2. Utiliser la librairie
+### 2. Utiliser la librairie
 
 Une fois la librairie insérée, l'authentification peut être déclenchée à l'aide d'un événement Javascript nommé `logora:authentication:require` :
 
@@ -54,7 +54,7 @@ Une fenêtre sera alors présentée à l'utilisateur pour qu'il se connecte ou c
 
 Une fois l'authentification terminée, l'utilisateur sera redirigé vers la page sur laquelle il a commencé le processus.
 
-#### 3. Événement de connexion
+### 3. Événement de connexion
 
 Un événement est déclenché lorsque l'utilisateur est connecté. Cet événement renvoie des informations sur l'utilisateur connecté.
 
@@ -68,7 +68,7 @@ Voici un aperçu de l'objet `user` :
 { "first_name": "Jean", "last_name": "Dupont", "image_url": "https://image.com/my-image", "points": 100 }
 ```
 
-#### 4. Événement de déconnexion
+### 4. Événement de déconnexion
 
 Un événement est déclenché lorsque l'utilisateur se déconnecte. Il ne renvoie pas d'informations.
 

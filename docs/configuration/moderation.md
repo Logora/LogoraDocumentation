@@ -8,13 +8,13 @@ Vous pouvez choisir votre système de modération depuis l'espace d'administrati
 
 ![Configuration de la modération](/img/moderation.png)
 
-#### Type de modération
+### 1) Type de modération
 
 `Avant publication du contenu`- **recommandé** : les contributions passeront par la modération avant leur publication (modération *a priori*)  
 
 `Après publication du contenu` : les contributions seront publiées puis passeront par la modération (modération *a posteriori*)
 
-#### Responsable de la modération 
+### 2) Responsable de la modération 
 
 `Manuelle` : vous gérez vous-même la modération.
 

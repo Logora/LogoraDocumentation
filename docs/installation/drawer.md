@@ -7,7 +7,7 @@ Cet article de documentation est complémentaire à l'installation "classique" v
 
 L'espace de débat peut être intégré sous forme de tiroir qui s'ouvre par la droite de l'écran ([démo](https://demo.logora.fr/drawer.html)).
 
-Il faut quoi qu'il en soit d'abord installer l'espace de débat de manière "classique". 
+Il faut quoi qu'il en soit d'abord installer l'espace de débat de manière [classique](../javascript-sdk).
 
 #### Installation
 

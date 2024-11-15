@@ -202,6 +202,10 @@ Cela permet d'afficher une question de débat quand un débat est lié à l'arti
             L'ID est l'identifiant de l'article. 
             Ce code propose d'afficher uniquement des commentaires, sans la fonctionnalité des débats.
         </p>
+
+        <figure> 
+            <img src="/img/emptycomment.png" alt="Empty comment system"  className={styles.maxwidth}/> 
+        </figure>
     </TabItem>
     <TabItem value="Vote" label="Vote" attributes={{className: styles.tabItem}}>
         <CodeBlock language="javascript">
@@ -214,8 +218,27 @@ Cela permet d'afficher une question de débat quand un débat est lié à l'arti
         </CodeBlock>
         <p style={{ marginTop: "1em" }}>
             Pas d'ID à passer ici. 
-            Vote permet d'épingler un débat ou d'afficher le dernier créer.
+            Vote permet d'épingler un débat ou d'afficher le dernier créé.
         </p> 
+        <figure> 
+            <img src="/img/voteinstallation.png" alt="Vote installation"  className={styles.maxwidth}/> 
+        </figure>
+    </TabItem>
+    <TabItem value="Arguments" label="Arguments" attributes={{className: styles.tabItem}}>
+        <CodeBlock language="javascript">
+            {`
+                resource: {
+                    name: "argument", // Valeur alternative: "proposition"
+                    id: "ARGUMENT_IDENTIFIER" // Identifiant unique de la contribution
+                }
+            `}
+        </CodeBlock>
+        <p style={{ marginTop: "1em" }}>
+            L'ID correspond ici à celui de l'argument ou de la proposition. Argument ou proposal permet d'afficher un argument ou une proposition en particulier via son ID. 
+        </p>
+        <figure> 
+            <img src="/img/argumentinstallation.png" alt="Displaying an argument"  className={styles.maxwidth}/> 
+        </figure>
     </TabItem>
     <TabItem value="Group" label="Group" attributes={{className: styles.tabItem}}>
         <CodeBlock language="javascript">
@@ -243,19 +266,6 @@ Cela permet d'afficher une question de débat quand un débat est lié à l'arti
             L'ID correspond ici à celui de la consultation. Group permet d'afficher une consultation en particulier via son ID.
         </p>
     </TabItem>
-    <TabItem value="Arguments" label="Arguments" attributes={{className: styles.tabItem}}>
-        <CodeBlock language="javascript">
-            {`
-                resource: {
-                    name: "argument", // Valeur alternative: "proposition"
-                    id: "ARGUMENT_IDENTIFIER" // Identifiant unique de la contribution
-                }
-            `}
-        </CodeBlock>
-        <p style={{ marginTop: "1em" }}>
-            L'ID correspond ici à celui de l'argument ou de la proposition. Argument ou proposal permet d'afficher un arugment ou une proposition en particulier via son ID. 
-        </p>
-  </TabItem>
 </Tabs>
 
 #### 2.3 Afficher plusieurs blocs dans la page article (optionnel)
@@ -374,4 +384,4 @@ debate: {
 
 Si aucun débat n'est associé à la page, l'objet _debate_ sera _null_.
 
-Il ne reste plus qu'à implémenter l'authentification unique et à personnaliser Logora pour lancer votre premier débat.
+Il ne reste plus qu'à implémenter l'[authentification unique](../../authentication/introduction) et à [personnaliser](../../configuration/theme) Logora pour lancer votre premier débat.

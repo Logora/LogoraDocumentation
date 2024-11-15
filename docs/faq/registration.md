@@ -10,7 +10,7 @@ L'efficacité de votre parcours d'inscription est fondamentale à la réussite d
 Cette étape peut sembler évidente, mais nous avons découvert que certains de nos partenaires les plus importants présentaient des pages d'inscription cassées, mal comprises ou peu performantes (taux de rebond allant jusqu'à 80% sur le parcours d'inscription !). 
 
 
-#### Problèmes rencontrés 
+### Problèmes rencontrés 
 
 1) La redirection vers une page d'inscription avec une représentation graphique différente de celle précédente : Ledit changement pose  problème d’un point de vue du “sentiment sécuritaire” que pourrait rechercher l’utilisateur. En effet, l’inscription étant un point important de friction entre l’utilisateur et la marque, rediriger le user à cette étape cruciale vers une page avec une présentation graphique différente, risque de lui donner l’impression que ses données ne sont pas en parfaite sécurité;
 
@@ -23,7 +23,7 @@ Seul l'email est nécessaire au bon fonctionnement de l'espace.
 
 Vous pouvez demander d'autres informations mais le plus court reste le plus efficace. 
 
-#### Exemples à suivre
+### Exemples à suivre
 
 Nous mettons à votre disposition une inscription toute faite, que vous pouvez activer depuis la configuration en choisissant `Social`. 
 
@@ -41,7 +41,7 @@ Si vous utilisez l'inscription SSO, nous recommandons que votre page d'inscripti
 
 <img src="/img/capital_registration.png" alt="Capital registration"/>
 
-#### Optimisation continue 
+### Optimisation continue 
 
 Analysez votre parcours en utilisant les outils à votre disposition (Hotjar, Google Analytics, Google Tag Manager) pour évaluer les performances de chacun des champs et optimiser votre conversion. 
 

@@ -7,7 +7,7 @@ title: Création des utilisateurs
 
 L'utilisateur lorsqu'il participe pour la première fois sur votre espace de discussion se crée un profil. 
 
-Cette création de profil se fait automatiquement pour l'utilisateur lorsqu'il est inscrit dans votre système comme décrit dans les articles liés au [Single Sign On](../authentication/introduction.md)
+Cette création de profil se fait automatiquement pour l'utilisateur lorsqu'il est inscrit dans votre système comme décrit dans les articles liés au [Single Sign On](../authentication/introduction.md).
 
 Vous nous envoyez les informations suivantes : prénom / nom / mail pour que nous puissions créer le profil de l'utilisateur. 
 
@@ -17,7 +17,7 @@ Dans le cas où vous ne nous transmettez aucun prénom / nom, nous générons de
 
 Si vous le souhaitez, nous pouvons ajouter une pop-up d'onboarding pour demander à l'utilisateur de changer de prénom / nom et d'avatar. 
 
-<img src="/img/onboarding.png" alt="Onboarding utilisateur" width="400"/>
+<img src="/img/onboardingbox.png" alt="Onboarding utilisateur" width="400"/>
 
 Dans ce cas, il faut demander à Logora d'activer ce paramètre. 
 

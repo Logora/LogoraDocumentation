@@ -20,7 +20,7 @@ Ce mode d'authentification permet de connecter automatiquement les utilisateurs 
 
 > ATTENTION : le jeton JWT transmis à Logora doit toujours être mis à jour selon l'état de l'utilisateur, qu'il soit connecté ou non. Si les pages de votre site web sont derrière un cache, notamment les pages qui contiennent la synthèse du débat, il est possible que le jeton JWT ne soit pas mis à jour. Si la mise en cache gêne la création du jeton JWT, utilisez une autre méthode d'authentification.
 
-#### 1. Génération du jeton JWT
+### 1. Génération du jeton JWT
 
 Grâce à la [sérialisation JSON Web Token](https://jwt.io/), les éditeurs peuvent transmettre les données utilisateurs existantes pour fournir aux utilisateurs une session authentifiée transparente sur Logora. Le jeton JWT doit être généré sur vos serveurs puis transmis à Logora via les variables de configuration javascript. Le jeton peut être signé ou chiffré, en fonction du degré de confidentialité que vous souhaitez obtenir pour les informations utilisateur.
 

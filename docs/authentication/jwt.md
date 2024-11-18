@@ -122,7 +122,7 @@ var logora_config = {
 
 Il faut également remplir l'interface sur l'espace d'administration :
 
-<img src="/img/jwtadmin.png" alt="Admin JWT" width="400" >
+![Admin JWT](/img/jwtadmin.png)
 
 ### 3. Déconnexion de l'utilisateur
 

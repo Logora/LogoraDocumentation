@@ -113,8 +113,6 @@ Code standard à copier/coller et compléter :
 </script>
 ```
 
-**resource.id (requis)** : identifiant unique lié à la page. Cet identifiant doit être unique pour chaque page où est inséré le bloc. Il permettra de récupérer l'appel contributif correspondant à la page. Par exemple, l'identifiant peut être l'ID dans votre base de données de l'article présent sur la page, ou un slug unique ('exemple-identifiant').
-
 > Pour des raisons de performance, les articles publiés il y a plus de 18 mois ne sont pas récupérés. La synthèse ne s'affichera pas.
 
 Pour créer un débat lié à la page, allez dans l'espace d'administration > créer un débat en sélectionnant l'article concerné dans la liste des derniers articles récupérés.
@@ -123,22 +121,7 @@ Pour créer un débat lié à la page, allez dans l'espace d'administration > cr
 
 Changer le contenu de l'objet _resource_ vous permet de spécifier ce que vous souhaitez insérer dans l'article.
 
-Sur le code ci-avant l'objet _resource_ indique la valeur "synthesis".
-
-<CodeBlock language="javascript">
-    {`
-        resource: {
-            name: "synthesis",
-            id: "PAGE_IDENTIFIER" // Identifiant unique de la page
-        }
-    `}
-</CodeBlock>
-<p style={{ marginTop: "1em" }}>
-
-Cela permet d'afficher une question de débat quand un débat est lié à l'article. Si vous activez le module de commentaires, les commentaires s'afficheront quand aucun débat n'est lié à l'article. 
-
-    Vous pouvez explorer dans les onglets suivants toutes les possibilités de personnalisation que propose l'objet resource.
-</p>
+Vous pouvez explorer dans les onglets suivants toutes les possibilités de personnalisation.
 
 <Tabs className={styles.uniqueTabs}>
     <TabItem value="Installation classique" label="Installation classique" default attributes={{className: styles.tabItem}}>

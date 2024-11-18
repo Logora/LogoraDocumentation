@@ -110,7 +110,7 @@ eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkExMjhHQ00ifQ.FuNsYUYJzh294MQZ_71zOxBLiiOkU8UKF
 
 Avant de passer à la deuxième étape, vérifiez le bon fonctionnement du jeton sur le site web : https://dinochiesa.github.io/jwt/
 
-#### 2. Transmission du jeton à Logora
+### 2. Transmission du jeton à Logora
 
 Une fois que le message a été généré, il doit être transmis via la variable de configuration Javascript, `remote_auth`, dans le code de l'espace de débat.
 
@@ -120,11 +120,15 @@ var logora_config = {
 }
 ```
 
-#### 3. Déconnexion de l'utilisateur
+Il faut également remplir l'interface sur l'espace d'administration :
+
+<img src="/img/jwtadmin.png" alt="Admin JWT" width="400" >
+
+### 3. Déconnexion de l'utilisateur
 
 Pour déconnecter l'utilisateur, retirez le paramètre `remote_auth` ou transmettez une chaîne de caractères vide. Si le paramètre est vide, Logora considère que l'utilisateur est déconnecté.
 
-#### 4. Redirection vers l'espace de débat après connexion de l'utilisateur
+### 4. Redirection vers l'espace de débat après connexion de l'utilisateur
 
 Lorsqu'un utilisateur non connecté veut effectuer une action sur l'espace de débat, il est redirigé vers votre page de connexion ou d'inscription. Lors de l'insertion de l'espace de débat et de la synthèse, vous devez définir les URLs de connexion et d'inscription, respectivement via les variables auth.login_url et auth.registration_url.
 

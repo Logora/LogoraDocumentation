@@ -4,35 +4,39 @@ title: Installation Javascript
 description: Install Logora using our universal Javascript code.
 ---
 
-import Tabs from "@theme/Tabs";
-import TabItem from "@theme/TabItem";
-import CodeBlock from '@theme/CodeBlock';
-import styles from '../../../../../docs/installation/styles.module.css';
+import Tabs from “@theme/Tabs”;
+import TabItem from “@theme/TabItem”;
+import CodeBlock from ‘@theme/CodeBlock’;
+import styles from ‘../../../../../docs/installation/styles.module.css’;
 
 Logora can be installed on any site by inserting the native JavaScript code. This documentation is intended for developers. Logora also offers custom documentation for [Wordpress installation](../wordpress).
 
 Javascript installation is a two-stage process:
 
 1. Insert the discussion forum
-2. Insert the summary of the debate on your article pages
+2. Insert the call to action on your article pages
 
 ### Before you start
 
-- If the Logora team has not created an administration space for you, create your Logora administration space: [Register](https://admin.logora.fr/#/signup)
+- If the Logora team has not created an administration space for you, create your Logora administration space: [Register](https://admin.logora.fr/#/signup).
 - Get your **application name** available on your [administration space](https://admin.logora.fr) in the tab _Configuration > General_.
 - Authorise the domains on which you wish to install Logora. To do this, go to your administration space in the tab _Configuration > General > Security > Authorised domains_. For example, if the code inserted on the page has the URL *https://exemple.com/article/exemple-article*, add the domain *https://exemple.com*. Example: _http://localhost:3000_ , *http://sous-domaine.exemple.com*. 
 
-Important: adding domains to the administration space works like adding a tag, so don't forget to press "Enter" when inserting your URLs.
+Examples : _http://localhost:3000_ , _http://sous-domaine.exemple.com_, _http://www.localhost:3000_ , _http://www.sous-domaine.exemple.com_.
+
+Important: adding domains to the administration space works like adding a tag, so don’t forget to press “Enter” when inserting your URLs.
 
 ### 1. Setting up the discussion forum
 
 The debate area is the main platform where your users can take part in debates. The discussion forum is inserted on a dedicated page on your site.
 
-Let's take the example of a website available at the address *https://votresite.com*. The website editor would like to access the discussion forum via the address *https://votresite.com/espace-debat*. Here are the steps to follow to insert the discussion forum:
+_Particular case: you can insert the discussion area in drawer format so that the user remains on your article page. This requires you to install the space by continuing to follow the steps below and then adding what is described in the article [integration in drawer](installation/drawer)_.
+
+Let’s take the example of a website available at the address *https://votresite.com*. The website editor would like to access the discussion forum via the address *https://votresite.com/espace-debat*. Here are the steps to follow to insert the discussion forum:
 
 #### 1.1. Add a page to insert the discussion forum
 
-Create a dedicated page on which to insert the discussion forum. This page is available at *https://votresite.com/espace-debat*. The 'debate-space' prefix is the default. You can change it in the administration area.
+Create a dedicated page on which to insert the discussion forum. This page is available at _https://votresite.com/espace-debat_. The ‘debate-space’ prefix is the default. You can change it in the administration area in _Configuration > Personnalisation_.
 
 #### 1.2. Insert the JavaScript code and your configuration variables
 
@@ -47,15 +51,15 @@ Standard code to copy/paste and complete:
 <script>
   // Configuration variables, the application name is available in your administration space
   var logora_config = {
-    shortname: "APPLICATION_NAME",
+    shortname: “APPLICATION_NAME”,
   };
 </script>
-<script src="https://cdn.logora.com/debat.js"></script>
+<script src=“https://cdn.logora.com/debat.js”></script>
 ```
 
 ```html
 <!-- Insert this tag where the debate space is to be displayed -->
-<div id="logora_app"></div>
+<div id=“logora_app”></div>
 ```
 
 #### 1.3. Rewriting the URLs for the debate area routes
@@ -65,7 +69,7 @@ For example, if a user wishes to access their profile directly via the URL *http
 
 URL rewriting also allows the Logora team to add new modules directly to new URLs on your site without asking you to intervene.
 
-Use URL rewriting on your platform or CMS so that paths starting with 'debate-space/' (or your chosen prefix) point to the page where the debate space is inserted.
+Use URL rewriting on your platform or CMS so that paths starting with ‘debate-space/’ (or your chosen prefix) point to the page where the debate space is inserted.
 
 Go to *https://votresite.com/espace-debat/debats*. You are now on the discussion index homepage!
 
@@ -77,6 +81,10 @@ To change the prefix and URL paths of the debate forum pages, go to [URL path co
 
 Insert the Javascript code where you want the calls to action to appear (comments, debate or consultation questions). This block is often inserted after the article, but it can be added inside the article if certain constraints prevent you from adding new functionalities after the article. This is an example of the Javascript code that loads and displays the block in your article. It must be inserted on all your article pages.
 
+This is an example of Javascript code that loads and displays the block in your article. It must be inserted on all your article pages.
+
+In the event of display problems, please refer to the article [Installation in the article - common errors](faq/errors.md).
+
 #### 2.1 Insert JavaScript code
 
 The **logora_embed** container is where the block is loaded.
@@ -84,26 +92,26 @@ The **logora_embed** container is where the block is loaded.
 Standard code to copy/paste and complete:
 
 ```javascript
-<div class="logora_embed" data-object-id="logora_config"></div>
+<div class=“logora_embed” data-object-id=“logora_config”></div>
 <script>
     // Configuration variables
     var logora_config = {
-        shortname: "APPLICATION_NAME", // Application name in your administration space
+        shortname: “APPLICATION_NAME”, // Application name in your administration space
         resource: {
-            name: "synthesis",
-            id: "PAGE_IDENTIFIER" // Unique identifier for the page
+            name: “synthesis”,
+            id: “PAGE_IDENTIFIER” // Unique identifier for the page
         }
     };
 
     (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://cdn.logora.com/embed.js';
+        var d = document, s = d.createElement(‘script’);
+        s.src = ‘https://cdn.logora.com/embed.js’;
         (d.head || d.body).appendChild(s);
     })();
 </script>
 ```
 
-**resource.id (required)**: unique identifier linked to the page. This identifier must be unique for each page where the block is inserted. It will be used to retrieve the call for contributions corresponding to the page. For example, the identifier can be the ID in your database of the article on the page, or a unique slug ('example-identifier').
+**resource.id (required)**: unique identifier linked to the page. This identifier must be unique for each page where the block is inserted. It will be used to retrieve the call for contributions corresponding to the page. For example, the identifier can be the ID in your database of the article on the page, or a unique slug (‘example-identifier’).
 
 > For performance reasons, articles published more than 18 months ago are not retrieved. The synthesis will not be displayed.
 
@@ -113,134 +121,143 @@ To create a debate linked to the page, go to the administration area > create a 
 
 Changing the content of the _resource_ object lets you specify what you want to insert in the article.
 
-The name usually indicates the value "synthesis".
-
-<CodeBlock language="javascript">
-    {`
-        resource: {
-            name: "synthesis",
-            id: "PAGE_IDENTIFIER" // Unique identifier for the page
-        }
-    `}
-</CodeBlock>
-<p style={{ marginTop: "1em" }}>
-In the following tabs, you can explore all the display possibilities offered by the resource object.
-</p>
+You can explore all the customisation options in the following tabs.
 
 <Tabs className={styles.uniqueTabs}>
-    <TabItem value="Synthesis" label="Synthesis" default attributes={{className: styles.tabItem}}>
+    <TabItem value=“Synthesis” label=“Synthesis” default attributes={{className: styles.tabItem}}>
         <div>
-            The synthesis value is the value used in the vast majority of cases by our partners. The ID is the article identifier. Synthesis is used to display a debate question when a debate is linked to the article, as shown here :
+        <CodeBlock language=“javascript”>
+            {`
+                resource: {
+                    name: “synthesis”,
+                    id: “PAGE_IDENTIFIER” // Unique identifier for the page
+                }
+            `}
+        </CodeBlock>
+        <p style={{ marginTop: “1em” }}>
+            The synthesis value is the value used in the vast majority of cases by our partners. The ID is the article identifier. Synthesis is used to display a debate question when a debate is linked to the article, as shown here : 
             <figure> 
-                <img src="/img/synthese.png" alt="Marianne synthesis" /> 
+                <img src=“/img/debatesynthesis.png” alt=“synthesis”  className={styles.maxwidth}/> 
             </figure>
             If no discussion is linked to the article, you can decide to display comments instead, by authorising the addition of comments in the administration space configuration.
             <h4>Optional: Allow comments to be added when no debate is linked to the article</h4>
             You can activate a comments area on your contributor space from your administration area <i>Configuration > Modules</i>.
-            Here <a href="https://www.loom.com/share/f36e14002c3a456f85aed8484f9fb7ed" target="_blank">une vidéo</a> is a demo demo on how to install comments and visuals for readers.
+            Here <a href=“https://www.loom.com/share/f36e14002c3a456f85aed8484f9fb7ed” target=“_blank”>is a demo video</a> on how to install comments for readers.
             <figure> 
-                <img src="https://github.com/Logora/LogoraDocumentation/assets/28570918/529423a0-eaf6-4736-8174-64c3c303b9b4" /> 
+                <img src=“/img/activecommentmodules.png” alt=“Activate comment modules from your admin space” className={styles.maxwidth} /> 
             </figure>
-           By default, this will activate a simple banner with a call to action "Would you like to comment on this article? Comment on it".
-            An <a href="https://www.marianne.net/agora/avis-aux-lecteurs-rejoignez-notre-espace-logora-et-devenez-le-debatteur-a-suivre" target="_blank">example on Marianne here</a>
+           By default, this will activate a simple banner with a call to action “Would you like to comment on this article? Comment on it”.
+            An <a href=“https://www.marianne.net/agora/avis-aux-lecteurs-rejoignez-notre-espace-logora-et-devenez-le-debatteur-a-suivre” target=“_blank”>example on Marianne here</a>
             <figure> 
-                <img src="https://github.com/Logora/LogoraDocumentation/assets/28570918/bb31dd2b-b7f6-46c3-8757-b7dbbccdf186" /> 
+                <img src=“/img/commentlight.png” alt=“Light call to action for comments” className={styles.maxwidth}/> 
             </figure>
            To generate more interaction, you can choose to present the best comments in addition to the call to action (1, 2 or 3).
            This option should be favoured if you have the possibility of giving more space to the comments.
           An example on Milenio with 3 comments displayed:
             <figure> 
-                <img src="https://github.com/Logora/LogoraDocumentation/assets/28570918/c8a9421a-0c03-471b-9641-d12fb444ec31" /> 
+                <img src=“/img/3comments.png” alt=“Three comments displayed” className={styles.maxwidth}/> 
             </figure>
             Recommended behaviour: they display the number of comments at the top of the article with the option of clicking on the comment icon, which automatically scrolls down to the comments.            
             <figure> 
-                <img src="https://github.com/Logora/LogoraDocumentation/assets/28570918/eabed076-0667-42d6-b89f-584c89202bc0" /> 
+                <img src=“/img/commentnotification.png” alt=“Notification for comments” className={styles.minwidth} /> 
             </figure>
         </div>
     </TabItem>
-    <TabItem value="Widget" label="Widget" attributes={{className: styles.tabItem}}>
-        <CodeBlock language="javascript">
+    <TabItem value=“Widget” label=“Alternative design” attributes={{className: styles.tabItem}}>
+        <CodeBlock language=“javascript”>
             {`
                 resource: {
-                    name: "widget",
-                    id: "PAGE_IDENTIFIER" // Unique identifier for the page
+                    name: “widget”,
+                    id: “PAGE_IDENTIFIER” // Unique identifier for the page
                 }
             `}
         </CodeBlock>
-        <p style={{ marginTop: "1em" }}>
+        <p style={{ marginTop: “1em” }}>
         This code proposes the same thing as synthesis, but the debate question is displayed in a one-line format. The ID is the article identifier.
         </p>
         <figure> 
-            <img src="/img/synthese_widget.png" /> 
+            <img src=“/img/synthese_widget.png” alt=“Debate with a light design” className={styles.width600} /> 
         </figure>
     </TabItem>
-    <TabItem value="Comments" label="Comments" attributes={{className: styles.tabItem}}>
-        <CodeBlock language="javascript">
+    <TabItem value=“Comments” label=“Comments - only” attributes={{className: styles.tabItem}}>
+        <CodeBlock language=“javascript”>
             {`
                 resource: {
-                    name: "comments",
-                    id: "SOURCE_IDENTIFIER" // Unique identifier for the page
+                    name: “comments”,
+                    id: “SOURCE_IDENTIFIER” // Unique identifier for the page
                 }
             `}
         </CodeBlock>
-        <p style={{ marginTop: "1em" }}>
+        <p style={{ marginTop: “1em” }}>
            The ID is the article identifier. 
            This code proposes to display only comments, without the debates functionality.
         </p>
+        <figure> 
+            <img src=“/img/emptycomment.png” alt=“Empty comment system”  className={styles.maxwidth}/> 
+        </figure>
     </TabItem>
-    <TabItem value="Vote" label="Vote" attributes={{className: styles.tabItem}}>
-        <CodeBlock language="javascript">
+    <TabItem value=“Vote” label=“Vote - only” attributes={{className: styles.tabItem}}>
+        <CodeBlock language=“javascript”>
             {`
                 resource: {
-                    name: "vote",
-                    id: "vote" // No ID needed here
+                    name: “vote”,
+                    id: “vote” // No ID needed here
                 }
             `}
         </CodeBlock>
-        <p style={{ marginTop: "1em" }}>
+        <p style={{ marginTop: “1em” }}>
             No ID required. 
             Vote allows you to pin a debate or display the last one created.
         </p> 
+       <figure> 
+          <img src=“/img/voteinstallation.png” alt=“Vote installation”  className={styles.midwidth}/> 
+       </figure>
     </TabItem>
-    <TabItem value="Group" label="Group" attributes={{className: styles.tabItem}}>
-        <CodeBlock language="javascript">
+    <TabItem value=“Arguments” label=“Arguments - only” attributes={{className: styles.tabItem}}>
+        <CodeBlock language=“javascript”>
             {`
                 resource: {
-                    name: "group",
-                    id: "DEBATE_IDENTIFIER" // Unique identifier for the debate
+                    name: “argument”, // Alternative value: “proposal”
+                    id: “ARGUMENT_IDENTIFIER” // Unique contribution identifier
                 }
             `}
         </CodeBlock>
-        <p style={{ marginTop: "1em" }}>
+        <p style={{ marginTop: “1em” }}>
+            The ID here corresponds to that of the argument or proposal. Argument or proposal is used to display a particular argument or proposal via its ID.
+        </p>
+       <figure> 
+            <img src=“/img/argumentinstallation.png” alt=“Displaying an argument”  className={styles.maxwidth}/> 
+        </figure>
+   </TabItem>
+  <TabItem value=“Consultation” label=“Consultation - only” attributes={{className: styles.tabItem}}>
+       <CodeBlock language=“javascript”>
+            {`
+                resource: {
+                    name: “consultation”,
+                    id: “CONSULTATION_IDENTIFIER” // Unique identifier for the consultation
+                }
+            `}
+        </CodeBlock>
+        <p style={{ marginTop: “1em” }}>
+          The ID here corresponds to that of the consultation. Group can be used to display a particular consultation via its ID.
+        </p>
+      <figure> 
+          <img src=“/img/consultationbox.png” alt=“Consultation question” className={styles.maxwidth}/> 
+      </figure>
+    </TabItem>
+    <TabItem value=“Group” label=“Debate - by id” attributes={{className: styles.tabItem}}>
+        <CodeBlock language=“javascript”>
+            {`
+                resource: {
+                    name: “group”,
+                    id: “DEBATE_IDENTIFIER” // Unique identifier for the debate
+                }
+            `}
+        </CodeBlock>
+        <p style={{ marginTop: “1em” }}>
         The ID here corresponds to that of the debate. Group can be used to display a particular debate via its ID.
         </p>
     </TabItem>
-    <TabItem value="Consultation" label="Consultation" attributes={{className: styles.tabItem}}>
-       <CodeBlock language="javascript">
-            {`
-                resource: {
-                    name: "consultation",
-                    id: "CONSULTATION_IDENTIFIER" // Unique identifier for the consultation
-                }
-            `}
-        </CodeBlock>
-        <p style={{ marginTop: "1em" }}>
-          The ID here corresponds to that of the consultation. Group can be used to display a particular consultation via its ID.
-        </p>
-    </TabItem>
-    <TabItem value="Arguments" label="Arguments" attributes={{className: styles.tabItem}}>
-        <CodeBlock language="javascript">
-            {`
-                resource: {
-                    name: "argument", // Alternative value: "proposal"
-                    id: "ARGUMENT_IDENTIFIER" // Unique contribution identifier
-                }
-            `}
-        </CodeBlock>
-        <p style={{ marginTop: "1em" }}>
-            The ID here corresponds to that of the argument or proposal. Argument or proposal is used to display a particular argument or proposal via its ID.
-        </p>
-  </TabItem>
 </Tabs>
 
 #### 2.3 Display several blocks in the article page (optional)
@@ -250,32 +267,32 @@ In this case, you need to create a configuration object for each block, and put 
 
 ```javascript
 // Container for each block
-<div class="logora_embed" data-object-id="logora_config"></div>
-<div class="logora_embed" data-object-id="logora_config_2"></div>
+<div class=“logora_embed” data-object-id=“logora_config”></div>
+<div class=“logora_embed” data-object-id=“logora_config_2”></div>
 
 // Configuration
 <script>
     // Configuration variables
     var logora_config = {
-        shortname: "APPLICATION_NAME",
+        shortname: “APPLICATION_NAME”,
         resource: {
-            name: "synthesis",
-            id: "PAGE_IDENTIFIER" // Unique identifier for the page
+            name: “synthesis”,
+            id: “PAGE_IDENTIFIER” // Unique identifier for the page
         }
     };
 
     var logora_config_2 = {
-        shortname: "APPLICATION_NAME",
+        shortname: “APPLICATION_NAME”,
         resource: {
-            name: "comments",
-            id: "PAGE_IDENTIFIER" // Unique identifier for the page
+            name: “comments”,
+            id: “PAGE_IDENTIFIER” // Unique identifier for the page
         }
     };
 
     // The script is only inserted once, even if there are two blocks.
     (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://cdn.logora.com/embed.js';
+        var d = document, s = d.createElement(‘script’);
+        s.src = ‘https://cdn.logora.com/embed.js’;
         (d.head || d.body).appendChild(s);
     })();
 </script>
@@ -284,8 +301,8 @@ In this case, you need to create a configuration object for each block, and put 
 In this case, the summary and comments will be displayed at the point where the :
 
 ```javascript
-<div class="logora_embed" data-object-id="logora_config"></div>
-<div class="logora_embed" data-object-id="logora_config_2"></div>
+<div class=“logora_embed” data-object-id=“logora_config”></div>
+<div class=“logora_embed” data-object-id=“logora_config_2”></div>
 ```
 
 #### 2.4 Send article metadata manually (optional)
@@ -302,27 +319,27 @@ Here is an example of metadata sent from configuration variables:
 ```javascript
 // Variables de configuration
 var logora_config = {
-  shortname: "APPLICATION_NAME", // Application name in your administration space
+  shortname: “APPLICATION_NAME”, // Application name in your administration space
   debate: {
-    identifier: "PAGE_IDENTIFIER", // Unique identifier for the page
+    identifier: “PAGE_IDENTIFIER”, // Unique identifier for the page
   },
   source: {
-    source_url: "https://votresite.com/article", // Canonical URL of the page
-    uid: "a3f4e033-9e13-4abb-be11-2d87a2294013", // Unique identifier for the page
-    title: "Page title", // Page title
-    description: "Page description", // Page description
-    origin_image_url: "https://image.com/image.png", // URL of the page image
-    published_date: "2020-12-01T12:00:00+01:00", // Date of publication of the page in ISO_8601 format
-    publisher: "Site name", // Site name
+    source_url: “https://votresite.com/article”, // Canonical URL of the page
+    uid: “a3f4e033-9e13-4abb-be11-2d87a2294013”, // Unique identifier for the page
+    title: “Page title”, // Page title
+    description: “Page description”, // Page description
+    origin_image_url: “https://image.com/image.png”, // URL of the page image
+    published_date: “2020-12-01T12:00:00+01:00”, // Date of publication of the page in ISO_8601 format
+    publisher: “Site name”, // Site name
     tag_objects: [
       // Article labels in the form of an array of objects
       {
-        name: "politics", // Displayed label name
-        uid: "politique-001", // Unique identifier for the label. Can be omitted if names are already unique
+        name: “politics”, // Displayed label name
+        uid: “politique-001", // Unique identifier for the label. Can be omitted if names are already unique
       },
       {
-        name: "health",
-        uid: "health-003",
+        name: “health”,
+        uid: “health-003",
       },
     ],
   },
@@ -337,7 +354,7 @@ To detect the loading of the synthesis, a _logoraContentLoaded_ event is trigger
 This event is used to retrieve information about the content displayed on the page.
 
 ```javascript
-window.addEventListener("logoraContentLoaded", (event) =>
+window.addEventListener(“logoraContentLoaded”, (event) =>
   console.log(event.detail)
 );
 ```
@@ -347,16 +364,16 @@ Object format _event.detail_ :
 ```javascript
 debate: {
   id: 1000,
-  name: "Should the constitution be changed?", // Title of consultation or article for comments
-  slug: "my-debate",
-  direct_url: "https://www.exemple.fr/espace-debat/debat/mon-debat",
-  created_at: "2023-03-16T09:36:31.204Z",
-  image_url: "https://image.com/debate",
-  type: "Group", // "Source" for comments, "Consultation" for consultations
+  name: “Should the constitution be changed?“, // Title of consultation or article for comments
+  slug: “my-debate”,
+  direct_url: “https://www.exemple.fr/espace-debat/debat/mon-debat”,
+  created_at: “2023-03-16T09:36:31.204Z”,
+  image_url: “https://image.com/debate”,
+  type: “Group”, // “Source” for comments, “Consultation” for consultations
   contributions_count: 12 // Only for comments, number of comments
 }
 ```
 
 If no debate is associated with the page, the _debate_ object will be _null_.
 
-All that's left to do is implement single sign-on and customise Logora to launch your first debate.
+All that’s left to do is implement single sign-on and customise Logora to launch your first debate.

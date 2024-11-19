@@ -1,6 +1,7 @@
 ---
 id: tracking
 title: Tracking des données
+description: Analysez comment se comportent vos utilisateurs
 ---
 
 #### Tracking des éléments de l'espace de débat

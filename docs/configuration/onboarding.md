@@ -1,6 +1,7 @@
 ---
 id: onboarding
 title: Création des utilisateurs
+description: Générez de nouvelles inscriptions
 ---
 
 ### 1) Fonctionnement de la création de vos utilisateurs

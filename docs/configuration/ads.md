@@ -1,6 +1,7 @@
 ---
 id: ads
 title: Insertions publicitaires
+description: Monétisez votre espace de discussion
 ---
 
 Les pages du plugin Logora sont fournies en marque blanche et hébergées sur votre site.

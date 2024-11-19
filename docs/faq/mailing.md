@@ -1,6 +1,7 @@
 ---
 id: mailing
 title: Gestion des mails
+description: Découvrez les différents emails que nous envoyons pour votre compte
 ---
 
 #### Envoi de mails pour votre compte

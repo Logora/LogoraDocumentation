@@ -1,6 +1,7 @@
 ---
 id: thesis
 title: Nombre de thèses
+description: Pourquoi Logora propose du débat à deux thèses
 ---
 
 ### Pourquoi deux thèses ? 

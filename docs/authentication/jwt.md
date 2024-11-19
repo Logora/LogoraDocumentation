@@ -1,6 +1,7 @@
 ---
 id: jwt
 title: JWT
+description: Authentification via le jeton JWT
 ---
 
 Ce mode d'authentification permet de connecter automatiquement les utilisateurs à Logora une fois qu'il sont authentifiés à travers votre système de connexion. Cette méthode utilise un jeton JWT (JSON Web Token) signé (JWS) ou chiffré (JWE) pour transmettre les données de l'utilisateur à Logora.

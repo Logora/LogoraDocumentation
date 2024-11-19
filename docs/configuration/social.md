@@ -1,6 +1,7 @@
 ---
 id: social
 title: Flux RSS des débats
+description: Accèdez à votre flux RSS des débats
 ---
 
 ### 1) Accédez à votre flux RSS

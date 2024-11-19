@@ -1,6 +1,7 @@
 ---
 id: wordpress
 title: Installation Wordpress
+description: Guide pour installer sur Wordpress
 ---
 
 ### Avant de commencer 

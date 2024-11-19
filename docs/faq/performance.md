@@ -1,6 +1,7 @@
 ---
 id: performance
 title: Performance
+description: Nous optimisons la performance de nos scripts pour un meilleur référencement.
 ---
 
 Logora met tout en oeuvre pour que le code inséré aie le moins d'impact sur le chargement de vos pages. Voici quelques détails sur le fonctionnement de Logora pour mieux évaluer la performance des scripts insérés.

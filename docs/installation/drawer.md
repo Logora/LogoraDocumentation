@@ -1,6 +1,7 @@
 ---
 id: drawer
 title: Intégration en tiroir
+description: Intégrer Logora en format tiroir pour rester sur la même page
 ---
 
 Cet article de documentation est complémentaire à l'installation "classique" via Javascript ou côté serveur. 

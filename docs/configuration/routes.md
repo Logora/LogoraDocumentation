@@ -1,6 +1,7 @@
 ---
 id: routes
 title: Chemins d'URL
+description: Configurez les URLs de l'espace de discussion
 ---
 
 L'espace de débat comprend plusieurs pages qui sont accessibles sur votre site via des URLs différentes. Si vous utilisez l'[Installation en Javascript](installation/javascript-sdk.md), ces URLs doivent pointer vers la page de votre site web où est inséré l'espace de débat. Si vous utilisez notre [plugin Wordpress](installation/wordpress.md), les routes sont gérées automatiquement.

@@ -1,6 +1,7 @@
 ---
 id: homepage
 title: Module de page d'accueil
+description: Epinglez une question de débat sur votre page d'accueil
 ---
 
 Logora vous fournit un module présentant un débat à intégrer sur votre page d'accueil. Par défaut, le module se met automatiquement à jour avec votre dernier débat créé. Vous pouvez aussi choisir d'épingler un débat depuis votre espace d'administration, cela remplacera le comportement par défaut du module (vous pourrez dé-épingler le débat a tout moment et revenir au comportement par défaut ou épingler un autre débat de votre choix).

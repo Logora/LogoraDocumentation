@@ -75,3 +75,11 @@ An event is triggered when the user logs out. It does not return anything.
 ```js
 window.addEventListener("logora:authentication:logout");
 ```
+
+#### 5. Authentication request
+
+When a user is asked to authenticate, an event is triggered. This event can be used to show the user your own login modal. It returns the URL to redirect to after login.
+
+```js
+window.addEventListener(“LOGORA::authenticationRequired”, event => console.log(event.detail.redirectUrl);
+```

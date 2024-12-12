@@ -82,5 +82,5 @@ Lorsqu'un utilisateur doit s'authentifier, un événement est déclenché. Cet �
 Il retourne l'URL de redirection après connexion.
 
 ```js
-window.addEventListener("LOGORA::authenticationRequired", event => console.log(event.detail.redirectUrl);
+window.addEventListener("LOGORA::authenticationRequired", event => console.log(event.detail.redirectUrl));
 ```

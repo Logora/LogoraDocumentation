@@ -78,8 +78,9 @@ window.addEventListener("logora:authentication:logout");
 
 ### 5. Demande d'authentification
 
-Lorsqu'un utilisateur doit s'authentifier, un événement est déclenché. Cet événement peut être écouté pour montrer à l'utiliisateur votre propre fenêtre de connexion :
+Lorsqu'un utilisateur doit s'authentifier, un événement est déclenché. Cet événement peut être écouté pour montrer à l'utiliisateur votre propre fenêtre de connexion.
+Il retourne l'URL de redirection après connexion.
 
 ```js
-window.addEventListener("LOGORA::authenticationRequired");
+window.addEventListener("LOGORA::authenticationRequired", event => console.log(event.detail.redirectUrl);
 ```

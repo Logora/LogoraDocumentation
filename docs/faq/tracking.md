@@ -28,6 +28,10 @@ Clic sur le titre du débat de la synthèse : `data-tid="link_debate_title_embed
 
 Clic sur "Voir plus" d'un argument : `data-tid="link_argument_read_more"` 
 
+### Suivi des performances sur la page de commentaires
+
+Clic sur "Voir plus" d'un argument : `data-tid="link_read_more"` 
+
 ### Suivi d'un utilisateur déconnecté
 
 Clic sur “Connexion” : `data-tid=”action_login_link”`

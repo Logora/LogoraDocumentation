@@ -30,7 +30,7 @@ Clic sur "Voir plus" d'un argument : `data-tid="link_argument_read_more"`
 
 ### Suivi des performances sur la page de commentaires
 
-Clic sur "Voir plus" d'un argument : `data-tid="link_read_more"` 
+Clic sur "Voir plus" d'un commentaire : `data-tid="link_read_more"` 
 
 ### Suivi d'un utilisateur déconnecté
 

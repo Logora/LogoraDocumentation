@@ -16,7 +16,7 @@ Le code de la synthèse inséré dans vos articles procède en quatre étapes :
 3. Insertion du code dans la page. Le code est pré-rendu par le serveur, il peut donc être inséré directement sans traitement supplémentaire.
 4. (Optionnel) Pour le premier appel de la page seulement, le script envoie les métadonnées de la page (titre, étiquettes, description) à nos serveurs pour associer ensuite plus facilement des débats aux articles.
 
-> Si vous avez des contraintes élevées en terme de performance, utilisez l'[insertion côté serveur de la synthèse](installation/api.md)
+> Si vous avez des contraintes élevées en terme de performance, utilisez l'[insertion côté serveur](../../installation/server-side-sdk)
 
 ### 2) Espace de débat
 

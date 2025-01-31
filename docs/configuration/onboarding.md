@@ -4,7 +4,7 @@ title: Création des utilisateurs
 description: Générez de nouvelles inscriptions
 ---
 
-### 1) Fonctionnement de la création de vos utilisateurs
+### Fonctionnement de la création de vos utilisateurs
 
 L'utilisateur lorsqu'il participe pour la première fois sur votre espace de discussion se crée un profil. 
 
@@ -12,7 +12,7 @@ Cette création de profil se fait automatiquement pour l'utilisateur lorsqu'il e
 
 Vous nous envoyez les informations suivantes : prénom / nom / mail pour que nous puissions créer le profil de l'utilisateur. 
 
-### 2) Alias et onboarding
+### Alias et onboarding
 
 Dans le cas où vous ne nous transmettez aucun prénom / nom, nous générons des alias pour vos utilisateurs. 
 

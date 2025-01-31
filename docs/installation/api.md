@@ -6,7 +6,7 @@ description: Insérez Logora côté serveur grâce à notre API
 
 Logora peut être installé sur n'importe quel site en insérant les pages de débat en code natif JavaScript et en insérant la question en pied d'article (la synthèse) côté serveur. Cette installation permet d'améliorer la performance de vos pages articles et d'indexer les pages de débat sur les moteurs de recherche. 
 
-Cette documentation est à destination des développeurs. Logora propose également une documentation personnalisée pour l'[installation Wordpress](installation/wordpress).
+Cette documentation est à destination des développeurs. Logora propose également une documentation personnalisée pour l'[installation Wordpress](wordpress).
 
 L'installation se fait en deux temps :
 1. Insérer l'espace de débat en Javascript
@@ -66,7 +66,7 @@ Utilisez la réécriture d'URL sur votre plateforme ou CMS pour que les chemins 
 Accédez à la page https://votresite.com/espace-debat/debats. Vous êtes sur la page d'accueil de l'espace de débat !
 
 
-Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat, rendez-vous sur [la configuration des chemins d'URL](configuration/routes.md).
+Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat, rendez-vous sur [la configuration des chemins d'URL](../../configuration/routes).
 
 ### 2. Récupération du code de la synthèse
 

@@ -9,7 +9,7 @@ L'équipe technique de Logora imagine, dessine et développe de nouveaux projets
 
 Ces développements sont testés en interne pendant plusieurs semaines, puis déployés chez nos partenaires les plus proches avant de les étendre à tous. 
 
-Si vous souhaitez être averti en priorité des modules dont le test a été concluant en interne et déployer en premier la nouveauté, envoyez-nous un mail à pierre@logora.fr. 
+Si vous souhaitez être averti en priorité des modules dont le test a été concluant en interne et déployer en premier la nouveauté, envoyez-nous un mail à contact@logora.fr. 
 
 Merci d'indiquer dans le mail si vous souhaitez : 
 

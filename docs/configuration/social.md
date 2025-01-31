@@ -4,7 +4,7 @@ title: Flux RSS des débats
 description: Accèdez à votre flux RSS des débats
 ---
 
-### 1) Accédez à votre flux RSS
+### Accédez à votre flux RSS
 
 Un flux RSS de vos débats et consultations créés est disponible à l'adresse https://app.logora.fr/rss/{votre-nom-d'application}. 
 
@@ -17,7 +17,7 @@ Un exemple de flux RSS :
 ![Un exemple de Flux RSS](/img/rss.png)
 
 
-### 2) Connectez le flux RSS à vos outils de partage
+### Connectez le flux RSS à vos outils de partage
 
 En appelant régulièrement votre flux RSS, vous pouvez poster automatiquement les nouveaux débats où vous le souhaitez. 
 
@@ -35,7 +35,7 @@ Vous pouvez automatiser 750 actions par mois pour 19$ / mois. Leur tarification 
 Vous récupérez **le titre, le lien, et l'image du débat ou de la consultation**. 
 Vous pouvez également ajouter une description personnalisée à chaque partage. 
 
-> Exemple pour un post sur Facebook : "La question {title} est à l'affiche sur le New York Times ! Suivez le lien pour participer sur notre espace dédié au débat.
+> Exemple pour un post sur Facebook : "La question [title] est à l'affiche sur le New York Times ! Suivez le lien pour participer sur notre espace dédié au débat.
 
 Un exemple de publication automatisée sans description personnalisée : 
 

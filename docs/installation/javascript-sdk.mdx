@@ -9,7 +9,7 @@ import TabItem from "@theme/TabItem";
 import CodeBlock from '@theme/CodeBlock';
 import styles from './styles.module.css';
 
-Logora peut être installé sur n'importe quel site en insérant le code natif JavaScript. Cette documentation est à destination des développeurs. Logora propose également une documentation personnalisée pour l'[installation Wordpress](../wordpress).
+Logora peut être installé sur n'importe quel site en insérant le code natif JavaScript. Cette documentation est à destination des développeurs. Logora propose également une documentation personnalisée pour l'[installation Wordpress](wordpress).
 
 L'installation en Javascript se fait en deux temps :
 
@@ -18,11 +18,11 @@ L'installation en Javascript se fait en deux temps :
 
 ### Avant de commencer
 
-1) Si l'équipe Logora ne vous a pas créé d'espace d'administration, créez votre espace d'administration Logora : [Inscription](https://admin.logora.fr/#/signup)
+1. Si l'équipe Logora ne vous a pas créé d'espace d'administration, créez votre espace d'administration Logora : [Inscription](https://admin.logora.fr/#/signup)
 
-2) Munissez-vous de votre **nom d'application** disponible sur votre [espace d'administration](https://admin.logora.fr) dans l'onglet _Configuration > Général_.
+2. Munissez-vous de votre **nom d'application** disponible sur votre [espace d'administration](https://admin.logora.fr) dans l'onglet _Configuration > Général_.
 
-3) Autorisez les domaines sur lesquels vous désirez installer Logora. Pour cela, rendez-vous sur votre espace d'administration dans l'onglet _Configuration > Général > Sécurité > Domaines autorisés_. Par exemple, si le code inséré sur la page à l'URL _https://exemple.com/article/exemple-article_, ajoutez le domaine _https://exemple.com_ et _https://www.exemple.com_. 
+3. Autorisez les domaines sur lesquels vous désirez installer Logora. Pour cela, rendez-vous sur votre espace d'administration dans l'onglet _Configuration > Général > Sécurité > Domaines autorisés_. Par exemple, si le code inséré sur la page à l'URL _https://exemple.com/article/exemple-article_, ajoutez le domaine _https://exemple.com_ et _https://www.exemple.com_. 
 
 Exemples : _http://localhost:3000_ , _http://sous-domaine.exemple.com_, _http://www.localhost:3000_ , _http://www.sous-domaine.exemple.com_.
 
@@ -32,7 +32,7 @@ Important : l'ajout des domaines sur l'espace d'administration fonctionne comme 
 
 L'espace de discussion est la plateforme principale où vos utilisateurs pourront engager avec votre contenu. L'espace de discussion est inséré sur une page dédiée sur votre site.
 
-_Cas particulier : vous pouvez insérer l'espace de discussion en format tiroir pour que l'utilisateur reste sur votre page article. Cela nécessite d'installer en l'espace en continuant à suivre les étapes suivantes puis à ajouter ce qui est décrit sur l'article [intégration en tiroir](installation/drawer)_
+_Cas particulier : vous pouvez insérer l'espace de discussion en format tiroir pour que l'utilisateur reste sur votre page article. Cela nécessite d'installer en l'espace en continuant à suivre les étapes suivantes puis à ajouter ce qui est décrit sur l'article [intégration en tiroir](drawer)_
 
 Prenons l'exemple de votre site web disponible à l'adresse _https://votresite.com_. Il faut pouvoir accéder à l'espace de discussion via l'adresse _https://votresite.com/espace-debat_. Voici les étapes à suivre pour insérer l'espace de discussion :
 
@@ -75,7 +75,7 @@ Utilisez la réécriture d'URL sur votre plateforme ou CMS pour que les chemins 
 
 Accédez à la page _https://votresite.com/espace-debat/debats_. Vous êtes sur la page d'accueil de l'espace de débat !
 
-Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat, rendez-vous sur [la configuration des chemins d'URL](configuration/routes.md).
+Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat, rendez-vous sur [la configuration des chemins d'URL](../../configuration/routes).
 
 ### 2. Installer le bloc contributif dans vos articles
 

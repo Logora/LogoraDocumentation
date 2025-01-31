@@ -1,4 +1,4 @@
-module.exports={
+export default {
   title: "Logora",
   tagline: "La fin du commentaire, le début du débat",
   url: "https://docs.logora.fr",
@@ -83,5 +83,17 @@ module.exports={
       links: [],
       copyright: "Copyright © 2024-25 Logora",
     }
-  }
+  },
+  script: [
+    {
+      src: 'https://app.alesia.ovh/api/assets/get_assets?type=js',
+      async: true,
+      defer: true
+    }
+  ],
+  stylesheets: [
+    {
+      href: "https://app.alesia.ovh/api/assets/get_assets?type=css"
+    }
+  ]
 }

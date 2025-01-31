@@ -9,7 +9,7 @@ For example, in the summer of 2022 we developed a comment space linked to the de
 
 These developments are being tested internally for several weeks and then rolled out to our closest partners before being extended to everyone. 
 
-If you would like to be notified first about modules that have been successfully tested internally and to be the first to be deployed, please send us an email to pierre@logora.fr. 
+If you would like to be notified first about modules that have been successfully tested internally and to be the first to be deployed, please send us an email to contact@logora.fr. 
 
 Please indicate in the email if you wish to: 
 

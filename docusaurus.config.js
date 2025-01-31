@@ -85,6 +85,6 @@ export default {
     }
   },
   scripts: [
-    'js/alesia.js'
+    'https://docs.logora.fr/js/alesia.js'
   ]
 }

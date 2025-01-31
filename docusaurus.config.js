@@ -85,15 +85,6 @@ export default {
     }
   },
   scripts: [
-    {
-      src: 'https://app.alesia.ovh/api/assets/get_assets?type=js',
-      async: true,
-      defer: true
-    }
-  ],
-  stylesheets: [
-    {
-      href: "https://app.alesia.ovh/api/assets/get_assets?type=css"
-    }
+    'js/alesia.js'
   ]
 }

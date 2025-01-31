@@ -84,7 +84,7 @@ export default {
       copyright: "Copyright © 2024-25 Logora",
     }
   },
-  script: [
+  scripts: [
     {
       src: 'https://app.alesia.ovh/api/assets/get_assets?type=js',
       async: true,

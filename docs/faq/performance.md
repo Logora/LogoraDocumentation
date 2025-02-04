@@ -11,7 +11,7 @@ Logora met tout en oeuvre pour que le code inséré aie le moins d'impact sur le
 
 
 Le code de la synthèse inséré dans vos articles procède en quatre étapes :
-1. Téléchargement du script **synthese.js**. Ce fichier, servi depuis AWS Cloudfront, a une taille de **8 Ko**. Il permet de lancer les fonctionnalités de Logora et gère les appels vers notre API.
+1. Téléchargement du script **embed.js**. Ce fichier, servi depuis le CDN DigitalOcean, a une taille de **8 Ko**. Il permet de lancer les fonctionnalités de Logora et gère les appels vers notre API.
 2. Appel vers l'API Logora pour vérifier si un débat correspond à la page en question. Cet appel renvoie le code HTML de la synthèse s'il y a un débat associé. La réponse a une taille de **9 Ko**, et le temps de réponse médian est de **10ms**. Nos serveurs sont situés à Paris.
 3. Insertion du code dans la page. Le code est pré-rendu par le serveur, il peut donc être inséré directement sans traitement supplémentaire.
 4. (Optionnel) Pour le premier appel de la page seulement, le script envoie les métadonnées de la page (titre, étiquettes, description) à nos serveurs pour associer ensuite plus facilement des débats aux articles.

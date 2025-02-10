@@ -75,7 +75,7 @@ The publication of Contributions by the User is carried out under the User's sol
 
 The User accepts that these Contributions may be moderated or rejected at the sole discretion of the Publisher, without any obligation to provide justification.
 
-In addition, the moderation system is based in particular on the ethical rules established by the Publisher and on Logora's Moderation Charter available at the following URL: [Moderation Charter](https://logora.fr/en/moderation).
+In addition, the moderation system is based in particular on the ethical rules established by the Publisher and on Logora's Moderation Charter available at the following URL: [Moderation Charter](https://www.logora.com/blog-posts/moderation).
 
 The User is hereby informed that, given the intrinsic characteristics of the Internet, the content it publishes is subject to misappropriation and/or piracy. The Publisher may not be held liable for any loss or damage that may result from a breach of the above obligations or from the use of this Discussion Forum.
 

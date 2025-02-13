@@ -1,4 +1,10 @@
-# Création d'un espace d'administration pour la modération des réseaux sociaux
+---
+id: social-moderation
+title: Modération des réseaux sociaux
+description: Modérez automatiquement vos réseaux sociaux avec Logora
+---
+
+# Modération des réseaux sociaux
 
 ## Introduction
 
@@ -39,10 +45,10 @@ Après l'inscription, vous verrez une interface vous permettant de connecter vos
 
 ## 3. Fonctionnement de la modération automatique
 
-Une fois les pages connectées, **Logora se charge de la modération des commentaires** en temps réel. Nous utilisons des services avancés comme **Mistral Moderation Services**, qui permettent d’automatiser 95% de la modération.
+Une fois les pages connectées, **Logora se charge de la modération des commentaires** en temps réel. Nous utilisons des services avancés comme **Mistral Moderation Services**, qui permettent d’automatiser 95% de la modération. Puisque la modération est automatisé, il est possible qu'il y ait quelques erreurs au lancement, qui seront corrigées par la suite.
 
-### 🔍 Vérification initiale
-Lors du lancement, notre équipe passe en revue tous les commentaires analysés afin de :
+### 🔍 Vérification manuelle initiale
+Lors du lancement et pendant 3 mois, notre équipe passe en revue tous les commentaires analysés automatiquement afin de :
 - Vérifier la qualité des décisions prises par l’algorithme.
 - Corriger manuellement les erreurs éventuelles.
 - Envoyer les données ajustées pour améliorer l’algorithme avec un **modèle fine-tuné** plus performant.
@@ -55,7 +61,7 @@ Lors du lancement, notre équipe passe en revue tous les commentaires analysés 
 
 La modération sur les **espaces de discussion des sites partenaires** est plus stricte car ces sites sont légalement responsables des contenus publiés sur leur plateforme.
 
-En revanche, la modération des **réseaux sociaux** est principalement automatique et moins stricte, car la responsabilité des contenus repose sur les utilisateurs eux-mêmes. Notre rôle est donc de filtrer les messages contraires à la loi, les scams et les contenus illisibles.
+En revanche, la modération des **réseaux sociaux** est principalement automatique et moins stricte, car la responsabilité des contenus repose sur les utilisateurs eux-mêmes. Notre rôle est donc de filtrer les messages les plus problématiques c'est à dire contraires à la loi, les scams et les contenus illisibles.
 
 ## 5. Analyse et suivi dans le dashboard
 

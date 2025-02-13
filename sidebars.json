@@ -8,7 +8,7 @@
       "type": "category",
       "label": "Installation",
 	    "collapsed": false,
-      "items": ["installation/javascript-sdk", "installation/wordpress", "installation/server-side-sdk", "installation/webview", "installation/drawer", "installation/amp-sdk", "installation/homepage"]
+      "items": ["installation/javascript-sdk", "installation/wordpress", "installation/server-side-sdk", "installation/webview", "installation/drawer", "installation/amp-sdk", "installation/homepage", "installation/social-moderation"]
     },
 	  {
       "type": "category",

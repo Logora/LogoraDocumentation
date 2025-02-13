@@ -3,7 +3,7 @@ id: webview
 title: Webview
 ---
 
-# Intégration de Logora en WebView avec SSO
+# Intégration en WebView (avec SSO)
 
 ## Introduction
 

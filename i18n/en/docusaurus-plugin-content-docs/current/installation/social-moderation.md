@@ -1,7 +1,7 @@
 ---
 id: social-moderation
-title: Modération des réseaux sociaux
-description: Modérez automatiquement vos réseaux sociaux avec Logora
+title: Social media moderation
+description: Automatically moderate content from social networks
 ---
 
 # Social Media Moderation

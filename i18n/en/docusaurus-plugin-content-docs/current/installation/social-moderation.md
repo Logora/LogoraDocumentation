@@ -8,75 +8,80 @@ description: Modérez automatiquement vos réseaux sociaux avec Logora
 
 ## Introduction
 
-L'outil de modération Logora permet d'automatiser la gestion des commentaires sur vos réseaux sociaux tout en assurant une transparence totale. Grâce à un espace d'administration dédié, vous pouvez connecter vos pages **Instagram, YouTube et Facebook** et laisser nos algorithmes gérer la modération automatique des contenus problématiques.
+Logora provides an **admin dashboard for automatic social media moderation**, allowing users to connect their **Instagram, YouTube, and Facebook pages** and automate the moderation of comments using advanced algorithms such as **Mistral Moderation Services**.  
 
-## 1. Création de votre espace d'administration
+The goal is to **identify and automatically reject content** that violates legal regulations, contains scams, or is unreadable. Users have full transparency over all actions taken, with the ability to override moderation decisions if needed.  
 
-Pour démarrer, inscrivez-vous sur la plateforme Logora via le lien suivant :
+## **1. Creating an Admin Space**  
 
-➡️ [Créer un espace d'administration](https://admin.logora.fr/#/signup?appType=socialModeration)
+To start using Logora’s social media moderation tool, follow these steps:  
 
-Une fois inscrit, vous accéderez à un **dashboard** qui vous permettra de connecter vos pages et de configurer la modération automatique.
+1. **Sign up for an admin space** at [this link](https://admin.logora.fr/#/signup?appType=socialModeration).  
+2. Once registered, access your **dashboard**, where you can connect your **Instagram, YouTube, and Facebook** accounts to Logora.  
+
+After connecting your accounts, Logora will begin retrieving comments and applying moderation rules automatically.  
+
+---
 
 ![Social choice](/img/source.png)
 
-## 2. Connexion des réseaux sociaux
+## **2. Connecting Social Media Pages**  
 
-### 2.1 Conditions requises
+### 🔹 **2.1 Requirements for Connection**  
+- You **must be an administrator** with full rights on the page or channel you want to connect.  
+- Logora requires **read and retrieve permissions** for comments to moderate them effectively.  
 
-Pour connecter une page à Logora, vous devez **être administrateur** et **avoir tous les droits** sur cette page. Sans ces permissions, la connexion ne fonctionnera pas.
+### 🔹 **2.2 Connecting YouTube Channels**  
+- If you manage **multiple YouTube channels**, they must be connected **one by one**.  
 
-### 2.2 Connexion des pages
+### 🔹 **2.3 Connecting Facebook Pages**  
+- For Facebook, you can either:  
+  - **Connect all pages at once**, or  
+  - **Select individual pages** and modify the selection later.
 
-Après l'inscription, vous verrez une interface vous permettant de connecter vos pages **Instagram, YouTube et Facebook**. Voici les étapes spécifiques pour chaque plateforme :
+Below are two images illustrating the Facebook connection process:  
 
-#### 🔹 Connexion à YouTube
-- Si vous possédez plusieurs chaînes, vous devrez les connecter **une par une**.
-- Lors de la connexion, vous devrez autoriser Logora à lire les commentaires de vos vidéos.
-
-#### 🔹 Connexion à Facebook
-- Vous pouvez **connecter toutes vos pages d’un coup** ou **choisir une seule page**.
+1. **Initial selection of pages to connect**  
 
 ![Facebook connection](/img/fbchoosepage.png)
 
-- Vous pourrez modifier à tout moment les pages connectées en accédant aux paramètres de votre espace d'administration.
+2. **Changing connected pages later**  
 
 ![Facebook settings](/img/fbsettings.png)
 
-## 3. Fonctionnement de la modération automatique
+Once connected, Logora begins retrieving and moderating comments in real time.
 
-Une fois les pages connectées, **Logora se charge de la modération des commentaires** en temps réel. Nous utilisons des services avancés comme **Mistral Moderation Services**, qui permettent d’automatiser 95% de la modération. Puisque la modération est automatisé, il est possible qu'il y ait quelques erreurs au lancement, qui seront corrigées par la suite.
+## **3. How Automatic Moderation Works**  
 
-### 🔍 Vérification manuelle initiale
-Lors du lancement et pendant 3 mois, notre équipe passe en revue tous les commentaires analysés automatiquement afin de :
-- Vérifier la qualité des décisions prises par l’algorithme.
-- Corriger manuellement les erreurs éventuelles.
-- Envoyer les données ajustées pour améliorer l’algorithme avec un **modèle fine-tuné** plus performant.
+###  🔍  **3.1 AI-Powered Moderation**  
+Logora’s moderation tool is powered by **Mistral Moderation Services**, which automatically handles **95% of comments** based on predefined rules.  
 
-### 💡 Transparence et contrôle
-- Tous les **contenus acceptés et rejetés** sont **visibles dans l'espace d'administration**.
-- Vous pouvez **modifier nos décisions** à tout moment si vous souhaitez revoir certains contenus.
+- At the start, **human moderators manually review all comments** to ensure the AI is making accurate decisions.  
+- If the AI **misclassifies** a comment, moderators **correct the mistake**, and this corrected data is sent back to the AI to **train a fine-tuned model** for better accuracy.  
 
-## 4. Différence entre la modération des réseaux sociaux et celle des sites partenaires
+### 💡 **3.2 Full Transparency and Manual Overrides**  
+- All **retrieved, accepted, and rejected** comments are **visible in the admin dashboard**.  
+- Users can **override moderation decisions** at any time.
+  
+### **3.3 Difference Between Website & Social Media Moderation**  
+- Logora’s moderation for **partner websites** is **stricter** and **more human-driven** since site owners are legally responsible for user-generated content.  
+- On **social media**, moderation is more **automated**, as responsibility primarily lies with the platform hosting the content.  
 
-La modération sur les **espaces de discussion des sites partenaires** est plus stricte car ces sites sont légalement responsables des contenus publiés sur leur plateforme.
+---
 
-En revanche, la modération des **réseaux sociaux** est principalement automatique et moins stricte, car la responsabilité des contenus repose sur les utilisateurs eux-mêmes. Notre rôle est donc de filtrer les messages les plus problématiques c'est à dire contraires à la loi, les scams et les contenus illisibles.
+## 📊 **4.Monitoring Engagement and Performance**  
 
-## 5. Analyse et suivi dans le dashboard
+The **admin dashboard** provides detailed insights into:  
+- **The number of comments and votes retrieved** for each social media platform.  
+- **The most popular posts**, based on engagement metrics.  
 
-Le tableau de bord Logora offre une vision complète des performances des réseaux sociaux connectés :
+We are continuously improving 🚀 the dashboard to allow users to:  
+- **Analyze engagement trends** over time.  
+- **Compare performance across different social media platforms**.  
+- **Identify topics that drive the most reactions** and understand audience behavior.  
 
-📊 **Indicateurs disponibles :**
-- Nombre de **commentaires** et de **votes** récupérés par réseau social.
-- Liste des **posts les plus populaires**.
+---
 
-🚀 **Améliorations futures :**
-Nous allons enrichir le tableau de bord pour permettre :
-- Une **analyse détaillée** des performances des posts.
-- La **comparaison des réseaux** entre eux.
-- L’identification des **thématiques générant le plus d’engagement**.
+## **Conclusion**  
 
-## Conclusion
-
-Grâce à Logora, vous pouvez gérer facilement la modération des réseaux sociaux avec un haut niveau d’automatisation et de transparence.
+By integrating Logora’s **automatic moderation system**, businesses and publishers can **maintain a clean and legally compliant online presence** while reducing manual moderation efforts.  

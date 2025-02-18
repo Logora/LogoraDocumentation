@@ -13,7 +13,7 @@ Two applications have already successfully integrated Logora: **Der SPIEGEL** an
 - [Der SPIEGEL](https://www.loom.com/share/725de75c09d64911ad42fdff7acf07e7?sid=c5d01191-5783-4980-be81-f1a21e162e87)
 - [Suedkurier](https://www.loom.com/share/b3eabe7ab0d1417f8cbbfd29735c2adf?sid=356bc7c1-559e-4f2e-bece-7cecc328cb6e)
 
-For seamless user authentication, Logora supports Single Sign-On (SSO) through the injection of a token into the `logora_config` object under the `remote_auth` parameter.
+For seamless user authentication, Logora supports Single Sign-On (SSO) through the injection of a token into the `logora_config` object under the `remote_auth` parameter. **Logora's SSO integration is only compatible with the JWT authentication method.**
 
 ## 1. Installing Logora in WebView
 
@@ -33,7 +33,7 @@ In your mobile application or WebView site, create a web view that loads the URL
     <script>
       var logora_config = {
         shortname: "APPLICATION_NAME",
-        remote_auth: "YOUR_SSO_TOKEN"
+        remote_auth: "YOUR_JWT_SSO_TOKEN"
       };
     </script>
     <script src="https://cdn.logora.com/debat.js"></script>
@@ -92,14 +92,16 @@ class DebateActivity : AppCompatActivity() {
 
 For users to be automatically authenticated on Logora without re-entering their credentials, it is necessary to inject a token into `remote_auth` within `logora_config`.
 
-Logora supports several SSO authentication methods: **JWT** and **OAuth 2.0**. You can check the detailed guides on authentication in our [JWT documentation](../../authentication/jwt) and [OAuth 2.0 documentation](../../authentication/oauth2_server).
+**Logora's SSO integration is only compatible with JWT authentication.**
+
+You can check the detailed guide on authentication in our [JWT documentation](../../authentication/jwt).
 
 Example configuration:
 
 ```javascript
 var logora_config = {
   shortname: "APPLICATION_NAME",
-  remote_auth: "YOUR_SSO_TOKEN"
+  remote_auth: "YOUR_JWT_SSO_TOKEN"
 };
 ```
 
@@ -116,4 +118,4 @@ var logora_config = {
 
 ## Conclusion
 
-With this integration, your users can interact on Logora without friction, directly from your application or WebView site while benefiting from secure and seamless authentication.
+With this integration, your users can interact on Logora without friction, directly from your application or WebView site while benefiting from secure and seamless authentication through JWT-based SSO.

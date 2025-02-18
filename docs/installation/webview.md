@@ -13,7 +13,7 @@ Deux applications ont déjà intégré Logora avec succès : **Der SPIEGEL** et 
 - [Der SPIEGEL](https://www.loom.com/share/725de75c09d64911ad42fdff7acf07e7?sid=c5d01191-5783-4980-be81-f1a21e162e87)
 - [Suedkurier](https://www.loom.com/share/b3eabe7ab0d1417f8cbbfd29735c2adf?sid=356bc7c1-559e-4f2e-bece-7cecc328cb6e)
 
-Pour une authentification transparente des utilisateurs, Logora supporte l'Authentification Unique (SSO) via l'injection d'un jeton dans l'objet `logora_config` sous le paramètre `remote_auth`. 
+Pour une authentification transparente des utilisateurs, Logora supporte l'Authentification Unique (SSO) via l'injection d'un jeton dans l'objet `logora_config` sous le paramètre `remote_auth`. **L'intégration SSO de Logora est uniquement compatible avec la méthode JWT.**
 
 ## 1. Installation de Logora en WebView
 
@@ -33,7 +33,7 @@ Dans votre application mobile ou site WebView, créez une vue Web qui charge l'U
     <script>
       var logora_config = {
         shortname: "NOM_APPLICATION",
-        remote_auth: "VOTRE_JETON_SSO"
+        remote_auth: "VOTRE_JETON_JWT"
       };
     </script>
     <script src="https://cdn.logora.com/debat.js"></script>
@@ -92,14 +92,16 @@ class DebateActivity : AppCompatActivity() {
 
 Pour que les utilisateurs soient automatiquement authentifiés sur Logora sans ressaisie de leurs identifiants, il est nécessaire d’injecter un jeton dans `remote_auth` au sein de `logora_config`.
 
-Logora prend en charge plusieurs méthodes d'authentification SSO : **JWT** et **OAuth 2.0**. Vous pouvez consulter les guides détaillés sur l’authentification dans notre [documentation JWT](../../authentication/jwt) et [documentation OAuth 2.0](../../authentication/oauth2_server).
+**L'intégration SSO de Logora est uniquement compatible avec la méthode JWT.**
+
+Vous pouvez consulter le guide détaillé sur l’authentification dans notre [documentation JWT](../../authentication/jwt).
 
 Exemple de configuration :
 
 ```javascript
 var logora_config = {
   shortname: "NOM_APPLICATION",
-  remote_auth: "VOTRE_JETON_SSO"
+  remote_auth: "VOTRE_JETON_JWT"
 };
 ```
 
@@ -116,4 +118,4 @@ var logora_config = {
 
 ## Conclusion
 
-Avec cette intégration, vos utilisateurs peuvent interagir sur Logora sans friction, directement depuis votre application ou site WebView, tout en bénéficiant d'une authentification sécurisée et transparente.
+Avec cette intégration, vos utilisateurs peuvent interagir sur Logora sans friction, directement depuis votre application ou site WebView, tout en bénéficiant d'une authentification sécurisée et transparente via JWT.

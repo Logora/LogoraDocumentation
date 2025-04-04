@@ -53,6 +53,8 @@ Vous pouvez maintenant créer le jeton, soit en format JWS, ou soit sous format 
 
 ##### JWT signé (JWS)
 
+> **Important** : Si votre clé secrète est encodée en Base64, activez l'option correspondante dans votre espace d'administration.
+
 Le jeton est composée de trois parties, l'en-tête, le corps (payload) que vous avez généré précédemment et la signature.
 
 En-tête du jeton

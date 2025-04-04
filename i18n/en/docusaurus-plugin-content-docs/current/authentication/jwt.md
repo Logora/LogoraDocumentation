@@ -52,6 +52,8 @@ You can now create the token in either JWS (by default) or JWE format. If you're
 
 ##### Signed JWT (JWS)
 
+> **Important** : If your secret key is encoded in Base64, enable the corresponding option in your administration interface.
+
 The token is made up of three parts: the header, the payload you generated earlier, and the signature.
 
 Token header

@@ -54,13 +54,15 @@ Standard code to copy/paste and complete:
     shortname: "APPLICATION_NAME",
   };
 </script>
-<script src="https://cdn.logora.com/debat.js"></script>
+<script src="https://cdn.logora.com/debat.js" async fetchpriority="high"></script>
 ```
 
 ```html
 <!-- Insert this tag where the debate space is to be displayed -->
 <div id="logora_app"></div>
 ```
+
+> Since the script is loading the main content of the page, it should be prioritized to minimize Largest Contentful Page (LCP) metric.
 
 #### 1.3. Rewriting the URLs for the debate area routes
 

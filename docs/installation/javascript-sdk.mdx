@@ -56,13 +56,15 @@ Code standard à copier/coller et compléter :
     shortname: "NOM_APPLICATION",
   };
 </script>
-<script src="https://cdn.logora.com/debat.js"></script>
+<script src="https://cdn.logora.com/debat.js" async fetchpriority="high"></script>
 ```
 
 ```html
 <!-- Insérer cette balise là où l'espace de débat doit être affiché -->
 <div id="logora_app"></div>
 ```
+> Comme le script charge le contenu principal de la page, il doit être chargé le plus tôt possible, avec une haute priorité, pour minimiser le Largest Contentful Paint (LCP)
+
 
 #### 1.3. Réécriture des URLs pour les routes de l'espace de débat (important)
 

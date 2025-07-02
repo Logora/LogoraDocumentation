@@ -39,8 +39,9 @@ Deux événements sont disponibles pour gérer le tiroir :
   const event = new CustomEvent("logora:drawer:close");
   window.dispatchEvent(event);
 ```
+#### Désactiver l’affichage du tiroir pour un embed Logora spécifique
 Si vous souhaitez désactiver l’affichage du tiroir pour un embed Logora spécifique, vous pouvez ajouter l’attribut data-disable-drawer directement sur la balise ``` <div> ``` de l’embed. Cela permet d’empêcher le chargement du tiroir pour ce composant uniquement. Par exemple :
 ```html
 <div class="logora_embed" data-object-id="logora_config" data-disable-drawer></div>
 ```
-Cet attribut désactive le tiroir pour cet embed, tout en laissant le comportement par défaut actif sur les autres instances.
+Cet attribut désactive le tiroir pour cet embed, tout en laissant le comportement par défaut actif sur les autres instances. Cela peut être utile si, par exemple, vous souhaitez afficher les commentaires avec la navigation en tiroir sur la page article, mais préférez montrer d’autres modules comme les débats sur une page dédiée plutôt que dans le tiroir.

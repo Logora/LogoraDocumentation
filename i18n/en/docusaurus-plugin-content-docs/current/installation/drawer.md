@@ -41,3 +41,11 @@ Two events are available to control the drawer :
   const event = new CustomEvent("logora:drawer:close");
   window.dispatchEvent(event);
 ```
+
+#### Disable the drawer for a specific Logora embed
+If you want to disable the drawer for a specific Logora embed, you can do so by adding the data-disable-drawer attribute directly to the ``` <div> ``` of the embed. This will prevent the drawer from being triggered for that specific instance. For example:
+
+```html
+<div class="logora_embed" data-object-id="logora_config" data-disable-drawer></div>
+```
+This attribute disables the drawer for this embed only, while keeping the default behavior for others. This can be useful if, for example, you want to display comments with drawer navigation in the article page, but prefer to show other modules like debates on a dedicated page rather than inside the drawer.

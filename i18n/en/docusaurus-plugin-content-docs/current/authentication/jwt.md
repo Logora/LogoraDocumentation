@@ -34,7 +34,8 @@ The token payload contains user information in JSON format:
   "email": "jean@logora.fr",
   "first_name": "Jean",
   "last_name": "Dupont",
-  "iat": 1516239022
+  "iat": 1755007651,
+  "exp": 1755011251
 }
 ```
 
@@ -44,7 +45,8 @@ It must include the following case-sensitive attributes:
 - `last_name` (optional): user's surname.
 - email`: the email address registered for this account.
 - image_url` (optional): link to the user's avatar.
-- `iat`: JWT token generation date.
+- `iat`: token generation date.
+- `exp` (optional) : token expiration date. If present, session will not start if the token is expired
 
 Field names can be customized in the administration area if you have a different format.
 

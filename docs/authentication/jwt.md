@@ -35,7 +35,8 @@ Le corps du jeton contient les informations de l'utilisateur sous format JSON :
   "email": "jean@logora.fr",
   "first_name": "Jean",
   "last_name": "Dupont",
-  "iat": 1516239022
+  "iat": 1755007651,
+  "exp": 1755011251
 }
 ```
 
@@ -45,7 +46,8 @@ Il doit inclure les attributs suivants, sensibles à la casse :
 - `last_name` (optionnel) : nom de famille de l'utilisateur.
 - `email` : l'adresse email enregistrée pour ce compte.
 - `image_url` (optionnel) : lien vers l'avatar de l'utilisateur.
-- `iat` : date de génération du jeton JWT
+- `iat` : date de génération du jeton
+- `exp` (optionnel) : date d'expiration du jeton. Si présent, la session ne démarrera pas si le jeton est expiré.
 
 Le nom des champs est personnalisable sur l'espace d'administration si vous avez un format différent.
 

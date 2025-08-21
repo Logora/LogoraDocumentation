@@ -11,7 +11,7 @@ La déconnexion automatique (ou "backchannel logout") permet à une application 
 Si votre application utilise OAuth2 et est compatible OIDC, l'intégration de la déconnexion backchannel est très simple :
 
 - **Envoyez-nous simplement l'URL de l'issuer OIDC** (issuer ID) de votre fournisseur d'identité.
-- Ajoutez l'URL de la route de déconnexion à votre client OIDC : https://app.logora.fr/auth/logout.
+- Ajoutez l'URL de la route de déconnexion à votre client OIDC : https://app.logora.fr/auth/logout/<nom_de_l_application>.
 
 Aucune implémentation supplémentaire n'est nécessaire de votre côté. Lorsqu'une déconnexion est déclenchée, notre API s'occupe de tout (vérification du token, suppression des sessions, etc.).
 
@@ -21,17 +21,16 @@ Si votre application n'est pas compatible OIDC, vous devrez effectuer les appels
 
 #### Route à utiliser
 
-- `POST https://app.logora.fr/auth/logout` : pour notifier la déconnexion d'un utilisateur.
+- `POST https://app.logora.fr/auth/logout/<nom_de_l_application>` : pour notifier la déconnexion d'un utilisateur, en remplaçant _<nom_de_l_application> par votre nom d'application.
 
 #### Exemple d'appel API
 
+Le paramètre `logout_token` doit être passé dans le corps de la requête (formData) :
+
 ```bash
-curl -X POST https://app.logora.fr/auth/logout \
-  -H "Content-Type: application/json" \
-  -d '{
-    "logout_token": "<token>",
-    "application_name": "<nom de l'application>"
-  }'
+curl -X POST https://app.logora.fr/auth/logout/<nom_de_l_application> \
+	-H "Content-Type: application/x-www-form-urlencoded" \
+	-d "logout_token=<token>"
 ```
 
 #### Comment générer le `logout_token` ?

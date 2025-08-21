@@ -6,7 +6,7 @@ description: Déconnexion automatique (Backchannel Logout)
 
 La déconnexion automatique (ou "backchannel logout") permet à une application de notifier un fournisseur d'identité (IdP) qu'un utilisateur doit être déconnecté sur tous les services connectés via OpenID Connect (OIDC).
 
-## 1. Cas d'une application compatible OAuth2/OIDC
+### 1. Cas d'une application compatible OAuth2/OIDC
 
 Si votre application utilise OAuth2 et est compatible OIDC, l'intégration de la déconnexion backchannel est très simple :
 
@@ -15,15 +15,15 @@ Si votre application utilise OAuth2 et est compatible OIDC, l'intégration de la
 
 Aucune implémentation supplémentaire n'est nécessaire de votre côté. Lorsqu'une déconnexion est déclenchée, notre API s'occupe de tout (vérification du token, suppression des sessions, etc.).
 
-## 2. Cas d'une application non compatible OIDC
+### 2. Cas d'une application non compatible OIDC
 
 Si votre application n'est pas compatible OIDC, vous devrez effectuer les appels à notre API vous-même.
 
-### Route à utiliser
+#### Route à utiliser
 
 - `POST https://app.logora.fr/auth/logout` : pour notifier la déconnexion d'un utilisateur.
 
-### Exemple d'appel API
+#### Exemple d'appel API
 
 ```bash
 curl -X POST https://app.logora.fr/auth/logout \
@@ -34,7 +34,7 @@ curl -X POST https://app.logora.fr/auth/logout \
   }'
 ```
 
-### Comment générer le `logout_token` ?
+#### Comment générer le `logout_token` ?
 
 Le `logout_token` est un JWT (JSON Web Token) signé par votre clé secrète disponible dans votre espace d'administration. Il doit contenir au minimum le claim `sub`, qui doit correspondre au **uid de l'utilisateur tel qu'il est transmis à Logora** (c'est-à-dire l'identifiant unique de l'utilisateur dans votre système, utilisé lors de la création du compte sur Logora).
 

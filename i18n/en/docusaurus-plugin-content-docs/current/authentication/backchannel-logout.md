@@ -7,7 +7,7 @@ description: Backchannel Logout
 Backchannel logout allows an application to notify an identity provider (IdP) that a user should be logged out from all services connected via OpenID Connect (OIDC).
 
 
-## 1. Case of an OAuth2/OIDC compatible application
+### 1. Case of an OAuth2/OIDC compatible application
 
 If your application uses OAuth2 and is OIDC compatible, integrating backchannel logout is very simple:
 
@@ -16,15 +16,15 @@ If your application uses OAuth2 and is OIDC compatible, integrating backchannel 
 
 No additional implementation is required on your side. When a logout is triggered, our API takes care of everything (token verification, session deletion, etc.).
 
-## 2. Case of a non-OIDC compatible application
+### 2. Case of a non-OIDC compatible application
 
 If your application is not OIDC compatible, you will need to make the API calls yourself.
 
-### Route to use
+#### Endpoint to use
 
 - `POST https://app.logora.fr/auth/logout`: to notify the logout of a user.
 
-### Example API call
+#### Example API call
 
 ```bash
 curl -X POST https://app.logora.fr/auth/logout \
@@ -35,7 +35,7 @@ curl -X POST https://app.logora.fr/auth/logout \
   }'
 ```
 
-### How to generate the `logout_token`?
+#### How to generate the `logout_token`?
 
 The `logout_token` is a JWT (JSON Web Token) signed with your secret key available in your admin panel. It must contain at least the `sub` claim, which must match the **uid of the user as transmitted to Logora** (i.e., the unique identifier of the user in your system, used when creating the account on Logora).
 

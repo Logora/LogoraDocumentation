@@ -22,7 +22,7 @@ If your application is not OIDC compatible, you will need to make the API calls 
 
 #### Endpoint to use
 
-- `POST https://app.logora.fr/auth/logout/APPLICATION_NAME`: to notify the logout of a user, where _<application_name>_ should be replaced by your application name.
+- `POST https://app.logora.fr/auth/logout/APPLICATION_NAME`: to notify the logout of a user, where _APPLICATION_NAME_ should be replaced by your application name.
 
 
 #### Example API call

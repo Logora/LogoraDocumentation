@@ -21,7 +21,7 @@ Si votre application n'est pas compatible OIDC, vous devrez effectuer les appels
 
 #### Route à utiliser
 
-- `POST https://app.logora.fr/auth/logout/NOM_APPLICATION` : pour notifier la déconnexion d'un utilisateur, en remplaçant <NOM_APPLICATION> par votre nom d'application.
+- `POST https://app.logora.fr/auth/logout/NOM_APPLICATION` : pour notifier la déconnexion d'un utilisateur, en remplaçant _NOM_APPLICATION_ par votre nom d'application.
 
 #### Exemple d'appel API
 

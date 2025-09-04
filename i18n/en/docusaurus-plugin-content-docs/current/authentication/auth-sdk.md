@@ -81,5 +81,5 @@ window.addEventListener("logora:authentication:logout");
 When a user is asked to authenticate, an event is triggered. This event can be used to show the user your own login modal. It returns the URL to redirect to after login.
 
 ```js
-window.addEventListener("LOGORA::authenticationRequired", event => console.log(event.detail.redirectUrl));
+window.addEventListener("logora:authentication:requested", event => console.log(event.detail.redirectUrl));
 ```

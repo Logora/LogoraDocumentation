@@ -28,10 +28,10 @@ jobs:
         with:
           source: "build"
           destination: "www"
-          storageZoneName: "${{ secrets.STORAGE_NAME }}"
-          storagePassword: "${{ secrets.STORAGE_PASSWORD }}"
+          storageZoneName: "${{ secrets.BUNNY_STORAGE_NAME }}"
+          storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD }}"
           accessKey: "${{ secrets.BUNNY_API_KEY }}"
-          pullZoneId: "${{ secrets.ZONE_ID }}"
+          pullZoneId: "${{ secrets.BUNNY_ZONE_ID }}"
           upload: "true"
           remove: "true"
           purgePullZone: "true"

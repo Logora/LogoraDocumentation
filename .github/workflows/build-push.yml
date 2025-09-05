@@ -27,7 +27,7 @@ jobs:
         uses: ayeressian/bunnycdn-storage-deploy@v2.4.0
         with:
           source: "build"
-          destination: "www"
+          destination: "."
           storageZoneName: "${{ secrets.BUNNY_STORAGE_NAME }}"
           storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD }}"
           accessKey: "${{ secrets.BUNNY_API_KEY }}"

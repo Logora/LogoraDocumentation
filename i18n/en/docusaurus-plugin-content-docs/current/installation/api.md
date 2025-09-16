@@ -31,7 +31,10 @@ URL parameters :
 - `noHtml` (optional) : _true_. Skip HTML code generation. You only retrieve necessary information to implement your own design.
 
 
-Request body: The request body must contain metadata about the page, in JSON format.
+Request body (optional) : The request body must contain metadata about the page, in JSON format.
+
+> If you want to retrieve information about a debate or comments, without creating an article, you can omit the body of the request
+
 ```json
 {
   "source": 

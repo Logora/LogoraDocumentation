@@ -15,8 +15,7 @@ Pour accéder à une documentation plus détaillée de l'API de pré-rendu, rend
 #### Requête
 
 URL de base :
-- `https://render.logora.fr/synthesis` pour la synthèse  
-- `https://render.logora.fr/widget` pour le widget
+- `https://render.logora.fr/synthesis` pour la synthèse, voir documentation pour les autres options
 
 Méthode : `POST`
 
@@ -30,10 +29,10 @@ Paramètres d'URL :
 - `language` (optionnel) : indique la langue des textes de la synthèse. Les choix possibles sont : `fr`, `es`, `en`, `de`, `it`.
 - `insertType` (optionnel) : mode d'insertion, ne pas ajouter si insertion standard. Indiquer *amp* pour une insertion sur une page AMP ou *iframe* pour une insertion en iframe.  
 - `cache` (optionnel) : _true_ ou _false_. Permet de désactiver le cache pour tester en environnement de développement. Par défaut, les requêtes sont mises en cache quelques minutes. Ne pas désactiver le cache en production.
-- `noHtml` (optionnel) : _true_. Permet d'éviter la génération du code HTML pour seulement récupérer les informations nécessaires pour intégrer votre design. 
+- `noHtml` (optionnel) : _true_. Permet d'éviter la génération du code HTML pour seulement récupérer les informations nécessaires pour intégrer votre propre design. 
 
 
-Corps de la requête : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.
+Corps de la requête (optionnel) : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.
 ```json
 {
   "source": 
@@ -79,10 +78,15 @@ La réponse renvoyée est sous cette forme :
 ```json
 {
   "success": true, // true si un débat est associé, false si aucun débat ou une erreur
-  "debate": {    
+  "debate": {
+    "id": 43455,
     "slug": "mon-debat",    // Identifiant unique du débat, présent dans l'URL
     "name": "Faut-il introduire une dose de proportionnelle dans l'élection des députés ?",     // Titre du débat
-    "direct_url": "https://exemple.com/espace-debat/debat/mon-debat"      // Lien vers le débat
+    "type": "Group",
+    "direct_url": "https://exemple.com/espace-debat/debat/mon-debat",      // Lien vers le débat
+    "created_at": "2025-05-12T12:26:20.042Z",
+    "image_url": "https://storage.logora.com/uploads/standard_3fd4460e064c8f079db11c12ce522fce.jpg",
+    "contributions_count": 77
   },
   "content": CODE_HTML // Code HTML de la synthèse à insérer dans la page. Attribut non présent si success à false
 }
@@ -92,5 +96,5 @@ La réponse renvoyée est sous cette forme :
 Le code HTML renvoyé a pour racine le conteneur suivant  : 
 
 ```html
-<div id="logoraRoot" class="logoraContainer" data-id="synthesis"><div>
+<div id="logoraRoot" class="logoraContainer" data-id="group_embed"><div>
 ```

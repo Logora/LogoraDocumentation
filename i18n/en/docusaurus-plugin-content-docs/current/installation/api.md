@@ -16,8 +16,7 @@ To get a more detailed documentation of this API, go to the [Documentation](http
 #### Query
 
 Base URL :
-- `https://render.logora.fr/synthesis` for the debate summary
-- `https://render.logora.fr/widget` for the widget
+- `https://render.logora.fr/synthesis` for the debate summary, see documentation for other options
 
 Method : `POST`  
 Header : `Content-Type: application/json`
@@ -78,12 +77,17 @@ The response returned follows this format:
 ```json
 {
   "success": true, // true if a debate is associated, false if no debate or an error
-  "debate": {    
+  "debate": {
+    "id": 43253,
     "slug": "my-debate",    // Unique identifier of the debate, present in the URL
     "name": "Should proportional representation be introduced in the election of deputies?",     // Debate title
-    "direct_url": "https://exemple.com/debate-space/debate/my-debate"      // Link to the debate
+    "type": "Group",
+    "direct_url": "https://exemple.com/debate-space/debate/my-debate",      // Link to the debate
+    "created_at": "2025-05-12T12:26:20.042Z",
+    "image_url": "https://storage.logora.com/uploads/standard_3fd4460e064c8f079db11c12ce522fce.jpg",
+    "contributions_count": 77
   },
-  "content": CODE_HTML  // HTML code of the debate summary to insert in the page. Attribute not present if success is false
+  "content": CODE_HTML  // HTML code of the debate summary to insert in the page. Attribute not present if success is false, null if noHtml is true
 }
 ```
 
@@ -91,5 +95,5 @@ The response returned follows this format:
 The returned HTML code has the following container at its root: 
 
 ```html
-<div id="logoraRoot" class="logoraContainer" data-id="synthesis"><div>
+<div id="logoraRoot" class="logoraContainer" data-id="group_embed"><div>
 ```

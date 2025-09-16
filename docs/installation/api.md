@@ -33,6 +33,9 @@ Paramètres d'URL :
 
 
 Corps de la requête (optionnel) : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.
+
+> Si vous voulez récupérer des infos sur un débat ou sur les commentaires, sans création d'article, vous pouvez omettre le corps de la requête
+
 ```json
 {
   "source": 

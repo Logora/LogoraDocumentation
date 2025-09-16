@@ -116,6 +116,20 @@ var logora_config = {
 };
 ```
 
+## 3. Initial Route
+
+To define the first page that will be displayed in the webview, you can pass the desired path as the `initial_path` parameter:
+
+```javascript
+var logora_config = {
+    shortname: "APPLICATION_NAME",
+    initial_path: "/debate/debate-title"
+};
+```
+
+The application will then open directly on this page. This provides a direct link to the debate space pages.
+
+
 ## Conclusion
 
 With this integration, your users can interact on Logora without friction, directly from your application or WebView site while benefiting from secure and seamless authentication through JWT-based SSO.

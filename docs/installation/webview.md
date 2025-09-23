@@ -122,7 +122,7 @@ Pour définir la première page affichée dans la webview, vous pouvez passer en
 ```javascript
 var logora_config = {
   shortname: "NOM_APPLICATION",
-  inital_path: "/debat/titre-de-debat"
+  initial_path: "/debat/titre-de-debat"
 };
 ```
 

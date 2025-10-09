@@ -57,3 +57,4 @@ Once the configuration is validated, all automatic emails (notifications, newsle
 - Make sure your DNS records (SPF, DKIM, DMARC) are properly configured for your domain to prevent your emails from being marked as spam.  
 - If you encounter a connection error, verify the credentials and ports used.  
 - If needed, contact the Logora team for assistance.
+

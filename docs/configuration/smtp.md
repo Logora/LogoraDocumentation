@@ -46,7 +46,7 @@ Si vous utilisez Gmail ou Google Workspace, vous devez créer un **mot de passe 
 ### 4. Enregistrer et tester la configuration
 
 1. Cliquez sur **Enregistrer**.  
-2. Pour tester la configuration, vous pouvez demander à un collègue ou à un utilisateur de **répondre à un débat** afin de recevoir un e-mail automatique de notification.  
+2. Pour tester la configuration, vous pouvez demander à un collègue ou à un utilisateur de **vous répondre dans un débat** afin de recevoir un e-mail automatique de notification.  
    Si le message arrive correctement depuis votre adresse personnalisée, la configuration est opérationnelle.
 
 Une fois la configuration validée, tous les e-mails automatiques (notifications, newsletters, etc.) seront envoyés depuis votre propre adresse.

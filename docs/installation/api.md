@@ -4,13 +4,16 @@ title: Installation côté serveur
 description: Insérez Logora côté serveur grâce à notre API
 ---
 
-### Récupération du code de la synthèse
-
-Logora fournit une route d'API pour récupérer la synthèse dans vos pages côté serveur. Cette route d'API renvoie le code HTML complet de la synthèse (CSS et scripts inclus), que vous pouvez insérer dans votre modèle de page. Cette méthode remplace l'insertion du script Logora sur vos pages.
+Logora fournit une API pour installer l'espace de débat côté serveur. Cette API renvoie le code HTML complet du bloc dans les articles ou des pages de l'espace de débat (CSS et scripts inclus), que vous pouvez insérer dans vos modèles de page.
 
 Pour accéder à une documentation plus détaillée de l'API de pré-rendu, rendez-vous sur la [Documentation](https://render.logora.fr/docs)
 
-> Cette API est utilisée par ailleurs par le code Javascript Logora pour afficher la synthèse.
+
+### Récupération du code du bloc dans les articles
+
+L'API permet de récupérer le code HTML complet du bloc dans les articles (CSS et scripts inclus), que vous pouvez insérer dans votre modèle de page. Cette méthode remplace l'insertion du script Logora sur vos pages.
+
+> Cette API est utilisée par ailleurs par le code Javascript Logora pour afficher le bloc dans les articles.
 
 #### Requête
 
@@ -20,7 +23,6 @@ URL de base :
 Méthode : `POST`
 
 En-tête : `Content-Type: application/json`
-
 
 Paramètres d'URL :   
 - `shortname` (requis) : nom de votre application disponible dans votre espace d'administration
@@ -101,3 +103,43 @@ Le code HTML renvoyé a pour racine le conteneur suivant  :
 ```html
 <div id="logoraRoot" class="logoraContainer" data-id="group_embed"><div>
 ```
+
+
+### Récupération du code de l'espace de débat
+
+L'API peut aussi être utilisée pour récupérer le code des pages de l'espace de débat. Cela vous permet d'envoyer aux moteurs de recherche une page complète, générée côté serveur. Le code renvoyé est statique, il n'est donc fait que pour les moteurs de recherche. Différenciez les appels aux moteurs de recherche et aux utilisateurs, à qui vous servirez la version côté client.
+
+
+#### Requête
+
+URL de base :
+- `https://render.logora.fr/app`
+
+Méthode : `GET`
+
+En-tête : `Content-Type: application/json`
+
+Paramètres d'URL :   
+- `shortname` (requis) : nom de votre application disponible dans votre espace d'administration
+- `url` (requis) : URL de la page à récupérer
+
+
+#### Réponse
+
+La réponse renvoyée est sous cette forme :
+
+```json
+{
+  "success": true, // true si tout s'est bien passé
+  "title": "Titre de la page",
+  "description": "Description de la page",
+  "content": CODE_HTML // Code HTML de l'espace à insérer dans votre page. Attribut non présent si success à false
+}
+```
+
+Le code HTML renvoyé a pour racine le conteneur suivant  : 
+
+```html
+<div id="logoraRoot" class="logoraContainer" data-vid="view_app" data-shortname="YOUR_SHORTNAME">
+```
+

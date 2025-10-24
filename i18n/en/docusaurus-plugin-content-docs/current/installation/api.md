@@ -8,7 +8,7 @@ Logora provides an API to install the debate space server-side. This API returns
 
 For more detailed documentation on the pre-render API, visit the [Documentation](https://render.logora.fr/docs).
 
-### Retrieving the block code in articles
+### 1. Retrieving the block code in articles
 
 The API allows you to retrieve the complete HTML code of the block for articles (including CSS and scripts), which you can insert into your page template. This method replaces the insertion of the Logora script on your pages.
 
@@ -98,7 +98,7 @@ The returned HTML code has the following root container:
 <div id="logoraRoot" class="logoraContainer" data-id="group_embed"><div>
 ```
 
-### Retrieving the debate space code
+### 2. Retrieving the debate space code
 
 The API can also be used to retrieve the code for debate space pages. This allows you to send a complete, server-generated page to search engines. The returned code is static and intended only for search engines. Differentiate calls for search engines and users, to whom you will serve the client-side version.
 

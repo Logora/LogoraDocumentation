@@ -9,7 +9,7 @@ Logora fournit une API pour installer l'espace de débat côté serveur. Cette A
 Pour accéder à une documentation plus détaillée de l'API de pré-rendu, rendez-vous sur la [Documentation](https://render.logora.fr/docs)
 
 
-### Récupération du code du bloc dans les articles
+### 1. Récupération du code du bloc dans les articles
 
 L'API permet de récupérer le code HTML complet du bloc dans les articles (CSS et scripts inclus), que vous pouvez insérer dans votre modèle de page. Cette méthode remplace l'insertion du script Logora sur vos pages.
 
@@ -105,7 +105,7 @@ Le code HTML renvoyé a pour racine le conteneur suivant  :
 ```
 
 
-### Récupération du code de l'espace de débat
+### 2. Récupération du code de l'espace de débat
 
 L'API peut aussi être utilisée pour récupérer le code des pages de l'espace de débat. Cela vous permet d'envoyer aux moteurs de recherche une page complète, générée côté serveur. Le code renvoyé est statique, il n'est donc fait que pour les moteurs de recherche. Différenciez les appels aux moteurs de recherche et aux utilisateurs, à qui vous servirez la version côté client.
 

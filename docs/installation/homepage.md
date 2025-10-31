@@ -70,8 +70,9 @@ Le code entier revient à ceci :
     // Variables de configuration
     var logora_config = {
         shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
-        debate: {
-            identifier: "PAGE_IDENTIFIER" // Identifiant unique de la page
+        resource: {
+            id: "PAGE_IDENTIFIER", // Identifiant unique de la page,
+            name: "synthesis"
         }
         synthesis: {
             hideArguments: true

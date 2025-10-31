@@ -55,8 +55,8 @@ If you wish to install different questions on various sections, you need to inst
 
 ```html
 synthesis: {
-            hideArguments: true
-       }
+   hideArguments: true
+}
 ```
 
 The entire code looks like this:
@@ -78,7 +78,7 @@ The entire code looks like this:
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://cdn.logora.com/synthese.js'; // 'https://cdn.logora.com/widget.js' for the widget
+        s.src = 'https://cdn.logora.com/embed.js';
         (d.head || d.body).appendChild(s);
     })();
 </script>

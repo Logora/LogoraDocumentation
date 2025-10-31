@@ -81,7 +81,7 @@ Le code entier revient à ceci :
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://cdn.logora.com/synthese.js'; // 'https://cdn.logora.com/widget.js' pour le widget
+        s.src = 'https://cdn.logora.com/embed.js';
         (d.head || d.body).appendChild(s);
     })();
 </script>

@@ -75,6 +75,11 @@ La réécriture des URLs permet également à l'équipe Logora de rajouter direc
 
 Utilisez la réécriture d'URL sur votre plateforme ou CMS pour que les chemins commençant par 'espace-debat/' (ou le préfixe que vous avez choisi) pointent vers la page où est inséré l'espace de débat.
 
+Si vous utilisez le fichier htaccess, vous pouvez ajouter la règle suivante, à adapter selon votre usage :
+```
+RewriteRule ^espace-debat(/.*|)$ /espace-debat [NC,L]
+```
+
 Accédez à la page _https://votresite.com/espace-debat/debats_. Vous êtes sur la page d'accueil de l'espace de débat !
 
 Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat, rendez-vous sur [la configuration des chemins d'URL](../../configuration/routes).

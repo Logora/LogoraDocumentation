@@ -73,6 +73,11 @@ URL rewriting also allows the Logora team to add new modules directly to new URL
 
 Use URL rewriting on your platform or CMS so that paths starting with 'debate-space/' (or your chosen prefix) point to the page where the debate space is inserted.
 
+If you are using an .htaccess file, you can add the following rule, adapting it to your needs:
+```
+RewriteRule ^debate-space(/.*|)$ /debate-space [NC,L]
+```
+
 Go to *https://votresite.com/espace-debat/debats*. You are now on the discussion index homepage!
 
 To change the prefix and URL paths of the debate forum pages, go to [URL path configuration](configuration/routes.md).

@@ -1,5 +1,5 @@
 ---
-id: Module-de-commentaires
+id: module-commentaires
 title: Module de commentaires
 description: Installez les commentaires en pied d’article grâce à notre code JavaScript.
 ---

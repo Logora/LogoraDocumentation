@@ -73,7 +73,7 @@ Le code entier revient à ceci :
         resource: {
             id: "PAGE_IDENTIFIER", // Identifiant unique de la page,
             name: "synthesis"
-        }
+        },
         synthesis: {
             hideArguments: true
        }

@@ -34,9 +34,10 @@ Standard code to copy, paste, and complete:
         (d.head || d.body).appendChild(s);
     })();
 </script>
+```
+
 
 #### Configuration variables
-
 
 - **shortname**  
   Name of the Logora application associated with your site.  

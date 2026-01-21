@@ -17,7 +17,7 @@ The **logora_comments** container corresponds to the location where the comments
 Standard code to copy, paste, and complete:
 
 ```javascript
-<div class="logora_comments" data-object-id="logora_config"></div>
+<div id="logora_comments" data-object-id="logora_config"></div>
 <script>
     // Configuration variables
     var logora_config = {

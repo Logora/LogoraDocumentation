@@ -17,7 +17,7 @@ Le conteneur logora_comments correspond à l’emplacement où le module de comm
 Code standard à copier/coller et compléter :
 
 ```javascript
-<div class="logora_comments" data-object-id="logora_config"></div>
+<div id="logora_comments" data-object-id="logora_config"></div>
 <script>
     // Variables de configuration
     var logora_config = {

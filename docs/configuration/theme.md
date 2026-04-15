@@ -115,3 +115,44 @@ Il suffit d'ajouter un bloc `<style>` dans votre page en ciblant l'élément `#l
 </style>
 ```
 
+### 3. Mode sombre
+
+#### Activation
+
+Le mode sombre s'active sur votre espace d'administration, ou en passant `theme.enableDarkMode: true` dans la configuration. La classe `logoraDarkMode` est alors automatiquement ajoutée sur l'élément `#logoraRoot`.
+
+```js
+var logora_config = {
+  shortname: "your-shortname",
+  theme: {
+    enableDarkMode: true
+  }
+};
+```
+
+Le mode sombre ne s'applique que lorsque le système de l'utilisateur est lui-même en mode sombre (`prefers-color-scheme: dark`). Si l'appareil est en mode clair, la classe `logoraDarkMode` n'a aucun effet.
+
+Vous pouvez aussi ajouter ou retirer la classe manuellement sur l'élément `#logoraRoot` pour forcer le mode sans passer par la configuration.
+
+#### Variables CSS du mode sombre
+
+Les valeurs par défaut du mode sombre peuvent être surchargées via des variables CSS dédiées, à suffixe `-dark`, toujours sur `#logoraRoot` :
+
+```html
+<style>
+  #logoraRoot {
+    --background-color-container-dark: #0a0a0a;
+    --background-color-primary-dark: #1a1a1a;
+    --background-color-secondary-dark: #5a5a5a;
+    --text-primary-dark: #f5f5f5;
+    --text-secondary-dark: #cccccc;
+    --text-tertiary-dark: #444444;
+    --box-border-dark: 1px solid #666666;
+    --darken-text-tertiary-dark: #4a4a4a;
+    --darkest-text-tertiary-dark: #707070;
+    --tag-text-color-dark: #f5f5f5;
+    --box-border-main-container-dark: 0;
+  }
+</style>
+```
+

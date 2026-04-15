@@ -115,4 +115,4 @@ Simply add a `<style>` block to your page targeting the `#logoraRoot` element:
     --img-aspect-ratio: 16/9;
   }
 </style>
-` ` `
+```

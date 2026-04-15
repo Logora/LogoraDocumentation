@@ -113,6 +113,5 @@ Il suffit d'ajouter un bloc `<style>` dans votre page en ciblant l'élément `#l
     --img-aspect-ratio: 16/9;
   }
 </style>
-` ` `
+```
 
-Les variables disponibles couvrent les couleurs des thèses (`--for-primary-color`, `--against-primary-color`, `--third-position-color-primary`), les appels à l'action (`--call-primary-color`), les arrière-plans, les bordures, les ombres, les rayons, la typographie et les étiquettes.

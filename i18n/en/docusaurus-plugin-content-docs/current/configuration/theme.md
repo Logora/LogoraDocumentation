@@ -116,3 +116,45 @@ Simply add a `<style>` block to your page targeting the `#logoraRoot` element:
   }
 </style>
 ```
+
+
+### 3. Dark mode
+
+#### Activation
+
+Dark mode can be enabled from your administration space, or by passing `theme.enableDarkMode: true` in the configuration. The `logoraDarkMode` class is then automatically added to the `#logoraRoot` element.
+
+```js
+var logora_config = {
+  shortname: "your-shortname",
+  theme: {
+    enableDarkMode: true
+  }
+};
+```
+
+Dark mode only applies when the user's system is itself in dark mode (`prefers-color-scheme: dark`). If the device is in light mode, the `logoraDarkMode` class has no effect.
+
+You can also add or remove the class manually on the `#logoraRoot` element to force the mode without going through the configuration.
+
+#### CSS variables for dark mode
+
+The default dark mode values can be overridden via dedicated CSS variables with a `-dark` suffix, still on `#logoraRoot`:
+
+```html
+<style>
+  #logoraRoot {
+    --background-color-container-dark: #0a0a0a;
+    --background-color-primary-dark: #1a1a1a;
+    --background-color-secondary-dark: #5a5a5a;
+    --text-primary-dark: #f5f5f5;
+    --text-secondary-dark: #cccccc;
+    --text-tertiary-dark: #444444;
+    --box-border-dark: 1px solid #666666;
+    --darken-text-tertiary-dark: #4a4a4a;
+    --darkest-text-tertiary-dark: #707070;
+    --tag-text-color-dark: #f5f5f5;
+    --box-border-main-container-dark: 0;
+  }
+</style>
+```

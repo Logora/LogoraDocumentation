@@ -1,137 +1,202 @@
 ---
 id: jwt
 title: JWT
+description: Authentication via JWT — generation, transmission, lifecycle, avatar format
 ---
 
-This authentication mode automatically connects users to Logora once they have been authenticated through your login system. This method uses a signed (JWS) or encrypted (JWE) JSON Web Token (JWT) to transmit user data to Logora.
+This authentication mode automatically logs users into Logora once they're authenticated through your login system. It uses a **JWT** (JSON Web Token), signed (JWS) or encrypted (JWE), to transmit user data to Logora.
 
-### Before you start
+:::tip When to use JWT?
+JWT is the **simplest SSO method** to set up and the most widely used at Logora. If you need stricter security (token-by-token revocation, scopes), look at the [OAuth 2.0 server](/authentication/oauth2_server) instead.
+:::
 
-- Go to your [Administration space](https://admin.logora.fr) (*Configuration > Authentication*) to choose the authentication mode `JWT signature`.  
-- Get your API secret key. This secret key will be used to create the JWT token. It must be kept confidential.
+## Before you start
 
-### Authentication process
+- Go to your [admin space](https://admin.logora.fr), tab *Configuration > Authentication*, to choose the `JWT` authentication mode.
+- Have your **API secret key** ready. This secret will be used to create the JWT. It must remain confidential.
 
-1. When the user connects to your website, you must create a JWT token containing the user's information. It will be transmitted to Logora. 
-2. When the user goes to a page where the Logora code is inserted, the JWT token is inserted in the Javascript configuration variables, via the `remote_auth` parameter.
-3. The Logora application detects the JWT token, decodes it, verifies it and signs in or signs up the user.
+## Authentication flow
 
-### Set up
+```
+[Your server]                  [Browser]                  [Logora]
+       │                              │                         │
+       │  1. User login               │                         │
+       │ ◄────────────────────────── │                         │
+       │                              │                         │
+       │  2. Generates signed JWT     │                         │
+       │ ──────────────────────────►  │                         │
+       │                              │                         │
+       │                              │  3. logora_config       │
+       │                              │     contains JWT        │
+       │                              │ ──────────────────────► │
+       │                              │                         │
+       │                              │  4. Logora validates,   │
+       │                              │     opens session       │
+       │                              │ ◄────────────────────── │
+```
 
-> WARNING : the JWT token transmitted to Logora must always be updated according to the state of the user, whether they are connected or not. If the pages of your website are behind a cache, especially the pages that contain the debate summary, it is possible that the JWT token is not updated. If caching is interfering with the creation of the JWT token, use another authentication method.
+1. When the user logs in on your site, you generate the JWT containing the user info on your server.
+2. When the user reaches a page where Logora code is embedded, the JWT is injected into the JavaScript config via the `remote_auth` parameter.
+3. The Logora app detects the token, decodes, verifies, and signs the user in or registers them.
 
-#### 1. Generation of the JWT token
+## Setup
 
-Using [JSON Web Token serialization](https://jwt.io/), editors can pass on existing user data to provide users with a seamless, authenticated session on Logora. The JWT token must be generated on your servers and then transmitted to Logora via javascript configuration variables. The token can be signed or encrypted, depending on the degree of confidentiality you require for user information.
+:::warning Cached pages
+The JWT must always reflect the user's current state, logged in or not. If your pages are behind a cache (especially pages containing the debate synthesis), the token may not be refreshed.
 
-##### Creating the token payload
+If caching prevents fresh token generation, use a different authentication method.
+:::
 
-The token payload contains user information in JSON format:
+### 1. Generate the JWT
+
+The JWT lets you transmit existing user data to Logora to provide a seamless authenticated session. The token must be generated on **your servers** and transmitted via JavaScript config. It can be signed or encrypted depending on your confidentiality needs.
+
+#### Token body
+
+The body contains user info as JSON:
 
 ```json
 {
   "uid": "12345abc",
-  "email": "jean@logora.fr",
-  "first_name": "Jean",
-  "last_name": "Dupont",
+  "email": "john@logora.fr",
+  "first_name": "John",
+  "last_name": "Doe",
   "iat": 1755007651,
   "exp": 1755011251
 }
 ```
 
-It must include the following case-sensitive attributes:
-- `uid`: unique identifier associated with the user in your database.
-- `first_name`: user's first name, or username if `last_name` is empty.
-- `last_name` (optional): user's surname.
-- email`: the email address registered for this account.
-- image_url` (optional): link to the user's avatar.
-- `iat`: token generation date.
-- `exp` (optional) : token expiration date. If present, session will not start if the token is expired
+Supported fields (case-sensitive):
 
-Field names can be customized in the administration area if you have a different format.
+| Field | Type | Description |
+|---|---|---|
+| `uid` | string, **required** | Unique user identifier in your database |
+| `first_name` | string, **required** | First name, or username if `last_name` is empty |
+| `last_name` | string, optional | Last name |
+| `email` | string, **required** | Email address |
+| `image_url` | string, optional | Avatar URL (see [required format](#format-required-for-image_url)) |
+| `iat` | number, **required** | Token issued-at timestamp (Unix) |
+| `exp` | number, optional | Expiration timestamp. If present, **expired tokens won't start a session** |
 
-You can now create the token in either JWS (by default) or JWE format. If you're not sure which solution to choose, choose the signed version, which is the most widely used and easiest to set up.
+:::note Customizable field names
+If your system uses a different format (e.g. `userId` instead of `uid`), you can map the names in the admin (*Configuration > Authentication*).
+:::
 
-##### Signed JWT (JWS)
+#### Signed JWT (JWS) — easiest
 
-> **Important** : If your secret key is encoded in Base64, enable the corresponding option in your administration interface.
+:::caution If your secret key is Base64-encoded
+Enable the corresponding option in your admin, otherwise the signature won't validate.
+:::
 
-The token is made up of three parts: the header, the payload you generated earlier, and the signature.
+The token has three parts: header, payload, and signature.
 
-Token header
-``` 
-{ 
-  "alg": "HS256", 
-  "typ": "JWT 
-}
 ```
+header = { "alg": "HS256", "typ": "JWT" }
 
-Signature  
-```
-HMACSHA256(
-   base64UrlEncode(header) + "." +
-   base64UrlEncode(payload),
-   SECRET_KEY
-)
-```
-
-Pseudo-code example
-```
-header = { 
-  "alg": "HS256", 
-  "typ": "JWT" 
-}
 payload = {
   uid: "123abc",
-  first_name: "Jean",
-  last_name: "Dupont",
-  email: "jeandupont@exemple.com",
+  first_name: "John",
+  email: "john@example.com",
   iat: 1516239022
 }
+
 signature = HMACSHA256(
-   base64UrlEncode(header) + "." +
-   base64UrlEncode(payload),
+   base64UrlEncode(header) + "." + base64UrlEncode(payload),
    SECRET_KEY
 )
 
-// Variable transmitted to Logora
-tokenJWT = base64UrlEncode(header) + "." + base64UrlEncode(payload) + "." + signature
-=> "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIxMjNhYmMiLCJmaXJzdF9uYW1lIjoiSmVhbiIsImxhc3RfbmFtZSI6IkR1cG9udCIsImVtYWlsIjoiamVhbmR1cG9udEBleGVtcGxlmNvbSIsImlhdCI6MTUxNjIzOTAyMn0. ITnJo8VwbP4PkVTANSt651C0olsrdRNCNmvTHkanuYk"
-```
-Before proceeding to the second step, check that the token works properly on the website: https://jwt.io/
-
-##### Encrypted JWT (JWE)
-
-To use this type of token, select the "JWE" option in the administration settings.
-Encrypting the token ensures that user information is not divulged. We only support RSA keys (RSA-OAEP and RSA1_5).
-
-To generate the token, we suggest you read this article, which explains the process: https://dzone.com/articles/using-json-web-encryption-jwe
-
-Here's an example of a token generated with the body generated above, and which will be transmitted to Logora:
-```
-eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkExMjhHQ00ifQ. FuNsYUYJzh294MQZ_71zOxBLiiOkU8UKF4b-wwhCKNKCm1452jnyxzljNTCkTGVhZui6CnBctUByqdvVugMzIlWxNA4hSXWvQUKxm-QJlJyqbdeL6URM2mxeqBxk3iEA7TIbLCd30pnFo8KkSbbHmkDVrVElJ403t0bNKPlvJkjU_Dc71tP3Zun- Nc_3PK9azldEZ7IEPYvd--leYPBBTThNZ--SHSWx_C8rF5a3PHaniVttguHX4EJ39V36xz_7FWFXh4ZNCCFp_kqa05_ixD0EEH11kpxdOv-wm_MgOyt9XODoIWqZUrcDywCkhNy_gIHP8LHbHFhyHR3o8qQvhQ. s_bngM9ad5tmrkQH.GJUshscvO9ZtspkyH-emLbbgyczh_uzFTbv_QEWM3iryARl0UrvYzaBjyBIr3o16bw4PfUCK-4TXTRzV4C56s63BNIwL7fY0AQXrBfRifg8AtaIg0NJyJXbnUzqB7Gx23KruL9g.zSNCxobkIFdAY82DRf1Qdw
+jwtToken = base64UrlEncode(header) + "." + base64UrlEncode(payload) + "." + signature
 ```
 
-Before proceeding to the second step, check that the token works properly on the website: https://dinochiesa.github.io/jwt/
+Before moving to step 2, validate the token at **[https://jwt.io/](https://jwt.io/)**.
 
-#### 2. Transmission of the token to Logora
+#### Encrypted JWT (JWE) — more confidentiality
 
-Once the message has been generated, it must be transmitted via the Javascript configuration variable, `remote_auth`, in the debate space code.
+Encryption prevents reading user info if the token is intercepted. Choose the **JWE** option in admin settings. We only support **RSA** keys (RSA-OAEP and RSA1_5).
+
+Tutorial: [Using JSON Web Encryption (JWE)](https://dzone.com/articles/using-json-web-encryption-jwe).
+
+Validate at **[https://dinochiesa.github.io/jwt/](https://dinochiesa.github.io/jwt/)**.
+
+### 2. Send the token to Logora
+
+Once generated, transmit the token via the `remote_auth` JavaScript variable:
 
 ```javascript
 var logora_config = {
-	remote_auth: jeton_JWT
+  remote_auth: jwt_token
 }
 ```
 
-#### 3. Disconnecting the user
+Also fill in the admin interface:
 
-To disconnect the user, remove the `remote_auth` parameter or transmit an empty string. If the parameter is empty, Logora considers that the user is disconnected.
+![JWT admin](/img/jwtadmin.png)
 
-#### 4. Redirection to the debate speace after user log-in
+### 3. User logout
 
-When a user who is not logged in wants to perform an action in the discussion forum, they are redirected to your login or registration page. When inserting the discussion forum and the overview, you must define the login and registration URLs, via the auth.login_url and auth.registration_url variables respectively.
+To log the user out, remove `remote_auth` or send an empty string. Logora then considers the user logged out.
 
-When redirecting, a logora_redirect request parameter is passed, containing the URL of the page before redirection. Use this parameter to redirect the user after login or registration. The name of the parameter passed can be changed, for example to `redirect_to`.
+```javascript
+var logora_config = {
+  remote_auth: ""  // logout
+}
+```
 
-These parameters can be changed in the administration area, in the *Configuration > Authentication* tab.
+For real-time **server-side logout**, use [Backchannel Logout](/authentication/backchannel-logout).
+
+### 4. Redirect after login
+
+When an unauthenticated user tries an action on the debate space, they're redirected to your login or signup page. Set these URLs via `auth.login_url` and `auth.registration_url`.
+
+On redirect, a `logora_redirect` query parameter is passed, containing the URL of the page before redirect. Use it to bring the user back. The parameter name is customizable (e.g. `redirect_to`).
+
+These settings are in *Admin > Configuration > Authentication*.
+
+---
+
+## Session lifecycle
+
+### Logora session duration
+
+Once the JWT is validated, Logora opens **its own session**, independent from yours. This session:
+
+- expires **2 hours** after creation (default)
+- can be explicitly revoked via [Backchannel Logout](/authentication/backchannel-logout)
+- can include an `exp` claim on the JWT — if present, **expired tokens won't start a session**
+
+:::warning Common question: can a stolen token be replayed forever?
+No, provided you use the `exp` claim correctly. To mitigate token replay:
+
+1. **Always include a short `exp` claim** (≤ 5 minutes recommended)
+2. **Refresh the `remote_auth` on every page render** (no HTML cache freezing the token)
+3. **Call backchannel logout server-side** when the user logs out on your site
+:::
+
+### Update user info on every login (`updateUserOnLogin`)
+
+Enable *Update user info on every login* in *Admin > Configuration > Authentication* to have Logora refresh `first_name`, `last_name`, `email`, `image_url` on each login.
+
+:::caution Edge case
+If you enable this option **and** send `image_url`, the avatar chosen by the user in Logora will be **overwritten on every login**. To let users pick their own avatar, **don't send** `image_url`.
+:::
+
+### Format required for `image_url`
+
+For the SSO avatar to display, your URL must serve an image with:
+
+| Criterion | Value |
+|---|---|
+| **Extension** | `.png`, `.jpg`, or `.jpeg` |
+| **HTTP Content-Type** | `image/png`, `image/jpeg` |
+| **Accessibility** | Public, **without authentication** (no cookies, no token in URL) |
+| **Recommended size** | 200×200 px minimum, 1:1 ratio |
+
+:::danger Frequent error (Krone, Bild)
+A URL returning a binary with `Content-Type: application/octet-stream` or requiring authentication cookies will **not be processed**. This is the #1 cause of "avatars not showing up" we see in support.
+:::
+
+---
+
+## Troubleshooting
+
+Hitting an SSO issue (Cloudflare blocking, Google/SSO conflict, rejected token)? See the dedicated page: **[SSO troubleshooting](/faq/troubleshooting-sso)**.

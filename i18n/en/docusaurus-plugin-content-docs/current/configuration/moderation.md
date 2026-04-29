@@ -1,25 +1,108 @@
 ---
 id: moderation
 title: Moderation
-description: Logora takes care of the moderation of your debate space. Customize the type of moderation from your administration space.
+description: Logora handles your debate space moderation. Configure the algorithm, blacklist, rejection reasons, and the team in charge.
 ---
 
-You can choose your moderation system from the administration area *Configuration > Moderation*.
+Logora offers several moderation layers that can be combined, configurable from your [admin space](https://admin.logora.fr) (*Configuration > Moderation*).
 
-![Moderation setup](/img/moderation.png)
+![Moderation configuration](/img/moderation.png)
 
-#### Type of moderation
+## Moderation type
 
-`Before publication of content` - **recommended**: contributions will go through moderation before publication (*a priori* moderation)  
+| Type | Description | Recommendation |
+|---|---|---|
+| **Pre-publication** | *A priori* moderation: contributions only appear once validated. Pending messages appear as published to their authors to keep the experience smooth. | ✅ Recommended |
+| **Post-publication** | *A posteriori* moderation: contributions appear immediately, then enter the moderation queue. | For very high-trust communities |
 
-`After publication of content`: contributions will be published and then go through moderation (moderation *a posteriori*)
+## Moderation team
 
-#### Responsible for moderation 
+### Manual
 
-`Manual`: you manage the moderation yourself.
+You handle moderation from the Logora admin. The queue is in *Moderation > Queue*.
 
-`Smart (Logora)` - **recommended**: the Logora team takes care of the moderation. We have built a moderation algorithm by tagging over 45,000 contributions that automatically accepts arguments that are considered readable, well-written and non-hateful. When the algorithm is not sure of the quality of the argument (unknown source, new turns of phrase, new concepts), the argument is sent to a member of our team for manual moderation. This concerns 15 to 20% of the arguments. We perform moderation every 24 hours on weekdays. Pending posts are seen as published by their authors to make their experience more fluid. 
-All of our moderators are native speakers and have a university degree. We have processed over two million arguments for all of our partners with a 100% success rate of detecting hateful, unreadable and illegal messages.
+### Smart — Logora ✅ recommended
 
-`External`: we outsource moderation to your external moderation services (Netino, Bodyguard, or others). If your moderation provider is not listed in the administration area, send us an email at contact@logora.fr, we will connect to them as soon as possible. 
-`Third party`: Logora integrates with external moderation services:
+Our proprietary algorithm (trained on **45,000+ labeled contributions**, **2M+ processed in production**) automatically accepts clearly compliant messages.
+
+Uncertain cases (15–20%) are processed within **24 hours on weekdays** by our team of native, college-educated moderators.
+
+:::info Performance
+**100% success rate** on detecting hateful, illegible, or illegal messages per our internal evaluation (5,000 contribution sample, 2025).
+:::
+
+### Third-party AI engines
+
+You can also activate one of these AI engines from the admin:
+
+| Engine | Provider | Specifics |
+|---|---|---|
+| **Logora AI** | Logora (default) | Model trained on our data |
+| **OpenAI** | OpenAI | GPT for content moderation |
+| **Azure Content Safety** | Microsoft | Fine-grained categorization (hate, sexual, violence) |
+| **Mistral** | Mistral AI | European model, GDPR-friendly |
+| **Perspective AI** | Google Jigsaw | Beta in Logora |
+
+Each engine has its own thresholds adjustable in *Moderation > Thresholds* (toxicity, personal attack, sexual content, etc.).
+
+### External
+
+If you already work with a provider (Nétino, Bodyguard, Ferret Go, Etoeo, etc.), we plug into their APIs.
+
+:::tip Provider not in the list?
+To add a provider absent from the admin, write to [contact@logora.fr](mailto:contact@logora.fr). Setup typically takes **5 business days**.
+:::
+
+## Blacklist and watchlist
+
+In *Moderation > Blacklist* you can add:
+
+| List | Effect |
+|---|---|
+| **Blacklist** (blocking) | Contribution is **automatically rejected** |
+| **Watchlist** (flagging) | Contribution goes to **manual moderation** |
+
+These lists apply to **contributions** but also to **usernames** if you enable *Apply to usernames* on the same page.
+
+:::note Real-world case
+Cutowl/Robin (Italy) wanted to prevent usernames containing slurs: option enabled, blacklist applied at signup and on every username change. Users get a clear error message if they try a blocked word.
+:::
+
+## Rejection emails and moderation reasons
+
+When a contribution is rejected, the author receives an explanatory email. You can:
+
+- **Choose from preset reasons** (insult, off-topic, unverified source, hate speech, etc.)
+- **Add a free-form note** shown to the author — notes are auto-saved and persist even if you close the tab
+- **Customize the subject and body** in *Configuration > Emails > Rejection email*
+
+See also [Customize notification emails](/faq/notification-emails).
+
+## Moderation API (custom integration)
+
+If you have your own internal tool or a particular workflow, we expose a bidirectional webhook:
+
+1. Logora sends each contribution to your webhook
+2. You return `accepted` / `rejected` + reason
+
+See the [Swagger documentation](https://app.logora.fr/docs) section `Moderation`.
+
+## Moderation dashboard
+
+The admin includes a dashboard with:
+
+- **Volume**: contributions moderated per day
+- **Rejection rate**: per reason category
+- **Median processing time**
+- **Top reported contributors**
+
+CSV export available in *Moderation > Statistics*.
+
+## Best practices
+
+:::tip Recommendations from our experience
+- **Start with pre-publication moderation** on sensitive topics (politics, society). You can switch to post-publication once the community stabilizes.
+- **Customize the rejection email** with an empathetic message: a user who understands why their message was rejected is 3× less likely to reoffend.
+- **Combine multiple layers**: blacklist (blocking) + AI (flagging) + human team (final validation) = robust pipeline.
+- **Monitor AI thresholds** in the first week: adjust them to your editorial tolerance.
+:::

@@ -31,7 +31,24 @@
       "type": "category",
       "label": "FAQ",
 	    "collapsed": false,
-      "items": ["faq/quality", "faq/performance", "faq/data", "faq/mailing", "faq/tracking", "faq/registration", "faq/thesis", "faq/invitation", "faq/journalist", "faq/share", "faq/premium", "faq/iframes", "faq/errors"]
+      "items": [
+        "faq/quality",
+        "faq/performance",
+        "faq/data",
+        "faq/account-deletion",
+        "faq/mailing",
+        "faq/tracking",
+        "faq/registration",
+        "faq/thesis",
+        "faq/invitation",
+        "faq/journalist",
+        "faq/share",
+        "faq/premium",
+        "faq/iframes",
+        "faq/api",
+        "faq/render-api",
+        "faq/errors"
+      ]
     }
   ]
 }

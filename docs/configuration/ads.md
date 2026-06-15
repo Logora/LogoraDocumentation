@@ -42,16 +42,20 @@ Les champs `path` et `id` sont propres à chaque emplacement. Les champs `target
 
 ### Sans Google Ad Manager
 
-Si vous utilisez une autre régie, ciblez les conteneurs publicitaires Logora via leur attribut HTML :
+Si vous utilisez une autre régie, vous pouvez cibler les conteneurs publicitaires Logora existants.
+
+Pour que les conteneurs soient rendus, remplissez les champs `path` et `id` — y compris avec des valeurs factices. Les conteneurs portent l'ID `div-gpt-ad-{votre-id}`.
+
+Ciblez-les ensuite avec votre script :
 
 | Sélecteur | Emplacement |
 |-----------|-------------|
-| `[data-logora-ad-slot="article"]` | Pavé pied d'article |
-| `[data-logora-ad-slot="thread"]` | Pavé dans la liste d'arguments |
+| `#div-gpt-ad-{votre-id-article}` | Pavé pied d'article |
+| `#div-gpt-ad-{votre-id-thread}` | Pavé dans la liste d'arguments |
 
 ```html
 <script>
-document.querySelectorAll('[data-logora-ad-slot="article"]').forEach(function(el) {
+document.querySelectorAll('#logoraRoot [id^="div-gpt-ad-"]').forEach(function(el) {
   // Insérez ici le code de votre régie publicitaire
 });
 </script>

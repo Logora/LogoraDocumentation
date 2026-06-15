@@ -42,16 +42,20 @@ The `path` and `id` fields are specific to each placement. The `targeting key` a
 
 ### Without Google Ad Manager
 
-If you use another ad provider, target the Logora ad containers via their HTML attribute:
+If you use another ad provider, you can target the existing Logora ad containers.
+
+To make the containers render, fill in the `path` and `id` fields — even with placeholder values. The containers use the ID `div-gpt-ad-{your-id}`.
+
+Then target them with your script:
 
 | Selector | Placement |
 |----------|-----------|
-| `[data-logora-ad-slot="article"]` | Article footer ad |
-| `[data-logora-ad-slot="thread"]` | In-list ad |
+| `#div-gpt-ad-{your-article-id}` | Article footer ad |
+| `#div-gpt-ad-{your-thread-id}` | In-list ad |
 
 ```html
 <script>
-document.querySelectorAll('[data-logora-ad-slot="article"]').forEach(function(el) {
+document.querySelectorAll('[id^="div-gpt-ad-"]').forEach(function(el) {
   // Insert your ad provider code here
 });
 </script>

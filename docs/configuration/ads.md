@@ -57,6 +57,3 @@ document.querySelectorAll('[data-logora-ad-slot="article"]').forEach(function(el
 </script>
 ```
 
-:::note
-Si vous avez contractualisé avec un modèle de partage de revenu, remplissez tous les emplacements et transmettez les performances à Logora (rapport Excel, Data Studio, etc.).
-:::

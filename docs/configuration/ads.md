@@ -55,7 +55,7 @@ Ciblez-les ensuite avec votre script :
 
 ```html
 <script>
-document.querySelectorAll('[id^="div-gpt-ad-"]').forEach(function(el) {
+document.querySelectorAll('#logoraRoot [id^="div-gpt-ad-"]').forEach(function(el) {
   // Insérez ici le code de votre régie publicitaire
 });
 </script>

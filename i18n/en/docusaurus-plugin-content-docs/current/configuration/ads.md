@@ -55,7 +55,7 @@ Then target them with your script:
 
 ```html
 <script>
-document.querySelectorAll('[id^="div-gpt-ad-"]').forEach(function(el) {
+document.querySelectorAll('#logoraRoot [id^="div-gpt-ad-"]').forEach(function(el) {
   // Insert your ad provider code here
 });
 </script>

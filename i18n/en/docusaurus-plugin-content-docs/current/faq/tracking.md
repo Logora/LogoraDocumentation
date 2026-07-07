@@ -25,6 +25,10 @@ Click on the title of the summary debate: `data-tid="link_debate_title_embed"`
 
 Click on "See more" of an argument: `data-tid="link_argument_read_more"` 
 
+### Tracking performance on the comments page
+
+Click on ‘See more’ for a comment: `data-tid=‘link_read_more’` 
+
 ### Monitoring a disconnected user
 
 Click on "Connection" : `data-tid=”action_login_link”`

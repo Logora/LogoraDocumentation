@@ -3,7 +3,7 @@ id: routes
 title: URL paths
 ---
 
-The debate space includes several pages that are accessible on your site via different URLs. If you are using the [Javascript installation](installation/javascript-sdk.md), these URLs must point to the page on your website where the debate space is inserted. If you use our [Wordpress plugin](installation/wordpress.md), the routes are handled automatically.
+The debate space includes several pages that are accessible on your site via different URLs. If you are using the [Javascript installation](../../installation/javascript-sdk.md), these URLs must point to the page on your website where the debate space is inserted. If you use our [Wordpress plugin](installation/wordpress.md), the routes are handled automatically.
 
 ### Debate space prefix path
 

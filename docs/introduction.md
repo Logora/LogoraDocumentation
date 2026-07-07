@@ -10,4 +10,4 @@ Cette documentation va vous guider dans l'installation et dans l'utilisation de 
 
 #### Installation
 
-Utilisez notre [code universel](installation/javascript-sdk) ou notre [plugin Wordpress](installation/wordpress.md) pour commencer l'installation !
+Utilisez notre [code universel](installation/javascript-sdk) ou notre [plugin Wordpress](installation/wordpress) pour commencer l'installation !

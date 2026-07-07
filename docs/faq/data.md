@@ -1,6 +1,7 @@
 ---
 id: data
 title: Gestion des utilisateurs
+description: Gérez les profils de vos utilisateurs 
 ---
 
 Conformément aux règlements sur les données personnelles, les utilisateurs peuvent demander la suppression ou la récupération de leurs données de l'espace de débat. 

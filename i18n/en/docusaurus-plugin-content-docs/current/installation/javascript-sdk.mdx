@@ -9,7 +9,7 @@ import TabItem from "@theme/TabItem";
 import CodeBlock from '@theme/CodeBlock';
 import styles from '../../../../../docs/installation/styles.module.css';
 
-Logora can be installed on any site by inserting the native JavaScript code. This documentation is intended for developers. Logora also offers custom documentation for [Wordpress installation](../wordpress).
+Logora can be installed on any site by inserting the native JavaScript code. This documentation is intended for developers. Logora also offers custom documentation for [Wordpress installation](wordpress).
 
 Javascript installation is a two-stage process:
 
@@ -30,7 +30,7 @@ Important: adding domains to the administration space works like adding a tag, s
 
 The debate area is the main platform where your users can take part in debates. The discussion forum is inserted on a dedicated page on your site.
 
-_Particular case: you can insert the discussion area in drawer format so that the user remains on your article page. This requires you to install the space by continuing to follow the steps below and then adding what is described in the article [integration in drawer](installation/drawer)_.
+_Particular case: you can insert the discussion area in drawer format so that the user remains on your article page. This requires you to install the space by continuing to follow the steps below and then adding what is described in the article [integration in drawer](drawer)_.
 
 Let's take the example of a website available at the address *https://votresite.com*. The website editor would like to access the discussion forum via the address *https://votresite.com/espace-debat*. Here are the steps to follow to insert the discussion forum:
 
@@ -54,13 +54,15 @@ Standard code to copy/paste and complete:
     shortname: "APPLICATION_NAME",
   };
 </script>
-<script src="https://cdn.logora.com/debat.js"></script>
+<script src="https://cdn.logora.com/debat.js" async fetchpriority="high"></script>
 ```
 
 ```html
 <!-- Insert this tag where the debate space is to be displayed -->
 <div id="logora_app"></div>
 ```
+
+> Since the script is loading the main content of the page, it should be prioritized to minimize Largest Contentful Page (LCP) metric.
 
 #### 1.3. Rewriting the URLs for the debate area routes
 
@@ -70,6 +72,11 @@ For example, if a user wishes to access their profile directly via the URL *http
 URL rewriting also allows the Logora team to add new modules directly to new URLs on your site without asking you to intervene.
 
 Use URL rewriting on your platform or CMS so that paths starting with 'debate-space/' (or your chosen prefix) point to the page where the debate space is inserted.
+
+If you are using an .htaccess file, you can add the following rule, adapting it to your needs:
+```
+RewriteRule ^debate-space(/.*|)$ /debate-space [NC,L]
+```
 
 Go to *https://votresite.com/espace-debat/debats*. You are now on the discussion index homepage!
 

@@ -1,6 +1,7 @@
 ---
 id: errors
 title: Installation dans l'article - erreurs courantes
+description: Un guide pour vérifier pourquoi Logora n'apparaît pas dans vos articles 
 ---
 
 Lors de l'installation de Logora pour enrichir vos articles avec des discussions interactives, des problèmes peuvent survenir, surtout lors de l'insertion du code dans votre contenu. Voici un guide étape par étape pour diagnostiquer et résoudre ces problèmes courants.

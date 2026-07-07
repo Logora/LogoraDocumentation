@@ -3,7 +3,7 @@ id: introduction
 title: Introduction - legal framework
 ---
 
-Logora describes in the [Protection of personal data](rgpd.md) how processing is carried out on your behalf. 
+Logora describes in the [Protection of personal data](rgpd) how processing is carried out on your behalf. 
 
 We also provide several standard documents to help you adapt your legal framework to the opening of a contributory system. 
 
@@ -11,9 +11,9 @@ These documents can be added as they are to your site or can help you update you
 
 #### Legal documents for your site
 
-1) [Confidentiality policy](confidentiality.md) for your users
+1) [Confidentiality policy](confidentiality) for your users
    
-2) [The General Terms of Use](terms.md) of your users
+2) [The General Terms of Use](terms) of your users
    
 Concerning the contract between Logora and your organisation, we can send you an example by email. 
 

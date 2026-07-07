@@ -1,0 +1,39 @@
+name: Build Bundle and deploy
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build bundle
+        run: yarn build
+
+      - name: Deploy to BunnyCDN
+        uses: ayeressian/bunnycdn-storage-deploy@v2.4.0
+        with:
+          source: "build"
+          destination: "."
+          storageZoneName: "${{ secrets.BUNNY_STORAGE_NAME }}"
+          storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD }}"
+          accessKey: "${{ secrets.BUNNY_API_KEY }}"
+          pullZoneId: "${{ secrets.BUNNY_ZONE_ID }}"
+          upload: "true"
+          remove: "true"
+          purgePullZone: "true"
+          purgePullZoneDelay: "5"
+          maxRetries: "5"

@@ -4,88 +4,25 @@ title: Installation côté serveur
 description: Insérez Logora côté serveur grâce à notre API
 ---
 
-Logora peut être installé sur n'importe quel site en insérant les pages de débat en code natif JavaScript et en insérant la question en pied d'article (la synthèse) côté serveur. Cette installation permet d'améliorer la performance de vos pages articles et d'indexer les pages de débat sur les moteurs de recherche. 
-
-Cette documentation est à destination des développeurs. Logora propose également une documentation personnalisée pour l'[installation Wordpress](installation/wordpress).
-
-L'installation se fait en deux temps :
-1. Insérer l'espace de débat en Javascript
-2. Insérer la synthèse du débat sur vos pages côté serveur
-	 
-### Avant de commencer 
-
-- Si l'équipe Logora ne vous a pas créé d'espace d'administration, créez votre espace d'administration Logora : [Inscription](https://logora.fr/signup)
-- Munissez-vous de votre **nom d'application** disponible sur votre [espace d'administration](https://admin.logora.fr) dans l'onglet *Configuration > Général*.
-- Autorisez les domaines sur lesquels vous désirez installer Logora. Pour cela, rendez-vous sur votre espace d'administration dans l'onglet *Configuration > Général > Sécurité > Domaines autorisés*. Par exemple, si le code inséré sur la page à l'URL https://exemple.com/article/exemple-article, ajoutez le domaine https://exemple.com. Exemple : http://localhost:3000 , http://sous-domaine.exemple.com.  Important : l'ajout des domaines sur l'espace d'administration fonctionne comme un ajout de tag, n'oubliez pas d'appuyer sur "Entrer" lors de l'insertion de vos URL.
-
-### 1. Installer l'espace de débat 
-
-
-L'espace de débat est la plateforme principale où vos utilisateurs pourront participer aux débats. L'espace de débat est inséré sur une page dédiée sur votre site. 
-
-
-Prenons l'exemple d'un site web disponible à l'adresse https://votresite.com. L'éditeur du site web souhaite accéder à l'espace de débat via l'adresse https://votresite.com/espace-debat. Voici les étapes à suivre pour insérer l'espace de débat :
-
-#### 1.1. Ajouter une page pour insérer l'espace de débat
-
-
-Créez une page dédiée où sera inséré l'espace de débat. Cette page est disponible à l'adresse https://votresite.com/espace-debat. Le préfixe 'espace-debat' est le préfixe par défaut. Il est modifiable dans l'espace d'administration.
-
-
-#### 1.2. Insérer le code JavaScript et vos variables de configuration
-
-
-Insérez le code Javascript du débat à l'endroit où vous souhaitez voir apparaître l'espace de débat. 
-
-Le conteneur **logora_app** est l'endroit où l'espace de débat est chargé.
-
-Code standard à copier/coller et compléter : 
-
-```html
-<div id="logora_app"></div>
-<script>
-    // Variables de configuration
-    var logora_config = {
-        shortname: "NOM_APPLICATION" // Nom d'application présent dans votre espace d'administration
-    };
-
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://cdn.logora.com/debat.js';
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-```
-
-#### 1.3. Réécriture des URLs pour les routes de l'espace de débat
-
-
-Utilisez la réécriture d'URL sur votre plateforme ou CMS pour que les chemins commençant par 'espace-debat/' (ou le préfixe que vous avez choisi) pointent vers la page où est inséré l'espace de débat.
-
-
-Accédez à la page https://votresite.com/espace-debat/debats. Vous êtes sur la page d'accueil de l'espace de débat !
-
-
-Pour modifier le préfixe et les chemins d'URLs des pages de l'espace de débat, rendez-vous sur [la configuration des chemins d'URL](configuration/routes.md).
-
-### 2. Récupération du code de la synthèse
-
-Logora fournit une route d'API pour récupérer la synthèse dans vos pages côté serveur. Cette route d'API renvoie le code HTML complet de la synthèse (CSS et scripts inclus), que vous pouvez insérer dans votre modèle de page. Cette méthode remplace l'insertion du script Logora sur vos pages.
+Logora fournit une API pour installer l'espace de débat côté serveur. Cette API renvoie le code HTML complet du bloc dans les articles ou des pages de l'espace de débat (CSS et scripts inclus), que vous pouvez insérer dans vos modèles de page.
 
 Pour accéder à une documentation plus détaillée de l'API de pré-rendu, rendez-vous sur la [Documentation](https://render.logora.fr/docs)
 
-> Cette API est utilisée par ailleurs par le code Javascript Logora pour afficher la synthèse.
+
+### 1. Récupération du code du bloc dans les articles
+
+L'API permet de récupérer le code HTML complet du bloc dans les articles (CSS et scripts inclus), que vous pouvez insérer dans votre modèle de page. Cette méthode remplace l'insertion du script Logora sur vos pages.
+
+> Cette API est utilisée par ailleurs par le code Javascript Logora pour afficher le bloc dans les articles.
 
 #### Requête
 
 URL de base :
-- `https://render.logora.fr/synthesis` pour la synthèse  
-- `https://render.logora.fr/widget` pour le widget
+- `https://render.logora.fr/synthesis` pour la synthèse, voir documentation pour les autres options
 
 Méthode : `POST`
 
 En-tête : `Content-Type: application/json`
-
 
 Paramètres d'URL :   
 - `shortname` (requis) : nom de votre application disponible dans votre espace d'administration
@@ -94,10 +31,13 @@ Paramètres d'URL :
 - `language` (optionnel) : indique la langue des textes de la synthèse. Les choix possibles sont : `fr`, `es`, `en`, `de`, `it`.
 - `insertType` (optionnel) : mode d'insertion, ne pas ajouter si insertion standard. Indiquer *amp* pour une insertion sur une page AMP ou *iframe* pour une insertion en iframe.  
 - `cache` (optionnel) : _true_ ou _false_. Permet de désactiver le cache pour tester en environnement de développement. Par défaut, les requêtes sont mises en cache quelques minutes. Ne pas désactiver le cache en production.
-- `noHtml` (optionnel) : _true_. Permet d'éviter la génération du code HTML pour seulement récupérer les informations nécessaires pour intégrer votre design. 
+- `noHtml` (optionnel) : _true_. Permet d'éviter la génération du code HTML pour seulement récupérer les informations nécessaires pour intégrer votre propre design. 
 
 
-Corps de la requête : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.
+Corps de la requête (optionnel) : Le corps de la requête doit contenir des métadonnées sur la page, en format JSON.
+
+> Si vous voulez récupérer des infos sur un débat ou sur les commentaires, sans création d'article, vous pouvez omettre le corps de la requête
+
 ```json
 {
   "source": 
@@ -143,10 +83,15 @@ La réponse renvoyée est sous cette forme :
 ```json
 {
   "success": true, // true si un débat est associé, false si aucun débat ou une erreur
-  "debate": {    
+  "debate": {
+    "id": 43455,
     "slug": "mon-debat",    // Identifiant unique du débat, présent dans l'URL
     "name": "Faut-il introduire une dose de proportionnelle dans l'élection des députés ?",     // Titre du débat
-    "direct_url": "https://exemple.com/espace-debat/debat/mon-debat"      // Lien vers le débat
+    "type": "Group",
+    "direct_url": "https://exemple.com/espace-debat/debat/mon-debat",      // Lien vers le débat
+    "created_at": "2025-05-12T12:26:20.042Z",
+    "image_url": "https://storage.logora.com/uploads/standard_3fd4460e064c8f079db11c12ce522fce.jpg",
+    "contributions_count": 77
   },
   "content": CODE_HTML // Code HTML de la synthèse à insérer dans la page. Attribut non présent si success à false
 }
@@ -156,53 +101,45 @@ La réponse renvoyée est sous cette forme :
 Le code HTML renvoyé a pour racine le conteneur suivant  : 
 
 ```html
-<div id="logoraRoot" class="logoraContainer" data-id="synthesis"><div>
+<div id="logoraRoot" class="logoraContainer" data-id="group_embed"><div>
 ```
 
-### Récupérer la liste des articles (optionnel)
 
-Pour éviter de faire des appels inutiles et charger la synthèse uniquement sur les pages article où un débat est lié, vous pouvez utiliser la route prévue par l'API de Logora pour récupérer la liste de vos articles liés à un débat.
+### 2. Récupération du code de l'espace de débat
+
+L'API peut aussi être utilisée pour récupérer le code des pages de l'espace de débat. Cela vous permet d'envoyer aux moteurs de recherche une page complète, générée côté serveur. Le code renvoyé est statique, il n'est donc fait que pour les moteurs de recherche. Différenciez les appels aux moteurs de recherche et aux utilisateurs, à qui vous servirez la version côté client.
+
 
 #### Requête
 
-URL de base : 
-`https://app.logora.fr/api/v1/updated_sources`
+URL de base :
+- `https://render.logora.fr/app`
 
 Méthode : `GET`
-En-tête : `Content-Type: application/json`
-Paramètres d'URL : 
-- `shortname` (requis) : nom de votre application disponible dans votre espace d'administration
-- `timestamp` (requis) : date depuis laquelle vous souhaitez récupérer les mises à jour des articles (si un débat est associé ou non), en format timestamp Unix (secondes).
-- `page` (optionnel) : numéro de page
-- `per_page` (optionnel) : nombre d'éléments par page, par défaut 10
 
-La route renvoie l'ensemble des articles qui ont eu une modification d'association à un débat depuis la date passée en paramètre.
+En-tête : `Content-Type: application/json`
+
+Paramètres d'URL :   
+- `shortname` (requis) : nom de votre application disponible dans votre espace d'administration
+- `url` (requis) : URL de la page à récupérer
+
 
 #### Réponse
 
+La réponse renvoyée est sous cette forme :
+
 ```json
 {
-  "success": true,
-  "data": {
-      {
-        "identifier": 1, // Identifiant unique de l'article que vous fournissez lors de l'insertion de la synthèse
-        "title": "Exemple d’Article – Démo", // Titre de l'article
-        "source_url": "https://demo.logora.fr/article-demo", // URL de l'article
-        "has_debate": false, // Indique si l'article est associé à un débat
-        "debate_updated_at": "2021-01-06T16:01:19.717Z" // Dernière modification de l'association à un débat (association à un débat ou suppression de l'association)
-      },
-      {
-        "identifier": 2,
-        "title": "Exemple d'article #2 - Démo",
-        "source_url": "https://demo.logora.fr/article2-demo",
-        "has_debate": true,
-        "debate_updated_at": "2021-01-06T15:22:32.630Z"
-      }, 
-      ...
-  }
+  "success": true, // true si tout s'est bien passé
+  "title": "Titre de la page",
+  "description": "Description de la page",
+  "content": CODE_HTML // Code HTML de l'espace à insérer dans votre page. Attribut non présent si success à false
 }
 ```
 
-En-têtes de la réponse :
-- `total` : nombre total d'éléments (sans inclure la pagination)
-- `total-pages` : nombre de pages de la réponse
+Le code HTML renvoyé a pour racine le conteneur suivant  : 
+
+```html
+<div id="logoraRoot" class="logoraContainer" data-vid="view_app" data-shortname="YOUR_SHORTNAME">
+```
+

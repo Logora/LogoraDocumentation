@@ -1,6 +1,7 @@
 ---
 id: share
 title: Partage des arguments
+description: Partagez les arguments de vos utilisateurs dans vos articles
 ---
 
 Vous pouvez partager les arguments et propositions de vos utilisateurs directement dans vos articles, sous format iframe.

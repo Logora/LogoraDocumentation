@@ -4,7 +4,7 @@ title: Librairie d'authentification
 description: Utilisez notre librairie d'authentification autonome
 ---
 
-Notre librairie d'authentification peut être utilisée indépendamment de l'espace de débat. Si vous souhaitez intégrer notre système d'utilisateurs à votre propre plateforme c'est à dire sans notre front-end précédent la connexion / inscription de l'utilisateur, utilisez cette librairie. **Si vous avez déjà [installé l'espace de discussion](../../installation/javascript-sdk), vous pouvez sauter le point 1, la librairie est incluse dans notre code.**
+Notre librairie d'authentification peut être utilisée indépendamment de l'espace de débat. Si vous souhaitez intégrer notre système d'utilisateurs à votre propre plateforme c'est à dire sans notre front-end précédent la connexion / inscription de l'utilisateur, utilisez cette librairie. **Si vous avez déjà [installé l'espace de débat](../../installation/javascript-sdk), vous pouvez sauter le point 1, la librairie est incluse dans notre code.**
 
 La librairie est écrite en React, et le code du composant principal est disponible [ici](https://bit.cloud/logora/debate/auth/auth_initializer).
 
@@ -74,4 +74,13 @@ Un événement est déclenché lorsque l'utilisateur se déconnecte. Il ne renvo
 
 ```js
 window.addEventListener("logora:authentication:logout");
+```
+
+### 5. Demande d'authentification
+
+Lorsqu'un utilisateur doit s'authentifier, un événement est déclenché. Cet événement peut être écouté pour montrer à l'utiliisateur votre propre fenêtre de connexion.
+Il retourne l'URL de redirection après connexion.
+
+```js
+window.addEventListener("logora:authentication:requested", event => console.log(event.detail.redirectUrl));
 ```

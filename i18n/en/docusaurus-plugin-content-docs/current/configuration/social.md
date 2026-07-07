@@ -3,7 +3,7 @@ id: social
 title: RSS feed of debates
 ---
 
-### 1) Access your RSS feed
+### Access your RSS feed
 
 An RSS feed of your created discussions and consultations is available at https://app.logora.fr/rss/{your-application-name}. 
 
@@ -16,7 +16,7 @@ An example of an RSS feed :
 ![An example of RSS feed](/img/rss.png)
 
 
-### 2) Connect the RSS feed to your sharing tools
+### Connect the RSS feed to your sharing tools
 
 By regularly calling your RSS feed, you can automatically post new debates wherever you want. 
 
@@ -29,7 +29,7 @@ The documentation link for Zapier is [available here.](https://zapier.com/apps/f
 You get **the title, link, and image of the debate or consultation**. 
 You can also add a custom description to each share. 
 
-> Example for a Facebook post: "The {title} issue is featured on the New York Times! Follow the link to participate on our dedicated debate space."
+> Example for a Facebook post: "The [title] issue is featured on the New York Times! Follow the link to participate on our dedicated debate space."
 
 An example of an automated publication without a custom description: 
 

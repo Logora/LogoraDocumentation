@@ -1,6 +1,7 @@
 ---
 id: homepage
 title: Module de page d'accueil
+description: Epinglez une question de débat sur votre page d'accueil
 ---
 
 Logora vous fournit un module présentant un débat à intégrer sur votre page d'accueil. Par défaut, le module se met automatiquement à jour avec votre dernier débat créé. Vous pouvez aussi choisir d'épingler un débat depuis votre espace d'administration, cela remplacera le comportement par défaut du module (vous pourrez dé-épingler le débat a tout moment et revenir au comportement par défaut ou épingler un autre débat de votre choix).
@@ -69,9 +70,10 @@ Le code entier revient à ceci :
     // Variables de configuration
     var logora_config = {
         shortname: "NOM_APPLICATION", // Nom d'application présent dans votre espace d'administration
-        debate: {
-            identifier: "PAGE_IDENTIFIER" // Identifiant unique de la page
-        }
+        resource: {
+            id: "PAGE_IDENTIFIER", // Identifiant unique de la page,
+            name: "synthesis"
+        },
         synthesis: {
             hideArguments: true
        }
@@ -79,7 +81,7 @@ Le code entier revient à ceci :
 
     (function() {
         var d = document, s = d.createElement('script');
-        s.src = 'https://cdn.logora.com/synthese.js'; // 'https://cdn.logora.com/widget.js' pour le widget
+        s.src = 'https://cdn.logora.com/embed.js';
         (d.head || d.body).appendChild(s);
     })();
 </script>

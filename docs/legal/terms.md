@@ -75,7 +75,7 @@ La publication des Contributions par l’Utilisateur est effectuée sous son ent
 
 L’Utilisateur accepte que ces Contributions soient modérées ou refusées à l’entière discrétion de l’Éditeur, sans obligation de justification.
 
-En outre, le système de modération repose notamment sur les règles déontologiques établies par l’Éditeur ainsi que sur la Chartre de Modération de Logora disponible via l’URL suivante: [Chartre de Modération](https://logora.fr/fr/moderation).
+En outre, le système de modération repose notamment sur les règles déontologiques établies par l’Éditeur ainsi que sur la Chartre de Modération de Logora disponible via l’URL suivante: [Chartre de Modération](https://www.logora.com/fr/blog-posts/moderation).
 
 L'Utilisateur est informé que, compte tenu des caractéristiques intrinsèques de l'Internet, les contenus qu'il diffuse sont susceptibles de détournement et/ou de piratage. L’Éditeur ne pourra pas être tenu pour responsable de toute perte ou dommage pouvant résulter d’un manquement aux obligations citées ci-dessus ou de l’utilisation de cet Espace de débats.
 

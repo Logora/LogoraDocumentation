@@ -1,6 +1,7 @@
 ---
 id: introduction
 title: Introduction - cadre légal
+description: Introduction aux documents juridiques
 ---
 
 Logora décrit dans la [Protection des données à caractère personnelles](rgpd.md) comment sont réalisés les traitements pour votre compte. 

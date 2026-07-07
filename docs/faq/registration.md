@@ -1,6 +1,7 @@
 ---
 id: registration
 title: Parcours d'inscription
+description: Optimisez le parcours d'inscription pour davantage de conversions
 ---
 
 #### Optimisez votre parcours d'inscription

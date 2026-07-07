@@ -1,6 +1,7 @@
 ---
 id: invitation
 title: Invitations et gestion des rôles
+description: Invitez d'autres utilisateurs sur votre espace d'administration
 ---
 
 ### Invitations

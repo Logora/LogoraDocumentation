@@ -1,6 +1,7 @@
 ---
 id: tracking
 title: Tracking des données
+description: Analysez comment se comportent vos utilisateurs
 ---
 
 #### Tracking des éléments de l'espace de débat
@@ -26,6 +27,10 @@ Clic sur "Débat des lecteurs" : `data-tid="link_debate_index_embed"`
 Clic sur le titre du débat de la synthèse : `data-tid="link_debate_title_embed"`
 
 Clic sur "Voir plus" d'un argument : `data-tid="link_argument_read_more"` 
+
+### Suivi des performances sur la page de commentaires
+
+Clic sur "Voir plus" d'un commentaire : `data-tid="link_read_more"` 
 
 ### Suivi d'un utilisateur déconnecté
 

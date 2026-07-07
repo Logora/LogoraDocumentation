@@ -11,15 +11,21 @@
     "deploy": "docusaurus deploy",
     "docusaurus": "docusaurus"
   },
-  "devDependencies": {},
+  "engines": {
+    "node": ">=20.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.7.0"
+  },
   "dependencies": {
-    "@docusaurus/core": "^2.2.0",
-    "@docusaurus/plugin-client-redirects": "^2.2.0",
-    "@docusaurus/plugin-content-docs": "^2.2.0",
-    "@docusaurus/preset-classic": "^2.2.0",
-    "@cmfcmf/docusaurus-search-local": "^0.11.0",
-    "clsx": "^1.1.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/plugin-client-redirects": "^3.7.0",
+    "@docusaurus/plugin-content-docs": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
+    "@cmfcmf/docusaurus-search-local": "^1.2.0",
+    "@mdx-js/react": "^3.1.0",
+    "clsx": "^2.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

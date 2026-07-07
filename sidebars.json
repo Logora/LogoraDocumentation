@@ -8,18 +8,18 @@
       "type": "category",
       "label": "Installation",
 	    "collapsed": false,
-      "items": ["installation/javascript-sdk", "installation/wordpress", "installation/server-side-sdk", "installation/amp-sdk", "installation/android-sdk", "installation/ios-sdk", "installation/drawer", "installation/homepage"]
+      "items": ["installation/javascript-sdk", "installation/wordpress", "installation/server-side-sdk", "installation/webview", "installation/drawer", "installation/amp-sdk", "installation/homepage", "installation/social-moderation", "installation/module-commentaires"]
     },
 	  {
       "type": "category",
       "label": "Single Sign On",
-      "items": ["authentication/introduction", "authentication/oauth2_server", "authentication/jwt", "authentication/auth-sdk"]
+      "items": ["authentication/introduction", "authentication/oauth2_server", "authentication/jwt", "authentication/auth-sdk", "authentication/backchannel-logout"]
     },
 	  {
       "type": "category",
       "label": "Configuration",
 	    "collapsed": false,
-      "items": ["configuration/theme", "configuration/routes", "configuration/moderation", "configuration/social", "configuration/onboarding", "configuration/ads"]
+      "items": ["configuration/theme", "configuration/routes", "configuration/moderation", "configuration/smtp", "configuration/social", "configuration/onboarding", "configuration/ads"]
     },
 	 {
       "type": "category",

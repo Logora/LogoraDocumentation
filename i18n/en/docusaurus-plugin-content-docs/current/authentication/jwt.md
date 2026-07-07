@@ -34,7 +34,8 @@ The token payload contains user information in JSON format:
   "email": "jean@logora.fr",
   "first_name": "Jean",
   "last_name": "Dupont",
-  "iat": 1516239022
+  "iat": 1755007651,
+  "exp": 1755011251
 }
 ```
 
@@ -44,13 +45,16 @@ It must include the following case-sensitive attributes:
 - `last_name` (optional): user's surname.
 - email`: the email address registered for this account.
 - image_url` (optional): link to the user's avatar.
-- `iat`: JWT token generation date.
+- `iat`: token generation date.
+- `exp` (optional) : token expiration date. If present, session will not start if the token is expired
 
 Field names can be customized in the administration area if you have a different format.
 
 You can now create the token in either JWS (by default) or JWE format. If you're not sure which solution to choose, choose the signed version, which is the most widely used and easiest to set up.
 
 ##### Signed JWT (JWS)
+
+> **Important** : If your secret key is encoded in Base64, enable the corresponding option in your administration interface.
 
 The token is made up of three parts: the header, the payload you generated earlier, and the signature.
 

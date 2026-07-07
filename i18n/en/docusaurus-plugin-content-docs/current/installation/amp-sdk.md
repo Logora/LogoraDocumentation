@@ -16,7 +16,7 @@ Base URL:
 
 Dynamic parameters that must be specified in the URL:
 - `shortname` : name of your application
-- `id` : unique page identifier
+- `id` : unique page identifier used by Logora to retrieve the associated synthesis
 
 Example URL :
 `https://cdn.logora.com/synthese-amp.html?shortname=logora-demo&id=1881`
@@ -30,7 +30,7 @@ Add the following script in the `<head>` container in addition to all the AMP in
 <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 ```
 
-Embed the amp-iframe in your page to load the summary in AMP format (the `<div overflow placeholder>` tag is required for the iframe to load). The iframe will resize automatically on load, that's why the height of 10 pixels is required.
+Embed the amp-iframe in your page to load the summary in AMP format (the `<div overflow placeholder>` tag is required for the iframe to load). The iframe resizes automatically through AMP `embed-size` messages, which is why an initial height of 10 pixels is required.
 
 ```html
 <amp-iframe

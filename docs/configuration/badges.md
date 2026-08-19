@@ -17,13 +17,11 @@ La plupart des badges possèdent **3 niveaux**, dont les paliers sont de plus en
 | <img src="https://assets.logora.com/badges/Contributeur.jpg" width="40" /> **Contributeur** | Écrire des arguments | 10 → 30 → 60 | « Débatteur Passionné » |
 | <img src="https://assets.logora.com/badges/Orateur.jpg" width="40" /> **Orateur** | Écrire des arguments ayant obtenu un score de pertinence d'au moins 75 | 10 → 30 → 60 | « Plume » |
 | <img src="https://assets.logora.com/badges/Influenceur.jpg" width="40" /> **Influenceur** | Voir sa suggestion de débat sélectionnée | 1 → 5 → 10 | « Initiateur » |
-| <img src="https://assets.logora.com/badges/Notable.jpg" width="40" /> **Notable** | Ajouter une description dans son profil | N/A | — |
+| <img src="https://assets.logora.com/badges/Notable.jpg" width="40" /> **Notable** | Ajouter une description dans son profil | N/A | N/A |
 | <img src="https://assets.logora.com/badges/Merci_maman.jpg" width="40" /> **Merci Maman !** | Recevoir des votes sur ses arguments | 10 → 30 → 60 | « Incontournable » |
 | <img src="https://assets.logora.com/badges/Critique.jpg" width="40" /> **Opposant** | Prendre position dans le camp « Contre » | 5 → 20 → 50 | « Résistant » |
 | <img src="https://assets.logora.com/badges/D%C3%A9put%C3%A9.jpg" width="40" /> **Député** | Prendre part à des débats | non activé par défaut | « Grand Débatteur » |
 | <img src="https://assets.logora.com/badges/Adh%C3%A9rent.jpg" width="40" /> **Adhérent** | Prendre position dans le camp « Pour » | 5 → 20 → 50 | « Prolifique » |
-
-Ces paliers correspondent à la configuration par défaut (voir `db/seeds.rb` du backend) ; ils peuvent être ajustés pour chaque application sur demande.
 
 ### Complété !
 

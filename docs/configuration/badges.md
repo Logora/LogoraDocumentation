@@ -12,14 +12,14 @@ Chaque badge possède **plusieurs niveaux**, avec des paliers de plus en plus é
 
 | Badge | Action | Récompense |
 | --- | --- | --- |
-| ![Contributeur](https://assets.logora.com/badges/Contributeur.jpg) **Contributeur** | Écrire N arguments | « Débatteur Passionné » |
-| ![Orateur](https://assets.logora.com/badges/Orateur.jpg) **Orateur** | Écrire N arguments avec un score de pertinence d'au moins 75 | « Plume » |
-| ![Influenceur](https://assets.logora.com/badges/Influenceur.jpg) **Influenceur** | Avoir sa suggestion sélectionnée N fois | « Initiateur » |
-| ![Notable](https://assets.logora.com/badges/Notable.jpg) **Notable** | Ajouter une description dans son profil | — |
-| ![Merci Maman !](https://assets.logora.com/badges/Merci_maman.jpg) **Merci Maman !** | Obtenir N votes | « Incontournable » |
-| ![Opposant](https://assets.logora.com/badges/Critique.jpg) **Opposant** | Soutenir le camp « Contre » sur N débats | « Résistant » |
-| ![Député](https://assets.logora.com/badges/D%C3%A9put%C3%A9.jpg) **Député** | Participer à N débats | « Grand Débatteur » |
-| ![Adhérent](https://assets.logora.com/badges/Adh%C3%A9rent.jpg) **Adhérent** | Soutenir le camp « Pour » sur N débats | « Prolifique » |
+| <img src="https://assets.logora.com/badges/Contributeur.jpg" width="40" /> **Contributeur** | Écrire N arguments | « Débatteur Passionné » |
+| <img src="https://assets.logora.com/badges/Orateur.jpg" width="40" /> **Orateur** | Écrire N arguments ayant obtenu un score de pertinence d'au moins 75 | « Plume » |
+| <img src="https://assets.logora.com/badges/Influenceur.jpg" width="40" /> **Influenceur** | Voir sa suggestion de débat sélectionnée N fois | « Initiateur » |
+| <img src="https://assets.logora.com/badges/Notable.jpg" width="40" /> **Notable** | Ajouter une description dans son profil | — |
+| <img src="https://assets.logora.com/badges/Merci_maman.jpg" width="40" /> **Merci Maman !** | Recevoir N votes sur ses arguments | « Incontournable » |
+| <img src="https://assets.logora.com/badges/Critique.jpg" width="40" /> **Opposant** | Prendre position dans le camp « Contre » sur N débats | « Résistant » |
+| <img src="https://assets.logora.com/badges/D%C3%A9put%C3%A9.jpg" width="40" /> **Député** | Prendre part à N débats | « Grand Débatteur » |
+| <img src="https://assets.logora.com/badges/Adh%C3%A9rent.jpg" width="40" /> **Adhérent** | Prendre position dans le camp « Pour » sur N débats | « Prolifique » |
 
 ### Complété !
 

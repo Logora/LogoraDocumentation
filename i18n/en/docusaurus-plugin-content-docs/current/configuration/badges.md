@@ -12,14 +12,14 @@ Each badge has **several levels**, with increasingly higher thresholds. Progress
 
 | Badge | Action | Reward |
 | --- | --- | --- |
-| ![Contributor](https://assets.logora.com/badges/Contributeur.jpg) **Contributor** | Write N arguments | "Dialogue pro" |
-| ![Speaker](https://assets.logora.com/badges/Orateur.jpg) **Speaker** | Write N arguments with a relevance score of at least 75 | "Feather" |
-| ![Influencer](https://assets.logora.com/badges/Influenceur.jpg) **Influencer** | Have your suggestion selected N times | "Initiator" |
-| ![Person with status](https://assets.logora.com/badges/Notable.jpg) **Person with status** | Add a description to your profile | — |
-| ![Popular](https://assets.logora.com/badges/Merci_maman.jpg) **Popular** | Get N votes | "A must" |
-| ![Critical thinker](https://assets.logora.com/badges/Critique.jpg) **Critical thinker** | Support the "Against" camp on N debates | "Resistant" |
-| ![Deputy](https://assets.logora.com/badges/D%C3%A9put%C3%A9.jpg) **Deputy** | Participate in N debates | "Great Debater" |
-| ![Supporter](https://assets.logora.com/badges/Adh%C3%A9rent.jpg) **Supporter** | Support the "For" camp on N debates | "Prolific" |
+| <img src="https://assets.logora.com/badges/Contributeur.jpg" width="40" /> **Contributor** | Write N arguments | "Dialogue pro" |
+| <img src="https://assets.logora.com/badges/Orateur.jpg" width="40" /> **Speaker** | Write N arguments with a relevance score of at least 75 | "Feather" |
+| <img src="https://assets.logora.com/badges/Influenceur.jpg" width="40" /> **Influencer** | Have your debate suggestion selected N times | "Initiator" |
+| <img src="https://assets.logora.com/badges/Notable.jpg" width="40" /> **Person with status** | Add a description to your profile | — |
+| <img src="https://assets.logora.com/badges/Merci_maman.jpg" width="40" /> **Popular** | Receive N votes on your arguments | "A must" |
+| <img src="https://assets.logora.com/badges/Critique.jpg" width="40" /> **Critical thinker** | Take a stand in the "Against" camp on N debates | "Resistant" |
+| <img src="https://assets.logora.com/badges/D%C3%A9put%C3%A9.jpg" width="40" /> **Deputy** | Take part in N debates | "Great Debater" |
+| <img src="https://assets.logora.com/badges/Adh%C3%A9rent.jpg" width="40" /> **Supporter** | Take a stand in the "For" camp on N debates | "Prolific" |
 
 ### Completed!
 

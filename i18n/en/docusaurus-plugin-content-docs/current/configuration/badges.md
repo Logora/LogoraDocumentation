@@ -29,4 +29,4 @@ When a goal is reached, the badge displays "Completed!" and the reward title is 
 
 ### Customization
 
-By default, badge images are hosted by Logora (`https://assets.logora.com/badges/`). You can customize the image domain and extension via the `badges.baseUrl` and `badges.fileExtension` SDK configuration variables.
+By default, badge images are hosted by Logora (`https://assets.logora.com/badges/`). If you wish to customize your badges, simply share the images of the badges to change with your Logora contact, and we will take care of setting them up.

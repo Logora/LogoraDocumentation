@@ -29,4 +29,4 @@ Lorsqu'un objectif est atteint, le badge affiche « Complété ! » et le titre 
 
 ### Personnalisation
 
-Par défaut, les images des badges sont hébergées par Logora (`https://assets.logora.com/badges/`). Vous pouvez personnaliser le nom de domaine et l'extension des images via les variables de configuration `badges.baseUrl` et `badges.fileExtension` du SDK.
+Par défaut, les images des badges sont hébergées par Logora (`https://assets.logora.com/badges/`). Si vous souhaitez personnaliser vos badges, il vous suffit de partager les images des badges à modifier avec votre interlocuteur Logora, et nous nous chargeons de les mettre en place.

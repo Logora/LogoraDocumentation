@@ -10,14 +10,14 @@ Each badge has **several levels**, with increasingly higher thresholds. Progress
 
 ### Available badges
 
-Each badge has **3 levels**, with increasingly higher thresholds. The table below shows, for each badge, the number of actions to complete at each level ("Thresholds" column). The reward (i.e. the title displayed on the profile) is unlocked when **level 3** is reached.
+Most badges have **3 levels**, with increasingly higher thresholds. The table below shows, for each badge, the number of actions to complete at each level ("Thresholds" column). The reward (i.e. the title displayed on the profile) is unlocked when **level 3** is reached.
 
 | Badge | Action | Thresholds (level 1 → 2 → 3) | Reward |
 | --- | --- | --- | --- |
 | <img src="https://assets.logora.com/badges/Contributeur.jpg" width="40" /> **Contributor** | Write arguments | 10 → 30 → 60 | "Dialogue pro" |
 | <img src="https://assets.logora.com/badges/Orateur.jpg" width="40" /> **Speaker** | Write arguments with a relevance score of at least 75 | 10 → 30 → 60 | "Feather" |
 | <img src="https://assets.logora.com/badges/Influenceur.jpg" width="40" /> **Influencer** | Have your debate suggestion selected | 1 → 5 → 10 | "Initiator" |
-| <img src="https://assets.logora.com/badges/Notable.jpg" width="40" /> **Person with status** | Add a description to your profile | 1 | — |
+| <img src="https://assets.logora.com/badges/Notable.jpg" width="40" /> **Person with status** | Add a description to your profile | N/A | — |
 | <img src="https://assets.logora.com/badges/Merci_maman.jpg" width="40" /> **Popular** | Receive votes on your arguments | 10 → 30 → 60 | "A must" |
 | <img src="https://assets.logora.com/badges/Critique.jpg" width="40" /> **Critical thinker** | Take a stand in the "Against" camp | 5 → 20 → 50 | "Resistant" |
 | <img src="https://assets.logora.com/badges/D%C3%A9put%C3%A9.jpg" width="40" /> **Deputy** | Take part in debates | not enabled by default | "Great Debater" |

@@ -10,6 +10,8 @@ Chaque badge possède **plusieurs niveaux**, avec des paliers de plus en plus é
 
 ### Les badges disponibles
 
+« N » correspond au nombre d'actions à réaliser pour débloquer le badge : sa valeur (par exemple 5, 20 ou 60) est fixée pour chaque niveau et chaque application.
+
 | Badge | Action | Récompense |
 | --- | --- | --- |
 | <img src="https://assets.logora.com/badges/Contributeur.jpg" width="40" /> **Contributeur** | Écrire N arguments | « Débatteur Passionné » |

@@ -10,6 +10,8 @@ Each badge has **several levels**, with increasingly higher thresholds. Progress
 
 ### Available badges
 
+"N" stands for the number of actions to complete in order to unlock the badge: its value (for example 5, 20 or 60) is set for each level and each application.
+
 | Badge | Action | Reward |
 | --- | --- | --- |
 | <img src="https://assets.logora.com/badges/Contributeur.jpg" width="40" /> **Contributor** | Write N arguments | "Dialogue pro" |

@@ -200,7 +200,7 @@ Paramètres pour gérer la connexion, l'affichage de la fenêtre de connexion et
 | `anonymousFirstName` | texte | `Débatteur` | Non (contacter Logora) | Prénom des utilisateurs anonymes. |
 | `anonymousLastName` | texte | `Anonyme` | Non (contacter Logora) | Nom des utilisateurs anonymes. |
 | `randomAnonymousName` | booléen | `false` | Oui (dans l'admin) | Attribue un nom aléatoire si le nom est vide. |
-| `updateUserOnLogin` | booléen | `false` | Non (contacter Logora) | Met à jour le nom, prénom et image à chaque connexion. ⚠️ Attention : écrase les modifications faites sur l'espace de débat. |
+| `updateUserOnLogin` | booléen | `false` | Non (contacter Logora) | Met à jour le nom, prénom et image à chaque connexion. Attention : écrase les modifications faites sur l'espace de débat. |
 | `hideLogoutButton` | booléen | `false` | Non (contacter Logora) | Cache le bouton de déconnexion. |
 
 ---

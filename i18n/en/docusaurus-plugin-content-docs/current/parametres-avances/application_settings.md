@@ -198,7 +198,7 @@ Settings to manage login, the login window display and user anonymity.
 | `anonymousFirstName` | text | `Débatteur` | No (contact Logora) | First name for anonymous users. |
 | `anonymousLastName` | text | `Anonyme` | No (contact Logora) | Last name for anonymous users. |
 | `randomAnonymousName` | boolean | `false` | Yes (in the admin) | Assigns a random name if the name is empty. |
-| `updateUserOnLogin` | boolean | `false` | No (contact Logora) | Updates the name, first name and avatar on each login. ⚠️ Warning: overwrites changes made in the debate space. |
+| `updateUserOnLogin` | boolean | `false` | No (contact Logora) | Updates the name, first name and avatar on each login. Warning: overwrites changes made in the debate space. |
 | `hideLogoutButton` | boolean | `false` | No (contact Logora) | Hides the logout button. |
 
 ---

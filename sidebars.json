@@ -21,6 +21,12 @@
 	    "collapsed": false,
       "items": ["configuration/theme", "configuration/routes", "configuration/moderation", "configuration/smtp", "configuration/social", "configuration/onboarding", "configuration/badges", "configuration/ads"]
     },
+    {
+      "type": "category",
+      "label": "Paramètres avancés",
+      "collapsed": false,
+      "items": ["parametres-avances/application_settings"]
+    },
 	 {
       "type": "category",
       "label": "Legal",

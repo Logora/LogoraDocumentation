@@ -62,7 +62,7 @@ Les caractéristiques du Traitement mis en œuvre par la Société s’agissant 
 
 **Durée du conservation des Données**: 
 
-- [À discuter ; dans la clause des CGU relatives à la protection des données, il est indiqué que les données sont conservées pendant 3 ans à compter de la fin du contrat, sauf exception à des fins journalistiques.]
+- Données de compte et contenu des contributions : conservées pendant la vie du compte de l'Utilisateur, puis pendant 3 ans à compter de la fin du contrat, sauf exception nécessaire à des fins journalistiques. La durée de conservation des données de connexion (adresse IP, logs d'accès) applicable à votre espace est celle prévue par votre contrat avec Logora.
 
 ## Article 5. Destinataires de vos Données
 

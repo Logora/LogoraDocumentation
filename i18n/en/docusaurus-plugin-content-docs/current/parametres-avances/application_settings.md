@@ -230,13 +230,13 @@ Settings to enable and configure ad spaces in the debate space.
 
 ## Translation
 
-Settings to enable automatic content translation.
+Settings to enable automatic translation of content in your debate space (arguments, comments...). If your site has visitors who speak different languages, automatic translation allows everyone to read and write in their own language.
 
 | Parameter | Values | Default | Editable | Description |
 |---|---|---|---|---|
-| `enable` | boolean | `false` | No (contact Logora) | Enables automatic content translation. |
-| `dialect` | string | — | No (contact Logora) | Regional variant (e.g. `"CH"` for Swiss). |
-| `translationMethods` | object | — | Yes (in the admin) | Translation method per language pair (e.g. `{fr: {en: "deepl", es: "deepl"}}`). |
+| `enable` | boolean | `false` | No (contact Logora) | Turns automatic translation on or off. |
+| `dialect` | string | — | No (contact Logora) | Allows you to choose a regional variant. For example, if you want Swiss German instead of standard German, use `"CH"`. |
+| `translationMethods` | object | — | Yes (in the admin) | Allows you to choose languages and translation tools. Example: to translate French content into English and Spanish via Deepl, write: `{fr: {en: "deepl", es: "deepl"}}`. |
 
 ---
 

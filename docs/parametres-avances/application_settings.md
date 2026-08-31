@@ -232,13 +232,13 @@ Paramètres pour activer et configurer les espaces publicitaires dans l'espace d
 
 ## Traduction
 
-Paramètres pour activer la traduction automatique du contenu.
+Paramètres pour activer la traduction automatique des contenus de votre espace de débat (arguments, commentaires...). Si votre site a des visiteurs qui parlent différentes langues, la traduction automatique permet à chacun de lire et d'écrire dans sa propre langue.
 
 | Paramètre | Valeurs | Défaut | Modifiable | Description |
 |---|---|---|---|---|
-| `enable` | booléen | `false` | Non (contacter Logora) | Active la traduction automatique du contenu. |
-| `dialect` | string | — | Non (contacter Logora) | Variante régionale (ex : `"CH"` pour le suisse). |
-| `translationMethods` | objet | — | Oui (dans l'admin) | Méthode de traduction par paire de langues (ex: `{fr: {en: "deepl", es: "deepl"}}`). |
+| `enable` | booléen | `false` | Non (contacter Logora) | Active ou désactive la traduction automatique. |
+| `dialect` | string | — | Non (contacter Logora) | Permet de choisir une variante régionale. Par exemple, si vous voulez du suisse-allemand plutôt que de l'allemand standard, mettez `"CH"`. |
+| `translationMethods` | objet | — | Oui (dans l'admin) | Permet de choisir les langues et les outils de traduction. Exemple : pour que les contenus en français soient traduits en anglais et en espagnol via Deepl, on écrit : `{fr: {en: "deepl", es: "deepl"}}`. |
 
 ---
 

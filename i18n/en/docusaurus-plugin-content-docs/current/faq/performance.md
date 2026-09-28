@@ -1,22 +1,66 @@
 ---
 id: performance
 title: Performance
+description: Logora optimizes its scripts to minimize their impact on your page load.
 ---
 
-Logora makes every effort to ensure that the inserted code has the least impact on page loading. Here are some details on how Logora works to better evaluate the performance of inserted scripts.
+Logora does everything to minimize the impact of embedded code on your page load. Here are the technical details to evaluate the performance of the embedded scripts.
 
-#### Synthesis at the foot of the article
+## 1) Article footer synthesis
 
-The synthesis code inserted in your articles proceeds in four steps:
-1. Download the script **embed.js**. This file, served from the DigitalOcean CDN, has a size of **8 Ko**. It allows you to launch Logora's functionalities and manages the calls to our API.
-2. Call to the Logora API to check if a debate matches the page in question. This call returns the HTML code of the summary if there is an associated debate. The response has a size of **9 Ko**, and the median response time is **10ms**. Our servers are located in Paris.
-3. Inserting the code in the page. The code is pre-rendered by the server, so it can be inserted directly without additional processing.
-4. (Optional) For the first call of the page only, the script sends the metadata of the page (title, tags, description) to our servers to associate debates to the articles more easily.
+The synthesis script is served from:
 
-> If you have high performance constraints, use the [insert synthesis server side](installation/api.md)
+```
+https://api.logora.fr/synthese.js
+```
 
-#### Debate space
+The synthesis code embedded in your articles works in four steps:
 
-The debate space code proceeds in the same way as the synthesis code, but downloads more scripts and makes more calls to our API based on the user's actions and navigation. The initial **debat.js** file has a size of **60 KB**.
+1. **Download the script** `synthese.js`
+2. **Logora API call** to check if a debate matches the page. The response includes the synthesis HTML if a debate is associated. The HTML is pre-rendered by the server.
+3. **Insert the code into the page** without further client-side processing.
+4. **(Optional)** On the first call only, the script sends page metadata (title, tags, description) to ease article/debate matching.
 
-Our API has a median response time of **15ms** (95th percentile 50ms) and handle several million requests per day.
+:::tip High performance constraints?
+Use [server-side install](/installation/server-side-sdk) to fetch the HTML directly into your template, with no client call. See also [Pre-render API](/faq/render-api).
+:::
+
+## 2) Debate space
+
+The debate space script is served from:
+
+```
+https://api.logora.fr/debat.js
+```
+
+The code follows the same principle but downloads more scripts and makes more API calls based on user actions.
+
+## 3) Preconnect to Logora domains
+
+To speed up first load, preconnect to Logora domains in your `<head>`:
+
+```html
+<link rel="preconnect" href="https://api.logora.fr" />
+<link rel="preconnect" href="https://app.logora.fr" />
+<link rel="preconnect" href="https://render.logora.fr" />
+<link rel="dns-prefetch" href="https://api.logora.fr" />
+```
+
+These directives tell the browser to establish TCP/TLS connections in parallel with HTML parsing.
+
+## 4) Measure real impact
+
+To measure Logora's impact on your pages:
+
+1. **Pagespeed Insights**: [pagespeed.web.dev](https://pagespeed.web.dev/) — compare with and without Logora
+2. **Chrome DevTools > Performance**: session recording to see CPU cost
+3. **Real User Monitoring**: tag Logora pages in Datadog, New Relic, or Contentsquare
+
+---
+
+## See also
+
+- [Server-side install](/installation/server-side-sdk) (no client call)
+- [Comments module](/installation/module-commentaires)
+- [Javascript install](/installation/javascript-sdk)
+- [Pre-render API (`render.logora.fr`)](/faq/render-api)

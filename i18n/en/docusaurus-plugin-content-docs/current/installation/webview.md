@@ -1,27 +1,26 @@
 ---
 id: webview
 title: Webview
+description: Embed Logora in a WebView inside a mobile app (iOS / Android / React Native) with SSO.
 ---
 
-# Logora Integration in WebView with SSO
+Embedding Logora in a WebView lets you display the debate space directly inside a mobile app or a website in WebView mode, while preserving Logora's interactive features.
 
-## Introduction
-
-Integrating Logora in a WebView allows you to display the debate space directly within a mobile application or a website in WebView mode. This approach ensures a seamless user experience while maintaining Logora's interactive features.
-
-Two applications have already successfully integrated Logora: **Der SPIEGEL** and **Suedkurier**. You can see these integrations in action at the following links:
+Two apps have already integrated Logora successfully: **Der SPIEGEL** and **Suedkurier**. See them in action:
 - [Der SPIEGEL](https://www.loom.com/share/725de75c09d64911ad42fdff7acf07e7?sid=c5d01191-5783-4980-be81-f1a21e162e87)
 - [Suedkurier](https://www.loom.com/share/b3eabe7ab0d1417f8cbbfd29735c2adf?sid=356bc7c1-559e-4f2e-bece-7cecc328cb6e)
 
-For seamless user authentication, Logora supports Single Sign-On (SSO) through the injection of a token into the `logora_config` object under the `remote_auth` parameter. **Logora's SSO integration is only compatible with the JWT authentication method.**
+:::warning JWT-only SSO
+Logora's SSO integration in WebView is **only compatible with JWT**. See [JWT Authentication](/authentication/jwt).
+:::
 
-## 1. Installing Logora in WebView
+## 1. Installing Logora in a WebView
 
-Installing Logora in a WebView follows the same procedure as the standard installation by inserting the standard JavaScript code. Here are the steps to follow:
+Installation follows the same procedure as the standard JavaScript install.
 
-### 1.1 Creating the WebView
+### 1.1 Create the WebView page
 
-In your mobile application or WebView site, create a web view that loads the URL of the debate space. Example in HTML:
+Host on your site a minimal page that loads the Logora widget:
 
 ```html
 <!DOCTYPE html>
@@ -32,11 +31,11 @@ In your mobile application or WebView site, create a web view that loads the URL
     <title>Logora Debate</title>
     <script>
       var logora_config = {
-        shortname: "APPLICATION_NAME",
-        remote_auth: "YOUR_JWT_SSO_TOKEN"
+        shortname: "APP_NAME",
+        remote_auth: "YOUR_JWT_TOKEN"
       };
     </script>
-    <script src="https://cdn.logora.com/debat.js"></script>
+    <script src="https://api.logora.fr/debat.js"></script>
 </head>
 <body>
     <div id="logora_app"></div>
@@ -44,9 +43,9 @@ In your mobile application or WebView site, create a web view that loads the URL
 </html>
 ```
 
-### 1.2 Loading in a Mobile WebView
+### 1.2 Load in a mobile WebView
 
-**Example in Swift (iOS)**
+#### iOS (Swift)
 
 ```swift
 import UIKit
@@ -54,13 +53,13 @@ import WebKit
 
 class DebateViewController: UIViewController {
     var webView: WKWebView!
-    
+
     override func loadView() {
         webView = WKWebView()
         webView.configuration.preferences.javaScriptEnabled = true
         view = webView
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let url = URL(string: "https://yoursite.com/debate-space")!
@@ -69,11 +68,10 @@ class DebateViewController: UIViewController {
 }
 ```
 
-**Example in Kotlin (Android)**
+#### Android (Kotlin)
 
 ```kotlin
 import android.os.Bundle
-import android.webkit.WebSettings
 import android.webkit.WebView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -88,48 +86,94 @@ class DebateActivity : AppCompatActivity() {
 }
 ```
 
-## 2. Single Sign-On (SSO) in WebView
+#### React Native
 
-For users to be automatically authenticated on Logora without re-entering their credentials, it is necessary to inject a token into `remote_auth` within `logora_config`.
+```javascript
+import { WebView } from 'react-native-webview';
 
-**Logora's SSO integration is only compatible with JWT authentication.**
+<WebView
+  source={{ uri: 'https://yoursite.com/debate-space' }}
+  javaScriptEnabled={true}
+/>
+```
 
-You can check the detailed guide on authentication in our [JWT documentation](../../authentication/jwt).
+## 2. SSO authentication in WebView
 
-Example configuration:
+For users to be authenticated automatically on Logora without re-entering credentials, inject a token into `remote_auth` within `logora_config`.
 
 ```javascript
 var logora_config = {
-  shortname: "APPLICATION_NAME",
-  remote_auth: "YOUR_JWT_SSO_TOKEN"
+  shortname: "APP_NAME",
+  remote_auth: "YOUR_JWT_TOKEN"
 };
 ```
 
-### User Logout
+See the full guide: [JWT Authentication](/authentication/jwt).
 
-To log out a user, simply remove the `remote_auth` value or pass an empty string:
+### Logout
+
+To log the user out, remove `remote_auth` or pass an empty string:
 
 ```javascript
 var logora_config = {
-  shortname: "APPLICATION_NAME",
+  shortname: "APP_NAME",
   remote_auth: ""
 };
 ```
 
-## 3. Initial Route
+## 3. Adapt the rendering to WebView via a URL parameter
 
-To define the first page that will be displayed in the webview, you can pass the desired path as the `initial_path` parameter:
+To distinguish your WebView from your responsive web view, a common convention (used for example by Cronista) is to add a parameter to the URL of the page hosting the WebView:
 
-```javascript
-var logora_config = {
-    shortname: "APPLICATION_NAME",
-    initial_path: "/debate/debate-title"
-};
+```
+https://yoursite.com/debate-space?outputType=webapp-type
 ```
 
-The application will then open directly on this page. This provides a direct link to the debate space pages.
+Logora does not process this parameter directly — it's up to your integration to detect it and adapt behavior (custom CSS, link interception, etc.).
 
+### Example: intercept internal links and forward them to the native router
 
-## Conclusion
+Logora dispatches a `logoraContentLoaded` DOM event once the widget is rendered. You can use it to adjust link behavior:
 
-With this integration, your users can interact on Logora without friction, directly from your application or WebView site while benefiting from secure and seamless authentication through JWT-based SSO.
+```javascript
+window.addEventListener("logoraContentLoaded", () => {
+  const currentUrl = new URL(window.location.href);
+  if (currentUrl.searchParams.get("outputType") !== "webapp-type") return;
+
+  const root = document.querySelector("#logoraRoot");
+  if (!root) return;
+
+  const links = root.querySelectorAll("a[href]");
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      // Forward URL to native router
+      window.ReactNativeWebView?.postMessage(link.href);
+      // or for native iOS / Android:
+      // window.webkit?.messageHandlers?.linkHandler?.postMessage(link.href);
+    });
+  });
+});
+```
+
+On the native side, listen for messages and run your custom navigation.
+
+## 4. Session persistence
+
+If your app uses a native session manager (Piano, Auth0, internal OAuth):
+
+1. Get the native session token when opening the WebView
+2. Regenerate a Logora JWT from the native claims (server-side)
+3. Pass it as `remote_auth` as above
+
+:::caution Don't try to share native cookies
+Cookie sharing between the native app and WebView is fragile and blocked by iOS/Android in most cases. **Always** use a freshly regenerated JWT each time the WebView opens.
+:::
+
+---
+
+## See also
+
+- [JWT Authentication](/authentication/jwt)
+- [Appearance and theme](/configuration/theme)
+- [Pre-render API](/faq/render-api) — alternative to fetch pre-rendered HTML server-side

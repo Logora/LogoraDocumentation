@@ -4,12 +4,14 @@ title: Récupération des données par lot (API)
 description: Récupérez vos données Logora en batch via l'API et les exports CSV
 ---
 
+> 📖 **Référence complète de l'API** : la liste de toutes les routes, paramètres et réponses est disponible sur **[https://app.logora.fr/docs/index.html](https://app.logora.fr/docs/index.html)**.
+
 L'API Logora vous permet de récupérer automatiquement les données de votre espace de débat (commentaires, votes, débats, utilisateurs…) par requêtes programmées, puis de les traiter selon vos besoins (sauvegarde, analyse, croisement avec vos systèmes).
 
 Il existe deux approches complémentaires :
 
 - **L'API REST** : interrogez les ressources directement par requêtes HTTP (idéal pour du contact régulier et ciblé).
-- **Les exports CSV** : générez un fichier complet des données, à télécharger ensuite (idéal pour une extraction complète en une fois).
+- **Les exports CSV** : depuis votre espace d'administration, générez un fichier complet des données, à télécharger ensuite (idéal pour une extraction complète en une fois).
 
 #### Avant de commencer
 
@@ -80,7 +82,7 @@ GET /api/v1/messages?created_at_gte=2026-01-01&created_at_lte=2026-12-31&api_key
 GET /api/v1/messages?page=1&per_page=100&api_key=API_KEY
 ```
 
-Pour récupérer *toutes* les données, bouclez sur les pages jusqu'à épuisement. Le nombre total d'éléments et de pages est renvoyé dans les en-têtes de réponse `total` et `total-pages`. Les filtres et paramètres disponibles dépendent de chaque route : la liste complète est détaillée dans la [documentation de l'API](https://app.logora.fr/docs).
+Pour récupérer *toutes* les données, bouclez sur les pages jusqu'à épuisement. Le nombre total d'éléments et de pages est renvoyé dans les en-têtes de réponse `total` et `total-pages`. Les filtres et paramètres disponibles dépendent de chaque route : la liste complète est détaillée dans la [documentation de l'API](https://app.logora.fr/docs/index.html).
 
 > **Astuce** : certaines routes exposent des statistiques agrégées via `GET /stats/{resource}` (par jour, semaine ou mois), utiles pour un tableau de bord sans reconstruire les totaux côté client.
 
@@ -88,40 +90,22 @@ Pour récupérer *toutes* les données, bouclez sur les pages jusqu'à épuiseme
 
 ### 3. Exporter l'ensemble des données en CSV
 
-Pour une extraction complète et ponctuelle, l'API d'exports génère un fichier CSV asynchrone.
+> :warning: L'export CSV n'est **pas disponible via l'API** : il se lance uniquement depuis votre **espace d'administration**.
 
-**Créer un export** :
+Pour une extraction complète et ponctuelle, rendez-vous dans votre [espace d'administration](https://admin.logora.fr) et utilisez la fonction d'export :
 
-```
-POST https://app.logora.fr/api/v1/exports
-Authorization: Bearer ACCESS_TOKEN
-Content-Type: application/json
+- Choisissez la ressource à exporter, parmi `Message`, `User`, `Consultation`, `Proposal`, `Group`, `DebateSuggestion`, `Moderator::Report`.
+- Appliquez éventuellement des filtres (par exemple une période avec `created_at_gte`).
+- Lancez l'export : le fichier CSV est généré en arrière-plan puis téléchargeable depuis la même page. Le lien de téléchargement est valable deux semaines.
 
-{
-  "data_name": "Message",
-  "filters": { "created_at_gte": "2026-01-01" }
-}
-```
-
-- `data_name` : la ressource à exporter, parmi `Message`, `User`, `Consultation`, `Proposal`, `Group`, `DebateSuggestion`, `Moderator::Report`.
-- `filters` (optionnel) : mêmes filtres que l'API REST.
-
-L'export est traité en arrière-plan. Récupérez son statut puis son fichier :
-
-```
-GET https://app.logora.fr/api/v1/exports/{id}
-```
-
-La réponse contient `status` (`pending`, `success`, `error`) et `file_path`, l'URL de téléchargement du CSV (valable deux semaines).
-
-Vous pouvez également lancer et télécharger les exports directement depuis votre [espace d'administration](https://admin.logora.fr).
+Pour une récupération *régulière* et automatisée, privilégiez plutôt l'API REST (section 2) ; l'export CSV de l'espace d'administration convient aux extractions complètes ponctuelles.
 
 ---
 
 ### 4. Bonnes pratiques
 
 - **Programmez vos appels** : pour une récupération régulière (quotidienne, hebdomadaire), lancez vos requêtes depuis votre propre serveur, en filtrant sur la période écoulée (`created_at_gte`) plutôt qu'en re-téléchargeant tout.
-- **Respectez les quotas** : espacez les appels ; en cas de gros volume, préférez l'export CSV à de nombreuses requêtes paginées.
+- **Respectez les quotas** : espacez les appels ; en cas de gros volume, préférez l'export CSV de l'espace d'administration à de nombreuses requêtes paginées.
 - **Sécurité** : conservez vos clés d'API et secrets côté serveur, ne les exposez jamais dans le navigateur.
 
-Pour plus de détails, consultez la [documentation de notre API](https://app.logora.fr/docs).
+Pour plus de détails, consultez la [documentation de notre API](https://app.logora.fr/docs/index.html).

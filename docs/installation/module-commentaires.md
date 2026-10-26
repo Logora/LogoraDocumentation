@@ -52,4 +52,31 @@ Code standard à copier/coller et compléter :
   Identifiant unique et stable de l’article.  
   Il permet d’associer correctement les commentaires au contenu concerné.
 
+---
+
+## Le titre de mon article a changé, comment mettre à jour l’espace de débat ?
+
+Le titre affiché dans l’espace de débat (question du débat, module en pied d’article) provient de l’article enregistré dans Logora, et non de votre page HTML : il n’est pas modifié automatiquement lorsque vous changez le titre de l’article dans votre CMS. Une synchronisation est nécessaire.
+
+### 1. Vérifier la page de l’article côté site
+
+- Le titre de l’article doit être à jour sur la page elle-même, dans la balise `<title>` et dans les balises Open Graph (`og:title` en particulier).
+- C’est à partir de ces balises que Logora alimente l’article lié à votre page : si elles sont correctes, la synchronisation reprendra le bon titre.
+
+### 2. Mettre à jour l’article côté administration Logora
+
+- Connectez-vous à votre espace d’administration Logora et ouvrez l’article concerné.
+- Mettez à jour son titre (et, si besoin, son URL de référence) afin qu’il corresponde à la page publiée.
+- L’espace de débat lié à cet article affiche ensuite le nouveau titre.
+
+### 3. Dissocier un article de son espace de débat
+
+Vous pouvez dissocier un article d’un débat depuis l’espace d’administration, dans la fiche de l’article ou du débat concerné. Cette dissociation ne supprime ni les commentaires déjà collectés, ni la page de commentaires : le module reste accessible via son URL directe.
+
+### 4. Référencement (Google)
+
+- Google référence la page de l’article publiée par votre CMS, dont vous contrôlez le `<title>` et les balises Open Graph : une fois la page corrigée et recrawlée par Google, c’est le nouveau titre qui apparaît dans les résultats de recherche.
+- Le module Logora est chargé côté client (JavaScript) et n’altère ni le titre ni les métadonnées de votre page : il n’a pas d’impact sur le titre référencé par Google.
+- Pour vérifier ou accélérer la mise à jour, demandez une nouvelle indexation de l’URL concernée dans la [Google Search Console](https://search.google.com/search-console/about).
+
 

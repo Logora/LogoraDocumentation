@@ -45,7 +45,7 @@ If your mail server no longer accepts SMTP authentication — Microsoft is depre
 | **Authentication method** | `None (relay allowed by IP)` |
 | **SMTP username / password** | empty: both fields are disabled |
 | **STARTTLS automatic** | enabled for port `587` |
-| **Implicit TLS connection** | checked for port `465` |
+| **Implicit TLS connection** | checked for port `465` (STARTTLS is then ignored) |
 
 Ask the Logora team for the **outbound IP addresses** to authorise on your relay, then restrict that relay to senders of your domain.
 

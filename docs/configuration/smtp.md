@@ -45,7 +45,7 @@ Si votre serveur de messagerie n'accepte plus l'authentification SMTP — Micros
 | **Méthode d'authentification** | `Aucune (relais autorisé par IP)` |
 | **Nom d'utilisateur / mot de passe** | vides : les champs sont désactivés |
 | **STARTTLS automatique** | activé pour le port `587` |
-| **Connexion TLS implicite** | coché pour le port `465` |
+| **Connexion TLS implicite** | coché pour le port `465` (STARTTLS est alors ignoré) |
 
 Demandez à l'équipe Logora les **adresses IP de sortie** à autoriser sur votre relais, puis limitez ce relais aux expéditeurs de votre domaine.
 

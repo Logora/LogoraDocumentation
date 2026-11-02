@@ -36,7 +36,9 @@ An SMTP configuration form will then appear.
 
 ### 3. Relay without authentication (Microsoft 365, corporate relay)
 
-If your mail server no longer accepts SMTP authentication — Microsoft is deprecating SMTP AUTH on Exchange Online — use an **IP-authorised relay**: Logora connects to it without credentials.
+If your mail server no longer accepts SMTP authentication — Microsoft is deprecating SMTP AUTH on Exchange Online — use an **IP-authorised relay**: Logora connects to it without credentials. Two architectures are possible.
+
+**a. Corporate relay** (your own internal relay)
 
 | Field | Value |
 |--------|----------|
@@ -47,23 +49,36 @@ If your mail server no longer accepts SMTP authentication — Microsoft is depre
 | **STARTTLS automatic** | enabled for port `587` |
 | **Implicit TLS connection** | checked for port `465` (STARTTLS is then ignored) |
 
-Ask the Logora team for the **outbound IP addresses** to authorise on your relay, then restrict that relay to senders of your domain.
+Authorise **Logora’s outbound IP addresses** on that relay, then restrict it to senders of your domain.
 
-#### Microsoft 365 / Exchange Online
+**b. Microsoft 365 direct** (without an intermediate relay)
+
+| Field | Value |
+|--------|----------|
+| **SMTP server** | `<tenant>.mail.protection.outlook.com` |
+| **SMTP port** | `25` |
+| **Authentication method** | `None (relay allowed by IP)` |
+| **STARTTLS automatic** | enabled |
+| **Implicit TLS connection** | disabled |
+
+Exchange Online only accepts an inbound connector on port `25` of the tenant MX endpoint: on `587` without authentication the submission is rejected (`530 5.7.57 Client was not authenticated`), and that endpoint does not listen on `465`. In this case the **Logora IPs** are authorised in the connector, and the sender must belong to an accepted domain of the tenant.
+
+#### Microsoft 365 inbound connector
 
 1. In the [Exchange admin centre](https://admin.exchange.microsoft.com), open **Mail flow > Connectors**, then **Add a connector**.
-2. Choose **From: Your organization's email server** to **To: Office 365**, with the **Organization mailboxes** usage.
+2. Choose **From: Your organization’s email server** to **To: Office 365**, with the **Organization mailboxes** usage.
 3. Name it (for example `Logora`), then select **By verifying that the IP address of the sending server matches** and add the IPs provided by Logora.
-4. Keep **TLS** enabled and authentication disabled: this connector does not use SMTP AUTH and therefore does not require re-enabling the deprecated protocol.
-5. Make sure the sender address configured in Logora belongs to an accepted domain of your tenant.
+4. For TLS validation, choose **Any digital certificate, including self-signed certificates** (or match the subject name to the sending domain): without this choice the connector cannot be created.
+5. Keep authentication disabled: this connector does not use SMTP AUTH and therefore does not require re-enabling the deprecated protocol.
+6. Make sure the sender address configured in Logora belongs to an accepted domain of your tenant.
 
 #### SPF, DKIM and DMARC
 
-These records belong to your domain, not to Logora's code:
+These records belong to your domain, not to Logora’s code, and depend on the architecture:
 
-- **SPF**: your relay must be authorised in your domain's SPF record.
-- **DKIM**: the signature is added by your relay; enable DKIM signing for your domain (Microsoft 365: **Protection > DKIM**, or your provider).
-- **DMARC**: publish a policy aligned with your sender domain.
+- **Corporate relay**: your relay must be authorised in your domain’s SPF record, and it adds the DKIM signature.
+- **Microsoft 365 direct**: Microsoft sends from its own infrastructure (already covered by `include:spf.protection.outlook.com`), and the signature is the tenant DKIM one (**Protection > DKIM**).
+- **DMARC**: publish a policy aligned with your sender domain in both cases.
 
 Logora cannot sign these emails for you, nor test them remotely: a rejection for SPF, DKIM or DMARC is fixed in your DNS.
 

@@ -101,7 +101,7 @@ Authorization: Bearer ACCESS_TOKEN
 
 Les horodatages sans décalage horaire sont lus en UTC. Une date au format `AAAA-MM-JJ` en `to_date` inclut toute la journée. Une borne invalide renvoie une erreur `400`. La route `GET /sources` demande un jeton OAuth avec le scope `public`.
 
-Le classement prime sur le paramètre `sort`. Combiné à une recherche (`query`), il ne garde que les éléments actifs, dans l'ordre de la recherche. Pour paginer, utilisez `page` et `per_page` : la pagination par curseur (`cursor_pagination`) n'est pas disponible avec `most_active`.
+Le classement prime sur le paramètre `sort` et sur l'ordre de la recherche : combiné à `query`, il classe les résultats de la recherche par activité. Pour paginer, utilisez `page` et `per_page` : la pagination par curseur (`cursor_pagination`) n'est pas disponible avec `most_active` et renvoie une erreur `400`.
 
 ---
 

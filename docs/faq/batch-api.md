@@ -97,10 +97,10 @@ GET /api/v1/sources?most_active=true&per_page=10
 Authorization: Bearer ACCESS_TOKEN
 ```
 
-Pour une autre période, passez ses bornes (dates ou horodatages ISO 8601) et, si besoin, un fuseau horaire (`most_active[time_zone]=Europe/Paris`) :
+Pour une autre période, ajoutez `from_date` et `to_date` (dates ou horodatages ISO 8601), comme pour les routes de statistiques, et si besoin un fuseau horaire (`time_zone=Europe/Paris`) :
 
 ```
-GET /api/v1/sources?most_active[from_date]=2026-11-01T08:00:00Z&most_active[to_date]=2026-11-03T08:00:00Z&per_page=10
+GET /api/v1/sources?most_active=true&from_date=2026-11-01T08:00:00Z&to_date=2026-11-03T08:00:00Z&per_page=10
 ```
 
 Une date au format `AAAA-MM-JJ` en `to_date` inclut toute la journée. Une borne invalide renvoie une erreur `400`. La route `GET /sources` demande un jeton OAuth avec le scope `public`.

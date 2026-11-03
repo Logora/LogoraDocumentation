@@ -86,6 +86,25 @@ Pour récupérer *toutes* les données, bouclez sur les pages jusqu'à épuiseme
 
 > **Astuce** : certaines routes exposent des statistiques agrégées via `GET /stats/{resource}` (par jour, semaine ou mois), utiles pour un tableau de bord sans reconstruire les totaux côté client.
 
+#### Classer par activité récente
+
+Les routes `GET /sources` (articles), `GET /groups` (débats) et `GET /consultations` acceptent le paramètre `most_active`. Il classe les éléments par nombre de contributions acceptées et non supprimées sur une période, du plus actif au moins actif : les commentaires, réponses comprises, ou les propositions pour les consultations. Les éléments sans contribution sur la période sont exclus, quelle que soit leur date de publication.
+
+Exemple : les 10 articles les plus commentés sur les 48 dernières heures (fenêtre glissante, calculée au moment de la requête) :
+
+```
+GET /api/v1/sources?most_active=true&per_page=10
+Authorization: Bearer ACCESS_TOKEN
+```
+
+Pour une autre période, passez ses bornes (dates ou horodatages ISO 8601) et, si besoin, un fuseau horaire (`most_active[time_zone]=Europe/Paris`) :
+
+```
+GET /api/v1/sources?most_active[from_date]=2026-11-01T08:00:00Z&most_active[to_date]=2026-11-03T08:00:00Z&per_page=10
+```
+
+Une date au format `AAAA-MM-JJ` en `to_date` inclut toute la journée. Une borne invalide renvoie une erreur `400`. La route `GET /sources` demande un jeton OAuth avec le scope `public`.
+
 ---
 
 ### 3. Exporter l'ensemble des données en CSV

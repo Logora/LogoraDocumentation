@@ -84,3 +84,13 @@ Il retourne l'URL de redirection après connexion.
 ```js
 window.addEventListener("logora:authentication:requested", event => console.log(event.detail.redirectUrl));
 ```
+
+### 6. Demande d'abonnement
+
+Lorsque les commentaires sont réservés aux abonnés, un utilisateur connecté mais non abonné qui tente de commenter, répondre ou voter déclenche un événement. Il retourne le module concerné (`comments`) et l'URL de la page.
+
+```js
+window.addEventListener("logora:subscription:requested", event => console.log(event.detail.module, event.detail.redirectUrl));
+```
+
+Par défaut, la fenêtre « Abonnez-vous pour commenter » s'affiche aussi. Pour afficher uniquement votre propre fenêtre ou page d'abonnement, demandez à Logora d'activer l'option `disableSubscriptionModal`.

@@ -47,6 +47,11 @@ It must include the following case-sensitive attributes:
 - image_url` (optional): link to the user's avatar.
 - `iat`: token generation date.
 - `exp` (optional) : token expiration date. If present, session will not start if the token is expired
+- `subscriber` (optional): boolean, `true` if the user is a subscriber. Updated at each login; if missing, the user is considered a non-subscriber.
+
+##### Reserve comments to subscribers
+
+In *Configuration > Modules*, the "Reserve comments to subscribers" option restricts participation in comments (commenting, replying, voting) to users whose token contains `"subscriber": true`. Other logged-in users can read, share and report; when they click a participation action, they see a "Subscribe to comment" window whose title, text, button label and link can be configured in the same place. Visitors who are not logged in see the usual login window. Debates and consultations are not affected. The restriction is enforced by the API, not only in the interface.
 
 Field names can be customized in the administration area if you have a different format.
 

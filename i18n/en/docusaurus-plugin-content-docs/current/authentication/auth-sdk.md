@@ -83,3 +83,13 @@ When a user is asked to authenticate, an event is triggered. This event can be u
 ```js
 window.addEventListener("logora:authentication:requested", event => console.log(event.detail.redirectUrl));
 ```
+
+#### 6. Subscription request
+
+When comments are reserved to subscribers, a logged-in user who is not a subscriber and tries to comment, reply or vote triggers an event. It returns the module concerned (`comments`) and the page URL.
+
+```js
+window.addEventListener("logora:subscription:requested", event => console.log(event.detail.module, event.detail.redirectUrl));
+```
+
+By default, the "Subscribe to comment" window is also shown. To show only your own subscription window or page, ask Logora to enable the `disableSubscriptionModal` option.

@@ -52,7 +52,7 @@ Il doit inclure les attributs suivants, sensibles à la casse :
 
 ##### Réserver les commentaires aux abonnés
 
-Dans *Configuration > Modules*, l'option « Réserver les commentaires aux abonnés » limite la participation aux commentaires (commenter, répondre, voter) aux utilisateurs dont le jeton contient `"subscriber": true`. Les autres utilisateurs connectés peuvent lire, partager et signaler ; au clic sur une action de participation, ils voient une fenêtre « Abonnez-vous pour commenter » dont le titre, le texte, le libellé du bouton et le lien sont configurables au même endroit. Les visiteurs non connectés voient la fenêtre de connexion, elle aussi personnalisable pour le module commentaires. Les débats et consultations ne sont pas concernés. La restriction est appliquée par l'API, pas seulement dans l'interface.
+Dans *Configuration > Modules*, l'option « Réserver les commentaires aux abonnés » limite la participation aux commentaires (commenter, répondre, voter) aux utilisateurs dont le jeton contient `"subscriber": true`. Les autres utilisateurs connectés peuvent lire, partager et signaler ; au clic sur une action de participation, ils voient une fenêtre « Abonnez-vous pour commenter » dont le titre, le texte, le libellé du bouton et le lien sont configurables au même endroit. Les visiteurs non connectés voient la fenêtre de connexion habituelle. Les débats et consultations ne sont pas concernés. La restriction est appliquée par l'API, pas seulement dans l'interface.
 
 Le nom des champs est personnalisable sur l'espace d'administration si vous avez un format différent.
 

@@ -51,10 +51,6 @@ Each decision sent with the key is attributed to the technical account in the
 space's moderation history. This account appears in **Team**, where the space
 administrator can remove it at any time.
 
-If you moderate several spaces with the same key, add the
-`current-application` header to each request, set to the target application
-name. Without this header, the API uses the account's first space.
-
 ### 2. Fetch pending content
 
 ```bash

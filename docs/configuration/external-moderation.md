@@ -54,10 +54,6 @@ Chaque décision envoyée avec la clé est attribuée au compte technique dans
 l'historique de modération de l'espace. Ce compte apparaît dans **Équipe**, où
 l'administrateur de l'espace peut le retirer à tout moment.
 
-Si vous modérez plusieurs espaces avec la même clé, ajoutez à chaque requête
-l'en-tête `current-application` avec le nom de l'application visée. Sans cet
-en-tête, l'API utilise le premier espace du compte.
-
 ### 2. Récupérer les contenus en attente
 
 ```bash

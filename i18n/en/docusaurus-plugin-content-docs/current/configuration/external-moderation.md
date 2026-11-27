@@ -64,7 +64,8 @@ Parameters:
 |---|---|---|
 | `status` | `pending` | Required. Content awaiting a decision. |
 | `is_moderated` | `true` | Content already analyzed by Logora's automatic moderation. Omit this parameter if the space uses manual moderation. |
-| `moderable_type` | `Message` | Comments and arguments only. |
+| `moderable_type` | `Message` | User contributions (comments, arguments, questions). |
+| `group_type` | `Source`, `Group`, or `QaSession` | Optional. Limits results to one type of contribution: `Source` for article comments, `Group` for debate arguments, `QaSession` for Q&A session questions. |
 | `sort` | `+id` | Oldest first. Encode `+` as `%2B` in the URL. |
 | `per_page` | `1` to `1000` | Items per page. Defaults to `10`. |
 | `page` | integer | Page number, starting at `1`. |

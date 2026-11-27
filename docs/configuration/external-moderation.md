@@ -67,7 +67,8 @@ Paramètres :
 |---|---|---|
 | `status` | `pending` | Requis. Contenus en attente de décision. |
 | `is_moderated` | `true` | Contenus déjà analysés par la modération automatique de Logora. Omettez ce paramètre si l'espace est en modération manuelle. |
-| `moderable_type` | `Message` | Commentaires et arguments uniquement. |
+| `moderable_type` | `Message` | Contributions des utilisateurs (commentaires, arguments, questions). |
+| `group_type` | `Source`, `Group` ou `QaSession` | Optionnel. Limite à un type de contribution : `Source` pour les commentaires d'articles, `Group` pour les arguments de débats, `QaSession` pour les questions des sessions Q&R. |
 | `sort` | `+id` | Du plus ancien au plus récent. Encodez `+` en `%2B` dans l'URL. |
 | `per_page` | `1` à `1000` | Nombre de contenus par page. `10` par défaut. |
 | `page` | entier | Numéro de page, à partir de `1`. |

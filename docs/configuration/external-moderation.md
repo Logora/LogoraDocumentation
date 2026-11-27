@@ -217,8 +217,8 @@ Les erreurs sont renvoyées au format suivant :
 {
   "success": false,
   "error": {
-    "title": "Objet non trouvé",
-    "detail": "Impossible de trouver l'objet demandé.",
+    "title": "Not found",
+    "detail": "The requested object could not be found.",
     "code": "NOT_FOUND"
   }
 }

@@ -34,67 +34,34 @@ vous recevez tous les contenus.
 
 :::
 
-### Prérequis : un compte modérateur
+### 1. Obtenir une clé d'API
 
-Votre outil s'authentifie avec un compte de l'espace d'administration Logora.
-Pour obtenir ce compte :
+Votre outil s'authentifie avec une clé d'API propre à votre service :
 
-1. L'administrateur de l'espace vous invite depuis **Équipe > Inviter un
-   nouveau membre**, avec le rôle **Modérateur**. Voir
-   [Invitations et gestion des rôles](../faq/invitation.md).
-2. Créez votre compte sur l'[espace d'administration](https://admin.logora.fr)
-   avec l'adresse e-mail invitée, puis acceptez l'invitation.
+1. L'administrateur de l'espace demande une clé d'API pour son prestataire de
+   modération à [contact@logora.fr](mailto:contact@logora.fr).
+2. Logora crée un compte technique avec le rôle **Modérateur** sur l'espace et
+   vous transmet la clé.
 
-Nous recommandons un compte technique dédié plutôt qu'un compte personnel :
-chaque décision est attribuée à ce compte dans l'historique de modération de
-l'espace. Les rôles **Journaliste** et **Administrateur** donnent aussi accès à
-la modération, mais le rôle **Modérateur** suffit.
+Envoyez la clé dans l'en-tête `Authorization` de chaque requête :
+`Authorization: Bearer CLE_D_API`.
 
-Si votre compte est membre de plusieurs espaces, ajoutez à chaque requête
-l'en-tête `current-application` avec le nom de l'application visée (visible
-dans *Configuration > Général*). Sans cet en-tête, l'API utilise le premier
-espace du compte.
+La clé n'expire pas. Conservez-la comme un mot de passe : si elle est
+compromise, demandez sa révocation à
+[contact@logora.fr](mailto:contact@logora.fr).
 
-### 1. Obtenir un jeton d'accès
+Chaque décision envoyée avec la clé est attribuée au compte technique dans
+l'historique de modération de l'espace. Ce compte apparaît dans **Équipe**, où
+l'administrateur de l'espace peut le retirer à tout moment.
 
-Échangez l'identifiant et le mot de passe du compte contre un jeton d'accès :
-
-```bash
-curl -X POST https://app.logora.fr/oauth/token \
-  -d grant_type=password \
-  -d username=moderation@prestataire.example \
-  -d password=MOT_DE_PASSE
-```
-
-Réponse :
-
-```json
-{
-  "access_token": "JETON_D_ACCES",
-  "token_type": "Bearer",
-  "expires_in": 7200,
-  "refresh_token": "JETON_DE_RAFRAICHISSEMENT",
-  "scope": "public",
-  "created_at": 1795770381
-}
-```
-
-Le jeton d'accès est valable 2 heures (`expires_in`, en secondes). Avant son
-expiration, demandez-en un nouveau avec le jeton de rafraîchissement :
-
-```bash
-curl -X POST https://app.logora.fr/oauth/token \
-  -d grant_type=refresh_token \
-  -d refresh_token=JETON_DE_RAFRAICHISSEMENT
-```
-
-Envoyez ensuite le jeton d'accès dans l'en-tête `Authorization` de chaque
-requête : `Authorization: Bearer JETON_D_ACCES`.
+Si vous modérez plusieurs espaces avec la même clé, ajoutez à chaque requête
+l'en-tête `current-application` avec le nom de l'application visée. Sans cet
+en-tête, l'API utilise le premier espace du compte.
 
 ### 2. Récupérer les contenus en attente
 
 ```bash
-curl -H "Authorization: Bearer JETON_D_ACCES" \
+curl -H "Authorization: Bearer CLE_D_API" \
   "https://app.logora.fr/api/v1/moderation_entries?status=pending&is_moderated=true&moderable_type=Message&sort=%2Bid&per_page=100&page=1"
 ```
 
@@ -179,7 +146,7 @@ traitez-le comme un nouveau contenu.
 
 ```bash
 curl -X PATCH https://app.logora.fr/api/v1/moderation_entries/81 \
-  -H "Authorization: Bearer JETON_D_ACCES" \
+  -H "Authorization: Bearer CLE_D_API" \
   -H "Content-Type: application/json" \
   -d '{"status": "rejected", "moderation_reason": "insulte"}'
 ```
@@ -227,7 +194,7 @@ Les erreurs sont renvoyées au format suivant :
 | Code HTTP | Cause | Action |
 |---|---|---|
 | `400` | Paramètre invalide, par exemple un `status` inconnu. | Corrigez la requête. |
-| `401` | Jeton absent, invalide ou expiré, ou compte sans rôle de modération sur l'espace. | Renouvelez le jeton. Si l'erreur persiste, vérifiez le rôle du compte avec l'administrateur de l'espace. |
+| `401` | Clé absente, invalide ou révoquée, ou compte retiré de l'espace. | Vérifiez la clé. Si l'erreur persiste, contactez l'administrateur de l'espace ou [contact@logora.fr](mailto:contact@logora.fr). |
 | `404` | Entrée introuvable dans cet espace, par exemple parce que le contenu a été supprimé. | Ignorez le contenu. |
 | `5xx` | Erreur temporaire. | Réessayez plus tard, avec un délai croissant. |
 

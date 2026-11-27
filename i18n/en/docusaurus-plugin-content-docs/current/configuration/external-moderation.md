@@ -32,68 +32,33 @@ If the space uses manual moderation, you receive all content.
 
 :::
 
-### Prerequisite: a moderator account
+### 1. Get an API key
 
-Your tool authenticates with a Logora administration account. To get this
-account:
+Your tool authenticates with an API key specific to your service:
 
-1. The space administrator invites you from **Team > Invite a new member**,
-   with the **Moderator** role. See
-   [Invitations and role management](../faq/invitation.md).
-2. Create your account in the
-   [administration area](https://admin.logora.fr) with the invited email
-   address, then accept the invitation.
+1. The space administrator requests an API key for their moderation provider
+   at [contact@logora.fr](mailto:contact@logora.fr).
+2. Logora creates a technical account with the **Moderator** role on the space
+   and sends you the key.
 
-We recommend a dedicated technical account rather than a personal one: each
-decision is attributed to this account in the space's moderation history. The
-**Journalist** and **Administrator** roles also give access to moderation, but
-the **Moderator** role is enough.
+Send the key in the `Authorization` header of every request:
+`Authorization: Bearer API_KEY`.
 
-If your account is a member of several spaces, add the `current-application`
-header to each request, set to the target application name (shown in
-*Configuration > General*). Without this header, the API uses the account's
-first space.
+The key doesn't expire. Keep it as safe as a password: if it's compromised,
+ask for its revocation at [contact@logora.fr](mailto:contact@logora.fr).
 
-### 1. Get an access token
+Each decision sent with the key is attributed to the technical account in the
+space's moderation history. This account appears in **Team**, where the space
+administrator can remove it at any time.
 
-Exchange the account's email and password for an access token:
-
-```bash
-curl -X POST https://app.logora.fr/oauth/token \
-  -d grant_type=password \
-  -d username=moderation@provider.example \
-  -d password=PASSWORD
-```
-
-Response:
-
-```json
-{
-  "access_token": "ACCESS_TOKEN",
-  "token_type": "Bearer",
-  "expires_in": 7200,
-  "refresh_token": "REFRESH_TOKEN",
-  "scope": "public",
-  "created_at": 1795770381
-}
-```
-
-The access token is valid for 2 hours (`expires_in`, in seconds). Before it
-expires, request a new one with the refresh token:
-
-```bash
-curl -X POST https://app.logora.fr/oauth/token \
-  -d grant_type=refresh_token \
-  -d refresh_token=REFRESH_TOKEN
-```
-
-Then send the access token in the `Authorization` header of every request:
-`Authorization: Bearer ACCESS_TOKEN`.
+If you moderate several spaces with the same key, add the
+`current-application` header to each request, set to the target application
+name. Without this header, the API uses the account's first space.
 
 ### 2. Fetch pending content
 
 ```bash
-curl -H "Authorization: Bearer ACCESS_TOKEN" \
+curl -H "Authorization: Bearer API_KEY" \
   "https://app.logora.fr/api/v1/moderation_entries?status=pending&is_moderated=true&moderable_type=Message&sort=%2Bid&per_page=100&page=1"
 ```
 
@@ -177,7 +142,7 @@ and a new `edited_at` value: treat it as new content.
 
 ```bash
 curl -X PATCH https://app.logora.fr/api/v1/moderation_entries/81 \
-  -H "Authorization: Bearer ACCESS_TOKEN" \
+  -H "Authorization: Bearer API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"status": "rejected", "moderation_reason": "insult"}'
 ```
@@ -225,7 +190,7 @@ Errors use the following format:
 | HTTP code | Cause | Action |
 |---|---|---|
 | `400` | Invalid parameter, for example an unknown `status`. | Fix the request. |
-| `401` | Missing, invalid, or expired token, or account without a moderation role on the space. | Renew the token. If the error persists, check the account's role with the space administrator. |
+| `401` | Missing, invalid, or revoked key, or account removed from the space. | Check the key. If the error persists, contact the space administrator or [contact@logora.fr](mailto:contact@logora.fr). |
 | `404` | Entry not found in this space, for example because the content was deleted. | Skip the content. |
 | `5xx` | Temporary error. | Retry later with an increasing delay. |
 

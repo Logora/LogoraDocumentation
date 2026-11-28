@@ -45,3 +45,37 @@ src="https://cdn.logora.com/synthese-amp.html?shortname=NOM_APPLICATION&id=PAGE_
     <div overflow placeholder></div>
 </amp-iframe>
 ```
+
+
+#### Debate (embed iframe)
+
+The standard embed iframe, used to insert a debate into an article, also works in an AMP page: it sends the parent a resize message in AMP format (`sentinel: 'amp'`, `type: 'embed-size'`, `height`) that the `amp-iframe` runtime accepts.
+
+Base URL:
+`https://cdn.logora.com/embed.html`
+
+Dynamic parameters that must be specified in the URL:
+- `shortname`: name of your application
+- `id`: identifier of the object to display
+- `resource`: object type (`group`, `consultation`, …)
+
+Example URL:
+`https://cdn.logora.com/embed.html?shortname=logora-demo&id=14593&resource=group`
+
+Insertion: same prerequisites as the summary (the `amp-iframe` script in the `<head>`, an initial height of 10 pixels, the `<div overflow placeholder>` tag).
+
+```html
+<amp-iframe
+width="600"
+height="10"
+sandbox="allow-scripts allow-same-origin allow-top-navigation"
+layout="responsive"
+resizable
+frameborder="0"
+src="https://cdn.logora.com/embed.html?shortname=NOM_APPLICATION&id=IDENTIFIANT&resource=group"
+>
+    <div overflow placeholder></div>
+</amp-iframe>
+```
+
+The height is sent only once, when the content is loaded, and AMP ignores any request below 100 pixels. For content whose height changes after the first load, use a non-AMP page with the [dynamic iframe resizing](../faq/iframes.md).
